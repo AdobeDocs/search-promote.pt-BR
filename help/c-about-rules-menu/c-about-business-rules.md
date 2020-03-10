@@ -84,10 +84,10 @@ As etapas a seguir pressupõem que você esteja usando o Construtor de regras vi
 
    Na [!DNL Business Rules] página, use o **[!UICONTROL Filter by tag]** recurso para filtrar por regras que correspondam a um determinado rótulo. 1. Na [!DNL Business Rule Builder] página, defina os acionadores e as ações que deseja usar.
 
-       **Opções de acionador**
- Os     
-     acionadores são as condições que devem ser atendidas para que uma regra de negócios seja executada. Quando uma regra de negócios tem vários acionadores, você pode configurar como os acionadores respondem usando um dos três métodos a seguir:
-   
+   **Opções de acionador**
+
+   Os acionadores são as condições que devem ser atendidas para que uma regra de negócios seja executada. Quando uma regra de negócios tem vários acionadores, você pode configurar como os acionadores respondem usando um dos três métodos a seguir:
+
    * Uma resposta na qual todos os acionadores devem ser verdadeiros (a configuração padrão), como no exemplo a seguir:
 
       `if a AND b AND c then ...`
