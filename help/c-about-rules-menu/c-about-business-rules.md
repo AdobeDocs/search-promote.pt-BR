@@ -7,7 +7,7 @@ title: Sobre regras comerciais
 topic: Rules,Site search and merchandising
 uuid: f2186f54-7a39-4f46-bb29-5115d5a17f07
 translation-type: tm+mt
-source-git-commit: 2dd205d3034e8397d88007a1618a121f0b6087a8
+source-git-commit: fc1f0b15a15a9d0308494fc23c5b4258442c8aab
 
 ---
 
@@ -22,7 +22,7 @@ Por exemplo, você pode configurar quando os banners são exibidos ou quais resu
 
 Cada regra de negócios é composta de acionadores e ações.
 
-O acionador define quando a regra é executada. Por exemplo, quando o termo de consulta é &quot;masculino&quot; ou quando os resultados são principalmente chapéus. O acionador consiste em várias condições que devem ser todas, ou qualquer uma delas ser verdadeira para que o acionador geral seja verdadeiro. Você pode especificar a precedência alterando o operador de disparo.
+O acionador define quando a regra é executada. Por exemplo, quando o termo do query é &quot;masculino&quot; ou quando os resultados são principalmente chapéus. O acionador consiste em várias condições que devem ser todas, ou qualquer uma delas ser verdadeira para que o acionador geral seja verdadeiro. Você pode especificar a precedência alterando o operador de disparo.
 
 A ação define o que acontece quando a condição de disparo é atendida. Por exemplo, configurar o banner para exibir ou mover um determinado resultado para a posição 1. A tabela de regras mostra informações de resumo sobre a regra. Você pode clicar no nome de uma regra para abri-la e ver informações adicionais.
 
@@ -40,20 +40,20 @@ As regras de negócios podem ter um dos três estados: Aprovado, Suspenso ou WIP
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Aprovado </p> </td> 
-   <td colname="col2"> <p>Regras comerciais aprovadas são executadas em seu ambiente ativo e em seu ambiente de preparo. Você aprova uma regra de negócios no Construtor de regras avançado. </p> </td> 
+   <td colname="col2"> <p>As regras comerciais aprovadas são executadas em seu ambiente ativo e em seu ambiente preparado. Você aprova uma regra de negócios no Construtor de regras avançado. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Suspenso </p> </td> 
-   <td colname="col2"> <p>As regras de negócios suspensas nunca são executadas em seu ambiente de preparo ou em seu ambiente ativo. </p> </td> 
+   <td colname="col2"> <p>As regras comerciais suspensas nunca são executadas em seu ambiente preparado ou em seu ambiente ativo. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>WIP </p> </td> 
-   <td colname="col2"> <p>WIP (Trabalho em andamento) são regras comerciais que não são aprovadas nem suspensas. Ou seja, você ainda pode estar trabalhando neles ou pode querer testá-los primeiro antes de aprová-los. As regras de negócios em um estado de WIP são executadas somente em seu ambiente de preparo. </p> </td> 
+   <td colname="col2"> <p>WIP (Trabalho em andamento) são regras comerciais que não são aprovadas nem suspensas. Ou seja, você ainda pode estar trabalhando neles ou pode querer testá-los primeiro antes de aprová-los. As regras comerciais em um estado de WIP são executadas somente no ambiente preparado. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Você aprova as regras de negócios e as empurra ao vivo para que elas funcionem em seu ambiente ativo. Atualmente, você só pode colocar *todas* as regras online. No entanto, você pode alterar o status de uma regra para ter controle sobre quais regras são executadas e não no ambiente ativo.
+Você aprova as regras de negócios e as empurra ao vivo para que sejam executadas no seu ambiente. Atualmente, você só pode colocar *todas* as regras online. No entanto, você pode alterar o status de uma regra para ter controle sobre quais regras são executadas e não no seu ambiente ativo.
 
 Por padrão, as regras são executadas sempre que seus acionadores associados são atendidos. Entretanto, você pode, opcionalmente, agendar uma regra para execução para uma data e um intervalo de tempo específicos.
 
@@ -86,7 +86,7 @@ As etapas a seguir pressupõem que você esteja usando o Construtor de regras vi
 
    **Opções de acionador**
 
-   Os acionadores são as condições que devem ser atendidas para que uma regra de negócios seja executada. Quando uma regra de negócios tem vários acionadores, você pode configurar como os acionadores respondem usando um dos três métodos a seguir:
+   Acionadores são as condições que devem ser cumpridas para que uma regra de negócios seja executada. Quando uma regra de negócios tem vários acionadores, você pode configurar como os acionadores respondem usando um dos três métodos a seguir:
 
    * Uma resposta na qual todos os acionadores devem ser verdadeiros (a configuração padrão), como no exemplo a seguir:
 
@@ -120,7 +120,7 @@ As etapas a seguir pressupõem que você esteja usando o Construtor de regras vi
       <td colname="col2"> <p>O acionador é verdadeiro quando o termo de pesquisa corresponde a determinada palavra-chave que diferencia maiúsculas de minúsculas. O acionador é verdadeiro para a palavra-chave e para todos os seus sinônimos, conforme definido no dicionário de Linguística. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p> Correspondências de Consulta </p> </td> 
+      <td colname="col1"> <p> Corresponde a Query </p> </td> 
       <td colname="col2"> <p> O acionador é verdadeiro quando todos os parâmetros de pesquisa correspondem. </p> </td> 
       </tr> 
       <tr> 
@@ -130,7 +130,7 @@ As etapas a seguir pressupõem que você esteja usando o Construtor de regras vi
       </tr> 
       <tr> 
       <td colname="col1"> <p>O grupo de resultados está presente </p> </td> 
-      <td colname="col2"> <p> O acionador é verdadeiro quando o grupo de resultados definido pela pesquisa fornecida está presente no conjunto de resultados. O grupo inteiro deve estar presente no conjunto de resultados para que esse acionador seja atendido (os resultados podem aparecer em qualquer página). O grupo de resultados é dinâmico e pode ser alterado após operações de índice, dependendo de quais resultados correspondem aos critérios de pesquisa originais. </p> </td> 
+      <td colname="col2"> <p> O acionador é verdadeiro quando o grupo de resultados definido pela pesquisa fornecida está presente no conjunto de resultados. O grupo inteiro deve estar presente no conjunto de resultados para que esse acionador seja atendido (os resultados podem aparecer em qualquer página). O grupo de resultados é dinâmico e pode ser alterado após operações de índice dependendo de quais resultados correspondem aos critérios de pesquisa originais. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p> Resultado presente </p> </td> 
@@ -255,7 +255,7 @@ As etapas a seguir pressupõem que você esteja usando o Construtor de regras vi
 1. (Opcional) No **[!UICONTROL Schedule]** painel, execute um dos procedimentos a seguir:
 
    * Clique em **[!UICONTROL Run Indefinitely]** para que a regra seja executada sempre que seus acionadores associados forem atendidos. Essa opção é o padrão.
-   * Clique em **[!UICONTROL Fixed Schedule]** e especifique a data e a hora de início, a data e a hora de término da regra para ser executada sempre que seu acionador associado for atendido.
+   * Clique em **[!UICONTROL Fixed Schedule]** e especifique a data e a hora do start, a data e a hora de término para a regra ser executada sempre que seu acionador associado for atendido.
 
 1. Clique em **[!UICONTROL Save Rule]**.
 1. (Opcional) Na [!DNL Business Rules] página, execute um dos procedimentos a seguir:
@@ -313,7 +313,7 @@ Você pode usar o Construtor de regras visual ou o Construtor de regras avançad
 1. (Opcional) No [!DNL Schedule] painel, execute um dos procedimentos a seguir:
 
    * Clique em **[!UICONTROL Run Indefinitely]** para que a regra seja executada sempre que seus acionadores associados forem atendidos. Essa opção é o padrão.
-   * Clique em **[!UICONTROL Fixed Schedule]** e especifique a data e a hora de início, a data e a hora de término da regra para ser executada sempre que seu acionador associado for atendido.
+   * Clique em **[!UICONTROL Fixed Schedule]** e especifique a data e a hora do start, a data e a hora de término para a regra ser executada sempre que seu acionador associado for atendido.
 
 1. Clique em **[!UICONTROL Save Rule]**.
 
@@ -459,7 +459,7 @@ Você pode deletar regras comerciais cujo status é WIP, suspenso ou aprovado, u
 1. No menu do produto, clique em **[!UICONTROL Rules]** > **[!UICONTROL Business Rules]**.
 1. Na [!DNL Business Rules] página, execute um dos procedimentos a seguir:
 
-   * Use o cabeçalho da coluna da caixa de seleção para marcar todas as regras exibidas na página no momento.
+   * Use o cabeçalho da coluna da caixa de seleção para marcar todas as regras que estão sendo exibidas na página.
    * Verifique somente as regras de negócios que deseja excluir, com base no status na coluna Status da tabela.
 
 1. Na lista [!DNL Bulk Actions] suspensa, clique em **[!UICONTROL Delete]**.
