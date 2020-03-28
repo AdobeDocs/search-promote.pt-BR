@@ -7,7 +7,7 @@ title: Search&amp;Notas de versão do Promote 8.16.0 (18/9/2014)
 topic: Release Notes,Site search and merchandising
 uuid: 0a59858b-213b-40d6-aea1-d085c4d6d2fa
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: ffdec2cfcb30e733c664a7d1ca23868b7a9a9aa5
 
 ---
 
@@ -50,5 +50,5 @@ source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
 * A configuração **[!UICONTROL Strip HTML]** do Conector de índice estava sempre marcada.
 * Inconsistent search results were experienced with the **[!UICONTROL Common Phrases]** feature.
 * Os nomes de atribuição estava sendo exibidos de forma truncada nos resumos da lista de regras.
-* Ao implementar uma Regra de negócio individual, todas a Regras de negócio estavam sendo implementadas.
+* A ativação de uma regra de negócios individual estava impondo todas as regras de negócios.
 
