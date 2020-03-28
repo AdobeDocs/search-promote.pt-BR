@@ -7,7 +7,7 @@ title: Sobre o Simulador
 topic: Simulator,Site search and merchandising
 uuid: 7ec8f5b9-3ab3-4b9a-bf8a-65d0ca1dfddb
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: 91ddead9f73b73ea1a20e26582998966f801d6ff
 
 ---
 
@@ -52,28 +52,28 @@ Consulte [Adicionar uma nova regra](c-about-rules-menu/c-about-business-rules.md
     </thead>
     <tbody> 
       <tr> 
-      <td colname="col1"> <p>Simular ao vivo preparado/simulado </p> </td> 
-      <td colname="col2"> <p>Alternar entre simular o ambiente ativo ou o ambiente de estágio. </p> </td> 
+      <td colname="col1"> <p><span class="uicontrol">Simular ao vivo preparado/simulado</span> </p> </td> 
+      <td colname="col2"> <p>Alternar entre simular seu ambiente ao vivo ou seu ambiente de palco. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>Mostrar/ocultar regras de processamento </p> </td> 
+      <td colname="col1"> <p><span class="uicontrol">Mostrar/ocultar regras de processamento</span> </p> </td> 
       <td colname="col2"> <p>Mostrar ou ocultar todas as regras de processamento que foram acionadas em vez de apenas as regras de negócios. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>Alterar data de simulação </p> </td> 
+      <td colname="col1"> <p><span class="uicontrol">Alterar data da Simulação</span> </p> </td> 
       <td colname="col2"> <p>Simular resultados de pesquisa para uma determinada data. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>Simular no PC </p> </td> 
+      <td colname="col1"> <p><span class="uicontrol">Simular no PC</span> </p> </td> 
       <td colname="col2"> <p>Simule os resultados da pesquisa como se você estivesse usando um computador pessoal. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>Simular em dispositivo móvel </p> </td> 
+      <td colname="col1"> <p><span class="uicontrol">Simular em dispositivo móvel</span> </p> </td> 
       <td colname="col2"> <p>Simule os resultados da pesquisa como se você estivesse usando um telefone celular ou tablet. </p> <p>Ao selecionar essa opção, você pode escolher entre as seguintes opções associadas: </p> 
         <ul id="ul_2A9901418212486A8EE67A78CB99CBE4"> 
-        <li id="li_B210E954DF0D44C397718112C72C2103"> <b>Dispositivo</b> <p>Simule os resultados da pesquisa em um telefone celular ou tablet. </p> </li> 
-        <li id="li_90B64EAA0B57446A90CE22172E703594"> <b>Resolução</b> <p>Com base no dispositivo selecionado, você pode escolher a resolução associada. </p> </li> 
-        <li id="li_042AF9FA3FA846EDB48F7296DB361515"> <b>Exibição horizontal</b> <p>Veja como os resultados da pesquisa simulada aparecem horizontalmente no dispositivo selecionado. </p> </li> 
+        <li id="li_B210E954DF0D44C397718112C72C2103"> <b><span class="uicontrol">Dispositivo</span></b> <p>Simule os resultados da pesquisa em um telefone celular ou tablet. </p> </li> 
+        <li id="li_90B64EAA0B57446A90CE22172E703594"> <b><span class="uicontrol">Resolução</span></b> <p>Com base no dispositivo selecionado, você pode escolher a resolução associada. </p> </li> 
+        <li id="li_042AF9FA3FA846EDB48F7296DB361515"> <b><span class="uicontrol">visualização horizontal</span></b> <p>Visualização como os resultados da pesquisa simulada aparecem horizontalmente no dispositivo selecionado. </p> </li> 
         </ul> </td> 
       </tr> 
     </tbody> 
