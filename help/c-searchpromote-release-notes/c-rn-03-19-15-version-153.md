@@ -7,7 +7,7 @@ title: Search&amp;Notas de versão do Promote 15.3.1 (24/03/2015)
 topic: Release Notes,Site search and merchandising
 uuid: f02da5a4-2207-4603-aa05-5cff7be16dd5
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: ffdec2cfcb30e733c664a7d1ca23868b7a9a9aa5
 
 ---
 
@@ -16,13 +16,13 @@ source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
 
 ## New features and enhancements {#section_2A10EF6B40FC4F2CB2381FFA9FFA64BD}
 
-* Pesquisando números de modelo de produto - Adicionada uma nova configuração de Linguística que permite, opcionalmente, dividir tokens em transições alfabéticas-numéricas. Essa funcionalidade permite correspondências de texto livre mais flexíveis em tokens de estilo de peça ou de produto.
+* Pesquisando números de modelo de produto - Adicionada uma nova configuração de Linguística que permite, opcionalmente, dividir tokens em transições alfabéticas e numéricas. Essa funcionalidade permite correspondências de texto livre mais flexíveis em tokens de estilo de peça ou de produto.
 
    Consulte **[!UICONTROL Partial Alphanumeric Matching]** Configurando como os termos de pesquisa são [correspondentes ao seu conteúdo da Web...](../c-about-linguistics-menu/c-about-words-and-language.md#task_351A9144A51F4B41923BDBACDEF3B616).
 
-* Foi adicionada a capacidade de exportar resultados de exibição de dados.
+* Adicionada a capacidade de exportar resultados de visualização de dados.
 
-   Consulte [Sobre exibições](../c-about-reports-menu/c-about-data-views.md#concept_DCA897D074464BC1861AA47B40CC86C3)de dados.
+   Consulte [Sobre Visualizações](../c-about-reports-menu/c-about-data-views.md#concept_DCA897D074464BC1861AA47B40CC86C3)de dados.
 
 * Intervalos gerados dinamicamente para os atributos variados que têm os recursos de segmentação de valores de faceta automática.
 
@@ -35,8 +35,8 @@ source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
 * A caixa de diálogo de edição do painel de facetas deve incluir facetas preparadas.
 * Resultados de pesquisa principais vazios para o modo de pesquisa &quot;incorporado&quot;, para uma pesquisa contendo caracteres japoneses.
 * A conversão tika dos arquivos .docx do Word agora preenche o `title` atributo.
-* Correção de mensagens erradas de &quot;banner duplicado&quot; no **[!UICONTROL Banner]** gerenciador.
-* Os banners do Dynamic Media Classic agora são agnósticos de protocolo.
+* Correção de mensagens erradas de &quot;banner de duplicado&quot; no **[!UICONTROL Banner]** gerenciador.
+* [!DNL Dynamic Media Classic] os banners agora são agnósticos de protocolo.
 * O atributo de **[!UICONTROL Table Name]** campo às vezes era oculto ao editar campos definidos pelo usuário na interface do usuário de Metadados, mesmo quando **[!UICONTROL Dynamic Facets]** era ativado para a conta.
 * **[!UICONTROL Recent Searches]** não codifica mais caracteres que não sejam ASCII.
 * Os campos MDI podem ser preenchidos sem precisar usar a Filtragem por script.
