@@ -7,7 +7,7 @@ title: Search&amp;Notas de versão do Promote 8.10.1 (18/07/2013)
 topic: Release Notes,Site search and merchandising
 uuid: 161d678a-6393-4adb-a47a-e28e108acc31
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: ffdec2cfcb30e733c664a7d1ca23868b7a9a9aa5
 
 ---
 
@@ -35,7 +35,7 @@ source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
 
 **Correções e melhorias**
 
-* **Regras** de negócios - foi adicionada a capacidade de atribuir mais de uma programação a uma regra de negócios.
+* **[!DNL Business Rules]** - Adicionada a capacidade de atribuir mais de uma programação a uma regra de negócios.
 
    See [About Business Rules](../c-about-rules-menu/c-about-business-rules.md#concept_2A93D76216754D3D8412CDEA00BD26BD).
 
