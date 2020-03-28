@@ -8,7 +8,7 @@ title: Sobre aspectos dinâmicos
 topic: Design,Site search and merchandising
 uuid: 1ea91c22-dcc2-4173-aa50-ce618ad0a99c
 translation-type: tm+mt
-source-git-commit: 4270ea66ba645ad0f71c9c8b5c2a1fcc6eb02ad2
+source-git-commit: ffdec2cfcb30e733c664a7d1ca23868b7a9a9aa5
 
 ---
 
@@ -96,12 +96,12 @@ Consulte também
 1. Clique em **regenerar o índice** de site preparado na caixa azul para recriar rapidamente o índice de site preparado.
 
    Consulte também [Regenerando o índice de um site](../c-about-index-menu/c-about-regenerate-index.md#task_B28DE40C0E9A475ABCBCBC4FF993AACD)ao vivo ou em etapas.
-1. Determine o número de aspectos dinâmicos a serem selecionados para uma determinada pesquisa. Você realiza essa tarefa executando um dos seguintes procedimentos:
+1. Determine o número de aspectos dinâmicos a serem selecionados para uma determinada pesquisa. Para realizar essa tarefa, execute um dos procedimentos a seguir:
 
-   * Crie uma regra de limpeza de consulta com quaisquer condições desejadas, que execute a ação `set`, `backend parameter`, `sp_sfvl_df_count` para valorizar `X`, onde `X` é o número desejado de aspectos dinâmicos a serem solicitados no momento da pesquisa e clique em **[!UICONTROL Add]**.
+   * Crie uma regra de limpeza de query com as condições desejadas, que execute a ação `set`, `backend parameter`, `sp_sfvl_df_count` para valorizar `X`, onde `X` é o número desejado de aspectos dinâmicos a serem solicitados no momento da pesquisa e clique em **[!UICONTROL Add]**.
    ![](assets/querycleaningrule_dynamicfacets.png)
 
-   Consulte [Adicionar uma regra](../c-about-rules-menu/c-about-query-cleaning-rules.md#task_47F43988D3D9485F8AE1DFDA7E00BF54)de limpeza de consulta.
+   Consulte [Adicionar uma regra](../c-about-rules-menu/c-about-query-cleaning-rules.md#task_47F43988D3D9485F8AE1DFDA7E00BF54)de limpeza de query.
 
    Consulte também Parâmetros [CGI de pesquisa](../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8)de backend, linha 40 na tabela para obter mais explicações sobre `sp_sfvl_df_count`.
 
@@ -169,7 +169,7 @@ Consulte também
 
    Certifique-se de especificar `__dynamic_facets` para o `gsname` na `guided-facet-rail` tag . Esta tag é um painel de facetas predefinido reservado para a saída de quaisquer facetas dinâmicas que são retornadas para uma determinada pesquisa.
 
-   Você também pode, opcionalmente, editar esse painel de facetas especial por meio de Regras > Regras de negócios e usando o Construtor de regras avançado, conforme mostrado abaixo.
+   Você também pode, opcionalmente, editar esse painel de facetas especial por meio de **[!UICONTROL Rules > Business Rules]** e usar o **[!UICONTROL Advanced Rule Builder]** como visto abaixo.
 
    ![](assets/dynamicfacetrail_businessrule.png)
 
