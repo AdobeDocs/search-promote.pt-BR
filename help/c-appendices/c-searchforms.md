@@ -7,7 +7,7 @@ title: Pesquisar formulários
 topic: Appendices,Site search and merchandising
 uuid: 91153e3a-c437-47f3-8c2a-d9ac02965b8c
 translation-type: tm+mt
-source-git-commit: 55f48748f8c0a2f739dfbe30e8d42b73c8106b81
+source-git-commit: 4542702e1d2ba04c70d9f6b24bfa32e1f1c6acb5
 
 ---
 
@@ -136,7 +136,7 @@ O processo de configuração de conjuntos de quadros é o seguinte:
   <tr> 
    <td colname="col1"> <p>2 </p> </td> 
    <td colname="col02"> <p>Defina o quadro do público alvo para a página de resultados da pesquisa. </p> </td> 
-   <td colname="col2"> <p> <a scope="local" href="#section_532CACB90888467093D95EACB64FDFA1" type="section" format="dita"> Definição do quadro do público alvo para a página de resultados da pesquisa </a> </p> </td> 
+   <td colname="col2"> <p> <a scope="local" href="#section_532CACB90888467093D95EACB64FDFA1" type="section" format="dita"> Configuração do quadro do público alvo para a página de resultados da pesquisa </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>3 </p> </td> 
@@ -151,7 +151,7 @@ O processo de configuração de conjuntos de quadros é o seguinte:
   <tr> 
    <td colname="col1"> <p>5 </p> </td> 
    <td colname="col02"> <p>Teste o formulário de pesquisa. </p> </td> 
-   <td colname="col2"> <p> <a scope="local" href="../c-appendices/c-searchforms.md#section_43D8D4A7BF524DC480DFE5442F6A2E3C" type="section" format="dita"> Teste do formulário de pesquisa </a> </p> </td> 
+   <td colname="col2"> <p> <a scope="local" href="#section_43D8D4A7BF524DC480DFE5442F6A2E3C" type="section" format="dita"> Teste do formulário de pesquisa </a> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -178,7 +178,7 @@ O processo de configuração de conjuntos de quadros é o seguinte:
 
    ![](assets/frames1.gif)
 
-## Definição do quadro do público alvo para a página de resultados da pesquisa {#section_532CACB90888467093D95EACB64FDFA1}
+## Configuração do quadro do público alvo para a página de resultados da pesquisa {#section_532CACB90888467093D95EACB64FDFA1}
 
 Se você colocar o código do formulário de pesquisa no quadro de navegação vertical como acima, poderá exibir os resultados da pesquisa no quadro principal maior. Neste exemplo, você chama o quadro principal de &quot;corpo&quot; e o define como o quadro de público alvo.
 
@@ -286,7 +286,7 @@ Usando o formulário de pesquisa avançada a seguir, o restante desse tópico mo
 
 Você pode visualização todo o código HTML do formulário de pesquisa avançada da amostra acima.
 
-Consulte Código [HTML do formulário de pesquisa](../c-appendices/c-searchforms.md#reference_9AAD4A46B68D4D48865508982CB86DB9)avançada.
+Consulte Código [HTML do formulário de pesquisa](#reference_9AAD4A46B68D4D48865508982CB86DB9)avançada.
 
 Consulte [Configuração do CSS](../c-about-auto-complete.md#task_EECE35DEB6C94F4A8A5B42B4DED76D96)de Completar automaticamente.
 
@@ -435,7 +435,7 @@ Consulte [Copiando o código HTML do formulário de pesquisa no...](../c-about-a
 
 O código de formulário HTML usado para produzir o formulário de pesquisa avançada que é exibido na parte superior do tópico de formulário de pesquisa avançada Amostra.
 
-Consulte [Amostra de formulário](../c-appendices/c-searchforms.md#reference_82E1051918744EBA88A01E9E6AE42C4A)de pesquisa avançada.
+Consulte [Amostra de formulário](#reference_82E1051918744EBA88A01E9E6AE42C4A)de pesquisa avançada.
 
 Se você usar esse código, lembre-se de substituir o `sp_a` valor de `sp99999999` por seu número de conta real.
 
