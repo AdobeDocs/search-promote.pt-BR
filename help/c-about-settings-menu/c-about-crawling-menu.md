@@ -8,7 +8,10 @@ title: Sobre o menu Rastreamento
 topic: Settings,Site search and merchandising
 uuid: a58c03bf-90f7-4b5b-91ff-988b95c246b0
 translation-type: tm+mt
-source-git-commit: 77a4e88c7bf47b637030e3935a39dfdf4f175e80
+source-git-commit: e080a61e24a3809beff7c212ff3d088b2a8ad3b6
+workflow-type: tm+mt
+source-wordcount: '11115'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +22,7 @@ Use o menu Rastreamento para definir a data e as máscaras de URL, senhas, tipos
 
 ## Sobre pontos de entrada de URL {#concept_5D857E3B5C124E85BC0B5AE77A509573}
 
-A maioria dos sites tem um ponto de entrada principal ou uma página inicial que um cliente visita inicialmente. Este ponto de entrada principal é o endereço URL a partir do qual o robô de pesquisa inicia o rastreamento de índice. No entanto, se o site tiver vários domínios ou subdomínios, ou se partes do site não estiverem vinculadas do ponto de entrada principal, você poderá usar os Pontos de entrada do URL para adicionar mais pontos de entrada.
+A maioria dos sites tem um ponto de entrada ou home page principal que um cliente visita inicialmente. Este ponto de entrada principal é o endereço URL a partir do qual o robô de pesquisa inicia o rastreamento de índice. No entanto, se o site tiver vários domínios ou subdomínios, ou se partes do site não estiverem vinculadas do ponto de entrada principal, você poderá usar os Pontos de entrada do URL para adicionar mais pontos de entrada.
 
 Todas as páginas do site abaixo de cada ponto de entrada de URL especificado são indexadas. Você pode combinar pontos de entrada de URL com máscaras para controlar exatamente quais partes de um site você deseja indexar. É necessário recriar o índice do site antes que os efeitos das configurações de Pontos de entrada do URL fiquem visíveis para os clientes.
 
@@ -132,7 +135,7 @@ Consulte [Definição das configurações](../c-about-settings-menu/c-about-acco
 
 ## Sobre máscaras de URL {#concept_8039DFC53FF3410AA494D602F71BA164}
 
-As máscaras de URL são padrões que determinam qual de seu site documenta o robô de pesquisa indexa ou não índices.
+As máscaras de URL são padrões que determinam qual de seu site documentos o robô de pesquisa indexa ou não índices.
 
 Certifique-se de recriar o índice do site para que os resultados das máscaras de URL fiquem visíveis aos clientes.
 
@@ -143,7 +146,7 @@ A seguir estão dois tipos de máscaras de URL que você pode usar:
 * Incluir máscaras de URL
 * Excluir máscaras de URL
 
-Incluir máscaras de URL informa ao robô de pesquisa para indexar quaisquer documentos que correspondam ao padrão da máscara.
+Inclua máscaras de URL para informar ao robô de pesquisa qualquer documentos que corresponda ao padrão da máscara.
 
 Excluir máscaras de URL instrui o robô de pesquisa a indexar documentos correspondentes.
 
@@ -186,7 +189,7 @@ Uma máscara de URL simples de inclusão é a seguinte:
 include https://www.mydomain.com/news/
 ```
 
-Somente os documentos vinculados por meio de uma série de links de um ponto de entrada de URL, ou que são usados como um ponto de entrada de URL propriamente dito, são indexados. A listagem exclusiva do URL de um documento como uma máscara de URL de inclusão não indexa um documento desvinculado. Para adicionar documentos não vinculados ao seu índice, você pode usar o recurso Pontos de entrada do URL.
+Somente documentos vinculados por meio de uma série de links de um ponto de entrada de URL, ou que são usados como um ponto de entrada de URL propriamente dito, são indexados. A listagem exclusiva de um URL de documento como uma máscara de URL de inclusão não indexa um documento desvinculado. Para adicionar documentos não vinculados ao seu índice, você pode usar o recurso de Pontos de entrada de URL.
 
 Consulte [Sobre pontos de entrada](../c-about-settings-menu/c-about-crawling-menu.md#concept_5D857E3B5C124E85BC0B5AE77A509573)de URL.
 
@@ -286,7 +289,7 @@ Uma vírgula não é válida como separador entre a máscara e a palavra-chave; 
    <td colname="col2"> <p>Usado para incluir e excluir máscaras. </p> <p>Qualquer máscara de URL precedida por 
      <userinput>
        regexp 
-     </userinput> é tratada como uma expressão regular. Se o robô de pesquisa encontrar documentos que correspondem a uma máscara de URL de expressão regular excluída, esses documentos não serão indexados. Se o robô de pesquisa encontrar documentos que correspondem a uma máscara de URL de expressão regular de inclusão, esses documentos serão indexados. Por exemplo, suponha que você tenha a seguinte máscara de URL: </p> <p> <code> exclude&amp;nbsp;regexp&amp;nbsp;^.*/products/.*\.html$ </code> </p> <p>O robô de pesquisa exclui arquivos correspondentes, como 
+     </userinput> é tratada como uma expressão regular. Se o robô de pesquisa encontrar documentos que correspondam a uma máscara de URL de expressão regular excluída, esses documentos não serão indexados. Se o robô de pesquisa encontrar documentos que correspondam a uma máscara de URL de expressão regular de inclusão, esses documentos serão indexados. Por exemplo, suponha que você tenha a seguinte máscara de URL: </p> <p> <code> exclude&amp;nbsp;regexp&amp;nbsp;^.*/products/.*\.html$ </code> </p> <p>O robô de pesquisa exclui arquivos correspondentes, como 
      <userinput>
        https://www.mydomain.com/products/page1.html 
      </userinput> </p> <p>Se você tivesse a seguinte máscara de URL de expressão regular excluída: </p> <p> <code> exclude&amp;nbsp;regexp&amp;nbsp;^.*\?..*$ </code> </p> <p>O robô de pesquisa não deve incluir nenhum URL que contenha um parâmetro CGI, como 
@@ -366,7 +369,7 @@ A máscara pode especificar qualquer um dos seguintes:
 * Um caminho completo como em `https://www.mydomain.com/products.html`
 * Um caminho parcial como em `https://www.mydomain.com/products`
 * Um URL que usa curingas `https://www.mydomain.com/*.html`
-* Uma expressão regular. Para tornar uma máscara uma expressão regular, insira a palavra-chave `regexp` antes do URL.
+* Uma expressão normal. Para tornar uma máscara uma expressão regular, insira a palavra-chave `regexp` antes do URL.
 
 As máscaras de data de inclusão e exclusão podem especificar uma data de uma das duas maneiras a seguir. As máscaras só serão aplicadas se os arquivos correspondentes tiverem sido criados na data especificada ou antes dela:
 
@@ -434,7 +437,7 @@ Você pode incluir seletivamente somente `/archive/fall/index.html` (independent
 include-days 0 https://www.mydomain.com/archive/fall/index.html
 ```
 
-Para que os dois exemplos de máscara acima funcionem conforme desejado, você deve listar a máscara de inclusão primeiro como no seguinte:
+Para que os dois exemplos de máscara acima funcionem conforme desejado, é necessário lista a máscara de inclusão primeiro, como a seguir:
 
 ```
 include-days 0 https://www.mydomain.com/archive/fall/index.html 
@@ -583,7 +586,7 @@ Realm2 name2 password2
 Realm3 name3 password3
 ```
 
-Você pode combinar senhas que contêm URLs ou realms para que sua lista de senhas tenha a seguinte aparência:
+Você pode combinar senhas que contêm URLs ou realms para que sua lista de senha tenha a seguinte aparência:
 
 ```
 Realm1 name1 password1 
@@ -636,7 +639,7 @@ Consulte [Configurar um índice incremental de um site](../c-about-index-menu/c-
 
 Você pode usar [!DNL Content Types] para selecionar os tipos de arquivos que deseja rastrear e indexar para esta conta.
 
-Os tipos de conteúdo que você pode escolher rastrear e indexar incluem documentos PDF, documentos de texto, filmes em Adobe Flash, arquivos de aplicativos do Microsoft Office como Word, Excel e Powerpoint e texto em arquivos MP3. O texto encontrado nos tipos de conteúdo selecionados é pesquisado junto com todo o outro texto do site.
+Os tipos de conteúdo que você pode escolher rastrear e indexar incluem documentos PDF, documentos de texto, filmes Adobe Flash, arquivos de aplicativos do Microsoft Office como Word, Excel e Powerpoint e texto em arquivos MP3. O texto encontrado nos tipos de conteúdo selecionados é pesquisado junto com todo o outro texto do site.
 
 Antes que os efeitos das configurações de Tipos de conteúdo fiquem visíveis para os clientes, é necessário recriar o índice do site.
 
@@ -679,7 +682,7 @@ Se você quiser apenas impedir a indexação de determinados arquivos MP3 em seu
 
 Você pode usar [!DNL Content Types] para selecionar os tipos de arquivos que deseja rastrear e indexar para esta conta.
 
-Os tipos de conteúdo que você pode escolher rastrear e indexar incluem documentos PDF, documentos de texto, filmes em Adobe Flash, arquivos de aplicativos do Microsoft Office como Word, Excel e Powerpoint e texto em arquivos MP3. O texto encontrado nos tipos de conteúdo selecionados é pesquisado junto com todo o outro texto do site.
+Os tipos de conteúdo que você pode escolher rastrear e indexar incluem documentos PDF, documentos de texto, filmes Adobe Flash, arquivos de aplicativos do Microsoft Office como Word, Excel e Powerpoint e texto em arquivos MP3. O texto encontrado nos tipos de conteúdo selecionados é pesquisado junto com todo o outro texto do site.
 
 Antes que os efeitos das configurações de Tipos de conteúdo fiquem visíveis para os clientes, é necessário recriar o índice do site.
 
@@ -794,7 +797,7 @@ Consulte [Configurar um índice incremental de um site](../c-about-index-menu/c-
       <li id="li_77550A448D954EF29FF33EE5E8B5E0F5"> Um caminho completo, como no seguinte: <code> https://www.mydomain.com/products.html </code> </li> 
       <li id="li_F84E25553BBA41419BE153DC0709E011"> Um caminho parcial, como no seguinte: <code> https://www.mydomain.com/products </code> </li> 
       <li id="li_8DADA1C8604740FCACBA30B4AAADB2A1"> Um URL que usa curingas como no seguinte: <code> https://www.mydomain.com/*.html </code> </li> 
-      <li id="li_1EF637B450654B509AA4B618F7FD3C2B"> Uma expressão regular como a seguir: <code> regexp&amp;nbsp^https://www\.mydomain\.com/.*/login\.html$ </code> </li> 
+      <li id="li_1EF637B450654B509AA4B618F7FD3C2B"> Uma expressão regular como a seguinte: <code> regexp&amp;nbsp^https://www\.mydomain\.com/.*/login\.html$ </code> </li> 
       </ul> </p> <p>Se você não quiser indexar o texto nas páginas identificadas por uma máscara de URL ou por uma máscara de URL de ação, ou se não quiser que os links sejam seguidos nessas páginas, use a variável 
       <userinput>
         noindex 
@@ -845,11 +848,11 @@ Consulte [Configurar um índice incremental de um site](../c-about-index-menu/c-
       </tr> 
       <tr> 
       <td colname="col1"> <p>Substituir URL de ação </p> </td> 
-      <td colname="col2"> <p>Especifique quando o destino do envio do formulário é diferente do especificado no atributo action do formulário. </p> <p>Por exemplo, você pode usar essa opção quando o formulário for enviado por meio de uma função JavaScript que constrói um valor de URL diferente do encontrado no formulário. </p> </td> 
+      <td colname="col2"> <p>Especifique quando o público alvo do envio do formulário é diferente do especificado no atributo action do formulário. </p> <p>Por exemplo, você pode usar essa opção quando o formulário for enviado por meio de uma função JavaScript que constrói um valor de URL diferente do encontrado no formulário. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Método de substituição </p> </td> 
-      <td colname="col2"> <p>Especifique quando o destino do envio do formulário é diferente do que é usado no atributo action do formulário e quando o JavaScript enviado alterou o método. </p> <p>Os valores padrão para todos os parâmetros de formulário ( 
+      <td colname="col2"> <p>Especifique quando o público alvo do envio do formulário é diferente do que é usado no atributo action do formulário e quando o JavaScript enviado alterou o método. </p> <p>Os valores padrão para todos os parâmetros de formulário ( 
       <userinput>
         &lt;input&gt; 
       </userinput> tags, incluindo campos ocultos), o padrão 
@@ -969,7 +972,7 @@ Consulte [Configurar um índice incremental de um site](../c-about-index-menu/c-
 
 Use [!DNL Index Connector] para definir fontes de entrada adicionais para indexar páginas XML ou qualquer tipo de feed.
 
-Você pode usar uma fonte de entrada de feed de dados para acessar o conteúdo armazenado em um formulário que é diferente do que normalmente é descoberto em um site usando um dos métodos de rastreamento disponíveis. Cada documento rastreado e indexado corresponde diretamente a uma página de conteúdo em seu site. No entanto, um feed de dados provém de um documento XML ou de um arquivo de texto delimitado por vírgula ou por tabulação e contém as informações de conteúdo a serem indexadas.
+Você pode usar uma fonte de entrada de feed de dados para acessar o conteúdo armazenado em um formulário que é diferente do que normalmente é descoberto em um site usando um dos métodos de rastreamento disponíveis. Cada documento rastreado e indexado corresponde diretamente a uma página de conteúdo do site. No entanto, um feed de dados provém de um documento XML ou de um arquivo de texto delimitado por vírgula ou por tabulação e contém as informações de conteúdo a serem indexadas.
 
 Uma fonte de dados XML consiste em estrofes XML, ou registros, que contêm informações que correspondem a documentos individuais. Esses documentos individuais são adicionados ao índice. Um feed de dados de texto contém registros separados delimitados por nova linha que correspondem a documentos individuais. Esses documentos individuais também são adicionados ao índice. Em ambos os casos, uma configuração de conector de índice descreve como interpretar o feed. Cada configuração descreve onde o arquivo reside e como os servidores o acessam. A configuração também descreve as informações de &quot;mapeamento&quot;. Ou seja, como os itens de cada registro são usados para preencher os campos de metadados no índice resultante.
 
@@ -1008,7 +1011,7 @@ Consulte também [Sobre o Conector de índice](../c-about-settings-menu/c-about-
   <tr> 
    <td colname="col1"> <p>2 </p> </td> 
    <td colname="col2"> <p>Analise a fonte de dados baixada em pseudo-documentos individuais. </p> </td> 
-   <td colname="col3"> <p>Para <span class="uicontrol"> Texto </span>, cada linha de texto delimitada por nova linha corresponde a um documento individual e é analisada usando o delimitador especificado, como uma vírgula ou tabulação. </p> <p>Para o <span class="uicontrol"> Feed </span>, os dados de cada documento são extraídos usando um padrão de expressão regular no seguinte formulário: </p> <p> <code> &lt;${Itemtag}&gt;(.*?)&lt;/${Itemtag}&gt; </code> </p> <p>Usando o <span class="uicontrol"> mapa </span> na página Adicionar <span class="wintitle"> </span> conector de índice, crie uma cópia em cache dos dados e crie uma lista de links para o crawler. Os dados são armazenados em um cache local e são preenchidos com os campos configurados. </p> <p>Os dados analisados são gravados no cache local. </p> <p>Esse cache é lido posteriormente para criar os documentos HTML simples de que o crawler precisa. Por exemplo, </p> <p> <code> &lt;html&gt;&lt;head&gt; 
+   <td colname="col3"> <p>Para <span class="uicontrol"> Texto </span>, cada linha de texto delimitada por nova linha corresponde a um documento individual e é analisada usando o delimitador especificado, como uma vírgula ou tabulação. </p> <p>Para o <span class="uicontrol"> Feed </span>, os dados de cada documento são extraídos usando um padrão de expressão regular no seguinte formulário: </p> <p> <code> &lt;${Itemtag}&gt;(.*?)&lt;/${Itemtag}&gt; </code> </p> <p>Usando o <span class="uicontrol"> Mapa </span> na página Adição do Conector de <span class="wintitle"> </span> índice, crie uma cópia em cache dos dados e crie uma lista de links para o crawler. Os dados são armazenados em um cache local e são preenchidos com os campos configurados. </p> <p>Os dados analisados são gravados no cache local. </p> <p>Esse cache é lido posteriormente para criar os documentos HTML simples de que o crawler precisa. Por exemplo, </p> <p> <code> &lt;html&gt;&lt;head&gt; 
       &lt;title&gt;{title}&lt;/title&gt; 
       &lt;meta&nbsp;name="{field}"&nbsp;content="{data}"&nbsp;/&gt; 
       ... 
@@ -1016,7 +1019,7 @@ Consulte também [Sobre o Conector de índice](../c-about-settings-menu/c-about-
       {body} 
       &lt;/body&gt;&lt;/html&gt; </code> </p> <p>O elemento <span class="codeph"> &lt;title&gt; </span> só é gerado quando existe um mapeamento para o campo de metadados Title. Da mesma forma, o elemento <span class="codeph"> &lt;body&gt; </span> só é gerado quando existe um mapeamento para o campo de metadados do Corpo. </p> <p> <b>Importante</b>: Não há suporte para a atribuição de valores à tag meta de URL predefinida. </p> <p>Para todos os outros mapeamentos, as tags <span class="codeph"> &lt;meta&gt; </span> são geradas para cada campo que tem dados encontrados no documento original. </p> <p>Os campos de cada documento são adicionados ao cache. Para cada documento gravado no cache, um link também é gerado como nos seguintes exemplos: </p> <p> <code> &lt;a&nbsp;href="index:Adobe?key=&lt;primary&nbsp;key&nbsp;field&gt;\"&nbsp;/&gt; 
       &lt;a&nbsp;href="index:Adobe?key=&lt;primary&nbsp;key&nbsp;field&gt;\"&nbsp;/&gt; 
-      .... </code> </p> <p>O mapeamento da configuração deve ter um campo identificado como Chave primária. Esse mapeamento forma a chave usada quando os dados são obtidos do cache. </p> <p>O rastreador reconhece o <span class="codeph"> índice de URL: O prefixo do </span> esquema, que pode então acessar os dados armazenados em cache localmente. </p> </td> 
+      .... </code> </p> <p>O mapeamento da configuração deve ter um campo identificado como Chave primária. Esse mapeamento forma a chave usada quando os dados são obtidos do cache. </p> <p>O rastreador reconhece o <span class="codeph"> índice de URL: </span> prefixo do esquema, que pode então acessar os dados armazenados em cache localmente. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>3 </p> </td> 
@@ -1026,7 +1029,7 @@ Consulte também [Sobre o Conector de índice](../c-about-settings-menu/c-about-
   <tr> 
    <td colname="col1"> <p>4 </p> </td> 
    <td colname="col2"> <p>Processar cada documento. </p> </td> 
-   <td colname="col3"> <p>O valor principal de cada link corresponde a uma entrada no cache, portanto, rastrear cada link resulta na busca dos dados desse documento do cache. Em seguida, é "montado" em uma imagem HTML que é processada e adicionada ao índice. </p> </td> 
+   <td colname="col3"> <p>O valor principal de cada link corresponde a uma entrada no cache, portanto, rastrear cada link resulta na busca dos dados do documento do cache. Em seguida, é "montado" em uma imagem HTML que é processada e adicionada ao índice. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1052,7 +1055,7 @@ Na tabela acima, a etapa 3 não se aplica e a etapa 4 é concluída no momento d
 
 Como alternativa, você pode combinar seus documentos XML com outros documentos que foram descobertos naturalmente pelo processo de rastreamento. Nesses casos, você pode usar regras de regravação ( **[!UICONTROL Settings]** > **[!UICONTROL Rewrite Rules]** > **[!UICONTROL Crawl List Retrieve URL Rules]**) para alterar os URLs dos documentos XML para direcioná-los para o Conector de índice.
 
-Consulte [Sobre a Lista de rastreamento Recuperar Regras](../c-about-settings-menu/c-about-rewrite-rules-menu.md#concept_EC8E2E48B99A458D8567B526C9827CBA)de URL.
+Consulte [Sobre Regras](../c-about-settings-menu/c-about-rewrite-rules-menu.md#concept_EC8E2E48B99A458D8567B526C9827CBA)de URL de Recuperação de Lista de Rastreamento.
 
 Por exemplo, suponha que você tenha a seguinte regra de regravação:
 
@@ -1060,7 +1063,7 @@ Por exemplo, suponha que você tenha a seguinte regra de regravação:
 RewriteRule (^http.*[.]xml$) index:Adobe?key=$1
 ```
 
-Essa regra converte qualquer URL que termine com `.xml` em um link do Conector de índice. O rastreador reconhece e regrava o esquema de `index:` URL. O processo de download é redirecionado pelo servidor Apache do Conector de índice no mestre. Cada documento baixado é examinado usando o mesmo padrão de expressão regular usado com Feeds. Nesse caso, no entanto, o documento HTML fabricado não é salvo no cache. Em vez disso, é entregue diretamente ao crawler para processamento de índice.
+Essa regra converte qualquer URL que termine com `.xml` em um link do Conector de índice. O rastreador reconhece e regrava o esquema de `index:` URL. O processo de download é redirecionado pelo servidor Apache do Conector de índice no primário. Cada documento baixado é examinado usando o mesmo padrão de expressão comum usado nos Feeds. Nesse caso, no entanto, o documento HTML fabricado não é salvo no cache. Em vez disso, é entregue diretamente ao crawler para processamento de índice.
 
 ## Como configurar vários conectores de índice {#section_C2B14C0F06354A57AEF6238FF3814E5D}
 
@@ -1082,7 +1085,7 @@ index:<indexconnector_configuration_name>
 
 O rastreador processa cada entrada adicionada se ela for encontrada na página Conectores de índice e estiver ativada.
 
-Observação: Como o URL de cada documento é construído usando o nome de configuração do Conector de índice e a chave primária do documento, certifique-se de usar o mesmo nome de configuração do Conector de índice ao executar atualizações incrementais! Isso permite [!DNL Adobe Search&Promote] atualizar corretamente documentos indexados anteriormente.
+Observação: Como cada URL de documento é construído usando o nome de configuração do Conector de índice e a chave primária do documento, certifique-se de usar o mesmo nome de configuração do Conector de índice ao executar atualizações incrementais! Isso permite [!DNL Adobe Search&Promote] atualizar corretamente documentos indexados anteriormente.
 
 Consulte também [Sobre pontos de entrada](../c-about-settings-menu/c-about-crawling-menu.md#concept_5D857E3B5C124E85BC0B5AE77A509573)de URL.
 
@@ -1108,20 +1111,20 @@ No momento em que você adiciona um Conector de índice, é possível usar opcio
   </tr> 
   <tr> 
    <td colname="col1"> <p>XML </p> </td> 
-   <td colname="col2"> <p>Faz o download do URL de um documento individual representativo, não da lista de links mestre. Este único documento é analisado usando o mesmo mecanismo usado com Feeds, e os resultados são exibidos. </p> <p>Antes de clicar em <span class="uicontrol"> Adicionar </span> para salvar a configuração, certifique-se de alterar o URL de volta para o documento da lista de links mestre. </p> </td> 
+   <td colname="col2"> <p>Faz o download do URL de um documento individual representativo, não da lista do link principal. Esse único documento é analisado usando o mesmo mecanismo usado com Feeds, e os resultados são exibidos. </p> <p>Antes de clicar em <span class="uicontrol"> Adicionar </span> para salvar a configuração, certifique-se de alterar o URL de volta para o documento de lista do link principal. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 **Importante**: O recurso Configurar Mapas pode não funcionar para grandes conjuntos de dados XML, pois seu analisador de arquivos tenta ler o arquivo inteiro na memória. Como resultado, você pode experimentar uma condição de falta de memória. No entanto, quando o mesmo documento é processado no momento da indexação, ele não é lido na memória. Em vez disso, documentos grandes são processados &quot;em trânsito&quot; e não são lidos inteiramente na memória primeiro.
 
-**O uso da Visualização ao adicionar um Conector de índice**
+**O uso da Pré-visualização ao adicionar um Conector de índice**
 
 No momento em que você adiciona um Conector de índice, é possível usar opcionalmente o recurso **[!UICONTROL Preview]** para validar os dados, como se estivesse salvando-os. Ele executa um teste em relação à configuração, mas sem salvar a configuração na conta. O teste acessa a fonte de dados configurada. No entanto, ele grava o cache de download em um local temporário; ele não entra em conflito com a pasta de cache principal que o crawler de indexação usa.
 
-A visualização processa apenas um padrão de cinco documentos, conforme controlado por Acct:IndexConnector-Preview-Max-Documents. Os documentos visualizados são exibidos no formulário de origem, à medida que são apresentados ao rastreador de indexação. A exibição é semelhante a um recurso &quot;Exibir origem&quot; em um navegador da Web. É possível navegar pelos documentos no conjunto de visualização usando links de navegação padrão.
+A Pré-visualização processa apenas um padrão de cinco documentos, conforme controlado por Acct:IndexConnector-Pré-visualização-Max-Documentos. Os documentos visualizados são exibidos no formulário de origem, à medida que são apresentados ao rastreador de indexação. A exibição é semelhante a um recurso &quot;Fonte de Visualização&quot; em um navegador da Web. É possível navegar pelos documentos no conjunto de pré-visualizações usando links de navegação padrão.
 
-A visualização não suporta configurações XML porque esses documentos são processados diretamente e não são baixados para o cache.
+A Pré-visualização não suporta configurações XML porque esses documentos são processados diretamente e não são baixados para o cache.
 
 ## Adicionando uma definição de Conector de índice {#task_96779B651A654E1F871F55D6DBBC8886}
 
@@ -1152,8 +1155,8 @@ Antes que os efeitos da definição nova e ativada fiquem visíveis para os clie
       <td colname="col2"> <p>A fonte de seus dados. O tipo de fonte de dados selecionado afeta as opções resultantes que estão disponíveis na página Adicionar <span class="wintitle"> conector de índice </span> . Você pode escolher entre as seguintes opções: </p> <p> 
       <ul id="ul_1ADC3DFBC929467385F7465BE8E13635"> 
       <li id="li_64FCD749F55442BAB316BD474128D4F9"> <span class="uicontrol"> Texto </span> <p>Arquivos de texto simples, delimitados por vírgulas, delimitados por tabulação ou outros formatos consistentemente delimitados. Cada linha de texto delimitada por nova linha corresponde a um documento individual e é analisada usando o delimitador especificado. </p> <p>É possível mapear cada valor, ou coluna, para um campo de metadados, referenciado pelo número da coluna, começando em 1 (um). </p> </li> 
-      <li id="li_2A4F16CE6DCE4114B7F8E4FE156252BB"> <span class="uicontrol"> Feed </span> <p>Faz o download de um documento XML mestre que contém várias "linhas" de informações. </p> </li> 
-      <li id="li_5A61C53522D74D4C9A5F65989604BDEF"> <span class="uicontrol"> XML </span> <p>Faz o download de um documento XML mestre que contém links ( 
+      <li id="li_2A4F16CE6DCE4114B7F8E4FE156252BB"> <span class="uicontrol"> Feed </span> <p>Faz o download de um documento XML primário que contém várias "linhas" de informações. </p> </li> 
+      <li id="li_5A61C53522D74D4C9A5F65989604BDEF"> <span class="uicontrol"> XML </span> <p>Faz o download de um documento XML primário que contém links ( 
       <userinput>
         &lt;a&gt; 
       </userinput>) a documentos XML individuais. </p> </li> 
@@ -1165,7 +1168,7 @@ Antes que os efeitos da definição nova e ativada fiquem visíveis para os clie
       </tr> 
       <tr> 
       <td colname="col1"> <p>Ativado </p> </td> 
-      <td colname="col2"> <p>Ativa a configuração "on" para rastrear e indexar. Ou, você pode desativar a configuração para evitar o rastreamento e a indexação. </p> <p> <b>Observação</b>: As configurações do Conector de índice desativado serão ignoradas se forem encontradas em uma lista de pontos de entrada. </p> </td> 
+      <td colname="col2"> <p>Ativa a configuração "on" para rastrear e indexar. Ou, você pode desativar a configuração para evitar o rastreamento e a indexação. </p> <p> <b>Observação</b>: As configurações do Conector de índice desativado serão ignoradas se forem encontradas em uma lista de ponto de entrada. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Endereço do host </p> </td> 
@@ -1203,7 +1206,7 @@ Antes que os efeitos da definição nova e ativada fiquem visíveis para os clie
       <td colname="col2"> <p>Especifica o tempo limite, em segundos, para conexões FTP, SFTP, HTTP ou HTTPS. Esse valor deve estar entre 30 e 300. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>Repetir </p> </td> 
+      <td colname="col1"> <p>Tentativas </p> </td> 
       <td colname="col2"> <p>Especifica o número máximo de tentativas para conexões FTP, SFTP, HTTP ou HTTPS com falha. Esse valor deve estar entre 0 e 10. </p> <p>Um valor zero (0) impedirá tentativas de repetição. </p> </td> 
       </tr> 
       <tr> 
@@ -1228,8 +1231,8 @@ Antes que os efeitos da definição nova e ativada fiquem visíveis para os clie
       <ul id="ul_981AE2C6D30443BDBFC6575D413732A2"> 
       <li id="li_A42CB9DFFF8C45A7BAC2D471FE96CEBE"> <span class="uicontrol"> Coluna </span> <p> Especifica um número de coluna, com a primeira coluna sendo 1 (uma). Para adicionar novas linhas de mapa para cada coluna, em <span class="wintitle"> Ação </span>, clique em <span class="uicontrol"> + </span>. </p> <p>Não é necessário referenciar cada coluna na fonte de dados. Em vez disso, você pode optar por ignorar valores. </p> </li> 
       <li id="li_26E8C9554A5D4BC5A5073D6385E3626F"> <span class="uicontrol"> Campo </span> <p>Define o valor do atributo name usado para cada tag &lt;meta&gt; gerada. </p> </li> 
-      <li id="li_5DFA514B7F9549B98D6CBC095A66033C"> <span class="uicontrol"> Metadados? </span> <p>Faz com que <span class="uicontrol"> </span> o Campo se torne uma lista suspensa na qual você pode selecionar campos de metadados definidos para a conta atual. </p> <p>O <span class="uicontrol"> valor </span> de Campo pode ser um campo de metadados indefinido, se desejado. Um campo de metadados não definido às vezes é útil para criar conteúdo usado pelo <span class="wintitle"> Filtrar script </span>. </p> <p>Consulte <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Sobre o script de filtragem </a>. </p> <p>Quando o Conector de índice processa documentos XML com várias ocorrências em qualquer campo de mapa, os vários valores são concatenados em um único valor no documento em cache resultante. Por padrão, esses valores são combinados usando um delimitador de vírgula. No entanto, suponha que o <span class="wintitle"> valor de Campo correspondente </span> seja um campo de metadados definido. Além disso, esse campo tem o conjunto de atributos <span class="wintitle"> Permitir listas </span> . Nesse caso, o valor de Delimitadores de lista do campo, que é o primeiro delimitador definido, é usado na concatenação. </p> </li> 
-      <li id="li_80DB205525094CE1AA6762BFC7892C95"> <span class="uicontrol"> Chave primária? </span> <p>Somente uma definição de mapa é identificada como a chave primária. Esse campo se torna a referência exclusiva que é apresentada quando este documento é adicionado ao índice. Esse valor é usado no URL do documento no Índice. </p> <p>Os <span class="uicontrol"> valores da Chave primária </span> devem ser exclusivos em todos os documentos representados pela configuração do Conector de índice - todas as duplicatas encontradas serão ignoradas. Se os documentos de origem não contiverem um único valor exclusivo para uso como Chave <span class="uicontrol"> primária </span>, mas dois ou mais campos juntos <i>puderem</i> formar um identificador exclusivo, você poderá definir a Chave <span class="uicontrol"> primária </span> combinando vários <span class="uicontrol"> valores de Coluna </span> com uma barra vertical ("|") delimitando os valores. </p> </li> 
+      <li id="li_5DFA514B7F9549B98D6CBC095A66033C"> <span class="uicontrol"> Metadados? </span> <p>Faz com que <span class="uicontrol"> </span> o Campo se torne uma lista suspensa da qual você pode selecionar campos de metadados definidos para a conta atual. </p> <p>O <span class="uicontrol"> valor </span> de Campo pode ser um campo de metadados indefinido, se desejado. Um campo de metadados não definido às vezes é útil para criar conteúdo usado pelo <span class="wintitle"> Filtrar script </span>. </p> <p>Consulte <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Sobre o script de filtragem </a>. </p> <p>Quando o Conector de índice processa documentos XML com várias ocorrências em qualquer campo de mapa, os vários valores são concatenados em um único valor no documento em cache resultante. Por padrão, esses valores são combinados usando um delimitador de vírgula. No entanto, suponha que o <span class="wintitle"> valor de Campo correspondente </span> seja um campo de metadados definido. Além disso, esse campo tem o conjunto de atributos <span class="wintitle"> Permitir listas </span> . Nesse caso, o valor Delimitadores de Lista do campo, que é o primeiro delimitador definido, é usado na concatenação. </p> </li> 
+      <li id="li_80DB205525094CE1AA6762BFC7892C95"> <span class="uicontrol"> Chave primária? </span> <p>Somente uma definição de mapa é identificada como a chave primária. Esse campo se torna a referência exclusiva que é apresentada quando esse documento é adicionado ao índice. Esse valor é usado no URL do documento no Índice. </p> <p>Os <span class="uicontrol"> valores da Chave primária </span> devem ser exclusivos em todos os documentos representados pela configuração do Conector de índice - todos os duplicados encontrados serão ignorados. Se os documentos de origem não contiverem um único valor exclusivo para uso como Chave <span class="uicontrol"> primária </span>, mas dois ou mais campos juntos <i>puderem</i> formar um identificador exclusivo, você poderá definir a Chave <span class="uicontrol"> primária </span> combinando vários <span class="uicontrol"> valores de Coluna </span> com uma barra vertical ("|") delimitando os valores. </p> </li> 
       <li id="li_80DB205525094CE1AA6762BFC7892D96"> <span class="uicontrol"> Remover HTML? </span> <p>Quando essa opção estiver marcada, todas as tags HTML encontradas nos dados desse campo serão removidas. </p> </li> 
       <li id="li_359D2902859B4C5BADB0BA26F0BA4DC0"> <span class="uicontrol"> Ação </span> <p>Permite adicionar linhas ao mapa ou remover linhas do mapa. A ordem das linhas não é importante. </p> </li> 
       </ul> </p> </td> 
@@ -1240,7 +1243,7 @@ Antes que os efeitos da definição nova e ativada fiquem visíveis para os clie
       </tr> 
       <tr> 
       <td colname="col1"> <p>Ativado </p> </td> 
-      <td colname="col2"> <p>Ativa a configuração "on" para rastrear e indexar. Ou, você pode desativar a configuração para evitar o rastreamento e a indexação. </p> <p> <b>Observação</b>: As configurações do Conector de índice desativado serão ignoradas se forem encontradas em uma lista de pontos de entrada. </p> </td> 
+      <td colname="col2"> <p>Ativa a configuração "on" para rastrear e indexar. Ou, você pode desativar a configuração para evitar o rastreamento e a indexação. </p> <p> <b>Observação</b>: As configurações do Conector de índice desativado serão ignoradas se forem encontradas em uma lista de ponto de entrada. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Endereço do host </p> </td> 
@@ -1248,7 +1251,7 @@ Antes que os efeitos da definição nova e ativada fiquem visíveis para os clie
       </tr> 
       <tr> 
       <td colname="col1"> <p>Caminho do arquivo </p> </td> 
-      <td colname="col2"> <p>Especifica o caminho para o documento XML mestre que contém várias "linhas" de informações. </p> <p>O caminho é relativo à raiz do endereço do host. </p> </td> 
+      <td colname="col2"> <p>Especifica o caminho para o documento XML primário que contém várias "linhas" de informações. </p> <p>O caminho é relativo à raiz do endereço do host. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Caminho do arquivo incremental </p> </td> 
@@ -1256,7 +1259,7 @@ Antes que os efeitos da definição nova e ativada fiquem visíveis para os clie
       </tr> 
       <tr> 
       <td colname="col1"> <p>Caminho do arquivo vertical </p> </td> 
-      <td colname="col2"> <p>Especifica o caminho para o documento XML que contém várias "linhas" esparsas de informações a serem usadas durante uma Atualização Vertical. </p> <p>O caminho é relativo à raiz do endereço do host. </p> <p>Este arquivo, se especificado, é baixado e processado durante as operações de Atualização vertical. </p> <p> <b>Observação</b>: Este recurso não está ativado por padrão. Entre em contato com o suporte técnico para ativar o recurso para uso. </p> </td> 
+      <td colname="col2"> <p>Especifica o caminho para o documento XML que contém várias "linhas" esparsas de informações a serem usadas durante uma atualização vertical. </p> <p>O caminho é relativo à raiz do endereço do host. </p> <p>Este arquivo, se especificado, é baixado e processado durante as operações de Atualização vertical. </p> <p> <b>Observação</b>: Este recurso não está ativado por padrão. Entre em contato com o suporte técnico para ativar o recurso para uso. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Exclui o caminho do arquivo </p> </td> 
@@ -1316,7 +1319,7 @@ Antes que os efeitos da definição nova e ativada fiquem visíveis para os clie
       <td colname="col1"> <p>Mapa </p> </td> 
       <td colname="col2"> <p>Permite que você especifique mapeamentos de elemento para metadados XML, usando expressões XPath. </p> <p> 
       <ul id="ul_604108C0277C4892AE8A40CA39889ABD"> 
-      <li id="li_0AF92270AE9F4BA8B2C7EE41FABC0F34"> <span class="uicontrol"> Adicionar tag </span> <p>Especifica uma representação XPath dos dados XML analisados. Usando o documento Adobe XML de exemplo acima, na opção Item tag, ele pode ser mapeado usando a seguinte sintaxe: </p> <p> <code> /record/@displayurl&nbsp;-&gt;&nbsp;page-url 
+      <li id="li_0AF92270AE9F4BA8B2C7EE41FABC0F34"> <span class="uicontrol"> Adicionar tag </span> <p>Especifica uma representação XPath dos dados XML analisados. Usando o exemplo do documento Adobe XML acima, na opção Item tag, ele pode ser mapeado usando a seguinte sintaxe: </p> <p> <code> /record/@displayurl&nbsp;-&gt;&nbsp;page-url 
       /record/metadata/meta[@name='title']/@content&nbsp;-&gt;&nbsp;title 
       /record/metadata/meta[@name='description']/@content&nbsp;-&gt;&nbsp;desc 
       /record/metadata/meta[@name='description']/@content&nbsp;-&gt;&nbsp;body </code> </p> <p>A sintaxe acima é traduzida como a seguinte: </p> <p> 
@@ -1327,8 +1330,8 @@ Antes que os efeitos da definição nova e ativada fiquem visíveis para os clie
       <li id="li_E35EAE3D284D46D485D9064D7BB6AB13"> <code> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;body </code> <p>O <span class="codeph"> atributo de </span> conteúdo de qualquer <span class="codeph"> meta- </span> elemento contido em um <span class="codeph"> elemento de metadados </span> , contido no <span class="codeph"> elemento record </span> , cujo atributo name é <span class="codeph"> descrição </span><span class="codeph"> </span>, mapeia para o campo de metadados . </p> </li> 
       </ul> </p> <p>XPath é uma notação relativamente complicada. Mais informações estão disponíveis no seguinte local: </p> <p>Consulte <a href="https://www.w3schools.com/xpath/" scope="external" format="html"> https://www.w3schools.com/xpath/ </a> </p> </li> 
       <li id="li_8147075D7ACD4811A7ED335F23FE62A6"> <span class="uicontrol"> Campo </span> <p>Define o valor do atributo name usado para cada tag <span class="codeph"> &lt;meta&gt; </span> gerada. </p> </li> 
-      <li id="li_2380199D63BF425A919606D8232FA6E2"> <span class="uicontrol"> Metadados? </span> <p>Faz com que <span class="uicontrol"> </span> o Campo se torne uma lista suspensa na qual você pode selecionar campos de metadados definidos para a conta atual. </p> <p>O <span class="uicontrol"> valor </span> de Campo pode ser um campo de metadados indefinido, se desejado. Um campo de metadados não definido às vezes é útil para criar conteúdo usado pelo <span class="wintitle"> Filtrar script </span>. </p> <p>Consulte <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Sobre o script de filtragem </a>. </p> <p>Quando o Conector de índice processa documentos XML com várias ocorrências em qualquer campo de mapa, os vários valores são concatenados em um único valor no documento em cache resultante. Por padrão, esses valores são combinados usando um delimitador de vírgula. No entanto, suponha que o <span class="wintitle"> valor de Campo correspondente </span> seja um campo de metadados definido. Além disso, esse campo tem o conjunto de atributos <span class="wintitle"> Permitir listas </span> . Nesse caso, o valor de Delimitadores de lista do campo, que é o primeiro delimitador definido, é usado na concatenação. </p> </li> 
-      <li id="li_DEA24003E97E406DA2510C43CCFDC70E"> <span class="uicontrol"> Chave primária? </span> <p>Somente uma definição de mapa é identificada como a chave primária. Esse campo se torna a referência exclusiva que é apresentada quando este documento é adicionado ao índice. Esse valor é usado no URL do documento no Índice. </p> <p>Os <span class="uicontrol"> valores da Chave primária </span> devem ser exclusivos em todos os documentos representados pela configuração do Conector de índice - todas as duplicatas encontradas serão ignoradas. Se os documentos de origem não contiverem um único valor exclusivo para uso como Chave <span class="uicontrol"> primária </span>, mas dois ou mais campos juntos <i>puderem</i> formar um identificador exclusivo, é possível definir a Chave <span class="uicontrol"> primária </span> combinando várias <span class="uicontrol"> definições de Tag </span> com uma barra vertical ("|") que delimita os valores. </p> </li> 
+      <li id="li_2380199D63BF425A919606D8232FA6E2"> <span class="uicontrol"> Metadados? </span> <p>Faz com que <span class="uicontrol"> </span> o Campo se torne uma lista suspensa da qual você pode selecionar campos de metadados definidos para a conta atual. </p> <p>O <span class="uicontrol"> valor </span> de Campo pode ser um campo de metadados indefinido, se desejado. Um campo de metadados não definido às vezes é útil para criar conteúdo usado pelo <span class="wintitle"> Filtrar script </span>. </p> <p>Consulte <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Sobre o script de filtragem </a>. </p> <p>Quando o Conector de índice processa documentos XML com várias ocorrências em qualquer campo de mapa, os vários valores são concatenados em um único valor no documento em cache resultante. Por padrão, esses valores são combinados usando um delimitador de vírgula. No entanto, suponha que o <span class="wintitle"> valor de Campo correspondente </span> seja um campo de metadados definido. Além disso, esse campo tem o conjunto de atributos <span class="wintitle"> Permitir listas </span> . Nesse caso, o valor Delimitadores de Lista do campo, que é o primeiro delimitador definido, é usado na concatenação. </p> </li> 
+      <li id="li_DEA24003E97E406DA2510C43CCFDC70E"> <span class="uicontrol"> Chave primária? </span> <p>Somente uma definição de mapa é identificada como a chave primária. Esse campo se torna a referência exclusiva que é apresentada quando esse documento é adicionado ao índice. Esse valor é usado no URL do documento no Índice. </p> <p>Os <span class="uicontrol"> valores da Chave primária </span> devem ser exclusivos em todos os documentos representados pela configuração do Conector de índice - todos os duplicados encontrados serão ignorados. Se os documentos de origem não contiverem um único valor exclusivo para uso como Chave <span class="uicontrol"> primária </span>, mas dois ou mais campos juntos <i>puderem</i> formar um identificador exclusivo, você poderá definir a Chave <span class="uicontrol"> primária </span> combinando várias <span class="uicontrol"> definições de Tag </span> com uma barra vertical ("|") que delimita os valores. </p> </li> 
       <li id="li_DEA24003E97E406DA2510C43CCFDC81F"> <span class="uicontrol"> Remover HTML? </span> <p>Quando essa opção estiver marcada, todas as tags HTML encontradas nos dados desse campo serão removidas. </p> </li> 
       <li id="li_5E829D1D0DBD4BB7AAB5DB983053D248"> <span class="uicontrol"> Usar para Excluir? </span> <p>Usado apenas durante operações de Índice Incremental. Registros que correspondem a este padrão XPath identificam itens para exclusão. O <span class="uicontrol"> valor da Chave Primária </span> para cada registro é usado para construir solicitações "delete", como acontece com Excluir caminho de arquivo. </p> <p> <b>Observação</b>: Este recurso não está ativado por padrão. Entre em contato com o suporte técnico para ativar o recurso para uso. </p> </li> 
       <li id="li_D40E2F9AD8AD49FC9AC4B8C75BA31E28"> <span class="uicontrol"> Ação </span> <p>Permite adicionar linhas ao mapa ou remover linhas do mapa. A ordem das linhas não é importante. </p> </li> 
@@ -1340,7 +1343,7 @@ Antes que os efeitos da definição nova e ativada fiquem visíveis para os clie
       </tr> 
       <tr> 
       <td colname="col1"> <p>Ativado </p> </td> 
-      <td colname="col2"> <p>Ativa a configuração "on" para rastrear e indexar. Ou, você pode desativar a configuração para evitar o rastreamento e a indexação. </p> <p> <b>Observação</b>: As configurações do Conector de índice desativado serão ignoradas se forem encontradas em uma lista de pontos de entrada. </p> </td> 
+      <td colname="col2"> <p>Ativa a configuração "on" para rastrear e indexar. Ou, você pode desativar a configuração para evitar o rastreamento e a indexação. </p> <p> <b>Observação</b>: As configurações do Conector de índice desativado serão ignoradas se forem encontradas em uma lista de ponto de entrada. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Endereço do host </p> </td> 
@@ -1348,7 +1351,7 @@ Antes que os efeitos da definição nova e ativada fiquem visíveis para os clie
       </tr> 
       <tr> 
       <td colname="col1"> <p>Caminho do arquivo </p> </td> 
-      <td colname="col2"> <p>Especifica o caminho para o documento XML mestre que contém links ( 
+      <td colname="col2"> <p>Especifica o caminho para o documento XML primário que contém links ( 
       <userinput>
         &lt;a&gt; 
       </userinput>) a documentos XML individuais. </p> <p>O caminho é relativo à raiz do endereço do host. </p> </td> 
@@ -1362,7 +1365,7 @@ Antes que os efeitos da definição nova e ativada fiquem visíveis para os clie
       <li id="li_2F967B5675254C949B31EAB19910751C"> FTP <p>Você deve inserir as credenciais de autenticação adequadas para acessar o servidor FTP. </p> </li> 
       <li id="li_C24BE4C1DE79488AA64C7133D78CD3A6"> SFTP <p>Você deve inserir as credenciais de autenticação adequadas para acessar o servidor SFTP. </p> </li> 
       <li id="li_7581C21CFC104986A361F62BD7A370C1"> Arquivo </li> 
-      </ul> </p> <p> <b>Observação</b>: A configuração Protocolo só é usada quando há informações especificadas nos campos Endereço do host e/ou Caminho do arquivo. Documentos XML individuais são baixados usando HTTP ou HTTPS, de acordo com suas especificações de URL. </p> </td> 
+      </ul> </p> <p> <b>Observação</b>: A configuração Protocolo só é usada quando há informações especificadas nos campos Endereço do host e/ou Caminho do arquivo. documentos XML individuais são baixados usando HTTP ou HTTPS, de acordo com suas especificações de URL. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Item </p> </td> 
@@ -1372,7 +1375,7 @@ Antes que os efeitos da definição nova e ativada fiquem visíveis para os clie
       <td colname="col1"> <p>Mapa </p> </td> 
       <td colname="col2"> <p>Permite que você especifique mapeamentos de coluna para metadados, usando números de coluna. </p> <p> 
       <ul id="ul_06F50CBA0AA64C7CB1AFAE076E629A64"> 
-      <li id="li_0FA2502869BA40DC93D790B79E15A9D2"> <span class="uicontrol"> Adicionar tag </span> <p>Especifica uma representação XPath dos dados XML analisados. Usando o documento Adobe XML de exemplo acima, na opção Item tag, é possível mapeá-lo usando a seguinte sintaxe: </p> <p> <code> /record/@displayurl&nbsp;-&gt;&nbsp;page-url 
+      <li id="li_0FA2502869BA40DC93D790B79E15A9D2"> <span class="uicontrol"> Adicionar tag </span> <p>Especifica uma representação XPath dos dados XML analisados. Usando o exemplo do documento Adobe XML acima, sob a opção Item tag, é possível mapeá-lo usando a seguinte sintaxe: </p> <p> <code> /record/@displayurl&nbsp;-&gt;&nbsp;page-url 
         /record/metadata/meta[@name='title']/@content&nbsp;-&gt;&nbsp;title 
         /record/metadata/meta[@name='description']/@content&nbsp;-&gt;&nbsp;desc 
         /record/metadata/meta[@name='description']/@content&nbsp;-&gt;&nbsp;body </code> </p> <p>A sintaxe acima é traduzida como a seguinte: </p> <p> 
@@ -1383,8 +1386,8 @@ Antes que os efeitos da definição nova e ativada fiquem visíveis para os clie
       <li id="li_7FA6A53DFD3D42A98B7BA17CC29DDB81"> <code> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;body </code> <p>O <span class="codeph"> atributo de </span> conteúdo de qualquer <span class="codeph"> meta- </span> elemento contido em um <span class="codeph"> elemento de metadados </span> , contido no <span class="codeph"> elemento record </span> , cujo atributo name é <span class="codeph"> descrição </span><span class="codeph"> </span>, mapeia para o campo de metadados . </p> </li> 
       </ul> </p> <p>XPath é uma notação relativamente complicada. Mais informações estão disponíveis no seguinte local: </p> <p>Consulte <a href="https://www.w3schools.com/xpath/" scope="external" format="html"> https://www.w3schools.com/xpath/ </a> </p> </li> 
       <li id="li_84999D07E0AE4265BC7928BBB49957B9"> <span class="uicontrol"> Campo </span> <p>Define o valor do atributo name usado para cada tag &lt;meta&gt; gerada. </p> </li> 
-      <li id="li_E125788D0F5242958BD790E26A675C20"> <span class="uicontrol"> Metadados? </span> <p>Faz com que <span class="uicontrol"> </span> o Campo se torne uma lista suspensa na qual você pode selecionar campos de metadados definidos para a conta atual. </p> <p>O <span class="uicontrol"> valor </span> de Campo pode ser um campo de metadados indefinido, se desejado. Um campo de metadados não definido às vezes é útil para criar conteúdo usado pelo <span class="wintitle"> Filtrar script </span>. </p> <p>Consulte <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Sobre o script de filtragem </a>. </p> <p>Quando o Conector de índice processa documentos XML com várias ocorrências em qualquer campo de mapa, os vários valores são concatenados em um único valor no documento em cache resultante. Por padrão, esses valores são combinados usando um delimitador de vírgula. No entanto, suponha que o <span class="wintitle"> valor de Campo correspondente </span> seja um campo de metadados definido. Além disso, esse campo tem o conjunto de atributos <span class="wintitle"> Permitir listas </span> . Nesse caso, o valor de Delimitadores de lista do campo, que é o primeiro delimitador definido, é usado na concatenação. </p> </li> 
-      <li id="li_9F435EFB3EC74B409EC82A851824609F"> <span class="uicontrol"> Chave primária? </span> <p>Somente uma definição de mapa é identificada como a chave primária. Esse campo se torna a referência exclusiva que é apresentada quando este documento é adicionado ao índice. Esse valor é usado no URL do documento no Índice. </p> <p>Os <span class="uicontrol"> valores da Chave primária </span> devem ser exclusivos em todos os documentos representados pela configuração do Conector de índice - todas as duplicatas encontradas serão ignoradas. Se os documentos de origem não contiverem um único valor exclusivo para uso como Chave <span class="uicontrol"> primária </span>, mas dois ou mais campos juntos <i>puderem</i> formar um identificador exclusivo, é possível definir a Chave <span class="uicontrol"> primária </span> combinando várias <span class="uicontrol"> definições de Tag </span> com uma barra vertical ("|") que delimita os valores. </p> </li> 
+      <li id="li_E125788D0F5242958BD790E26A675C20"> <span class="uicontrol"> Metadados? </span> <p>Faz com que <span class="uicontrol"> </span> o Campo se torne uma lista suspensa da qual você pode selecionar campos de metadados definidos para a conta atual. </p> <p>O <span class="uicontrol"> valor </span> de Campo pode ser um campo de metadados indefinido, se desejado. Um campo de metadados não definido às vezes é útil para criar conteúdo usado pelo <span class="wintitle"> Filtrar script </span>. </p> <p>Consulte <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Sobre o script de filtragem </a>. </p> <p>Quando o Conector de índice processa documentos XML com várias ocorrências em qualquer campo de mapa, os vários valores são concatenados em um único valor no documento em cache resultante. Por padrão, esses valores são combinados usando um delimitador de vírgula. No entanto, suponha que o <span class="wintitle"> valor de Campo correspondente </span> seja um campo de metadados definido. Além disso, esse campo tem o conjunto de atributos <span class="wintitle"> Permitir listas </span> . Nesse caso, o valor Delimitadores de Lista do campo, que é o primeiro delimitador definido, é usado na concatenação. </p> </li> 
+      <li id="li_9F435EFB3EC74B409EC82A851824609F"> <span class="uicontrol"> Chave primária? </span> <p>Somente uma definição de mapa é identificada como a chave primária. Esse campo se torna a referência exclusiva que é apresentada quando esse documento é adicionado ao índice. Esse valor é usado no URL do documento no Índice. </p> <p>Os <span class="uicontrol"> valores da Chave primária </span> devem ser exclusivos em todos os documentos representados pela configuração do Conector de índice - todos os duplicados encontrados serão ignorados. Se os documentos de origem não contiverem um único valor exclusivo para uso como Chave <span class="uicontrol"> primária </span>, mas dois ou mais campos juntos <i>puderem</i> formar um identificador exclusivo, você poderá definir a Chave <span class="uicontrol"> primária </span> combinando várias <span class="uicontrol"> definições de Tag </span> com uma barra vertical ("|") que delimita os valores. </p> </li> 
       <li id="li_9F435EFB3EC74B409EC82A851824610G"> <span class="uicontrol"> Remover HTML? </span> <p>Quando essa opção estiver marcada, todas as tags HTML encontradas nos dados desse campo serão removidas. </p> </li> 
       <li id="li_6302D18971AD439FBECE27742649C56B"> <span class="uicontrol"> Ação </span> <p>Permite adicionar linhas ao mapa ou remover linhas do mapa. A ordem das linhas não é importante. </p> </li> 
       </ul> </p> </td> 
@@ -1418,7 +1421,7 @@ Você pode editar um Conector de índice existente definido por você.
 
 >[!NOTE]
 >
->Nem todas as opções estão disponíveis para alteração, como Nome do conector de índice ou Tipo, na lista [!DNL Type] suspensa.
+>Nem todas as opções estão disponíveis para alteração, como Nome do conector de índice ou Tipo na lista suspensa. [!DNL Type]
 
 **Para editar uma definição do Conector de índice**
 
@@ -1449,7 +1452,7 @@ Você pode revisar as configurações de uma definição de conector de índice 
 
 Depois que uma definição de Conector de índice é adicionada à [!DNL Index Connector Definitions] página, não é possível alterar a configuração Tipo. Em vez disso, você deve excluir a definição e adicionar uma nova.
 
-**Para exibir as configurações de uma definição do Conector de índice**
+**Para visualização das configurações de uma definição do Conector de índice**
 
 1. No menu do produto, clique em **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Index Connector]**.
 1. Na [!DNL Index Connector] página, sob o cabeçalho da [!DNL Actions] coluna, clique **[!UICONTROL Edit]** em um nome de definição do Conector de índice cujas configurações você deseja revisar ou editar.
@@ -1465,7 +1468,7 @@ Consulte [Editando uma definição](../c-about-settings-menu/c-about-crawling-me
 **Para copiar uma definição do Conector de índice**
 
 1. No menu do produto, clique em **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Index Connector]**.
-1. Na [!DNL Index Connector] página, sob o cabeçalho da [!DNL Actions] coluna, clique **[!UICONTROL Copy]** em um nome de definição do Conector de índice cujas configurações você deseja duplicar.
+1. Na [!DNL Index Connector] página, sob o cabeçalho da [!DNL Actions] coluna, clique **[!UICONTROL Copy]** em um nome de definição do Conector de índice cujas configurações você deseja duplicado.
 1. Na [!DNL Index Connector Copy] página, digite o novo nome da definição.
 1. Clique em **[!UICONTROL Copy]**.
 1. (Opcional) Na [!DNL Index Connector Definitions] página, execute um dos procedimentos a seguir:
@@ -1486,7 +1489,7 @@ Consulte [Editando uma definição](../c-about-settings-menu/c-about-crawling-me
 
 Você pode alterar o nome de uma definição existente do Conector de índice.
 
-Depois de renomear a definição, marque **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL URL Entrypoints]**. Certifique-se de que o nome da nova definição seja refletido na lista suspensa da [!DNL URL Entrypoints] página.
+Depois de renomear a definição, marque **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL URL Entrypoints]**. Certifique-se de que o nome da nova definição seja refletido na lista suspensa na [!DNL URL Entrypoints] página.
 
 Consulte [Adicionar vários pontos de entrada de URL que você deseja indexar](../c-about-settings-menu/c-about-crawling-menu.md#task_2338A47387D74CFDAC4D4EF4A367ED45).
 
