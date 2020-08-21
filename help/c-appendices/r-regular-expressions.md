@@ -7,7 +7,10 @@ title: Expressões regulares
 topic: Appendices,Site search and merchandising
 uuid: 369b54f6-372a-41de-bb5d-3ae0bd640199
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: 7b883870bb16284d8070a21547cdb62cc79d7632
+workflow-type: tm+mt
+source-wordcount: '1058'
+ht-degree: 1%
 
 ---
 
@@ -80,7 +83,7 @@ Consulte também [Configurar um índice incremental de um site](../c-about-index
   <tr> 
    <td colname="col1"> </td> 
    <td colname="col2"> <p> ^ </p> </td> 
-   <td colname="col3"> <p> Início da âncora de linha. </p> </td> 
+   <td colname="col3"> <p> Start de âncora de linha. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> </td> 
@@ -103,40 +106,40 @@ Consulte também [Configurar um índice incremental de um site](../c-about-index
 **Regras sobre expressões regulares**
 
 * Um caractere comum, não um dos caracteres especiais descritos abaixo, é uma expressão regular de um caractere que corresponde a si mesmo.
-* Uma barra invertida (\) seguida por qualquer caractere especial é uma expressão regular de um caractere que corresponde ao próprio caractere especial. Os caracteres especiais incluem:
+* Uma barra invertida (\) seguida por qualquer caractere especial é uma expressão regular de um caractere que corresponde ao caractere especial em si. Os caracteres especiais incluem:
 
    * `.` (ponto), `*` (asterisco), `?` (ponto de interrogação), `+` (sinal de mais), `[` (colchete à esquerda), `|` (barra vertical) e `\` (barra invertida) são sempre caracteres especiais, exceto quando aparecem entre colchetes.
    * `^` (caret ou circunflex) é especial no início de uma expressão regular, ou quando segue imediatamente à esquerda de um par de colchetes.
-   * `$` (cifrão) é especial no final de uma expressão regular.
+   * `$` (cifrão) é especial ao final de uma expressão normal.
    * `.` (ponto) é uma expressão regular de um caractere que corresponde a qualquer caractere, incluindo caracteres de conjunto de códigos suplementares, com exceção da nova linha.
-   * Uma string não vazia de caracteres entre colchetes `[ ]` (colchetes à esquerda e à direita) é uma expressão regular de um caractere que corresponde a um caractere, incluindo caracteres suplementares do conjunto de códigos, nessa string.
+   * Uma string não vazia de caracteres entre colchetes `[ ]` (colchetes à esquerda e à direita) é uma expressão regular de um caractere que corresponde a um caractere, incluindo caracteres de conjunto de códigos suplementares, nessa string.
 
-      No entanto, se o primeiro caractere da string for um caractere `^` (circunflexo), a expressão regular de um caractere corresponde a qualquer caractere, incluindo caracteres de conjunto de códigos suplementares, com exceção da nova linha e dos caracteres restantes na string.
+      No entanto, se o primeiro caractere da string for um caractere `^` (circunflexo), a expressão regular de um caractere corresponde a qualquer caractere, incluindo caracteres de conjunto de código suplementares, com exceção de nova linha e dos caracteres restantes na string.
 
       O `^` tem esse significado especial somente se ocorrer primeiro na string. Você pode usar `-` (sinal de menos) para indicar um intervalo de caracteres consecutivos, incluindo caracteres suplementares do conjunto de códigos. Por exemplo, [0-9] é equivalente a [0123456789].
 
-      Os caracteres que especificam o intervalo devem ser do mesmo conjunto de códigos. Quando os caracteres são de conjuntos de códigos diferentes, um dos caracteres que especificam o intervalo é correspondido. O `-` perde esse significado especial se ocorrer primeiro (após uma inicial `^`, se houver) ou por último na string. O `]` (colchete direito) não encerra tal string quando ela é o primeiro caractere dentro dela, depois de uma inicial `^`, se houver. Por exemplo, []a-f] corresponde a um `]` (colchete quadrado direito) ou a uma das letras ASCII a a f inclusive. Os quatro caracteres listados como caracteres especiais acima são posicionados para si mesmos dentro de uma sequência de caracteres.
+      Os caracteres que especificam o intervalo devem ser do mesmo conjunto de códigos. Quando os caracteres são de conjuntos de códigos diferentes, um dos caracteres que especificam o intervalo é correspondido. O `-` perde esse significado especial se ocorrer primeiro (após uma inicial `^`, se houver) ou por último na string. O `]` (colchete direito) não encerra tal string quando ela é o primeiro caractere dentro dela, depois de uma inicial `^`, se houver. Por exemplo, `[]a-f]` corresponde a uma `]` (colchete direito) ou uma das letras ASCII a a f, inclusive. Os quatro caracteres listados como caracteres especiais acima são posicionados para si mesmos dentro de uma sequência de caracteres.
 
-**Regras para construir expressões regulares a partir de expressões regulares de um caractere**
+**Regras para a construção de expressões regulares a partir de expressões regulares de um caractere**
 
 Você pode usar as seguintes regras para construir expressões regulares a partir de expressões regulares de um caractere:
 
-* Uma expressão regular de um caractere é uma expressão regular que corresponde a qualquer correspondência da expressão regular de um caractere.
+* Uma expressão regular de um caractere é uma expressão regular que corresponde a qualquer correspondência entre a expressão regular de um caractere.
 * Uma expressão regular de um caractere seguida por um `*` (asterisco) é uma expressão regular que corresponde a zero ou mais ocorrências da expressão regular de um caractere, que pode ser um caractere de conjunto de códigos suplementar. Se houver alguma escolha, a string mais longa à esquerda que permitir uma correspondência será escolhida.
 * Uma expressão regular de um caractere seguida por um `?` (ponto de interrogação) é uma expressão regular que corresponde a zero ou uma ocorrência da expressão regular de um caractere, que pode ser um caractere de conjunto de códigos suplementar. Se houver alguma escolha, a string mais longa à esquerda que permitir uma correspondência será escolhida.
 * Uma expressão regular de um caractere seguida por um `+` (sinal de mais) é uma expressão regular que corresponde a uma ou mais ocorrências da expressão regular de um caractere, que pode ser um caractere de conjunto de códigos suplementar. Se houver alguma escolha, a string mais longa à esquerda que permitir uma correspondência será escolhida.
-* Uma expressão regular de um caractere seguida por `{m}`, `{m,}`ou `{m,n}` é uma expressão regular que corresponde a um intervalo de ocorrências da expressão regular de um caractere. Os valores de m e n devem ser números inteiros não negativos inferiores a 256; corresponde `{m}` exatamente a m ocorrências; corresponde `{m,}` a, pelo menos, m ocorrências; corresponde `{m,n}` a qualquer número de ocorrências entre m e n, inclusive. Sempre que uma opção existe, a expressão regular corresponde a quantas ocorrências forem possíveis.
+* Uma expressão regular de um caractere seguida por `{m}`, `{m,}`ou `{m,n}` é uma expressão regular que corresponde a um intervalo de ocorrências da expressão regular de um caractere. Os valores de m e n devem ser números inteiros não negativos inferiores a 256; `{m}` corresponde exatamente a m ocorrências; `{m,}` corresponde a pelo menos m ocorrências; `{m,n}` corresponde a qualquer número de ocorrências entre m e n, inclusive. Sempre que uma opção existe, a expressão regular corresponde a quantas ocorrências forem possíveis.
 * A concatenação de expressões regulares é uma expressão regular que corresponde à concatenação das strings correspondidas por cada componente da expressão regular.
-* Uma expressão regular delimitada entre as sequências de caracteres ( e ) é uma expressão regular que corresponde a qualquer correspondência entre a expressão regular não adornada.
-* Uma expressão regular seguida por `|` (barra vertical) seguida por uma expressão regular é uma expressão regular que corresponde à primeira expressão regular (antes do barra vertical) ou à segunda expressão regular (depois do barra vertical).
+* Uma expressão regular entre as sequências de caracteres ( e ) é uma expressão regular que corresponde a qualquer correspondência entre a expressão regular não adornada.
+* Uma expressão regular seguida de uma `|` (barra vertical) seguida de uma expressão regular é uma expressão regular que corresponde à primeira expressão regular (antes do barra vertical) ou à segunda expressão regular (depois do tubo vertical).
 
 Você também pode restringir uma expressão regular para corresponder somente a um segmento inicial ou final de uma linha, ou ambos.
 
-* Uma expressão regular `^` (circunflexo) no início de uma expressão regular restringe essa expressão regular para corresponder a um segmento inicial de uma linha.
-* Uma expressão regular `$` (cifrão) no final de uma expressão regular inteira restringe essa expressão regular para corresponder a um segmento final de uma linha.
-* A construção ^expressão regular$ restringe a expressão regular para corresponder à linha inteira.
+* Uma expressão `^` (circunflexo) no início de uma  regular restringe essa expressão regular para corresponder a um segmento inicial de uma linha.
+* Um `$` (cifrão) no final de uma expressão regular inteira restringe essa expressão regular para corresponder a um segmento final de uma linha.
+* A construção ^regular expressão$ restringe a expressão regular para corresponder à linha inteira.
 
-Há alguns nomes de classe de caracteres predefinidos que podem ser usados no lugar de expressões regulares entre colchetes complexas. Por exemplo, um dígito pode ser representado pela expressão regular de um caractere [0-9] ou pela expressão regular de um caractere da classe de caracteres [[:dígito:]].
+Há alguns nomes de classe de caracteres predefinidos que podem ser usados no lugar de expressões regulares entre colchetes. Por exemplo, um dígito pode ser representado pela expressão regular de um caractere [0-9] ou pela expressão regular de um caractere da classe de caracteres [[:dígito:]].
 
 As classes de caracteres predefinidas e seus significados são os seguintes:
 
@@ -199,7 +202,7 @@ As classes de caracteres predefinidas e seus significados são os seguintes:
  </tbody> 
 </table>
 
-Dois nomes de classe de caracteres especiais correspondem ao espaço nulo no início e no fim de uma palavra. Em outras palavras, eles não correspondem a um caractere real. Uma palavra é considerada qualquer sequência de caracteres alfabéticos, dígitos ou sublinhados (_).
+Dois nomes de classe de caracteres especiais correspondem ao espaço nulo no start e ao final de uma palavra. Em outras palavras, eles não correspondem a um caractere real. Uma palavra é considerada qualquer sequência de caracteres alfabéticos, dígitos ou sublinhados (_).
 
 <table> 
  <thead> 
@@ -211,7 +214,7 @@ Dois nomes de classe de caracteres especiais correspondem ao espaço nulo no in�
  <tbody> 
   <tr> 
    <td colname="col1"> <p> [[:&lt;:]] </p> </td> 
-   <td colname="col2"> <p> início de uma palavra </p> </td> 
+   <td colname="col2"> <p> start de uma palavra </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> [[:&gt;:]] </p> </td> 
