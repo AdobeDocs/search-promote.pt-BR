@@ -8,7 +8,10 @@ title: Sobre regras de classificação
 topic: Rules,Site search and merchandising
 uuid: 21962f9a-1d9c-442f-a6c4-5f452436c640
 translation-type: tm+mt
-source-git-commit: f4f69e6bdb37fb39045f8f25cffa4bf616834e54
+source-git-commit: 552f93f1f630c64bbe3d5c8a87c4f5895ae6868c
+workflow-type: tm+mt
+source-wordcount: '4647'
+ht-degree: 0%
 
 ---
 
@@ -19,9 +22,9 @@ Você pode usar Regras de classificação para controlar o posicionamento relati
 
 ## Usando regras de classificação {#concept_F555C076759B4E81B925441CFE707397}
 
-Você define regras de classificação para afetar a colocação relativa dos documentos nos resultados da pesquisa, com base no conteúdo de cada documento. Você pode basear as regras de classificação no conteúdo da meta tag, nas métricas do Adobe Analytics (se sua conta estiver configurada para funcionar com o Adobe Analytics) ou nas métricas HBX do Adobe Analytics (se sua conta estiver configurada para funcionar com o Adobe Analytics HBX).
+Você define regras de classificação para afetar a colocação relativa dos documentos nos resultados da pesquisa, com base no conteúdo de cada documento. Você pode basear as regras de classificação no conteúdo da meta tag, nas métricas do Adobe Analytics (se sua conta estiver configurada para funcionar com o Adobe Analytics) ou nas métricas do Adobe Analytics HBX (se sua conta estiver configurada para funcionar com o Adobe Analytics HBX).
 
-É possível definir páginas da Web que contêm meta tags com as características desejadas, como um determinado nome de marca ou preço, ou páginas da Web que tenham indicadores-chave de desempenho do Adobe Analytics desejados, como visualizadores únicos, para receber uma classificação maior que as páginas da Web que não possuem. As características &quot;desejáveis&quot; são facilmente atualizadas adicionando ou editando Regras de classificação e, em seguida, reindexando seu site.
+É possível definir páginas da Web que contêm meta tags com as características desejadas, como um determinado nome de marca ou preço, ou páginas da Web que tenham indicadores-chave de desempenho da Adobe Analytics desejados, como visualizadores únicos, para receber uma classificação maior que as páginas da Web que não possuem. As características &quot;desejáveis&quot; são facilmente atualizadas adicionando ou editando Regras de classificação e, em seguida, reindexando seu site.
 
 Se você tiver mais de uma meta tag do tipo &quot;classificação&quot; definida, poderá criar coleções separadas de regras para usar no cálculo dos vários campos de classificação. Você pode adicionar um grupo de regras de classificação, que pode ser atribuído a um dos campos de Classificação definidos. Os grupos de regras normalmente contêm uma ou mais definições de regras, mas também podem se referir a outros grupos de Regras, para que você possa criar um ou mais grupos de regras comumente usadas que sejam compartilhados durante o cálculo de suas várias classificações.
 
@@ -59,23 +62,21 @@ Antes de usar as regras de classificação, há várias etapas de configuração
       <ol id="ol_28ABB980143948DFA79AC4360AAB7556"> 
       <li id="li_544075CFA0964C6F8FAF7941AAA9ECCC"> No menu do produto, clique em <span class="uicontrol"> Configurações </span> &gt; <span class="uicontrol"> Metadados </span> &gt; <span class="uicontrol"> Definições </span>. </li> 
       <li id="li_F237F13B89E8425080C15D3BD697652C"> Na página Definições, clique em <span class="uicontrol"> Adicionar novo campo </span>. </li> 
-      <li id="li_2A839874D71D45FEA661B3D3B8BE2A86"> Na página Adicionar campo, no campo de <span class="uicontrol"> texto Nome do </span> campo, digite 
-      <userinput>
-        classificação 
-      </userinput>; no campo de texto Nome da <span class="uicontrol"> tag </span> , digite 
-      <userinput>
-        classificação 
-      </userinput>; na lista suspensa Tipo de <span class="uicontrol"> dados </span> , selecione <span class="uicontrol"> Classificação </span>. Deixe todas as outras opções de campo como estão. <p>Consulte o parâmetro de consulta <span class="codeph"> sp_sr </span> nos parâmetros CGI de pesquisa <a href="../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8" type="reference" format="dita" scope="local"> de backend </a>. </p> </li> 
+      <li id="li_2A839874D71D45FEA661B3D3B8BE2A86"> Na página Adicionar campo, no campo de <span class="uicontrol"> texto Nome do </span> campo, digite <code>
+        rank 
+      </code>; no campo de texto Nome da <span class="uicontrol"> tag </span> , digite <code>
+        rank 
+      </code>; na lista suspensa Tipo <span class="uicontrol"> de dados </span> , selecione <span class="uicontrol"> Classificação </span>. Deixe todas as outras opções de campo como estão. <p>Consulte o parâmetro de query <span class="codeph"> sp_sr </span> nos parâmetros CGI de pesquisa <a href="../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8" type="reference" format="dita" scope="local"> de backend </a>. </p> </li> 
       <li id="li_8E91AF4BE51A4A41ABBF9680DDE0B7CE">Clique em <span class="uicontrol">Adicionar </span>. </li> 
       </ol> </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>Para criar regras de classificação baseadas nas métricas do Adobe Analytics </p> </td> 
+      <td colname="col1"> <p>Para criar regras de classificação baseadas em métricas do Adobe Analytics </p> </td> 
       <td colname="col2"> <p> 
       <ol id="ol_BE57CBC303D941778B10D855ADC93C68"> 
-      <li id="li_8DF5D8F924B24ECBBD2D93C76C69D00C"> Certifique-se de configurar a autenticação do Adobe Analytics a partir da pesquisa/comercialização do site. <p>Consulte <a href="../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_8AA93F6273B747F9B4DE9E8DFBCBDC42" type="task" format="dita" scope="local"> Configurar a autenticação de métricas do Adobe Analytics </a>. </p> </li> 
-      <li id="li_CF7DD073FC5A432DADBD282AA8BB9920"> Selecione e adicione um conjunto de relatórios disponível. <p>Consulte <a href="../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_6DE17305EA7146DA8C30FF8FDF68A3C0" type="task" format="dita" scope="local"> Adicionando um conjunto de relatórios do Adobe Analytics </a>. </p> </li> 
-      <li id="li_9A63448577D04E028DF211D8715F943A"> Configure a lista de métricas do Adobe Analytics que você deseja que estejam disponíveis para a criação de novas Regras de classificação. <p>Consulte <a href="../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_360904CCBBB140238ADA036C3CC07664" type="task" format="dita" scope="local"> Editar as métricas do Adobe Analytics de um conjunto de relatórios </a>. </p> </li> 
+      <li id="li_8DF5D8F924B24ECBBD2D93C76C69D00C"> Certifique-se de configurar a autenticação do Adobe Analytics a partir da pesquisa/comercialização do site. <p>Consulte <a href="../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_8AA93F6273B747F9B4DE9E8DFBCBDC42" type="task" format="dita" scope="local"> Configurando a autenticação de métricas do Adobe Analytics </a>. </p> </li> 
+      <li id="li_CF7DD073FC5A432DADBD282AA8BB9920"> Selecione e adicione um conjunto de relatórios disponível. <p>Consulte <a href="../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_6DE17305EA7146DA8C30FF8FDF68A3C0" type="task" format="dita" scope="local"> Adicionando um conjunto de relatórios da Adobe Analytics </a>. </p> </li> 
+      <li id="li_9A63448577D04E028DF211D8715F943A"> Configure a lista de métricas do Adobe Analytics que você deseja que estejam disponíveis para a criação de novas Regras de classificação. <p>Consulte <a href="../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_360904CCBBB140238ADA036C3CC07664" type="task" format="dita" scope="local"> Editando as métricas do Adobe Analytics de um Conjunto de relatórios </a>. </p> </li> 
       <li id="li_1ACA3611D9B44AC394604CD89209C966"> Carregue as métricas iniciais do Adobe Analytics para suas páginas do site. <p>Consulte <a href="../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_2F3C55189B0A4049AB2113F2291CC181" type="task" format="dita" scope="local"> Carregamento de dados do Adobe Analytics </a>. </p> </li> 
       </ol> </p> </td> 
       </tr> 
@@ -103,7 +104,7 @@ A classificação por idade baseia-se nas duas equações a seguir:
 
 `RANK = e^(K * T)`
 
-Variáveis `H` e `T` são entradas para esta função: `H` é o período de semivida desejado e `T` é a idade do documento, expressa em segundos. `K` é a semivida calculada e `RANK` é a diminuição exponencial do valor etário especificado. O valor resultante é de 0 a 1. Um documento mais recente tem um valor de classificação mais próximo de 1 em comparação a um documento mais antigo. Em teoria, os documentos nunca devem alcançar o valor 0, mas o arredondamento de erros pode fazer com que o resultado se torne 0.
+Variáveis `H` e `T` são entradas para esta função: `H` é o período de semivida desejado e `T` é a idade do documento, expressa em segundos. `K` é a semivida calculada e `RANK` é a diminuição exponencial do valor etário especificado. O valor resultante é de 0 a 1. Um documento mais recente tem um valor de classificação mais próximo de 1 em comparação a um documento mais antigo. Em teoria, os documentos nunca devem alcançar o valor de 0, mas os erros de arredondamento podem fazer com que o resultado se torne 0.
 
 ## Requisitos para a utilização da classificação etária {#section_D716507D589442C6B7848892BD28F966}
 
@@ -131,7 +132,7 @@ No exemplo a seguir,
 
 `search_get_age_rank({birthdate}#28#0.20)`
 
-a data contida no campo do documento é `birthdate` transmitida como carimbo de data/hora. A meia-vida é de 28 dias. O valor de classificação padrão é 0,20 se a data for inválida.
+a data contida no campo documento `birthdate` é transmitida como carimbo de data/hora. A meia-vida é de 28 dias. O valor de classificação padrão é 0,20 se a data for inválida.
 
 Consulte a tabela de opções em [Adicionar uma regra](../c-about-rules-menu/c-about-ranking-rules.md#task_A132789FD4E5423DAD090DCDA7311E8A)de classificação.
 
@@ -141,7 +142,7 @@ A seguir está um exemplo de uma regra de valores/fileiras — uma regra associa
 
 `regexp .* search_get_age_rank({other_field}#365#0.20)`
 
-Este exemplo supõe que `other_field` contenha um valor de data. Se esse campo não for um campo do tipo data, esse valor será interpretado usando os formatos de data associados ao campo Data predefinido. Caso contrário, os formatos de data desse campo serão usados. Essa entrada de valores/fileiras é usada sempre que o campo do documento, que a Fonte de Dados da Regra identifica, não está vazio e o valor de retorno da função (de 0 a 1) é a classificação atribuída.
+Este exemplo supõe que `other_field` contenha um valor de data. Se esse campo não for um campo do tipo data, esse valor será interpretado usando os formatos de data associados ao campo Data predefinido. Caso contrário, os formatos de data desse campo serão usados. Essa entrada de valores/fileiras é usada sempre que o campo documento, que a Fonte de Dados da Regra identifica, não está vazio e o valor de retorno da função (de 0 a 1) é a classificação atribuída.
 
 Para uma regra associada a um campo numérico, especificamente um campo de Data:
 
@@ -174,7 +175,7 @@ A regra faz várias coisas. O peso da regra é definido como 10. O valor de clas
 
 **Exibição dos resultados**
 
-Use o recurso Exibição de dados para ver rapidamente os resultados da função de classificação etária. Adicione os campos Metadados apropriados. No exemplo, `age_val` e `myrank` são os dois campos de Metadados que devem ser adicionados à Exibição de dados. O `myrank` campo mostra como a classificação etária afeta os valores de classificação. O `age_val` campo mostra a saída bruta da função de decaimento exponencial para esse documento.
+Use o recurso Visualização de dados para ver rapidamente os resultados da função de classificação etária. Adicione os campos Metadados apropriados. No exemplo, `age_val` e `myrank` são os dois campos de Metadados que devem ser adicionados à Visualização de dados. O `myrank` campo mostra como a classificação etária afeta os valores de classificação. O `age_val` campo mostra a saída bruta da função de decaimento exponencial para esse documento.
 
 ## Valores padrão {#section_CB109EF78F914E92955D512ACFC3310E}
 
@@ -190,14 +191,14 @@ Por exemplo, o valor padrão da definição de Metadados nunca deve ocorrer se a
 
 ## Adicionar uma regra de classificação {#task_A132789FD4E5423DAD090DCDA7311E8A}
 
-É possível adicionar para afetar [!DNL Ranking Rules] a posição relativa das páginas da Web nos resultados da Pesquisa, com base no conteúdo de cada página da Web.
+Você pode adicionar para afetar [!DNL Ranking Rules] a posição relativa das páginas da Web nos resultados da pesquisa, com base no conteúdo de cada página da Web.
 
 Consulte [Configuração da classificação](../c-about-rules-menu/c-about-ranking-rules.md#task_4CEBC13925B047FC95BDC217B48089C5).
 
 **Para adicionar uma regra de classificação**
 
 1. No menu do produto, clique em **[!UICONTROL Rules]** > **[!UICONTROL Ranking Rules]** > **[!UICONTROL Edit Rules]**.
-1. (Opcional) Se você tiver criado um grupo de regras e adicionado regras ao grupo, na [!DNL Define Ranking Rules] página, na lista **[!UICONTROL Select Rule Group]** suspensa, selecione um grupo de regras que contenha as regras que deseja editar.
+1. (Opcional) Se você tiver criado um grupo de regras e adicionado regras ao grupo, na [!DNL Define Ranking Rules] **[!UICONTROL Select Rule Group]** página, na lista suspensa, selecione um grupo de regras que contenha as regras que deseja editar.
 
    Consulte [Adicionar um grupo](../c-about-rules-menu/c-about-ranking-rules.md#task_B65081B3CC9E4330A7FEE77B7BCD36C8)de regras de classificação.
 1. Na [!DNL Define Ranking Rules] página, clique **[!UICONTROL Add Rule]** para adicionar uma nova Regra de classificação ou para adicionar uma referência a um conjunto de regras.
@@ -220,12 +221,12 @@ Consulte [Configuração da classificação](../c-about-rules-menu/c-about-ranki
       <td colname="col2"> <p>Determina as características da fonte de dados usada como entrada para essa regra de classificação. </p> <p>Os tipos de fonte de dados que podem ser selecionados incluem: 
       <ul id="ul_B0A97BF0E314495985F44A642C86918D"> 
       <li id="li_4D8BDE32853540809AE78FF5FF5677A1"> <span class="uicontrol"> Meta tag </span> <p> Baseia essa regra em dados numéricos ou dados textuais armazenados em uma meta tag nomeada nas páginas do site. </p> </li> 
-      <li id="li_4976C31D67254C7F81D554EC49DDBB40"> <span class="uicontrol"> Métrica do Adobe Analytics (Número) </span> <p>Baseia essa regra em uma métrica numérica do Adobe Analytics associada às páginas do site. </p> </li> 
+      <li id="li_4976C31D67254C7F81D554EC49DDBB40"> <span class="uicontrol"> Métrica do Adobe Analytics (número) </span> <p>Baseia essa regra em uma métrica numérica do Adobe Analytics associada às páginas do site. </p> </li> 
       </ul> </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Nome da fonte de dados </p> </td> 
-      <td colname="col2"> <p>Se você escolher <span class="uicontrol"> Meta Tag </span> como o Tipo de fonte de dados, este é o nome de uma meta tag encontrada nas páginas do seu site. Os nomes no menu suspenso vêm da lista de valores de metadados definidos que foram configurados em Configurações &gt; Metadados &gt; Definições. </p> <p>Consulte <a scope="local" href="../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5" type="task" format="dita"> Adicionando um novo campo de tag meta </a>. </p> <p>Se você escolher Métrica do Adobe Analytics (Número) como Tipo de fonte de dados, esse será o nome de uma métrica do Adobe Analytics. Os nomes no menu suspenso vêm da lista definida para as métricas disponíveis do Adobe Analytics que foram configuradas em Configurações &gt; Adobe Analytics &gt; Métricas &gt; Editar. </p> <p>Consulte <a href="../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_360904CCBBB140238ADA036C3CC07664" type="task" format="dita" scope="local"> Editar as métricas do Adobe Analytics de um conjunto de relatórios </a>. </p> <p>Se o nome da métrica do Adobe Analytics que você selecionou ainda não estiver definido em <span class="uicontrol"> Configurações </span> &gt; <span class="uicontrol"> Metadados </span> &gt; <span class="uicontrol"> Definições </span>, um campo de texto e um botão Adicionar serão exibidos. Digite o nome do campo Metadados (o nome do campo de metadados não pode exceder 20 caracteres) e clique em <span class="uicontrol"> Adicionar </span>. </p> <p>Quando as páginas são encontradas com várias chaves do Adobe Analytics, assim como com uma página de produto que exibe vários produtos, o Esquema composto especifica como lidar com os vários valores de métrica do Adobe Analytics associados a essa página. Selecione uma das seguintes opções: </p> <p> 
+      <td colname="col2"> <p>Se você escolher <span class="uicontrol"> Meta Tag </span> como o Tipo de fonte de dados, este é o nome de uma meta tag encontrada nas páginas do seu site. Os nomes no menu suspenso vêm da lista de valores de metadados definidos que foram configurados em Configurações &gt; Metadados &gt; Definições. </p> <p>Consulte <a scope="local" href="../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5" type="task" format="dita"> Adicionando um novo campo de tag meta </a>. </p> <p>Se você escolher Métrica do Adobe Analytics (Número) como o Tipo de fonte de dados, esse será o nome de uma métrica do Adobe Analytics. Os nomes no menu suspenso vêm das métricas Adobe Analytics disponíveis definidas pela lista que foram configuradas em Configurações &gt; Adobe Analytics &gt; Métricas &gt; Editar. </p> <p>Consulte <a href="../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_360904CCBBB140238ADA036C3CC07664" type="task" format="dita" scope="local"> Editando as métricas do Adobe Analytics de um Conjunto de relatórios </a>. </p> <p>Se o nome da métrica do Adobe Analytics que você selecionou ainda não estiver definido em <span class="uicontrol"> Configurações </span> &gt; <span class="uicontrol"> Metadados </span> &gt; <span class="uicontrol"> Definições </span>, um campo de texto e um botão Adicionar serão exibidos. Digite o nome do campo Metadados (o nome do campo de metadados não pode exceder 20 caracteres) e clique em <span class="uicontrol"> Adicionar </span>. </p> <p>Quando as páginas são encontradas com várias chaves do Adobe Analytics, assim como com uma página de produto que exibe vários produtos, o Esquema composto especifica como lidar com os vários valores de métrica do Adobe Analytics associados a essa página. Selecione uma das seguintes opções: </p> <p> 
       <ul id="ul_D6E51748BB3949048A37C1895F2C0A58"> 
       <li id="li_04F00F382A264C96A519B0D975E25E94"> <span class="uicontrol"> Soma </span> <p>Retorna a soma dos valores da métrica. </p> </li> 
       <li id="li_FA44219B663F4CC197BD3A094EB84396"> <span class="uicontrol"> Média </span> <p>Retorna a média dos valores (a soma dividida pelo número de valores). </p> </li> 
@@ -236,23 +237,22 @@ Consulte [Configuração da classificação](../c-about-rules-menu/c-about-ranki
       </tr> 
       <tr> 
       <td colname="col1"> <p>Pesos/Condições </p> </td> 
-      <td colname="col2"> <p>Contém um número de peso de regra simples ou uma lista emparelhada de números de peso de regras e condições de teste. </p> <p>Um número de peso de regra é um valor de 1 a 10 que indica a importância dessa regra de classificação em relação às outras regras de classificação na determinação da classificação geral de um documento. Um peso de regra mais alto indica maior importância. Um peso de zero (0) ignora a regra. </p> <p>Escolha <span class="uicontrol"> Personalizado </span> na lista suspensa para personalizar a espessura da regra para várias páginas, definindo uma lista de pares de peso da regra/condições de teste. As condições de teste são fragmentos de Perl usados para testar Valores da Fonte de Dados ou variáveis globais que são definidas dentro do script de filtro personalizado (por exemplo, preço, marca, estação ou exibições de página, como no exemplo a seguir). Se uma condição de teste for avaliada como "true", o valor de peso da regra associado será aplicado. Se uma condição de teste for avaliada como "false", a próxima condição na lista será avaliada. <code> 0&nbsp;({price}&nbsp;&gt;&nbsp;50.00)&nbsp;&amp;&amp;&nbsp;({brand}=~/Kuhl/)5&nbsp;{season}&nbsp;=~&nbsp;/Fall/10&nbsp;{pageviews}&nbsp;&gt;&nbsp;1000005 </code>No exemplo de peso/condição criado personalizado acima, a espessura da regra 0 será aplicada se a primeira condição de teste for avaliada como "true". Ou seja, o preço contém um valor maior que 50 e a marca contém "Kuhl"). Se a primeira condição de teste for avaliada como "false", a próxima condição será avaliada. Se nenhuma das condições anteriores for cumprida, a espessura da regra 5 será atribuída. </p> <p>Você sempre deve fornecer uma espessura de regra sem nenhuma condição no final da lista. Se você não fizer isso, a regra obterá um peso de 0 caso nenhum dos testes de condição seja avaliado como "true". </p> </td> 
+      <td colname="col2"> <p>Contém um número de peso simples de regra única ou uma lista emparelhada de números de pesos de regras e condições de teste. </p> <p>Um número de peso de regra é um valor de 1 a 10 que indica a importância dessa regra de classificação em relação às outras regras de classificação para determinar a classificação geral de um documento. Um peso de regra superior indica maior importância. Um peso de zero (0) ignora a regra. </p> <p>Escolha <span class="uicontrol"> Personalizado </span> na lista suspensa para personalizar o peso da regra para várias páginas, definindo uma lista de pares de pesos de regras/condições de teste. As condições de teste são fragmentos de Perl usados para testar Valores da Fonte de Dados ou variáveis globais que são definidas dentro do script de filtro personalizado (por exemplo, preço, marca, estação ou visualizações de página, como no exemplo a seguir). Se uma condição de teste for avaliada como "true", o valor do peso da regra associado será aplicado. Se uma condição de teste for avaliada como "false", a próxima condição na lista será avaliada. <code> 0&nbsp;({price}&nbsp;&gt;&nbsp;50.00)&nbsp;&amp;&amp;&nbsp;({brand}=~/Kuhl/)5&nbsp;{season}&nbsp;=~&nbsp;/Fall/10&nbsp;{pageviews}&nbsp;&gt;&nbsp;1000005 </code>No exemplo de peso/condição criado personalizado acima, o peso de regra 0 será aplicado se a primeira condição de teste for avaliada como "true". Ou seja, o preço contém um valor maior que 50 e a marca contém "Kuhl"). Se a primeira condição de teste for avaliada como "false", a próxima condição será avaliada. Se nenhuma das condições anteriores for cumprida, a regra peso 5 será atribuída. </p> <p>Você sempre deve fornecer um peso de regra sem nenhuma condição no final da lista. Se você não fizer isso, a regra obterá um peso de 0 no caso em que nenhum dos testes de condição for avaliado como "true". </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Valores/classificações </p> </td> 
-      <td colname="col2"> <p>Consiste em uma das funções de classificação incorporadas, ou em um conteúdo possível da Fonte de dados junto com as classificações desejadas. </p> <p>Se você escolher Métrica do <span class="uicontrol"> Adobe Analytics (Número) </span> como o Tipo de fonte de dados, será apresentada uma lista suspensa com as seguintes opções: 
+      <td colname="col2"> <p>Consiste em uma das funções de classificação incorporadas, ou em um conteúdo possível da Fonte de dados junto com as classificações desejadas. </p> <p>Se você escolher Métrica <span class="uicontrol"> Adobe Analytics (Número) </span> como o Tipo de fonte de dados, será apresentada uma lista suspensa com as seguintes opções: 
       <ul id="ul_104906B6AA8547BAB6979AA37C4FAB90"> 
-      <li id="li_7656A2855A054DB8B64E90FE501517AA"> <span class="uicontrol"> Classificação automática por pedido (padrão) </span> <p>Calcula uma classificação que se baseia na posição relativa do documento, de acordo com a métrica do Adobe Analytics. Por exemplo, quanto mais perto a posição do documento estiver do documento classificado acima, maior a sua classificação. </p> </li> 
-      <li id="li_1A7D60EA6965434AA6D39B215C158306"> <span class="uicontrol"> Classificação automática por valor </span> <p>Calcula uma classificação com base no valor relativo do documento, de acordo com a métrica do Adobe Analytics. Por exemplo, quanto mais próximo o valor do documento estiver do valor do documento classificado acima, maior será a sua classificação. </p> </li> 
+      <li id="li_7656A2855A054DB8B64E90FE501517AA"> <span class="uicontrol"> Classificação automática por pedido (padrão) </span> <p>Calcula uma classificação baseada na posição relativa do documento, de acordo com sua Métrica do Adobe Analytics. Por exemplo, quanto mais próximo o documento estiver da posição mais alta, maior será a sua posição. </p> </li> 
+      <li id="li_1A7D60EA6965434AA6D39B215C158306"> <span class="uicontrol"> Classificação automática por valor </span> <p>Calcula uma classificação com base no valor relativo do documento, de acordo com sua Métrica do Adobe Analytics. Por exemplo, quanto mais próximo o valor do documento do documento classificado, maior será a sua classificação. </p> </li> 
       <li id="li_457DE44D6ADA40619DC77220BF12318E"> <span class="uicontrol"> Personalizado </span> <p>Especifica configurações personalizadas. Por exemplo, uma Fonte de dados com o nome de "marca" pode conter o nome da marca de um produto específico. Você pode especificar a importância relativa de cada marca listando-a junto com sua classificação. </p> </li> 
-      </ul> </p> <p>Os valores de classificação retornados dos cálculos de Classificação automática estão no intervalo de 0,0 (menor) a 1,0 (maior). Eles não são ajustados de acordo com os intervalos definidos para o campo Classificação em Configurações &gt; Metadados &gt; Definições. </p> <p>No exemplo a seguir, se a Fonte de Dados da marca para um resultado de pesquisa específico corresponder exatamente a "DKNY", a classificação aplicada para esse resultado será 0,5. Caso contrário, se a marca for "Levis", a classificação aplicada será 0,1. O conteúdo da Fonte de Dados deve corresponder ao valor definido. Em outras palavras, se o conteúdo da Fonte de Dados for "Levis Corp.", ele não corresponderá ao valor "Levis". O caso é ignorado, então "DKNY" corresponde a "dkny" e "Dkny". <code> DKNY&nbsp;0.5 Levis&nbsp;0.1 Lee&nbsp;0.2 </code> </p> <p>Como uma opção mais avançada, você pode especificar valores como expressões regulares. Por exemplo, suponha que algumas de suas páginas do site contenham o valor de marca "Levis" e outras páginas do site contenham o valor de marca "jeans Levis". Você pode usar uma expressão regular especificada com a palavra-chave 
-      <userinput>
+      </ul> </p> <p>Os valores de classificação retornados dos cálculos de Classificação automática estão no intervalo de 0,0 (menor) a 1,0 (maior). Eles não são ajustados de acordo com os intervalos definidos para o campo Classificação em Configurações &gt; Metadados &gt; Definições. </p> <p>No exemplo a seguir, se a Fonte de Dados da marca para um resultado de pesquisa específico corresponder exatamente a "DKNY", a classificação aplicada para esse resultado será 0,5. Caso contrário, se a marca for "Levis", a classificação aplicada será 0,1. O conteúdo da Fonte de Dados deve corresponder ao valor definido. Em outras palavras, se o conteúdo da Fonte de Dados for "Levis Corp.", ele não corresponderá ao valor "Levis". O caso é ignorado, então "DKNY" corresponde a "dkny" e "Dkny". <code> DKNY&nbsp;0.5 Levis&nbsp;0.1 Lee&nbsp;0.2 </code> </p> <p>Como uma opção mais avançada, você pode especificar valores como expressões regulares. Por exemplo, suponha que algumas de suas páginas do site contenham o valor de marca "Levis" e outras páginas do site contenham o valor de marca "jeans Levis". Você pode usar uma expressão regular especificada com a palavra-chave <code>
         regexp 
-      </userinput>. </p> <p>Consulte <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Expressões regulares </a>. </p> <p>No exemplo a seguir, um documento de resultados de pesquisa contendo o conteúdo da marca "jeans Levis" recebe uma classificação de 0.1. Como na comparação padrão, as letras maiúsculas e minúsculas são ignoradas para expressões regulares. <code> DKNY&nbsp;0.5 regexp&nbsp;Levis.*&nbsp;0.1 Lee&nbsp;0.2 </code> </p> </td> 
+      </code>. </p> <p>Consulte <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Expressões regulares </a>. </p> <p>No exemplo a seguir, um documento de resultado de pesquisa contendo o conteúdo da marca "jeans Levis" recebe uma classificação de 0.1. Como na comparação padrão, as letras maiúsculas e minúsculas são ignoradas para expressões regulares. <code> DKNY&nbsp;0.5 regexp&nbsp;Levis.*&nbsp;0.1 Lee&nbsp;0.2 </code> </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Classificação padrão </p> </td> 
-      <td colname="col2"> <p> Especifica a classificação a ser aplicada para documentos de resultados de pesquisa que não correspondem a nenhum dos valores especificados. No exemplo acima, um documento de resultados de pesquisa com uma Fonte de Dados de "marca" contendo "a lacuna" recebe o valor de classificação padrão, pois "a lacuna" não corresponde a nenhum dos valores definidos. </p> </td> 
+      <td colname="col2"> <p> Especifica a classificação a ser aplicada para documentos de resultado de pesquisa que não correspondem a nenhum dos valores especificados. No exemplo acima, um documento de resultados de pesquisa com uma Fonte de Dados de "marca" contendo "a lacuna" recebe o valor padrão de classificação porque "a lacuna" não corresponde a nenhum dos valores definidos. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Notas </p> </td> 
@@ -266,13 +266,14 @@ Consulte [Configuração da classificação](../c-about-rules-menu/c-about-ranki
    * `-1.0` é &quot;Classificação mínima (exibir inferior nos resultados da pesquisa)&quot;.
    * `0.0` é &quot;Classificação neutra (não altere a ordem dos resultados da pesquisa)&quot;.
    * `1.0` é &quot;Classificação máxima (exibir maior nos resultados da pesquisa.&quot;
+
    As classificações definidas devem estar dentro do mesmo intervalo para cada regra. Os intervalos de classificação também devem corresponder aos intervalos definidos para o campo Classificação em **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Definitions]**.
 
    Consulte [Adicionar um novo campo](../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5)de tag meta.
 
    Consulte também [Edição de uma regra](../c-about-rules-menu/c-about-ranking-rules.md#task_5EBF55A43D6545FEA46BAE5E586FA275)de classificação.
 1. Clique em **[!UICONTROL Add]**.
-1. Para visualizar os resultados da adição da regra, clique em **[!UICONTROL regenerate your staged site index]** para recriar o índice do site preparado.
+1. Para pré-visualização dos resultados da adição da regra, clique em **[!UICONTROL regenerate your staged site index]** para recriar o índice do site preparado.
 
    Consulte [Executando um índice completo de um site ao vivo ou preparado...](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
 
@@ -300,7 +301,7 @@ Consulte [Configuração da classificação](../c-about-rules-menu/c-about-ranki
 **Para editar uma regra de classificação**
 
 1. No menu do produto, clique em **[!UICONTROL Rules]** > **[!UICONTROL Ranking Rules]** > **[!UICONTROL Edit Rules]**.
-1. (Opcional) Se você tiver criado um grupo de regras e adicionado quaisquer regras ao grupo, na **[!UICONTROL Define Ranking Rules]** página, na lista **[!UICONTROL Select Rule Group]** suspensa, selecione um grupo de regras que contenha as regras que deseja editar.
+1. (Opcional) Se você tiver criado um grupo de regras e adicionado quaisquer regras ao grupo, na **[!UICONTROL Define Ranking Rules]** **[!UICONTROL Select Rule Group]** página, na lista suspensa, selecione um grupo de regras que contenha as regras que deseja editar.
 
    Consulte [Adicionar um grupo](../c-about-rules-menu/c-about-ranking-rules.md#task_B65081B3CC9E4330A7FEE77B7BCD36C8)de regras de classificação.
 1. Na tabela, no cabeçalho da **[!UICONTROL Actions]** coluna, clique **[!UICONTROL Edit]** no nome da fonte de dados que deseja alterar.
@@ -308,7 +309,7 @@ Consulte [Configuração da classificação](../c-about-rules-menu/c-about-ranki
 
    Consulte a tabela de opções em [Adicionar uma regra](../c-about-rules-menu/c-about-ranking-rules.md#task_A132789FD4E5423DAD090DCDA7311E8A)de classificação.
 1. Clique em **[!UICONTROL Save Changes]**.
-1. Recrie o índice do site preparado para visualizar os resultados da edição da regra.
+1. Recrie o índice do site preparado para pré-visualização dos resultados da edição da regra.
 
    Consulte [Executando um índice completo de um site ao vivo ou preparado...](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
 
@@ -338,12 +339,12 @@ Consulte [Adicionar um grupo](../c-about-rules-menu/c-about-ranking-rules.md#tas
 **Para excluir uma regra de classificação**
 
 1. No menu do produto, clique em **[!UICONTROL Rules]** > **[!UICONTROL Ranking Rules]** > **[!UICONTROL Edit Rules]**.
-1. (Opcional) Se você tiver criado um grupo de regras e adicionado quaisquer regras ao grupo, na [!DNL Define Ranking Rules] página, na lista **[!UICONTROL Select Rule Group]** suspensa, selecione um grupo de regras que contenha regras que deseja excluir.
+1. (Opcional) Se você tiver criado um grupo de regras e adicionado quaisquer regras ao grupo, na [!DNL Define Ranking Rules] **[!UICONTROL Select Rule Group]** página, na lista suspensa, selecione um grupo de regras que contenha regras que deseja excluir.
 1. Na tabela, no cabeçalho da **[!UICONTROL Actions]** coluna, clique **[!UICONTROL Delete]** no nome da fonte de dados que deseja alterar.
 1. Na [!DNL Delete Ranking Rule] página, clique em **[!UICONTROL Delete]**.
 
    Você será redirecionado para a [!DNL Define Ranking Rules] página.
-1. Recrie o índice do site preparado para visualizar os resultados da exclusão da regra.
+1. Recrie o índice do site preparado para pré-visualização nos resultados da exclusão da regra.
 
    Consulte [Executando um índice completo de um site ao vivo ou preparado...](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
 
@@ -385,7 +386,7 @@ Consulte [Revisando grupos](../c-about-rules-menu/c-about-ranking-rules.md#task_
 
    Consulte a tabela de opções em [Adicionar um novo campo](../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5)de tag meta.
 1. Clique em **[!UICONTROL Add]**.
-1. Recrie o índice do site preparado para visualizar os resultados da adição da regra.
+1. Recrie o índice do site preparado para pré-visualização dos resultados da adição da regra.
 
    Consulte [Executando um índice completo de um site ao vivo ou preparado...](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
 
@@ -421,7 +422,7 @@ Consulte [Adicionar um grupo](../c-about-rules-menu/c-about-ranking-rules.md#tas
 
    Consulte a tabela de opções em [Adicionar um novo campo](../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5)de tag meta.
 1. Clique em **[!UICONTROL Save Changes]**.
-1. Recrie o índice do site preparado para visualizar os resultados da adição da regra.
+1. Recrie o índice do site preparado para pré-visualização dos resultados da adição da regra.
 
    Consulte [Executando um índice completo de um site ao vivo ou preparado...](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
 
@@ -456,7 +457,7 @@ Consulte [Adicionar um grupo](../c-about-rules-menu/c-about-ranking-rules.md#tas
 1. Na [!DNL Define Ranking Rules] página, na lista **[!UICONTROL Select Rule Group]** suspensa, selecione um grupo que deseja excluir.
 1. À direita da lista **[!UICONTROL Select Rule Group]** suspensa, clique em **[!UICONTROL Delete]**.
 1. Na [!DNL Delete Ranking Rule Group] página, clique em **[!UICONTROL Delete]**.
-1. Recrie o índice do site preparado para visualizar os resultados da adição da regra.
+1. Recrie o índice do site preparado para pré-visualização dos resultados da adição da regra.
 
    Consulte [Executando um índice completo de um site ao vivo ou preparado...](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
 
@@ -538,12 +539,12 @@ Se você tiver mais de uma Regra definida em um grupo de Regras, o valor de Peso
 **Para ajustar o peso associado às regras de classificação**
 
 1. No menu do produto, clique em **[!UICONTROL Rules]** > **[!UICONTROL Ranking Rules]** > **[!UICONTROL Adjust Weights]**.
-1. Na [!DNL Adjust Ranking Weights] página, na lista **[!UICONTROL Select Rule Group]** suspensa, selecione um grupo cujas ponderações de classificação você deseja ajustar.
+1. Na [!DNL Adjust Ranking Weights] página, na lista **[!UICONTROL Select Rule Group]** suspensa, selecione um grupo cujos pesos de classificação você deseja ajustar.
 1. Arraste os controles deslizantes para alterar os valores de contribuição correspondentes.
 
    O gráfico setorial reflete suas alterações graficamente.
 1. Clique em **[!UICONTROL Save Changes]**.
-1. Recrie o índice do site preparado para visualizar os resultados da adição da regra.
+1. Recrie o índice do site preparado para pré-visualização dos resultados da adição da regra.
 
    Consulte [Executando um índice completo de um site ao vivo ou preparado...](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
 
