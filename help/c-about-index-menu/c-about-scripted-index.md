@@ -8,7 +8,10 @@ title: Sobre o índice de scripts
 topic: Index,Site search and merchandising
 uuid: 51e726ad-414b-4cbd-8a68-fefc3cf9b565
 translation-type: tm+mt
-source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
+source-git-commit: 552f93f1f630c64bbe3d5c8a87c4f5895ae6868c
+workflow-type: tm+mt
+source-wordcount: '1761'
+ht-degree: 1%
 
 ---
 
@@ -45,7 +48,7 @@ Um zero à esquerda é necessário para todas as datas ordinais inferiores ao 10
  <tbody> 
   <tr> 
    <td colname="col1"> <p>date-command </p> </td> 
-   <td colname="col2"> <p>A primeira linha de cada bloco começa com um de dois comandos de data: </p> <p> 
+   <td colname="col2"> <p>A primeira linha de cada start de bloco com um de dois comandos de data: </p> <p> 
      <ul id="ul_9C1B229B7F1846C490B853FC34989E77"> 
       <li id="li_31FEF1A7163842BDBB0ABE779D07045A"> <span class="codeph"> date </span> <p>Use o comando "date" para indicar que o especificador de data consistirá em um dia, data, hora e fuso horário. </p> </li> 
       <li id="li_0918D5B090014C1A852CB80BB7C2867C"> <span class="codeph"> segundos </span> <p>Use <span class="codeph"> segundos </span> para indicar que o especificador de datas consistirá em um tempo em cada segundo (por exemplo, 784111777). Ao usar <span class="codeph"> segundos </span>, verifique se o número de segundos aumenta entre blocos. </p> </li> 
@@ -68,89 +71,77 @@ Um zero à esquerda é necessário para todas as datas ordinais inferiores ao 10
    <td colname="col2"> <p>Cada bloco de texto pode conter quantos comandos de ação desejar. As seguintes opções de action-command correspondem às da indexação incremental padrão: </p> <p> 
      <ul id="ul_8E1435350A0F416BB8F7826CD3886E74"> 
       <li id="li_22181666628C48A28A6A0BA1F7CA8E77"> 
-       <userinput>
+       <code>
          add 
-       </userinput> <p>Usar com URL. O robô de pesquisa indexa somente os URLs especificados que foram alterados desde a última operação de indexação. Além disso, o robô de pesquisa segue links contidos em documentos especificados e indexa apenas os documentos que foram alterados. </p> <p>Você pode seguir o URL com 
-        <userinput>
+       </code> <p>Usar com URL. O robô de pesquisa indexa somente os URLs especificados que foram alterados desde a última operação de indexação. Além disso, o robô de pesquisa segue links contidos em documentos e indexa somente os documentos que foram alterados. </p> <p>Você pode seguir o URL com <code>
           nofollow 
-        </userinput> ou 
-        <userinput>
+        </code> ou <code>
           noindex 
-        </userinput> palavras-chave como no exemplo a seguir: </p> <p> <code> add&amp;nbsp;https://www.mydomain.com/&amp;nbsp;noindex </code> </p> </li> 
+        </code> palavras-chave, como no exemplo a seguir: </p> <p> <code> add&amp;nbsp;https://www.mydomain.com/&amp;nbsp;noindex </code> </p> </li> 
       <li id="li_8E47BF07DB24417083883F5BF40D6B9E"> 
-       <userinput>
+       <code>
          update 
-       </userinput> <p>Usar com máscara de URL. O robô de pesquisa encontra e atualiza todos os documentos que correspondem à máscara de URL especificada. </p> <p>Você pode seguir o URL com 
-        <userinput>
+       </code> <p>Usar com máscara de URL. O robô de pesquisa encontra e atualiza todos os documentos que correspondem à máscara de URL especificada. </p> <p>Você pode seguir o URL com <code>
           nofollow 
-        </userinput> ou 
-        <userinput>
+        </code> ou <code>
           noindex 
-        </userinput> palavras-chave como no exemplo a seguir: </p> <p> <code> update&amp;nbsp;https://www.mydomain.com/products/ </code> </p> </li> 
+        </code> palavras-chave, como no exemplo a seguir: </p> <p> <code> update&amp;nbsp;https://www.mydomain.com/products/ </code> </p> </li> 
       <li id="li_B3EC8B1670D54F66A1D8411A694EF7E4"> 
-       <userinput>
-         incluem 
-       </userinput> ou 
-       <userinput>
+       <code>
+         include 
+       </code> ou 
+       <code>
          exclude 
-       </userinput> <p>Usar com máscara de URL. O robô de pesquisa encontra e indexa ("incluir") ou ignora ("excluir") documentos com base no tipo de máscara especificado. </p> <p>Por exemplo, </p> <p> <code> include&amp;nbsp;https://www.mydomain.com/products/household/lightbulbs*.html </code> </p> <p>ou </p> <p> <code> exclude&amp;nbsp;https://www.mydomain.com/archive/ </code> </p> </li> 
+       </code> <p>Usar com máscara de URL. O robô de pesquisa encontra e indexa ("incluir") ou ignora ("excluir") documentos com base no tipo de máscara especificado. </p> <p>Por exemplo, </p> <p> <code> include&amp;nbsp;https://www.mydomain.com/products/household/lightbulbs*.html </code> </p> <p>ou </p> <p> <code> exclude&amp;nbsp;https://www.mydomain.com/archive/ </code> </p> </li> 
       <li id="li_050B54B735F0475E93806455FA6DC6A5"> 
-       <userinput>
-         incluir data 
-       </userinput> ou 
-       <userinput>
+       <code>
+         include-date 
+       </code> ou 
+       <code>
          exclude-date 
-       </userinput> <p>Usar com máscara de URL. O robô de pesquisa encontra e indexa ("incluir") ou ignora ("excluir") documentos com base no URL e na data dos documentos. Os seguintes tipos de máscaras estão disponíveis: </p> <p> 
+       </code> <p>Usar com máscara de URL. O robô de pesquisa encontra e indexa ("incluir") ou ignora ("excluir") documentos com base no URL e na data dos documentos. Os seguintes tipos de máscaras estão disponíveis: </p> <p> 
         <ul id="ul_23A15CB492214B86BE84D8E6EA1820AE"> 
          <li id="li_0C7051AC3B5A4C57A3E477F7B6246611"> 
-          <userinput>
-            incluir dias NNN 
-          </userinput> <p>O robô de pesquisa indexa todos os documentos que correspondem à máscara de URL especificada e são NNN dias ou mais antigos. </p> <p>Você pode seguir a máscara de URL com as palavras-chave 
-           <userinput>
+          <code>
+            include-days NNN 
+          </code> <p>O robô de pesquisa indexa todos os documentos que correspondem à máscara de URL especificada e são NNN dias ou mais antigos. </p> <p>Você pode seguir a máscara de URL com as palavras-chave <code>
              nofollow 
-           </userinput>, 
-           <userinput>
+           </code>, <code>
              noindex 
-           </userinput>e/ou 
-           <userinput>
-             data do servidor 
-           </userinput>. </p> </li> 
+           </code>e/ou <code>
+             server-date 
+           </code>. </p> </li> 
          <li id="li_983A10E2ED5D434EA9031F32143F4EF4"> 
-          <userinput>
-            incluir data AAAA-MM-DD 
-          </userinput> <p> O robô de pesquisa indexa todos os documentos que correspondem à máscara de URL especificada e são tão antigos ou mais antigos que a data AAAA-MM-DD, onde "AAAA" é o ano de 4 dígitos, "MM" é o mês de um ou dois dígitos (1-12) e "DD" é o dia de um ou dois dígitos (1-31). </p> <p>Você pode seguir a máscara de URL com as palavras-chave 
-           <userinput>
+          <code>
+            include-date YYYY-MM-DD 
+          </code> <p> O robô de pesquisa indexa todos os documentos que correspondem à máscara de URL especificada e são tão antigos ou mais antigos que a data AAAA-MM-DD, onde "AAAA" é o ano de 4 dígitos, "MM" é o mês de um ou dois dígitos (1-12) e "DD" é o dia de um ou dois dígitos (1-31). </p> <p>Você pode seguir a máscara de URL com as palavras-chave <code>
              nofollow 
-           </userinput>, 
-           <userinput>
+           </code>, <code>
              noindex 
-           </userinput>e/ou 
-           <userinput>
-             data do servidor 
-           </userinput>. </p> </li> 
+           </code>e/ou <code>
+             server-date 
+           </code>. </p> </li> 
          <li id="li_733CE1B748024CECA7FBE00D7BC7B88A"> 
-          <userinput>
-            dias excluídos NNN 
-          </userinput> <p> Desabilita a indexação de todos os documentos que correspondem à máscara de URL especificada e são NNN dias ou mais antigos. </p> <p>Você pode seguir a máscara de URL com a palavra-chave 
-           <userinput>
-             data do servidor 
-           </userinput>. </p> </li> 
+          <code>
+            exclude-days NNN 
+          </code> <p> Desabilita a indexação de todos os documentos que correspondem à máscara de URL especificada e são NNN dias ou mais antigos. </p> <p>Você pode seguir a máscara de URL com a palavra-chave <code>
+             server-date 
+           </code>. </p> </li> 
          <li id="li_90056A0B96CC4DA3854711860A15CE89"> 
-          <userinput>
-            data de exclusão AAAA-MM-DD 
-          </userinput> <p>Desabilita a indexação de todos os documentos que correspondem à máscara de URL especificada e são tão antigos ou mais antigos que a data AAAA-MM-DD. </p> <p>Você pode seguir a máscara de URL com a palavra-chave 
-           <userinput>
-             data do servidor 
-           </userinput>. </p> </li> 
+          <code>
+            exclude-date YYYY-MM-DD 
+          </code> <p>Desabilita a indexação de todos os documentos que correspondem à máscara de URL especificada e são tão antigos ou mais antigos que a data AAAA-MM-DD. </p> <p>Você pode seguir a máscara de URL com a palavra-chave <code>
+             server-date 
+           </code>. </p> </li> 
         </ul> </p> </li> 
       <li id="li_AA78F22B60FE4535BE73BA87A8992C08"> 
-       <userinput>
+       <code>
          delete 
-       </userinput> <p>Especifique URLs. O robô de pesquisa remove documentos do índice que são identificados pelo URL. </p> </li> 
+       </code> <p>Especifique URLs. O robô de pesquisa remove documentos do índice identificados pelo URL. </p> </li> 
       <li id="li_9C63061568AA4D57A4FEBCF6DB9194EC"> 
-       <userinput>
+       <code>
          deletemask 
-       </userinput> <p>O robô de pesquisa remove documentos do índice que correspondem à máscara de URL especificada. </p> </li> 
+       </code> <p>O robô de pesquisa remove documentos do índice que correspondem à máscara de URL especificada. </p> </li> 
      </ul> </p> </td> 
   </tr> 
  </tbody> 
@@ -170,7 +161,7 @@ No exemplo de arquivo de script a seguir, o robô de pesquisa processa os blocos
 * Inclua todos os outros diretórios e documentos em `www.mydomain.com`.
 * Atualize todos os documentos dentro dos diretórios `products` e `information` , pesquisando e indexando todos os links subsidiários que foram alterados desde a última operação de indexação.
 
-* Durante o rastreamento, exclua URLs na `archive` seção do site se eles tiverem data de 1 de janeiro de 1999 ou antes dela.
+* Durante o rastreamento, exclua URLs na seção `archive` do site se eles tiverem data de 1 de janeiro de 1999 ou antes dela.
 * Exclua URLs que correspondem `housewares.html` e `lightfixtures.html` do índice de pesquisa.
 
 * Indexar arquivos no `help` diretório, mas não rastrear nem indexar links desses arquivos.
@@ -244,8 +235,8 @@ A programação de índice se aplica somente ao seu índice ativo; não é poss�
 **Para definir a programação de índice incremental com script para um site ativo**
 
 1. No menu do produto, clique em **[!UICONTROL Index]** > **[!UICONTROL Scripted Index]** > **[!UICONTROL Live Schedule]**.
-1. Na **[!UICONTROL Scripted Incremental Index Schedule]** página, na lista **[!UICONTROL Read the Scripted Incrementally Indexing File]** suspensa, selecione a frequência na qual você deseja que o arquivo de texto de índice incremental por script seja executado, em horas ou minutos.
-1. Na lista **[!UICONTROL Base Time]** suspensa, selecione a hora de início em que deseja gerar novamente um novo índice incremental por script.
+1. Na **[!UICONTROL Scripted Incremental Index Schedule]** página, na lista **[!UICONTROL Read the Scripted Incrementally Indexing File]** suspensa, selecione a frequência na qual você deseja que o arquivo de texto de índice incremental com script seja executado, em horas ou minutos.
+1. Na lista **[!UICONTROL Base Time]** suspensa, selecione a hora de início em que deseja gerar novamente um novo índice incremental com script.
 1. Clique em **[!UICONTROL Save Changes]**.
 
 ## Execução de um índice incremental com script de um site ao vivo ou preparado {#task_6E6FC76EE1E84A5FADB3B67AD7B1DACB}
@@ -264,15 +255,15 @@ Consulte [Configuração de um índice](../c-about-index-menu/c-about-scripted-i
    * Clique em **[!UICONTROL Index]** > **[!UICONTROL Scripted Index]** > **[!UICONTROL Staged Index]**.
 
 1. Clique em **[!UICONTROL Scripted Index Now]**.
-1. (Opcional) Se ocorreram erros de indexação, clique em **[!UICONTROL View Errors]** para exibir o log associado.
+1. (Opcional) Se ocorreram erros de indexação, clique em **[!UICONTROL View Errors]** para visualização o log associado.
 
 ## Exibição do log de índice incremental com script de um site ao vivo ou preparado {#task_CBFCE9B9A87B4DF7A2A35A6E83DE93D7}
 
-Quando um índice de script completo em tempo real ou um índice de script completo preparado for concluído, você poderá exibir seu log associado para solucionar quaisquer erros que ocorreram.
+Quando um índice de script completo em tempo real ou um índice de script completo preparado for concluído, você poderá visualização seu log associado para solucionar quaisquer erros ocorridos.
 
 Não é possível exportar registros nem salvá-los. No entanto, o log permanece disponível para exibição até que o novo índice ocorra.
 
-**Para exibir o log de índice incremental de um site ao vivo ou preparado**
+**Para visualização do log de índice incremental de um site ao vivo ou preparado**
 
 1. No menu do produto, execute um dos procedimentos a seguir:
 
