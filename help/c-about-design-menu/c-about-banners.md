@@ -7,7 +7,10 @@ title: Sobre banners
 topic: Design,Site search and merchandising
 uuid: 653b567d-5cf3-41a0-a260-a6912d0fd20d
 translation-type: tm+mt
-source-git-commit: 7f1b5d94e8002992d62ec1e3dce11f9c5605fde8
+source-git-commit: 552f93f1f630c64bbe3d5c8a87c4f5895ae6868c
+workflow-type: tm+mt
+source-wordcount: '4810'
+ht-degree: 1%
 
 ---
 
@@ -26,9 +29,9 @@ c_about_banners.xml
 
 Existem dois métodos que você pode usar para adicionar anúncios de banner ao seu site.
 
-O primeiro método é adicionar banners por meio do Target, Search&amp;Promote. Os banners são trechos de código HTML exibidos no momento em que um cliente pesquisa seu site. Seu banner pode incluir texto ou uma imagem no formato GIF, JPEG ou PNG, ou em uma combinação de ambos. Você pode selecionar de tamanhos predefinidos ou definir suas próprias dimensões personalizadas para se ajustar à sua página. O código HTML usado para exibir o banner também pode especificar itens como o estilo de fonte a ser usado e a borda. Este método de adicionar um banner oferece funcionalidade básica e não requer software adicional.
+O primeiro método é adicionar banners por meio de Público alvo, Search &amp; Promote. Os banners são trechos de código HTML exibidos no momento em que um cliente pesquisa seu site. Seu banner pode incluir texto ou uma imagem no formato GIF, JPEG ou PNG, ou em uma combinação de ambos. Você pode selecionar de tamanhos predefinidos ou definir suas próprias dimensões personalizadas para se ajustar à sua página. O código HTML usado para exibir o banner também pode especificar itens como o estilo de fonte a ser usado e a borda. Este método de adicionar um banner oferta a funcionalidade básica e não requer software adicional.
 
-O segundo método é usar o Adobe Dynamic Media Classic, um serviço de gerenciamento dinâmico de mídia e publicação. Uma conta válida do Adobe Dynamic Media Classic permite gerenciar e fornecer conteúdo de banner diretamente para o Target, Search&amp;Promote, usando o Dynamic Media Classic. Na pesquisa/comercialização do site, você configura o acesso à sua conta do Dynamic Media Classic. Em seguida, abra o navegador de mídia do Dynamic Media Classic e escolha um ativo de mídia dinâmica que deseja servir como seu banner.
+O segundo método é usar o Adobe Dynamic Media Classic, um serviço de gerenciamento dinâmico de mídia e publicação. Uma conta Adobe Dynamic Media Classic válida permite gerenciar e fornecer conteúdo de banner diretamente ao Público alvo, Search &amp; Promote, usando o Dynamic Media Classic. Na pesquisa/comercialização do site, você configura o acesso à sua conta do Dynamic Media Classic. Em seguida, abra o navegador de mídia do Dynamic Media Classic e escolha um ativo de mídia dinâmica que deseja servir como seu banner.
 
 >[!NOTE]
 >
@@ -36,13 +39,13 @@ O segundo método é usar o Adobe Dynamic Media Classic, um serviço de gerencia
 
 ## Integração de banners com o Adobe Scene7 Publishing System {#section_D4D7ADEA6A6348E68EDA138E184FE579}
 
-Você pode usar os tipos de ativos do Dynamic Media Classic como banners na pesquisa/comercialização do site, incluindo imagens, banners dinâmicos e modelos, como modelos de imagem ou modelos Flash.
+Você pode usar os tipos de ativos do Dynamic Media Classic como banners na pesquisa/comercialização do site, incluindo imagens, banners dinâmicos e modelos, como modelos de imagem ou modelos de Flash.
 
 Os modelos são criados dinamicamente e arquivos de imagem em camadas endereçáveis, como arquivos em camadas em aplicativos de edição de imagens, como o Adobe Photoshop®. Ao contrário de um arquivo de imagem estática, um modelo pode incluir parâmetros. Por meio de parâmetros, é possível personalizar propriedades de imagens variáveis e conteúdo de imagens.
 
 >[!NOTE]
 >
->Você também pode criar modelos a partir de designs baseados em layout usando a Publicação de modelo no Scene7 Publishing System e arquivos do Adobe Illustrator e Adobe InDesign.
+>Você também pode criar modelos a partir de designs baseados em layout usando a Publicação de modelo no Scene7 Publishing System e arquivos da Adobe Illustrator e Adobe InDesign.
 
 Consulte Publicação [de](https://help.adobe.com/en_US/scene7/using/WSFBFBAD30-2694-4b18-B7CE-894F9FC5CDDF.html) modelos no Guia do usuário do Dynamic Media Classic (Scene7).
 
@@ -56,7 +59,7 @@ Consulte Noções básicas [do](https://help.adobe.com/en_US/scene7/using/WS60B6
 
 **Upload e publicação de ativos**
 
-Você deve fazer upload e publicar ativos no Dynamic Media Classic antes de usá-los para banners na pesquisa/comercialização do site. Esse pré-requisito também inclui todos os ativos que um modelo de imagem ou um modelo Flash usa. Use sua conta do Dynamic Media Classic para carregar e publicar ativos digitais. Ou você pode usar a pesquisa/comercialização do site para carregar um ativo digital e, em seguida, fazer com que o Dynamic Media Classic publique-o automaticamente para você com base nas configurações de upload. Se você tentar escolher um ativo que ainda não foi carregado e publicado, você será notificado na interface do usuário e terá a opção de fazer upload dele antes de continuar.
+Você deve fazer upload e publicar ativos no Dynamic Media Classic antes de usá-los para banners na pesquisa/comercialização do site. Esse pré-requisito também inclui todos os ativos que um modelo de imagem ou um modelo de Flash usa. Use sua conta do Dynamic Media Classic para carregar e publicar ativos digitais. Ou você pode usar a pesquisa/comercialização do site para carregar um ativo digital e, em seguida, fazer com que o Dynamic Media Classic publique-o automaticamente para você com base nas configurações de upload. Se você tentar escolher um ativo que ainda não foi carregado e publicado, você será notificado na interface do usuário e terá a opção de fazer upload dele antes de continuar.
 
 Você pode saber mais sobre como fazer upload e publicar ativos digitais usando o Scene7 Publishing System.
 
@@ -64,7 +67,7 @@ Consulte [Fazer upload e publicar ativos](https://help.adobe.com/en_US/scene7/us
 
 >[!NOTE]
 >
->Para usar a funcionalidade de upload no visualizador de ativos do Dynamic Media Classic, verifique se a conta do Dynamic Media Classic usada tem a função de &quot;Administrador da empresa SPS&quot; já definida.
+>Para usar a funcionalidade de upload no visualizador de ativos do Dynamic Media Classic, verifique se a conta do Dynamic Media Classic usada tem a função de &quot;Administrador de Empresas SPS&quot; já definida.
 
 Consulte Configuração [](https://help.adobe.com/en_US/scene7/using/WS662101DF-D697-47a7-A7D8-B52FD8E94438.html) administrativa no Guia do usuário do Dynamic Media Classic (Scene7).
 
@@ -86,7 +89,7 @@ t_adding_a_new_banner.xml
 
  -->
 
-Se você tiver uma conta válida do Adobe Dynamic Media Classic, poderá adicionar anúncios de banner por meio do Scene7 Publishing System.
+Se você tiver uma conta Adobe Dynamic Media Classic válida, poderá adicionar anúncios de banner por meio do Scene7 Publishing System.
 
 Consulte [Adicionar um banner usando o Adobe Dynamic Media Classic](../c-about-design-menu/c-about-banners.md#task_AD1E0C00A9E04B1FA819EB93288786B3).
 
@@ -112,13 +115,11 @@ Consulte [Configuração do acesso à sua conta](../c-about-settings-menu/c-abou
       </tr> 
       <tr> 
       <td colname="col1"> <p>HTML do banner </p> </td> 
-      <td colname="col2"> <p> Permite colar o código HTML associado ao banner. </p> <p>Qualquer código HTML é aceitável, incluindo o código CSS delimitado por 
-        <userinput>
+      <td colname="col2"> <p> Permite colar o código HTML associado ao banner. </p> <p>Qualquer código HTML é aceitável, incluindo código CSS cercado por <code>
           &lt;style&gt; 
-        </userinput> tags ou código JavaScript cercado por 
-        <userinput>
+        </code> tags, ou código JavaScript cercado por <code>
           &lt;script&gt; 
-        </userinput> específicos. Por exemplo, o seguinte bloco de código é para um banner de texto do tipo Parte superior horizontal: <code> &lt;div&nbsp;style="width:&nbsp;684px;&nbsp;background-image:&nbsp;url('https://www.brough.com/blackb.gif');&nbsp; 
+        </code> tags. Por exemplo, o seguinte bloco de código é para um banner de texto do tipo Parte superior horizontal: <code> &lt;div&nbsp;style="width:&nbsp;684px;&nbsp;background-image:&nbsp;url('https://www.brough.com/blackb.gif');&nbsp; 
           padding-top:&nbsp;10px;&nbsp;padding-bottom:&nbsp;10px;&nbsp;color:&nbsp;white;&nbsp;font-family:&nbsp;verdana;&nbsp; 
           text-align:&nbsp;center;&nbsp;font-size:&nbsp;20px;"&gt;&nbsp;Sound&nbsp;Study&nbsp;ships&nbsp;free!&nbsp;&lt;/div&gt; </code>No exemplo a seguir, o bloco de código é para uma imagem de apresentação completa: <code> &lt;img&amp;nbsp;src='https://geometrixx.com/images/GEOAds/geometrixx-beauty-home-01.jpg'&amp;nbsp;border="0"&amp;nbsp;/&gt; </code> </p> </td> 
       </tr> 
@@ -246,15 +247,15 @@ Consulte [Configuração do acesso à sua conta](../c-about-settings-menu/c-abou
       </tr> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/s7_list_or_grid.png"> </p> </td> 
-      <td colname="col2"> <p>Exibe ativos digitais em uma exibição de lista. A lista exibe o ícone ou a imagem em miniatura associada a cada ativo, o nome do arquivo, o tipo de ativo digital, as dimensões (quando aplicável) e a data em que foi editado pela última vez. </p> <p>A exibição de grade exibe ativos digitais na pasta selecionada como ícones, miniaturas ou ambos. </p> </td> 
+      <td colname="col2"> <p>Exibe ativos digitais em uma visualização lista. A lista exibe o ícone ou a imagem em miniatura associada a cada ativo, o nome do arquivo, o tipo de ativo digital, as dimensões (quando aplicável) e a data em que foi editado pela última vez. </p> <p>A visualização de grade exibe ativos digitais na pasta selecionada como ícones, miniaturas ou ambos. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/s7_actionsdropdown.png"> </p> </td> 
-      <td colname="col2"> <p>Na exibição de lista, você pode mover, excluir ou renomear um ativo digital selecionado. </p> <p>Na exibição de grade, você pode mover ou excluir um ou mais ativos digitais selecionados. </p> </td> 
+      <td colname="col2"> <p>Na visualização da lista, você pode mover, excluir ou renomear um ativo digital selecionado. </p> <p>Na visualização de grade, é possível mover ou excluir um ou mais ativos digitais selecionados. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/s7_upload.png"> </p> </td> 
-      <td colname="col2"> <p>Abre a caixa de diálogo <span class="wintitle"> Carregar </span> , na qual é possível carregar um ativo digital selecionado do seu desktop ou de um servidor externo para que você possa usá-lo como um banner. </p> <p>Depois de fazer upload do ativo, uma tarefa de publicação é agendada automaticamente para você no Scene7 Publishing System. </p> <p>Consulte a tabela de opções em <a href="../c-about-design-menu/c-about-banners.md#task_AD1E0C00A9E04B1FA819EB93288786B3" type="reference" format="dita" scope="local"> Adicionar um banner usando o Adobe Dynamic Media Classic </a>. </p> <p>Você pode saber mais sobre como fazer upload e publicar ativos digitais usando o Scene7 Publishing System. </p> <p>Consulte <a href="https://help.adobe.com/en_US/scene7/using/WS3673AD39-098B-4f08-8A24-CA51261B7366.html" scope="external" format="html"> Fazer upload e publicar ativos </a> no Guia do usuário do sistema de publicação do Scene7. </p> </td> 
+      <td colname="col2"> <p>Abre a caixa de diálogo <span class="wintitle"> Carregar </span> , na qual é possível carregar um ativo digital selecionado do seu desktop ou de um servidor externo para que você possa usá-lo como um banner. </p> <p>Após carregar o ativo, uma tarefa de publicação é agendada automaticamente para você no Scene7 Publishing System. </p> <p>Consulte a tabela de opções em <a href="../c-about-design-menu/c-about-banners.md#task_AD1E0C00A9E04B1FA819EB93288786B3" type="reference" format="dita" scope="local"> Adicionar um banner usando o Adobe Dynamic Media Classic </a>. </p> <p>Você pode saber mais sobre como fazer upload e publicar ativos digitais usando o Scene7 Publishing System. </p> <p>Consulte <a href="https://help.adobe.com/en_US/scene7/using/WS3673AD39-098B-4f08-8A24-CA51261B7366.html" scope="external" format="html"> Fazer upload e publicar ativos </a> no Guia do usuário do Scene7 Publishing System. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/s7_searchfield.png"> </p> </td> 
@@ -281,7 +282,7 @@ Consulte [Configuração do acesso à sua conta](../c-about-settings-menu/c-abou
 
    **Opções de propriedades**
 
-   As opções Propriedades serão exibidas se você escolher um modelo Flash, um modelo de imagem ou uma imagem. Dependendo do ativo digital escolhido, nem todas as opções estão disponíveis.
+   As opções Propriedades serão exibidas se você escolher um modelo de Flash, um modelo de imagem ou uma imagem. Dependendo do ativo digital escolhido, nem todas as opções estão disponíveis.
 
    <table> 
     <thead> 
@@ -304,19 +305,19 @@ Consulte [Configuração do acesso à sua conta](../c-about-settings-menu/c-abou
         <li id="li_4EDDFD7C8AB04677BEC20EFC9AEBBF1F">png-alfa </li> 
         <li id="li_4FCB03C29AE647ACBAF5105016DF7579">gif </li> 
         <li id="li_B884BD7DFF1845FAA9C58EF09B888A77">gif-alfa </li> 
-        </ul> <p>Essa opção não se aplica a modelos Flash. </p> </td> 
+        </ul> <p>Essa opção não se aplica aos modelos de Flashes. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Qualidade </p> </td> 
-      <td colname="col2"> <p>Controla o nível de compactação de imagens em formato JPEG ou GIF. Essa configuração afeta o tamanho do arquivo e a qualidade da imagem. A escala de qualidade é de 1 a 100. </p> <p>Quando você arrasta o controle deslizante para a esquerda ou direita, a imagem na janela de visualização é atualizada para refletir a alteração na qualidade. </p> <p>Essa opção não se aplica a modelos Flash. </p> </td> 
+      <td colname="col2"> <p>Controla o nível de compactação de imagens em formato JPEG ou GIF. Essa configuração afeta o tamanho do arquivo e a qualidade da imagem. A escala de qualidade é de 1 a 100. </p> <p>Quando você arrasta o controle deslizante para a esquerda ou direita, a imagem na janela da pré-visualização é atualizada para refletir a alteração na qualidade. </p> <p>Essa opção não se aplica aos modelos de Flashes. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Largura </p> </td> 
-      <td colname="col2"> <p>Especifica a largura do ativo digital, em pixels. Essa dimensão é a largura em que o ativo é visualizado pelos clientes que visitam seu site. </p> <p>Essa opção não se aplica a modelos Flash. </p> </td> 
+      <td colname="col2"> <p>Especifica a largura do ativo digital, em pixels. Essa dimensão é a largura em que o ativo é visualizado pelos clientes que visitam seu site. </p> <p>Essa opção não se aplica aos modelos de Flashes. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Altura </p> </td> 
-      <td colname="col2"> <p>Especifica a altura do ativo digital, em pixels. Essa dimensão é a altura em que o ativo é visto pelos clientes que visitam seu site. </p> <p>Essa opção não se aplica a modelos Flash. </p> </td> 
+      <td colname="col2"> <p>Especifica a altura do ativo digital, em pixels. Essa dimensão é a altura em que o ativo é visto pelos clientes que visitam seu site. </p> <p>Essa opção não se aplica aos modelos de Flashes. </p> </td> 
       </tr> 
     </tbody> 
     </table>
@@ -346,7 +347,7 @@ Consulte [Configuração do acesso à sua conta](../c-about-settings-menu/c-abou
 
    **Opção Modificar links**
 
-   A opção Modificar links aparece somente se você escolher um modelo Flash para o seu banner.
+   A opção Modificar links só será exibida se você escolher um modelo de Flash para seu banner.
 
    <table> 
     <thead> 
@@ -358,16 +359,16 @@ Consulte [Configuração do acesso à sua conta](../c-about-settings-menu/c-abou
     <tbody> 
       <tr> 
       <td colname="col1"> <p> <img placement="inline" id="image_EBB8159690C74D4692B5DF945B045E0B" src="assets/icon_edit_16.gif" /> </p> </td> 
-      <td colname="col2"> <p>Permite editar o campo de link URL usado no modelo Flash. </p> </td> 
+      <td colname="col2"> <p>Permite editar o campo de link URL usado no modelo de Flash. </p> </td> 
       </tr> 
     </tbody> 
     </table>
 
    **Opções de substituição de texto**
 
-   As opções Substituir texto aparecem somente se você escolher um modelo Flash para o banner que tenha camadas de texto editáveis.
+   As opções de Substituir texto são exibidas somente se você escolher um modelo de Flash para seu banner que tenha camadas de texto editáveis.
 
-   Quaisquer alterações feitas no texto no modelo Flash serão refletidas na janela Visualização.
+   Quaisquer alterações feitas no texto no modelo de Flash são refletidas na janela de Pré-visualização.
 
    >[!NOTE]
    >
@@ -391,18 +392,18 @@ Consulte [Configuração do acesso à sua conta](../c-about-settings-menu/c-abou
       </tr> 
       <tr> 
       <td colname="col1"> <p>Pesquisa  </p> </td> 
-      <td colname="col2"> <p>Permite inserir um termo de pesquisa para texto não vinculado dentro das camadas do modelo Flash. </p> </td> 
+      <td colname="col2"> <p>Permite inserir um termo de pesquisa para texto não vinculado nas camadas do modelo de Flash. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Substituir </p> </td> 
-      <td colname="col2"> <p>Permite que você especifique o texto que deseja inserir no lugar do texto que está procurando. </p> <p>Quando você pressiona <span class="uicontrol"> Enter </span> nesse campo, a janela de visualização é atualizada com o texto de substituição. </p> </td> 
+      <td colname="col2"> <p>Permite que você especifique o texto que deseja inserir no lugar do texto que está procurando. </p> <p>Quando você pressiona <span class="uicontrol"> Enter </span> nesse campo, a janela pré-visualização é atualizada com o texto de substituição. </p> </td> 
       </tr> 
     </tbody> 
     </table>
 
    **Opções de parâmetros**
 
-   As opções de parâmetros são exibidas somente se você escolher um modelo de imagem ou Flash para seu banner. As opções de parâmetro reais variam dependendo de como o modelo foi criado e parametrizado no Scene7 Publishing System. Por exemplo, os campos parametrizados do modelo podem permitir que você altere itens como texto, estilo de fonte, preço, códigos especiais usados para envio gratuito, tamanho da imagem dentro do banner ou até mesmo procure uma imagem diferente para usar.
+   As opções de parâmetros são exibidas somente se você escolher um modelo de imagem ou um modelo de Flash para seu banner. As opções de parâmetro reais variam dependendo de como o modelo foi criado e parametrizado no Scene7 Publishing System. Por exemplo, os campos parametrizados do modelo podem permitir que você altere itens como texto, estilo de fonte, preço, códigos especiais usados para envio gratuito, tamanho da imagem dentro do banner ou até mesmo procure uma imagem diferente para usar.
 
    >[!NOTE]
    >
@@ -414,7 +415,7 @@ Consulte [Configuração do acesso à sua conta](../c-about-settings-menu/c-abou
 
    **Alternar opções de visibilidade da camada**
 
-   A opção Alternar visibilidade da camada se aplica somente se você escolher um modelo Flash para seu banner.
+   A opção Alternar visibilidade da camada se aplica somente se você escolher um modelo de Flash para seu banner.
 
    <table> 
     <thead> 
@@ -426,7 +427,7 @@ Consulte [Configuração do acesso à sua conta](../c-about-settings-menu/c-abou
     <tbody> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/s7_togglelayervisibility.png"> </p> </td> 
-      <td colname="col2"> <p>Permite ativar ou desativar a visibilidade das várias camadas que compõem o arquivo de modelo Flash. </p> <p>Sempre que você ativa ou desativa a visibilidade de uma camada, a janela de visualização é atualizada para atualizar a exibição. </p> </td> 
+      <td colname="col2"> <p>Permite ativar ou desativar a visibilidade das várias camadas que compõem o arquivo de modelo de Flash. </p> <p>Cada vez que você ativa ou desativa a visibilidade de uma camada, a janela de pré-visualização é atualizada para atualizar a exibição. </p> </td> 
       </tr> 
     </tbody> 
     </table>
@@ -435,9 +436,9 @@ Consulte [Configuração do acesso à sua conta](../c-about-settings-menu/c-abou
 
    >[!NOTE]
    >
-   >Se você quiser usar a funcionalidade de upload no visualizador de ativos do Scene7, certifique-se de que a conta do Scene7 usada tenha a função de &quot;Administrador da empresa SPS&quot; já definida.
+   >Se você quiser usar a funcionalidade de upload no visualizador de ativos da Scene7, verifique se a conta da Scene7 usada tem a função de &quot;Administrador de Empresas da SPS&quot; já definida.
 
-   Consulte Configuração [](https://help.adobe.com/en_US/scene7/using/WS662101DF-D697-47a7-A7D8-B52FD8E94438.html) administrativa no Guia do usuário do sistema de publicação do Scene7.
+   Consulte Configuração [](https://help.adobe.com/en_US/scene7/using/WS662101DF-D697-47a7-A7D8-B52FD8E94438.html) administrativa no Guia do usuário do sistema de publicação da Scene7.
 
    **Opções básicas**
 
@@ -468,7 +469,7 @@ Consulte [Configuração do acesso à sua conta](../c-about-settings-menu/c-abou
 
    Ao carregar arquivos de imagem PostScript (EPS) ou Illustrator (AI), você pode formatá-los de várias maneiras. Você pode rasterizar os arquivos, convertê-los em FXG para Publicação de modelo, manter o plano de fundo transparente, escolher uma resolução e escolher um espaço de cor.
 
-   PSD (arquivos de documento do Photoshop) são usados com mais frequência no Dynamic Media Classic para criar modelos. Ao carregar um arquivo PSD, você pode criar um modelo do Dynamic Media Classic automaticamente a partir do arquivo (selecione a **[!UICONTROL Create Template]** opção).
+   PSD (arquivos de Documento Photoshop) são usados com mais frequência no Dynamic Media Classic para criar modelos. Ao carregar um arquivo PSD, você pode criar um modelo do Dynamic Media Classic automaticamente a partir do arquivo (selecione a **[!UICONTROL Create Template]** opção).
 
    O Scene7 Publishing System cria várias imagens de um arquivo PSD com camadas se você usar o arquivo para criar um modelo; cria uma imagem para cada camada.
 
@@ -482,8 +483,8 @@ Consulte [Configuração do acesso à sua conta](../c-about-settings-menu/c-abou
     </thead>
     <tbody> 
       <tr> 
-      <td colname="col1"> <p>Opções de perfil de cor </p> </td> 
-      <td colname="col02"> <p>Perfil de cor </p> </td> 
+      <td colname="col1"> <p>Opções de Perfil de cores </p> </td> 
+      <td colname="col02"> <p>Perfil de cores </p> </td> 
       <td colname="col2"> <p> Permite escolher entre as seguintes opções: </p> 
         <ul id="ul_6927BC08CA2647EDB2C85DAD2B82AE31"> 
         <li id="li_CA3F44FF9C0F4CE987DCB0AF9303C2E4"> <span class="uicontrol"> Converter em SRGB </span> <p>Converte em SRGB (Padrão Vermelho Verde Azul). SRGB é o espaço de cores recomendado para exibir imagens em páginas da Web. </p> </li> 
@@ -508,7 +509,7 @@ Consulte [Configuração do acesso à sua conta](../c-about-settings-menu/c-abou
       <tr> 
       <td colname="col1"> <p> Opções de PostScript </p> <p>Opções do Illustrator </p> </td> 
       <td colname="col02"> <p> Espaço da cor </p> </td> 
-      <td colname="col2"> <p>Permite escolher um espaço de cor para o arquivo do Illustrator. O espaço de cores RGB é preferível para visualização online. </p> <p>É possível escolher entre as seguintes opções de espaço de cor: </p> 
+      <td colname="col2"> <p>Permite escolher um espaço de cor para o arquivo Illustrator. O espaço de cores RGB é preferível para visualização online. </p> <p>É possível escolher entre as seguintes opções de espaço de cor: </p> 
         <ul id="ul_0E83E2762A574480B243F963A7FB2ACD"> 
         <li id="li_B9FEC7D220D04CCABACD30839051DAE4"> <span class="uicontrol"> Detectar automaticamente </span> <p> Mantém o espaço de cores do arquivo PDF. </p> </li> 
         <li id="li_ED0EB3B12BCF41C7AFC435447010B6FF"> <span class="uicontrol"> Forçar como RGB </span> <p> Converte para o espaço de cores RGB. </p> </li> 
@@ -547,8 +548,8 @@ Consulte [Configuração do acesso à sua conta](../c-about-settings-menu/c-abou
       <td colname="col2"> <p>As camadas no arquivo PSD são carregadas como imagens separadas. Você pode selecionar entre as seguintes opções para decidir como deseja nomear essas imagens no Scene7 Publishing System: </p> 
         <ul id="ul_C2A25177A07740CA90B32C638304D39F"> 
         <li id="li_477D5BFF7238454BBF0E04B22DE378F7"> <span class="uicontrol"> Usar o nome da camada do arquivo PSD </span> <p>Nomeia as imagens após seus nomes de camada no arquivo PSD. Por exemplo, uma camada chamada <span class="codeph"> Tag de preço </span> no arquivo PSD original se torna uma imagem chamada <span class="codeph"> Tag de preço </span>. No entanto, se os nomes de camada no arquivo PSD forem nomes de camada padrão do Photoshop (Plano de fundo, Camada 1, Camada 2 e assim por diante), as imagens serão nomeadas após seus números de camada no arquivo PSD, não seus nomes de camada padrão. </p> </li> 
-        <li id="li_EB4173B884FC41328CFBDE27DA6D43AA"> <span class="uicontrol"> Usar o nome do arquivo PSD e o número do anexo </span> <p>Nomeia as imagens após seus números de camada no arquivo PSD, ignorando os nomes das camadas originais. As imagens são nomeadas com o nome de arquivo do Photoshop e um número de camada anexado. Por exemplo, a segunda camada de um arquivo chamado <span class="codeph"> Spring Ad.psd </span> é chamada <span class="codeph"> Spring Ad_2 </span> mesmo se ela tiver um nome não padrão no Photoshop. </p> </li> 
-        <li id="li_10B2D2DE2FD24BD08DB56D1D95ABA53D"> <span class="uicontrol"> Usar nome de arquivo PSD e nome ou número da camada </span> <p>Nomeia as imagens após o arquivo PSD seguido do nome da camada ou do número da camada. O número da camada será usado se os nomes de camada no arquivo PSD forem nomes de camada padrão do Photoshop. Por exemplo, uma camada chamada <span class="codeph"> Tag de preço </span> em um arquivo PSD chamado <span class="codeph"> SpringAd </span> é chamada <span class="codeph"> Spring Ad_Price Tag </span>. Uma camada com o nome padrão <span class="codeph"> Camada 2 </span> é chamada <span class="codeph"> Spring Ad_2 </span>. </p> </li> 
+        <li id="li_EB4173B884FC41328CFBDE27DA6D43AA"> <span class="uicontrol"> Usar o nome do arquivo PSD e o número do anexo </span> <p>Nomeia as imagens após seus números de camada no arquivo PSD, ignorando os nomes das camadas originais. As imagens são nomeadas com o nome de arquivo Photoshop e um número de camada anexado. Por exemplo, a segunda camada de um arquivo chamado <span class="codeph"> Spring Ad.psd </span> é chamada <span class="codeph"> Spring Ad_2 </span> mesmo se ela tiver um nome não padrão no Photoshop. </p> </li> 
+        <li id="li_10B2D2DE2FD24BD08DB56D1D95ABA53D"> <span class="uicontrol"> Usar nome de arquivo PSD e nome ou número da camada </span> <p>Nomeia as imagens após o arquivo PSD seguido do nome da camada ou do número da camada. O número da camada será usado se os nomes da camada no arquivo PSD forem nomes padrão da camada Photoshop. Por exemplo, uma camada chamada <span class="codeph"> Tag de preço </span> em um arquivo PSD chamado <span class="codeph"> SpringAd </span> é chamada <span class="codeph"> Spring Ad_Price Tag </span>. Uma camada com o nome padrão <span class="codeph"> Camada 2 </span> é chamada <span class="codeph"> Spring Ad_2 </span>. </p> </li> 
         <li id="li_5E57AC0719D4484B9C9BD14DB42B4455"> <span class="uicontrol"> Criar pasta com base no nome de arquivo PSD </span> <p>Cria uma pasta para as imagens de camada usando o nome de arquivo do PSD. </p> </li> 
         </ul> </td> 
       </tr> 
@@ -592,10 +593,10 @@ Consulte [Configuração do acesso à sua conta](../c-about-settings-menu/c-abou
     </tbody> 
     </table>
 
-1. No painel direito, clique na imagem, modelo ou arquivo Flash desejado.
+1. No painel direito, clique na imagem, modelo ou arquivo de Flash desejado.
 
    A janela [!DNL Pick An Asset] pop-up é exibida.
-1. (Opcional) Na janela [!DNL Pick An Asset] pop-up, na lista [!DNL Actions] suspensa, execute um dos procedimentos a seguir:
+1. (Opcional) Na janela [!DNL Pick An Asset] [!DNL Actions] pop-up, na lista suspensa, execute um dos procedimentos a seguir:
 
    * Clique em **[!UICONTROL Move]**. Na caixa de diálogo [!DNL Select a folder to move to] , selecione a pasta na qual deseja mover o ativo digital. Clique em **[!UICONTROL Move]**.
 
@@ -623,7 +624,7 @@ Consulte [Configuração do acesso à sua conta](../c-about-settings-menu/c-abou
 
       Consulte [Colocar configurações de estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Editar um banner usando o Adobe Dynamic Media Classic {#task_C3E782477FBF428ABEA220751781ACA9}
+## Edição de um banner usando o Adobe Dynamic Media Classic {#task_C3E782477FBF428ABEA220751781ACA9}
 
 Use [!DNL Edit Banner] para alterar as propriedades e os parâmetros de um banner que você adicionou usando o Adobe Dynamic Media Classic.
 
@@ -674,7 +675,7 @@ t_deleting_banners.xml
 
    * Na [!DNL Banners] página, selecione o tipo de banner que deseja localizar na lista **[!UICONTROL Find banner of type]** suspensa. Se desejar, especifique um nome de tag no campo de **[!UICONTROL with tag]** texto ou um nome de tipo de banner no campo de **[!UICONTROL with name]** texto. Clique em **[!UICONTROL Find.]**
 
-   * Na lista **[!UICONTROL Sort]** suspensa, selecione como deseja solicitar a lista de banners.
+   * Na lista **[!UICONTROL Sort]** suspensa, selecione como deseja solicitar a lista dos banners.
    * Na lista **[!UICONTROL Show]** suspensa, selecione o número de banners que deseja carregar na página atual que está sendo exibida.
 
 1. Faça uma das seguintes opções:
@@ -700,7 +701,7 @@ t_deleting_banners.xml
 
 ## Visualizar banners {#task_6AB1F81A984A4DC2ACACD1FE030545E2}
 
-Você pode navegar pelos banners que você adicionou à [!DNL Banners] página para exibir o tamanho completo deles. Nenhum CSS no modelo que afete o banner é exibido.
+Você pode navegar pelos banners que você adicionou à [!DNL Banners] página para visualização em tamanho normal. Nenhum CSS no modelo que afete o banner é exibido.
 
 <!-- 
 
@@ -708,21 +709,21 @@ t_previewing_banners.xml
 
  -->
 
-**Para visualizar banners**
+**Para banners de pré-visualização**
 
 1. No menu do produto, clique em **[!UICONTROL Design]** > **[!UICONTROL Banners]**.
 1. (Opcional) Execute um ou mais dos procedimentos a seguir:
 
    * Na [!DNL Banners] página, selecione o tipo de banner que deseja localizar na lista **[!UICONTROL Find banner of type]** suspensa. Se desejar, especifique um nome de tag no campo de **[!UICONTROL with tag]** texto ou um nome de tipo de banner no campo de **[!UICONTROL with name]** texto. Clique em **[!UICONTROL Find.]**
 
-   * Na lista **[!UICONTROL Sort]** suspensa, selecione como deseja solicitar a lista de banners.
+   * Na lista **[!UICONTROL Sort]** suspensa, selecione como deseja solicitar a lista dos banners.
    * Na lista **[!UICONTROL Show]** suspensa, selecione o número de banners que deseja carregar na página atual que está sendo exibida.
 
-1. Na [!DNL Banners] página, clique em uma miniatura do banner para exibir seu tamanho completo.
+1. Na [!DNL Banners] página, clique na miniatura do banner para visualização do tamanho total.
 1. Faça uma das seguintes opções:
 
-   * Na caixa de diálogo de visualização do banner, clique na seta para a esquerda ou para a direita para navegar e exibir os banners de tamanho inteiro adicionados.
-   * Clique no botão Fechar para fechar a caixa de diálogo de visualização do banner e voltar para a [!DNL Banners] página.
+   * Na caixa de diálogo pré-visualização do banner, clique na seta para a esquerda ou direita para navegar e visualização os banners de tamanho inteiro que você adicionou.
+   * Clique no botão Fechar para fechar a caixa de diálogo pré-visualização do banner e voltar para a [!DNL Banners] página.
 
 ## Publicar banners ao vivo {#task_161F4FEC8362474296A566E64BF05B97}
 
@@ -745,7 +746,7 @@ Consulte [Colocar configurações de estágio ao vivo](../c-about-staging.md#tas
 
    * Na [!DNL Banners] página, selecione o tipo de banner que deseja localizar na lista **[!UICONTROL Find banner of type]** suspensa. Se desejar, especifique um nome de tag no campo de **[!UICONTROL with tag]** texto ou um nome de tipo de banner no campo de **[!UICONTROL with name]** texto. Clique em **[!UICONTROL Find]**.
 
-   * Na lista **[!UICONTROL Sort]** suspensa, selecione como deseja solicitar a lista de banners.
+   * Na lista **[!UICONTROL Sort]** suspensa, selecione como deseja solicitar a lista dos banners.
    * Na lista **[!UICONTROL Show]** suspensa, selecione o número de banners que deseja carregar na página atual que está sendo exibida.
 
 1. Faça uma das seguintes opções:
