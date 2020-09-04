@@ -8,7 +8,10 @@ title: Sobre a conclusão automática
 topic: Design,Site search and merchandising
 uuid: 3dfdd14d-2044-4f01-a5bc-fcb2eb0d5068
 translation-type: tm+mt
-source-git-commit: 439100ab96f4b597c55b1c1ae38a5778c208e896
+source-git-commit: 552f93f1f630c64bbe3d5c8a87c4f5895ae6868c
+workflow-type: tm+mt
+source-wordcount: '1530'
+ht-degree: 1%
 
 ---
 
@@ -31,11 +34,11 @@ t_configuring_auto-complete.xml
 
  -->
 
-Depois de configurar o preenchimento automático, você pode exibir a fonte HTML resultante para revisão. A fonte HTML é o que você copia e cola nas páginas do seu site.
+Depois de configurar o preenchimento automático, você pode visualização a fonte HTML resultante para revisão. A fonte HTML é o que você copia e cola nas páginas do seu site.
 
 Consulte [Visualizar o formulário de pesquisa como ele apareceria em...](c-about-auto-complete.md#task_437B35EFA5424603A08AF8E79E6B4714).
 
-Consulte [Configuração da lista](c-about-auto-complete.md#task_1F8E0F346263443383F8CFD2C7AB35D4)de palavras de preenchimento automático.
+Consulte [Configuração da Lista](c-about-auto-complete.md#task_1F8E0F346263443383F8CFD2C7AB35D4)de preenchimento automático do Word.
 
 Consulte [Configuração do CSS](c-about-auto-complete.md#task_EECE35DEB6C94F4A8A5B42B4DED76D96)de Completar automaticamente.
 
@@ -68,7 +71,7 @@ Consulte [Configuração do CSS](c-about-auto-complete.md#task_EECE35DEB6C94F4A8
       </tr> 
       <tr> 
       <td colname="col1"> <p>Nome do formulário </p> </td> 
-      <td colname="col2"> <p>Especifica o atributo "name" da tag "form" do formulário de pesquisa ativado para preenchimento automático. Por exemplo, </p> <p> <span class="filepath"> &lt;form name="SiteSearch" method="get" action="https://sp1004337c.guided.t1.atomz.com" target="_blank"&gt; </span> </p> <p>onde <span class="filepath"> SiteSearch </span> é o atributo name da tag de formulário. </p> </td> 
+      <td colname="col2"> <p>Especifica o atributo "name" da tag "form" do formulário de pesquisa ativado para preenchimento automático. Por exemplo, </p> <p> <span class="filepath"> &lt;form name="SiteSearch" method="get" action="https://sp1004337c.guided.t1.atomz.com" público alvo="_blank"&gt; </span> </p> <p>onde <span class="filepath"> SiteSearch </span> é o atributo name da tag de formulário. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>ID da tag Div </p> </td> 
@@ -108,7 +111,7 @@ Consulte [Configuração do CSS](c-about-auto-complete.md#task_EECE35DEB6C94F4A8
 
       Consulte [Colocar configurações de estágio ao vivo](c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Configuração da lista de palavras de preenchimento automático {#task_1F8E0F346263443383F8CFD2C7AB35D4}
+## Configuração da Lista de conclusão automática do Word {#task_1F8E0F346263443383F8CFD2C7AB35D4}
 
 Configure a lista de palavras e frases que a opção Completar automaticamente é exibida para um cliente como sugestões.
 
@@ -122,7 +125,7 @@ Consulte [Configuração da conclusão automática](c-about-auto-complete.md#tas
 
 Consulte [Configuração do CSS](c-about-auto-complete.md#task_EECE35DEB6C94F4A8A5B42B4DED76D96)de Completar automaticamente.
 
-**Para configurar a Lista de palavras de preenchimento automático**
+**Para configurar a Lista de conclusão automática do Word**
 
 1. No menu do produto, clique em **[!UICONTROL Design]** > **[!UICONTROL Auto-Complete]** > **[!UICONTROL Auto-Complete Word List]**.
 1. Na [!DNL Auto-Complete Word List] página, defina as opções desejadas.
@@ -158,25 +161,20 @@ Consulte [Configuração do CSS](c-about-auto-complete.md#task_EECE35DEB6C94F4A8
       <td colname="col2"> <p> A lista de palavras de preenchimento automático é preenchida com as palavras e frases listadas nessa área. </p> <p> Clique em <span class="uicontrol"> Editar </span> para ver a lista ou para adicionar palavras e frases à lista. Quando terminar, clique em <span class="uicontrol"> Salvar alterações </span>. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>Remover essas palavras e frases </p> </td> 
-      <td colname="col2"> <p> As entradas nesta área não são exibidas na lista de palavras de preenchimento automático. </p> <p> Clique em <span class="uicontrol"> Editar </span> para ver a lista ou para adicionar palavras e frases à lista. Quando terminar, clique em <span class="uicontrol"> Salvar alterações </span>. </p> <p> Expressões regulares são permitidas nesta lista. Para especificar uma expressão regular nesta lista, inicie a linha com 
-        <userinput>
-          regexp 
-        </userinput> seguido por um único espaço, seguido pela expressão regular. Todas as linhas na lista de palavras que correspondem à expressão regular são removidas. </p> <p> <b>Importante</b>: Você só deve usar expressões regulares se tiver trabalhado com elas anteriormente em outros aplicativos. </p> <p>Consulte <a href="c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Expressões regulares </a>. </p> </td> 
+      <td colname="col1"> <p>Remover estas palavras e frases </p> </td> 
+      <td colname="col2"> <p> As entradas nesta área não são exibidas na lista de palavras de preenchimento automático. </p> <p> Clique em <span class="uicontrol"> Editar </span> para ver a lista ou para adicionar palavras e frases à lista. Quando terminar, clique em <span class="uicontrol"> Salvar alterações </span>. </p> <p> Expressões regulares são permitidas nesta lista. Para especificar uma expressão regular nessa lista, start a linha com <code>regexp</code> seguida de um único espaço, seguido pela expressão regular. Quaisquer linhas na lista de palavras que correspondam à expressão normal serão removidas. </p> <p> <b>Importante</b>: Você só deve usar expressões regulares se já tiver trabalhado com elas em outros aplicativos. </p> <p>Consulte <a href="c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Expressões regulares </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Ignorar Maiúsculas e Minúsculas </p> </td> 
-      <td colname="col2"> <p>São removidas entradas duplicadas na lista de palavras de preenchimento automático que diferem apenas por letras maiúsculas/minúsculas alfabéticas; todas as entradas da lista de palavras são forçadas a minúsculas. </p> <p>Se desejar que as sugestões de Completar automaticamente apareçam "primeira letra maiúscula" ou "todas maiúsculas", adicione o 
-        <userinput>
-          text-transform : capitalizar; 
-        </userinput> ou 
-        <userinput>
-          text-transform : maiúsculo; 
-        </userinput> Propriedades de texto CSS para o conteúdo de CSS de Completar automaticamente, em "/* estilos para o item de resultado */". </p> <p>Consulte <a href="c-about-auto-complete.md#task_EECE35DEB6C94F4A8A5B42B4DED76D96" type="task" format="dita" scope="local"> Configurando o CSS de Completar automaticamente </a>. </p> </td> 
+      <td colname="col2"> <p>As entradas de duplicado na lista de palavras de preenchimento automático que diferem apenas por letras maiúsculas/minúsculas alfabéticas são removidas; todas as entradas de lista de palavras são forçadas a minúsculas. </p> <p>Se desejar que as sugestões de Completar automaticamente apareçam "primeira letra maiúscula" ou "todas maiúsculas", adicione as propriedades de texto <code>
+          text-transform : capitalize; 
+        </code> ou <code>
+          text-transform : uppercase; 
+        </code> CSS ao conteúdo de CSS de Completar automaticamente, em "/* estilos para o item de resultado */". </p> <p>Consulte <a href="c-about-auto-complete.md#task_EECE35DEB6C94F4A8A5B42B4DED76D96" type="task" format="dita" scope="local"> Configurando o CSS de Completar automaticamente </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Atualização ao reindexar </p> </td> 
-      <td colname="col2"> <p>A lista de palavras de preenchimento automático é automaticamente regenerada após cada reindexação de conta bem-sucedida. </p> </td> 
+      <td colname="col2"> <p>A lista de palavras de preenchimento automático é regenerada automaticamente após cada reindexação de conta bem-sucedida. </p> </td> 
       </tr> 
     </tbody> 
    </table>
@@ -211,11 +209,11 @@ A opção Completar automaticamente o CSS controla o conteúdo do [!DNL autocomp
 
 [https://developer.yahoo.com/yui/examples/autocomplete/ac_skinning.html](https://developer.yahoo.com/yui/examples/autocomplete/ac_skinning.html).
 
-[Configuração da lista](c-about-auto-complete.md#task_1F8E0F346263443383F8CFD2C7AB35D4)de palavras de preenchimento automático.
+[Configuração da Lista](c-about-auto-complete.md#task_1F8E0F346263443383F8CFD2C7AB35D4)de preenchimento automático do Word.
 
 [Configuração da Completar](c-about-auto-complete.md#task_F491F2BFC4D24A61BBDC48B9059C11BB)Automaticamente.
 
-Quando terminar de configurar o CSS de Completar automaticamente, você poderá visualizar o formulário de pesquisa para ver se o CSS especificado é aceitável na aparência e no layout.
+Quando terminar de configurar o CSS de Completar automaticamente, você poderá pré-visualização o formulário de pesquisa para ver se o CSS especificado é aceitável na aparência e no layout.
 
 Consulte [Visualizar o formulário de pesquisa como ele apareceria em...](c-about-auto-complete.md#task_437B35EFA5424603A08AF8E79E6B4714).
 
@@ -244,7 +242,7 @@ Consulte [Copiando o código HTML do formulário de pesquisa no...](c-about-auto
 
 ## Visualizar o formulário de pesquisa como ele apareceria em seu site {#task_437B35EFA5424603A08AF8E79E6B4714}
 
-Com base na configuração de Completar automaticamente e Completar automaticamente o CSS, você pode visualizar como o formulário de pesquisa será exibido se você quiser adicionar o código HTML ao seu site.
+Com base na sua configuração de Completar automaticamente e Completar automaticamente o CSS, você pode pré-visualização como o formulário de pesquisa será exibido se você quiser adicionar o código HTML ao seu site.
 
 <!-- 
 
@@ -268,14 +266,14 @@ Consulte Código [HTML do formulário de pesquisa](c-appendices/c-searchforms.md
 
 Consulte Código [do modelo de formulário de pesquisa](c-appendices/c-searchforms.md#reference_D762C22E754E462DBEECD88D2C3FA579)avançada.
 
-**Para visualizar o formulário de pesquisa como ele apareceria em seu site**
+**Para pré-visualização o formulário de pesquisa como ele apareceria em seu site**
 
 1. No menu do produto, clique em **[!UICONTROL Design]** > **[!UICONTROL Auto-Complete]** > **[!UICONTROL Search Form]**.
 1. (Opcional) Clique em **[!UICONTROL HTML code]** para ver o HTML que você copia e cola nas páginas do seu site.
 
 ## Copiar o código HTML do formulário de pesquisa para as páginas do site {#task_A3A01EA800F24C0AA33902387E0362C7}
 
-Com base na configuração de Completar automaticamente e Completar automaticamente o CSS, você pode visualizar como o formulário de pesquisa será exibido se você quiser adicionar o código HTML ao seu site.
+Com base na sua configuração de Completar automaticamente e Completar automaticamente o CSS, você pode pré-visualização como o formulário de pesquisa será exibido se você quiser adicionar o código HTML ao seu site.
 
 <!-- 
 
