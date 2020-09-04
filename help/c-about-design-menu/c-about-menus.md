@@ -8,7 +8,10 @@ title: Sobre menus
 topic: Design,Site search and merchandising
 uuid: 011050cd-21b6-4150-9503-18fa3f771626
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: 552f93f1f630c64bbe3d5c8a87c4f5895ae6868c
+workflow-type: tm+mt
+source-wordcount: '763'
+ht-degree: 1%
 
 ---
 
@@ -68,14 +71,14 @@ t_adding_a_new_menu.xml
       <td colname="col2"> <p>Define um dos três tipos de menu a seguir: </p> <p> 
       <ul id="ul_7E66ACC1DA494B20BEC3B0B2CCAB103A"> 
       <li id="li_D81876660A8B48AFB70D3317063FBF6F"> <span class="uicontrol"> Classificar </span> <p>Organiza sua pesquisa por qualquer um dos tipos de metadados definidos. </p> <p>Por exemplo, você pode definir um menu de classificação com os seguintes tipos de metadados: três pontos relevantes; um campo de metadados personalizado, como um código de disponibilidade; e preço. Os três itens podem receber os rótulos "Classificar por relevância", "Classificar por disponibilidade" e "Classificar por preço", respectivamente. Quando você incluir isso no modelo de apresentação, o cliente poderá usar esse controle para classificar os resultados da pesquisa. </p> </li> 
-      <li id="li_63AE06B544B64DCAA8C55031B3DFFFF7"> <span class="uicontrol"> Contagem </span> <p>Define o número de resultados de pesquisa a serem exibidos. Esse tipo de menu mapeia para o parâmetro cgi <span class="varname"> sp_c </span>. </p> <p>Consulte <a href="../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8" format="dita" scope="local"> Parâmetros CGI de pesquisa de backend </a>. </p> </li> 
+      <li id="li_63AE06B544B64DCAA8C55031B3DFFFF7"> <span class="uicontrol"> Contagem </span> <p>Define o número de resultados da pesquisa a serem exibidos. Esse tipo de menu mapeia para o parâmetro cgi <span class="varname"> sp_c </span>. </p> <p>Consulte <a href="../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8" format="dita" scope="local"> Parâmetros CGI de pesquisa de backend </a>. </p> </li> 
       <li id="li_EEC810D420FF41498ECE49EBAAB33BE5"> <span class="uicontrol"> Navegação </span> <p>Especifica um conjunto de URLs estáticos associados aos itens de menu. Normalmente, um menu de navegação é usado para criar uma barra de navegação de nível superior na página de resultados da pesquisa. </p> <p>Por exemplo, você pode criar um menu que tenha mulheres, homens, meninos e meninas em que os itens de menu seriam algo como: 
-      <userinput>
-        /?q1=mulheres;x1=gênero 
-      </userinput>, 
-      <userinput>
-        /?q1=masculino;x1=gender 
-      </userinput> </p> </li> 
+      <code>
+        /?q1=womens;x1=gender 
+      </code>, 
+      <code>
+        /?q1=mens;x1=gender 
+      </code> </p> </li> 
       </ul> </p> </td> 
       </tr> 
       <tr> 
@@ -103,7 +106,7 @@ t_adding_a_new_menu.xml
       <td colname="col1"> <p>Rótulo do item </p> </td> 
       <td colname="col2"> <p>O rótulo do item depende do tipo de menu definido. </p> 
         <ul id="ul_957BF01235F84748B5EB7062D6AEAC41"> 
-        <li id="li_03FB2E2C96134A2B8E08154F87F0CD55"> Tipo de menu Classificar <p>Identifica o rótulo personalizado que você deseja que seu cliente veja quando exibir este item no menu. </p> </li> 
+        <li id="li_03FB2E2C96134A2B8E08154F87F0CD55"> Tipo de menu Classificar <p>Identifica o rótulo personalizado que você deseja que seu cliente veja quando ele visualização este item no menu. </p> </li> 
         <li id="li_C9FE2BC46D9443FB85FEB837C7CA45E1"> Tipo de menu Contagem <p>Identifica o rótulo personalizado que você deseja que seja exibido para este item de menu. </p> </li> 
         </ul> </td> 
       </tr> 
