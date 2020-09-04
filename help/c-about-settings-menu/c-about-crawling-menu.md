@@ -8,10 +8,10 @@ title: Sobre o menu Rastreamento
 topic: Settings,Site search and merchandising
 uuid: a58c03bf-90f7-4b5b-91ff-988b95c246b0
 translation-type: tm+mt
-source-git-commit: e080a61e24a3809beff7c212ff3d088b2a8ad3b6
+source-git-commit: 552f93f1f630c64bbe3d5c8a87c4f5895ae6868c
 workflow-type: tm+mt
-source-wordcount: '11115'
-ht-degree: 1%
+source-wordcount: '11033'
+ht-degree: 0%
 
 ---
 
@@ -52,45 +52,37 @@ Você qualifica cada ponto de entrada com uma ou mais das seguintes palavras-cha
  <tbody> 
   <tr> 
    <td colname="col1"> <p>noindex </p> </td> 
-   <td colname="col2"> <p> Se você não quiser indexar o texto na página do ponto de entrada, mas quiser seguir os links da página, adicione 
-     <userinput>
+   <td colname="col2"> <p> Se você não quiser indexar o texto na página do ponto de entrada, mas quiser seguir os links da página, adicione <code>
        noindex 
-     </userinput> após o ponto de entrada. </p> <p>Separe a palavra-chave do ponto de entrada por um espaço, como no exemplo a seguir: </p> <p> <code> https://www.my-additional-domain.com/more_pages/main.html&amp;nbsp;noindex </code> </p> <p>Essa palavra-chave equivale a uma meta tag de robôs com 
-     <userinput>
+     </code> depois do ponto de entrada. </p> <p>Separe a palavra-chave do ponto de entrada por um espaço, como no exemplo a seguir: </p> <p> <code> https://www.my-additional-domain.com/more_pages/main.html&amp;nbsp;noindex </code> </p> <p>Esta palavra-chave equivale a uma meta tag de robôs com <code>
        content="noindex" 
-     </userinput>) entre 
-     <userinput>
+     </code>) entre <code>
        &lt;head&gt; 
-     </userinput>... 
-     <userinput>
+     </code>... 
+     <code>
        &lt;/head&gt; 
-     </userinput> tags da página do ponto de entrada. </p> </td> 
+     </code> tags da página do ponto de entrada. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>nofollow </p> </td> 
-   <td colname="col2"> <p> Se você quiser indexar o texto na página do ponto de entrada, mas não quiser seguir nenhum dos links da página, adicione 
-     <userinput>
+   <td colname="col2"> <p> Se você quiser indexar o texto na página do ponto de entrada, mas não quiser seguir nenhum dos links da página, adicione <code>
        nofollow 
-     </userinput> após o ponto de entrada. </p> <p>Separe a palavra-chave do ponto de entrada por um espaço, como no exemplo a seguir: </p> <p> <code> https://www.domain.com/not_linked/directory_listing&amp;nbsp;nofollow </code> </p> <p>Essa palavra-chave equivale a uma meta tag de robôs com 
-     <userinput>
+     </code> após o ponto de entrada. </p> <p>Separe a palavra-chave do ponto de entrada por um espaço, como no exemplo a seguir: </p> <p> <code> https://www.domain.com/not_linked/directory_listing&amp;nbsp;nofollow </code> </p> <p>Esta palavra-chave é equivalente a uma meta tag de robôs com <code>
        content="nofollow" 
-     </userinput> entre 
-     <userinput>
+     </code> o <code>
        &lt;head&gt; 
-     </userinput>... 
-     <userinput>
+     </code>... 
+     <code>
        &lt;/head&gt; 
-     </userinput> tag de uma página de ponto de entrada. </p> </td> 
+     </code> tag de uma página de ponto de entrada. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>formulário </p> </td> 
-   <td colname="col2"> <p> Quando o ponto de entrada for uma página de logon, 
-     <userinput>
-       formulário 
-     </userinput> normalmente é usada para que o robô de pesquisa possa enviar o formulário de logon e receber os cookies apropriados antes de rastrear o site. Quando a palavra-chave "formulário" é usada, a página do ponto de entrada não é indexada e o robô de pesquisa não marca a página do ponto de entrada como rastreada. Use  
-     <userinput>
+   <td colname="col2"> <p> Quando o ponto de entrada é uma página de logon, <code>
+       form 
+     </code> é usado normalmente para que o robô de pesquisa possa enviar o formulário de logon e receber os cookies apropriados antes de rastrear o site. Quando a palavra-chave "formulário" é usada, a página do ponto de entrada não é indexada e o robô de pesquisa não marca a página do ponto de entrada como rastreada. Use <code>
        nofollow 
-     </userinput> se você não quiser que o robô de pesquisa siga os links da página. </p> </td> 
+     </code> se você não quiser que o robô de pesquisa siga os links da página. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -251,54 +243,42 @@ Uma vírgula não é válida como separador entre a máscara e a palavra-chave; 
  <tbody> 
   <tr> 
    <td colname="col1"> <p>noindex </p> </td> 
-   <td colname="col2"> <p> Se você não quiser indexar o texto nas páginas que correspondem à máscara de URL, mas quiser seguir os links de páginas correspondentes, adicione 
-     <userinput>
+   <td colname="col2"> <p> Se você não quiser indexar o texto nas páginas que correspondem à máscara de URL, mas quiser seguir os links de páginas correspondentes, adicione <code>
        noindex 
-     </userinput> após a máscara de inclusão de URL. Certifique-se de separar a palavra-chave da máscara por um espaço, como no exemplo a seguir: </p> <p> <code> include&amp;nbsp;*.swf&amp;nbsp;noindex </code> </p> <p>O exemplo acima especifica que o robô de pesquisa segue todos os links dos arquivos com a variável 
-     <userinput>
+     </code> depois da máscara de URL de inclusão. Certifique-se de separar a palavra-chave da máscara por um espaço, como no exemplo a seguir: </p> <p> <code> include&amp;nbsp;*.swf&amp;nbsp;noindex </code> </p> <p>O exemplo acima especifica que o robô de pesquisa segue todos os links de arquivos com a <code>
        .swf 
-     </userinput> , mas desativa a indexação de todo o texto contido nesses arquivos. </p> <p>A configuração  
-     <userinput>
+     </code> extensão, mas desativa a indexação de todo o texto contido nesses arquivos. </p> <p>A <code>
        noindex 
-     </userinput> palavra-chave equivale a uma meta tag de robô com 
-     <userinput>
+     </code> palavra-chave equivale a uma meta tag de robô com <code>
        content="noindex" 
-     </userinput> entre 
-     <userinput>
+     </code> as <code>
        &lt;head&gt;...&lt;/head&gt; 
-     </userinput> tags de páginas correspondentes. </p> </td> 
+     </code> tags de páginas correspondentes. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>nofollow </p> </td> 
-   <td colname="col2"> <p> Se você quiser indexar o texto nas páginas que correspondem à máscara de URL, mas não quiser seguir os links da página correspondente, adicione 
-     <userinput>
+   <td colname="col2"> <p> Se você quiser indexar o texto nas páginas que correspondem à máscara de URL, mas não quiser seguir os links da página correspondente, adicione <code>
        nofollow 
-     </userinput> após a máscara de inclusão de URL. Certifique-se de separar a palavra-chave da máscara por um espaço, como no exemplo a seguir: </p> <p> <code> include&amp;nbsp;https://www.mydomain.com/photos&amp;nbsp;nofollow </code> </p> <p>A configuração  
-     <userinput>
+     </code> depois da máscara de URL de inclusão. Certifique-se de separar a palavra-chave da máscara por um espaço, como no exemplo a seguir: </p> <p> <code> include&amp;nbsp;https://www.mydomain.com/photos&amp;nbsp;nofollow </code> </p> <p>A <code>
        nofollow 
-     </userinput> palavra-chave equivale a uma meta tag de robô com 
-     <userinput>
+     </code> palavra-chave equivale a uma meta tag de robô com <code>
        content="nofollow" 
-     </userinput> entre 
-     <userinput>
+     </code> as <code>
        &lt;head&gt;...&lt;/head&gt; 
-     </userinput> tags de páginas correspondentes. </p> </td> 
+     </code> tags de páginas correspondentes. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>regexp </p> </td> 
-   <td colname="col2"> <p>Usado para incluir e excluir máscaras. </p> <p>Qualquer máscara de URL precedida por 
-     <userinput>
+   <td colname="col2"> <p>Usado para incluir e excluir máscaras. </p> <p>Qualquer máscara de URL precedida por <code>
        regexp 
-     </userinput> é tratada como uma expressão regular. Se o robô de pesquisa encontrar documentos que correspondam a uma máscara de URL de expressão regular excluída, esses documentos não serão indexados. Se o robô de pesquisa encontrar documentos que correspondam a uma máscara de URL de expressão regular de inclusão, esses documentos serão indexados. Por exemplo, suponha que você tenha a seguinte máscara de URL: </p> <p> <code> exclude&amp;nbsp;regexp&amp;nbsp;^.*/products/.*\.html$ </code> </p> <p>O robô de pesquisa exclui arquivos correspondentes, como 
-     <userinput>
+     </code> é tratada como uma expressão regular. Se o robô de pesquisa encontrar documentos que correspondam a uma máscara de URL de expressão regular excluída, esses documentos não serão indexados. Se o robô de pesquisa encontrar documentos que correspondam a uma máscara de URL de expressão regular de inclusão, esses documentos serão indexados. Por exemplo, suponha que você tenha a seguinte máscara de URL: </p> <p> <code> exclude&amp;nbsp;regexp&amp;nbsp;^.*/products/.*\.html$ </code> </p> <p>O robô de pesquisa exclui arquivos correspondentes, como 
+     <code>
        https://www.mydomain.com/products/page1.html 
-     </userinput> </p> <p>Se você tivesse a seguinte máscara de URL de expressão regular excluída: </p> <p> <code> exclude&amp;nbsp;regexp&amp;nbsp;^.*\?..*$ </code> </p> <p>O robô de pesquisa não deve incluir nenhum URL que contenha um parâmetro CGI, como 
-     <userinput>
+     </code> </p> <p>Se você tivesse a seguinte máscara de URL de expressão regular excluída: </p> <p> <code> exclude&amp;nbsp;regexp&amp;nbsp;^.*\?..*$ </code> </p> <p>O robô de pesquisa não deve incluir nenhum URL que contenha um parâmetro CGI, como <code>
        https://www.mydomain.com/cgi/prog/?arg1=val1&amp;arg2=val2 
-     </userinput>. </p> <p>Se você tivesse a seguinte máscara de URL de expressão regular: </p> <p> <code> include&amp;nbsp;regexp&amp;nbsp;^.*\.swf$&amp;nbsp;noindex </code> </p> <p>O robô de pesquisa segue todos os links de arquivos com a extensão ".swf". A configuração  
-     <userinput>
+     </code>. </p> <p>Se você tivesse a seguinte máscara de URL de expressão regular: </p> <p> <code> include&amp;nbsp;regexp&amp;nbsp;^.*\.swf$&amp;nbsp;noindex </code> </p> <p>O robô de pesquisa segue todos os links de arquivos com a extensão ".swf". A <code>
        noindex 
-     </userinput> a palavra-chave também especifica que o texto dos arquivos correspondentes não são indexados. </p> <p>Consulte <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Expressões regulares </a>. </p> </td> 
+     </code> palavra-chave também especifica que o texto dos arquivos correspondentes não são indexados. </p> <p>Consulte <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Expressões regulares </a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -473,49 +453,39 @@ Uma vírgula não é válida como separador entre a máscara e a palavra-chave; 
  <tbody> 
   <tr> 
    <td colname="col1"> <p>noindex </p> </td> 
-   <td colname="col2"> <p> Se você não quiser indexar o texto nas páginas que estão datadas na data especificada pela máscara de inclusão ou antes dela, adicione 
-     <userinput>
+   <td colname="col2"> <p> Se você não quiser indexar o texto nas páginas que estão datadas na data especificada pela máscara de inclusão ou antes dela, adicione <code>
        noindex 
-     </userinput> após a máscara de data de inclusão, como no seguinte: </p> <p> <code> include-days&amp;nbsp;10&amp;nbsp;*.swf&amp;nbsp;noindex </code> </p> <p>Certifique-se de separar a palavra-chave da máscara com um espaço. </p> <p>O exemplo acima especifica que o robô de pesquisa segue todos os links de arquivos com a extensão ".swf" com 10 dias de idade ou mais. No entanto, desativa a indexação de todo o texto contido nesses arquivos. </p> <p>Talvez você queira verificar se o texto dos arquivos mais antigos não está indexado, mas segue todos os links desses arquivos. Nesses casos, use uma máscara de data de inclusão com a palavra-chave "noindex" em vez de usar uma máscara de data de exclusão. </p> </td> 
+     </code> após a máscara de data de inclusão, como a seguir: </p> <p> <code> include-days&amp;nbsp;10&amp;nbsp;*.swf&amp;nbsp;noindex </code> </p> <p>Certifique-se de separar a palavra-chave da máscara com um espaço. </p> <p>O exemplo acima especifica que o robô de pesquisa segue todos os links de arquivos com a extensão ".swf" com 10 dias de idade ou mais. No entanto, desativa a indexação de todo o texto contido nesses arquivos. </p> <p>Talvez você queira verificar se o texto dos arquivos mais antigos não está indexado, mas segue todos os links desses arquivos. Nesses casos, use uma máscara de data de inclusão com a palavra-chave "noindex" em vez de usar uma máscara de data de exclusão. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>nofollow </p> </td> 
-   <td colname="col2"> <p> Se você quiser indexar o texto nas páginas que estão datadas na data especificada pela máscara de inclusão ou antes dela, mas não quiser seguir os links da página correspondente, adicione 
-     <userinput>
+   <td colname="col2"> <p> Se você quiser indexar o texto nas páginas que estão datadas na data especificada pela máscara de inclusão, ou antes dela, mas não quiser seguir os links da página correspondente, adicione <code>
        nofollow 
-     </userinput> após a máscara de data de inclusão, como no seguinte: </p> <p> <code> include-days&amp;nbsp;8&amp;nbsp;https://www.mydomain.com/photos&amp;nbsp;nofollow </code> </p> <p>Certifique-se de separar a palavra-chave da máscara com um espaço. </p> <p>A configuração  
-     <userinput>
+     </code> depois da máscara de data de inclusão, como a seguir: </p> <p> <code> include-days&amp;nbsp;8&amp;nbsp;https://www.mydomain.com/photos&amp;nbsp;nofollow </code> </p> <p>Certifique-se de separar a palavra-chave da máscara com um espaço. </p> <p>A <code>
        nofollow 
-     </userinput> palavra-chave equivale a uma meta tag de robô com 
-     <userinput>
+     </code> palavra-chave equivale a uma meta tag de robô com <code>
        content="nofollow" 
-     </userinput> entre 
-     <userinput>
+     </code> a <code>
        &lt;head&gt;...&lt;/head&gt; 
-     </userinput> tag de páginas correspondentes. </p> </td> 
+     </code> tag entre páginas correspondentes. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>data do servidor </p> </td> 
-   <td colname="col2"> <p>Usado para incluir e excluir máscaras. </p> <p>O robô de pesquisa geralmente baixa e analisa cada arquivo antes de verificar as máscaras de data. Esse comportamento ocorre porque alguns tipos de arquivo podem especificar uma data dentro do próprio arquivo. Por exemplo, um documento HTML pode incluir tags meta que definem a data do arquivo. </p> <p>Se você vai excluir muitos arquivos com base na data deles e não quiser colocar uma carga desnecessária nos servidores, você pode usar 
-     <userinput>
-       data do servidor 
-     </userinput> após o URL na máscara de data. </p> <p>Esta palavra-chave instrui o robô de pesquisa a confiar na data do arquivo que é retornado pelo servidor em vez de analisar cada arquivo. Por exemplo, a máscara de data de exclusão a seguir ignora as páginas que correspondem ao URL se os documentos tiverem 90 dias ou mais, de acordo com a data retornada pelo servidor nos cabeçalhos HTTP: </p> <p> <code> exclude-days&amp;nbsp;90&amp;nbsp;https://www.mydomain.com/docs/archive&amp;nbsp;server-date </code> </p> <p> Se a data retornada pelo servidor tiver 90 dias ou mais, 
-     <userinput>
-       data do servidor 
-     </userinput> especifica que os documentos excluídos não serão baixados do servidor. O resultado significa um tempo de indexação mais rápido para seus documentos e uma carga reduzida colocada em seus servidores. Se o status 
-     <userinput>
-       data do servidor 
-     </userinput> não for especificado, o robô de pesquisa ignorará a data retornada pelo servidor nos cabeçalhos HTTP. Em vez disso, cada arquivo é baixado e verificado para ver se a data é especificada. Se nenhuma data for especificada no arquivo, o robô de pesquisa usará a data retornada pelo servidor. </p> <p>Não deve usar 
-     <userinput>
-       data do servidor 
-     </userinput> se seus arquivos contiverem comandos que substituam a data do servidor. </p> </td> 
+   <td colname="col2"> <p>Usado para incluir e excluir máscaras. </p> <p>O robô de pesquisa geralmente baixa e analisa cada arquivo antes de verificar as máscaras de data. Esse comportamento ocorre porque alguns tipos de arquivo podem especificar uma data dentro do próprio arquivo. Por exemplo, um documento HTML pode incluir tags meta que definem a data do arquivo. </p> <p>Se você for excluir muitos arquivos com base na data deles e não quiser colocar uma carga desnecessária nos servidores, poderá usar o URL <code>
+       server-date 
+     </code> após o URL na máscara de data. </p> <p>Esta palavra-chave instrui o robô de pesquisa a confiar na data do arquivo que é retornado pelo servidor em vez de analisar cada arquivo. Por exemplo, a máscara de data de exclusão a seguir ignora as páginas que correspondem ao URL se os documentos tiverem 90 dias ou mais, de acordo com a data retornada pelo servidor nos cabeçalhos HTTP: </p> <p> <code> exclude-days&amp;nbsp;90&amp;nbsp;https://www.mydomain.com/docs/archive&amp;nbsp;server-date </code> </p> <p> Se a data retornada pelo servidor tiver 90 dias ou mais, <code>
+       server-date 
+     </code> especifica que os documentos excluídos não serão baixados do servidor. O resultado significa um tempo de indexação mais rápido para seus documentos e uma carga reduzida colocada em seus servidores. Se não <code>
+       server-date 
+     </code> for especificado, o robô de pesquisa ignorará a data retornada pelo servidor nos cabeçalhos HTTP. Em vez disso, cada arquivo é baixado e verificado para ver se a data é especificada. Se nenhuma data for especificada no arquivo, o robô de pesquisa usará a data retornada pelo servidor. </p> <p>Você não deve usar <code>
+       server-date 
+     </code> se os arquivos contiverem comandos que substituam a data do servidor. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>regexp </p> </td> 
-   <td colname="col2"> <p> Use para incluir e excluir máscaras. </p> <p>Qualquer máscara de data precedida por 
-     <userinput>
+   <td colname="col2"> <p> Use para incluir e excluir máscaras. </p> <p>Qualquer máscara de data precedida por <code>
        regexp 
-     </userinput> é tratada como uma expressão regular. </p> <p>Se o robô de pesquisa encontrar arquivos que correspondem a uma máscara de data de expressão regular excluída, ele não indexará esses arquivos. </p> <p>Se o robô de pesquisa encontrar arquivos que correspondem a uma máscara de data de expressão regular de inclusão, ele indexará esses documentos. </p> <p>Por exemplo, suponha que você tenha a seguinte máscara de data: </p> <p> <code> exclude-days&amp;nbsp;180&amp;nbsp;regexp&amp;nbsp;.*archive.* </code> </p> <p>A máscara diz ao robô de pesquisa para excluir arquivos correspondentes com 180 dias ou mais. Ou seja, arquivos que contêm a palavra "arquivar" em seu URL. </p> <p>Consulte <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Expressões regulares </a>. </p> </td> 
+     </code> é tratada como uma expressão regular. </p> <p>Se o robô de pesquisa encontrar arquivos que correspondem a uma máscara de data de expressão regular excluída, ele não indexará esses arquivos. </p> <p>Se o robô de pesquisa encontrar arquivos que correspondem a uma máscara de data de expressão regular de inclusão, ele indexará esses documentos. </p> <p>Por exemplo, suponha que você tenha a seguinte máscara de data: </p> <p> <code> exclude-days&amp;nbsp;180&amp;nbsp;regexp&amp;nbsp;.*archive.* </code> </p> <p>A máscara diz ao robô de pesquisa para excluir arquivos correspondentes com 180 dias ou mais. Ou seja, arquivos que contêm a palavra "arquivar" em seu URL. </p> <p>Consulte <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Expressões regulares </a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -639,7 +609,7 @@ Consulte [Configurar um índice incremental de um site](../c-about-index-menu/c-
 
 Você pode usar [!DNL Content Types] para selecionar os tipos de arquivos que deseja rastrear e indexar para esta conta.
 
-Os tipos de conteúdo que você pode escolher rastrear e indexar incluem documentos PDF, documentos de texto, filmes Adobe Flash, arquivos de aplicativos do Microsoft Office como Word, Excel e Powerpoint e texto em arquivos MP3. O texto encontrado nos tipos de conteúdo selecionados é pesquisado junto com todo o outro texto do site.
+Os tipos de conteúdo que você pode escolher rastrear e indexar incluem documentos PDF, documentos de texto, filmes de Flash Adobe, arquivos de aplicativos do Microsoft Office como Word, Excel e Powerpoint e texto em arquivos MP3. O texto encontrado nos tipos de conteúdo selecionados é pesquisado junto com todo o outro texto do site.
 
 Antes que os efeitos das configurações de Tipos de conteúdo fiquem visíveis para os clientes, é necessário recriar o índice do site.
 
@@ -682,7 +652,7 @@ Se você quiser apenas impedir a indexação de determinados arquivos MP3 em seu
 
 Você pode usar [!DNL Content Types] para selecionar os tipos de arquivos que deseja rastrear e indexar para esta conta.
 
-Os tipos de conteúdo que você pode escolher rastrear e indexar incluem documentos PDF, documentos de texto, filmes Adobe Flash, arquivos de aplicativos do Microsoft Office como Word, Excel e Powerpoint e texto em arquivos MP3. O texto encontrado nos tipos de conteúdo selecionados é pesquisado junto com todo o outro texto do site.
+Os tipos de conteúdo que você pode escolher rastrear e indexar incluem documentos PDF, documentos de texto, filmes de Flash Adobe, arquivos de aplicativos do Microsoft Office como Word, Excel e Powerpoint e texto em arquivos MP3. O texto encontrado nos tipos de conteúdo selecionados é pesquisado junto com todo o outro texto do site.
 
 Antes que os efeitos das configurações de Tipos de conteúdo fiquem visíveis para os clientes, é necessário recriar o índice do site.
 
@@ -782,61 +752,49 @@ Consulte [Configurar um índice incremental de um site](../c-about-index-menu/c-
       </tr> 
       <tr> 
       <td colname="col1"> <p>Máscara de URL da página </p> </td> 
-      <td colname="col2"> <p>Identifique a página da Web ou as páginas que contêm o formulário. Para identificar um formulário que aparece em uma única página, insira o URL dessa página como no exemplo a seguir: </p> <p> <code> https://www.mydomain.com/login.html </code> </p> <p>Para identificar formulários que aparecem em várias páginas, especifique uma máscara de URL que use curingas para descrever as páginas. Para identificar formulários encontrados em qualquer página do ASP em <code> https://www.mydomain.com/register/ </code>, por exemplo, especifique o seguinte: </p> <p> <code> https://www.mydomain.com/register/*.asp&amp;nbsp; </code> </p> <p>Também é possível usar uma expressão regular para identificar várias páginas. Especifique apenas 
-      <userinput>
+      <td colname="col2"> <p>Identifique a página da Web ou as páginas que contêm o formulário. Para identificar um formulário que aparece em uma única página, insira o URL dessa página como no exemplo a seguir: </p> <p> <code> https://www.mydomain.com/login.html </code> </p> <p>Para identificar formulários que aparecem em várias páginas, especifique uma máscara de URL que use curingas para descrever as páginas. Para identificar formulários encontrados em qualquer página do ASP em <code> https://www.mydomain.com/register/ </code>, por exemplo, especifique o seguinte: </p> <p> <code> https://www.mydomain.com/register/*.asp&amp;nbsp; </code> </p> <p>Também é possível usar uma expressão regular para identificar várias páginas. Basta especificar a <code>
         regexp 
-      </userinput> palavra-chave antes da máscara de URL, como no exemplo a seguir: </p> <p> <code> regexp&amp;nbsp;^https://www\.mydomain\.com/.*/login\.html$ </code> </p> </td> 
+      </code> palavra-chave antes da máscara de URL, como no exemplo a seguir: </p> <p> <code> regexp&amp;nbsp;^https://www\.mydomain\.com/.*/login\.html$ </code> </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Máscara de URL de ação </p> </td> 
-      <td colname="col2"> <p>Identifica o atributo action da variável 
-      <userinput>
+      <td colname="col2"> <p>Identifica o atributo action da <code>
         &lt;form&gt; 
-      </userinput> tag. </p> <p>Como a máscara de URL da página, a máscara de URL de ação pode assumir a forma de um único URL, um URL com curingas ou uma expressão regular. </p> <p>A máscara de URL pode ser qualquer uma das seguintes: 
+      </code> tag. </p> <p>Como a máscara de URL da página, a máscara de URL de ação pode assumir a forma de um único URL, um URL com curingas ou uma expressão regular. </p> <p>A máscara de URL pode ser qualquer uma das seguintes: 
       <ul id="ul_EDFE7688D3DD4C0BBACCE5D4648D8E44"> 
       <li id="li_77550A448D954EF29FF33EE5E8B5E0F5"> Um caminho completo, como no seguinte: <code> https://www.mydomain.com/products.html </code> </li> 
       <li id="li_F84E25553BBA41419BE153DC0709E011"> Um caminho parcial, como no seguinte: <code> https://www.mydomain.com/products </code> </li> 
       <li id="li_8DADA1C8604740FCACBA30B4AAADB2A1"> Um URL que usa curingas como no seguinte: <code> https://www.mydomain.com/*.html </code> </li> 
       <li id="li_1EF637B450654B509AA4B618F7FD3C2B"> Uma expressão regular como a seguinte: <code> regexp&amp;nbsp^https://www\.mydomain\.com/.*/login\.html$ </code> </li> 
-      </ul> </p> <p>Se você não quiser indexar o texto nas páginas identificadas por uma máscara de URL ou por uma máscara de URL de ação, ou se não quiser que os links sejam seguidos nessas páginas, use a variável 
-      <userinput>
+      </ul> </p> <p>Se você não quiser indexar o texto nas páginas que são identificadas por uma máscara de URL ou por uma máscara de URL de ação, ou se não quiser que os links sejam seguidos nessas páginas, use as palavras-chave <code>
         noindex 
-      </userinput> e 
-      <userinput>
+      </code> e <code>
         nofollow 
-      </userinput> palavras-chave. É possível adicionar essas palavras-chave às suas máscaras usando máscaras de URL ou pontos de entrada. </p> <p>Consulte <a href="../c-about-settings-menu/c-about-crawling-menu.md#concept_5D857E3B5C124E85BC0B5AE77A509573" type="concept" format="dita" scope="local"> Sobre pontos de entrada de URL </a>. </p> <p>Consulte <a href="../c-about-settings-menu/c-about-crawling-menu.md#concept_8039DFC53FF3410AA494D602F71BA164" type="concept" format="dita" scope="local"> Sobre máscaras de URL </a>. </p> </td> 
+      </code> . É possível adicionar essas palavras-chave às suas máscaras usando máscaras de URL ou pontos de entrada. </p> <p>Consulte <a href="../c-about-settings-menu/c-about-crawling-menu.md#concept_5D857E3B5C124E85BC0B5AE77A509573" type="concept" format="dita" scope="local"> Sobre pontos de entrada de URL </a>. </p> <p>Consulte <a href="../c-about-settings-menu/c-about-crawling-menu.md#concept_8039DFC53FF3410AA494D602F71BA164" type="concept" format="dita" scope="local"> Sobre máscaras de URL </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Máscara de nome do formulário </p> </td> 
-      <td colname="col2"> <p>Identifica formulários se a variável 
-      <userinput>
+      <td colname="col2"> <p>Identifica formulários se as <code>
         &lt;form&gt; 
-      </userinput> as tags em suas páginas da Web contêm um atributo de nome. </p> <p>Você pode usar um nome simples ( 
-      <userinput>
+      </code> tags em suas páginas da Web contiverem um atributo de nome. </p> <p>Você pode usar um nome simples ( <code>
         login_form 
-      </userinput>), um nome com um caractere curinga ( 
-      <userinput>
-        formulário* 
-      </userinput>), ou uma expressão regular ( 
-      <userinput>
-        regexp ^.*autorizar.*$ 
-      </userinput>). </p> <p>Geralmente, esse campo pode ser deixado em branco, pois os formulários normalmente não têm um atributo name. </p> </td> 
+      </code>), um nome com um curinga ( <code>
+        form* 
+      </code>) ou uma expressão normal ( <code>
+        regexp ^.*authorize.*$ 
+      </code>). </p> <p>Geralmente, esse campo pode ser deixado em branco, pois os formulários normalmente não têm um atributo name. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Máscara de ID de formulário </p> </td> 
-      <td colname="col2"> <p>Identifica formulários se a variável 
-      <userinput>
+      <td colname="col2"> <p>Identifica formulários se as <code>
         &lt;form&gt; 
-      </userinput> as tags em suas páginas da Web contêm um atributo de id. </p> <p>Você pode usar um nome simples ( 
-      <userinput>
+      </code> tags em suas páginas da Web contiverem um atributo id. </p> <p>Você pode usar um nome simples ( <code>
         login_form 
-      </userinput>), um nome com um caractere curinga ( 
-      <userinput>
-        formulário* 
-      </userinput>), ou uma expressão regular ( 
-      <userinput>
-        regexp ^.*autorizar.*$ 
-      </userinput>). </p> <p>Geralmente, esse campo pode ser deixado em branco, pois os formulários normalmente não têm um atributo name. </p> </td> 
+      </code>), um nome com um curinga ( <code>
+        form* 
+      </code>) ou uma expressão normal ( <code>
+        regexp ^.*authorize.*$ 
+      </code>). </p> <p>Geralmente, esse campo pode ser deixado em branco, pois os formulários normalmente não têm um atributo name. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Parâmetros </p> </td> 
@@ -852,52 +810,43 @@ Consulte [Configurar um índice incremental de um site](../c-about-index-menu/c-
       </tr> 
       <tr> 
       <td colname="col1"> <p>Método de substituição </p> </td> 
-      <td colname="col2"> <p>Especifique quando o público alvo do envio do formulário é diferente do que é usado no atributo action do formulário e quando o JavaScript enviado alterou o método. </p> <p>Os valores padrão para todos os parâmetros de formulário ( 
-      <userinput>
+      <td colname="col2"> <p>Especifique quando o público alvo do envio do formulário é diferente do que é usado no atributo action do formulário e quando o JavaScript enviado alterou o método. </p> <p>Os valores padrão para todos os parâmetros de formulário ( <code>
         &lt;input&gt; 
-      </userinput> tags, incluindo campos ocultos), o padrão 
-      <userinput>
-        &lt;opção&gt; 
-      </userinput> de um 
-      <userinput>
-        &lt;selecionar&gt; 
-      </userinput> e o texto padrão entre 
-      <userinput>
+      </code> tags, incluindo campos ocultos), o padrão <code>
+        &lt;option&gt; 
+      </code> de uma <code>
+        &lt;select&gt; 
+      </code> tag e o texto padrão entre <code>
         &lt;textarea&gt;...&lt;/textarea&gt; 
-      </userinput> tags) são lidas da página da Web. No entanto, qualquer parâmetro listado na seção <span class="wintitle"> Submissão de formulário </span> , no campo <span class="uicontrol"> Parâmetros </span> , é substituído pelos padrões do formulário. </p> </td> 
+      </code> tags) são lidos na página da Web. No entanto, qualquer parâmetro listado na seção <span class="wintitle"> Submissão de formulário </span> , no campo <span class="uicontrol"> Parâmetros </span> , é substituído pelos padrões do formulário. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Parâmetros </p> </td> 
-      <td colname="col2"> <p>É possível prefixar parâmetros de envio de formulário com a variável 
-      <userinput>
-        não 
-      </userinput> palavra-chave. </p> <p>Ao prefixar um parâmetro com 
-      <userinput>
-        não 
-      </userinput>, não é apresentado como parte da apresentação do formulário. Esse comportamento é útil para caixas de seleção que devem ser enviadas desmarcadas. </p> <p>Por exemplo, suponha que você deseja enviar os seguintes parâmetros: </p> <p> 
+      <td colname="col2"> <p>É possível prefixar parâmetros de envio de formulário com a <code>
+        not 
+      </code> palavra-chave. </p> <p>Quando um parâmetro é prefixado com <code>
+        not 
+      </code>, ele não é enviado como parte do envio do formulário. Esse comportamento é útil para caixas de seleção que devem ser enviadas desmarcadas. </p> <p>Por exemplo, suponha que você deseja enviar os seguintes parâmetros: </p> <p> 
       <ul id="ul_962D12BACF464FF189DB12BFAFCC93A6"> 
       <li id="li_830C6C3EC8D2448388A453BB8EDE5940"> O parâmetro de email com o valor 
-      <userinput>
+      <code>
         nobody@mydomain.com 
-      </userinput> </li> 
+      </code> </li> 
       <li id="li_905497E3FACE472DBDD49392D5B45E01"> O parâmetro password com o valor 
-      <userinput>
-        teste 
-      </userinput> </li> 
+      <code>
+        tryme 
+      </code> </li> 
       <li id="li_AAA411708ADC464793EADF0D821E282E"> O parâmetro mycheckbox como desmarcado. </li> 
-      <li id="li_0D3DDE641E2B4BEF9F570C03FDB40ED2"> <p>Todos os outros 
-      <userinput>
+      <li id="li_0D3DDE641E2B4BEF9F570C03FDB40ED2"> <p>Todos os outros <code>
         &lt;form&gt; 
-      </userinput> parâmetros como seus valores padrão </p> </li> 
+      </code> parâmetros como seus valores padrão </p> </li> 
       </ul> </p> <p>Seu parâmetro de envio de formulário seria semelhante ao seguinte: </p> <p> <code> email=nobody@mydomain.com 
         password=tryme 
-        not&nbsp;mycheckbox </code> </p> <p>O atributo de método do 
-      <userinput>
+        not&nbsp;mycheckbox </code> </p> <p>O atributo de método da <code>
         &lt;form&gt; 
-      </userinput> na página da Web é usada para decidir se os dados são enviados para o servidor usando o método GET ou o método POST. </p> <p>Se a  
-      <userinput>
+      </code> tag na página da Web é usado para decidir se os dados são enviados para o servidor usando o método GET ou o método POST. </p> <p>Se a <code>
         &lt;form&gt; 
-      </userinput> não contém um atributo de método, o formulário é submetido usando o método GET. </p> </td> 
+      </code> tag não contiver um atributo de método, o formulário será enviado usando o método GET. </p> </td> 
       </tr> 
     </tbody> 
     </table>
@@ -1044,7 +993,7 @@ Como os documentos para rastreamentos XML já estão separados em arquivos indiv
 <a href="index:<ic_config_name>?url="{url}">
 ```
 
-Por exemplo, se a configuração da Adobe retornou os seguintes links:
+Por exemplo, se a configuração do Adobe retornasse os seguintes links:
 
 ```
 <a href="https://www.adobe.com/somepath/doc1.xml">doc 1</a> 
@@ -1122,9 +1071,9 @@ No momento em que você adiciona um Conector de índice, é possível usar opcio
 
 No momento em que você adiciona um Conector de índice, é possível usar opcionalmente o recurso **[!UICONTROL Preview]** para validar os dados, como se estivesse salvando-os. Ele executa um teste em relação à configuração, mas sem salvar a configuração na conta. O teste acessa a fonte de dados configurada. No entanto, ele grava o cache de download em um local temporário; ele não entra em conflito com a pasta de cache principal que o crawler de indexação usa.
 
-A Pré-visualização processa apenas um padrão de cinco documentos, conforme controlado por Acct:IndexConnector-Pré-visualização-Max-Documentos. Os documentos visualizados são exibidos no formulário de origem, à medida que são apresentados ao rastreador de indexação. A exibição é semelhante a um recurso &quot;Fonte de Visualização&quot; em um navegador da Web. É possível navegar pelos documentos no conjunto de pré-visualizações usando links de navegação padrão.
+A pré-visualização processa apenas um padrão de cinco documentos, conforme controlado por Acct:IndexConnector-Pré-visualização-Max-Documentos. Os documentos visualizados são exibidos no formulário de origem, à medida que são apresentados ao rastreador de indexação. A exibição é semelhante a um recurso &quot;Fonte de Visualização&quot; em um navegador da Web. É possível navegar pelos documentos no conjunto de pré-visualizações usando links de navegação padrão.
 
-A Pré-visualização não suporta configurações XML porque esses documentos são processados diretamente e não são baixados para o cache.
+A pré-visualização não suporta configurações XML porque esses documentos são processados diretamente e não são baixados para o cache.
 
 ## Adicionando uma definição de Conector de índice {#task_96779B651A654E1F871F55D6DBBC8886}
 
@@ -1156,10 +1105,9 @@ Antes que os efeitos da definição nova e ativada fiquem visíveis para os clie
       <ul id="ul_1ADC3DFBC929467385F7465BE8E13635"> 
       <li id="li_64FCD749F55442BAB316BD474128D4F9"> <span class="uicontrol"> Texto </span> <p>Arquivos de texto simples, delimitados por vírgulas, delimitados por tabulação ou outros formatos consistentemente delimitados. Cada linha de texto delimitada por nova linha corresponde a um documento individual e é analisada usando o delimitador especificado. </p> <p>É possível mapear cada valor, ou coluna, para um campo de metadados, referenciado pelo número da coluna, começando em 1 (um). </p> </li> 
       <li id="li_2A4F16CE6DCE4114B7F8E4FE156252BB"> <span class="uicontrol"> Feed </span> <p>Faz o download de um documento XML primário que contém várias "linhas" de informações. </p> </li> 
-      <li id="li_5A61C53522D74D4C9A5F65989604BDEF"> <span class="uicontrol"> XML </span> <p>Faz o download de um documento XML primário que contém links ( 
-      <userinput>
+      <li id="li_5A61C53522D74D4C9A5F65989604BDEF"> <span class="uicontrol"> XML </span> <p>Faz o download de um documento XML primário que contém links ( <code>
         &lt;a&gt; 
-      </userinput>) a documentos XML individuais. </p> </li> 
+      </code>) para documentos XML individuais. </p> </li> 
       </ul> </p> </td> 
       </tr> 
       <tr> 
@@ -1231,7 +1179,7 @@ Antes que os efeitos da definição nova e ativada fiquem visíveis para os clie
       <ul id="ul_981AE2C6D30443BDBFC6575D413732A2"> 
       <li id="li_A42CB9DFFF8C45A7BAC2D471FE96CEBE"> <span class="uicontrol"> Coluna </span> <p> Especifica um número de coluna, com a primeira coluna sendo 1 (uma). Para adicionar novas linhas de mapa para cada coluna, em <span class="wintitle"> Ação </span>, clique em <span class="uicontrol"> + </span>. </p> <p>Não é necessário referenciar cada coluna na fonte de dados. Em vez disso, você pode optar por ignorar valores. </p> </li> 
       <li id="li_26E8C9554A5D4BC5A5073D6385E3626F"> <span class="uicontrol"> Campo </span> <p>Define o valor do atributo name usado para cada tag &lt;meta&gt; gerada. </p> </li> 
-      <li id="li_5DFA514B7F9549B98D6CBC095A66033C"> <span class="uicontrol"> Metadados? </span> <p>Faz com que <span class="uicontrol"> </span> o Campo se torne uma lista suspensa da qual você pode selecionar campos de metadados definidos para a conta atual. </p> <p>O <span class="uicontrol"> valor </span> de Campo pode ser um campo de metadados indefinido, se desejado. Um campo de metadados não definido às vezes é útil para criar conteúdo usado pelo <span class="wintitle"> Filtrar script </span>. </p> <p>Consulte <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Sobre o script de filtragem </a>. </p> <p>Quando o Conector de índice processa documentos XML com várias ocorrências em qualquer campo de mapa, os vários valores são concatenados em um único valor no documento em cache resultante. Por padrão, esses valores são combinados usando um delimitador de vírgula. No entanto, suponha que o <span class="wintitle"> valor de Campo correspondente </span> seja um campo de metadados definido. Além disso, esse campo tem o conjunto de atributos <span class="wintitle"> Permitir listas </span> . Nesse caso, o valor Delimitadores de Lista do campo, que é o primeiro delimitador definido, é usado na concatenação. </p> </li> 
+      <li id="li_5DFA514B7F9549B98D6CBC095A66033C"> <span class="uicontrol"> Metadados? </span> <p>Faz com que <span class="uicontrol"> </span> o Campo se torne uma lista suspensa da qual você pode selecionar campos de metadados definidos para a conta atual. </p> <p>O <span class="uicontrol"> valor </span> de Campo pode ser um campo de metadados indefinido, se desejado. Um campo de metadados não definido às vezes é útil para criar conteúdo usado pelo <span class="wintitle"> Filtrar script </span>. </p> <p>Consulte <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Sobre o script de filtragem </a>. </p> <p>Quando o Conector de índice processa documentos XML com várias ocorrências em qualquer campo de mapa, os vários valores são concatenados em um único valor no documento em cache resultante. Por padrão, esses valores são combinados usando um delimitador de vírgula. No entanto, suponha que o <span class="wintitle"> valor de Campo correspondente </span> seja um campo de metadados definido. Além disso, esse campo tem o conjunto de atributos <span class="wintitle"> Lista de permissões </span> . Nesse caso, o valor Delimitadores de Lista do campo, que é o primeiro delimitador definido, é usado na concatenação. </p> </li> 
       <li id="li_80DB205525094CE1AA6762BFC7892C95"> <span class="uicontrol"> Chave primária? </span> <p>Somente uma definição de mapa é identificada como a chave primária. Esse campo se torna a referência exclusiva que é apresentada quando esse documento é adicionado ao índice. Esse valor é usado no URL do documento no Índice. </p> <p>Os <span class="uicontrol"> valores da Chave primária </span> devem ser exclusivos em todos os documentos representados pela configuração do Conector de índice - todos os duplicados encontrados serão ignorados. Se os documentos de origem não contiverem um único valor exclusivo para uso como Chave <span class="uicontrol"> primária </span>, mas dois ou mais campos juntos <i>puderem</i> formar um identificador exclusivo, você poderá definir a Chave <span class="uicontrol"> primária </span> combinando vários <span class="uicontrol"> valores de Coluna </span> com uma barra vertical ("|") delimitando os valores. </p> </li> 
       <li id="li_80DB205525094CE1AA6762BFC7892D96"> <span class="uicontrol"> Remover HTML? </span> <p>Quando essa opção estiver marcada, todas as tags HTML encontradas nos dados desse campo serão removidas. </p> </li> 
       <li id="li_359D2902859B4C5BADB0BA26F0BA4DC0"> <span class="uicontrol"> Ação </span> <p>Permite adicionar linhas ao mapa ou remover linhas do mapa. A ordem das linhas não é importante. </p> </li> 
@@ -1278,7 +1226,7 @@ Antes que os efeitos da definição nova e ativada fiquem visíveis para os clie
       </tr> 
       <tr> 
       <td colname="col1"> <p>Item </p> </td> 
-      <td colname="col2"> <p>Identifica o elemento XML que pode ser usado para identificar linhas XML individuais no arquivo de fonte de dados especificado. </p> <p>Por exemplo, no fragmento Feed a seguir de um documento XML da Adobe, o valor da tag do Item é <span class="codeph"> record </span>: </p> <p> <code> &lt;?xml&nbsp;version="1.0"&nbsp;encoding="utf-8"?&gt; 
+      <td colname="col2"> <p>Identifica o elemento XML que pode ser usado para identificar linhas XML individuais no arquivo de fonte de dados especificado. </p> <p>Por exemplo, no fragmento Feed a seguir de um documento XML Adobe, o valor da tag do Item é <span class="codeph"> record </span>: </p> <p> <code> &lt;?xml&nbsp;version="1.0"&nbsp;encoding="utf-8"?&gt; 
         &lt;!DOCTYPE&nbsp;gsafeed&nbsp;PUBLIC&nbsp;"-//Google//DTD&nbsp;GSA&nbsp;Feeds//EN"&nbsp;""&gt; &lt;gsafeed&gt; 
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;header&gt; 
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;datasource&gt;marketplace&lt;/datasource&gt; 
@@ -1319,7 +1267,7 @@ Antes que os efeitos da definição nova e ativada fiquem visíveis para os clie
       <td colname="col1"> <p>Mapa </p> </td> 
       <td colname="col2"> <p>Permite que você especifique mapeamentos de elemento para metadados XML, usando expressões XPath. </p> <p> 
       <ul id="ul_604108C0277C4892AE8A40CA39889ABD"> 
-      <li id="li_0AF92270AE9F4BA8B2C7EE41FABC0F34"> <span class="uicontrol"> Adicionar tag </span> <p>Especifica uma representação XPath dos dados XML analisados. Usando o exemplo do documento Adobe XML acima, na opção Item tag, ele pode ser mapeado usando a seguinte sintaxe: </p> <p> <code> /record/@displayurl&nbsp;-&gt;&nbsp;page-url 
+      <li id="li_0AF92270AE9F4BA8B2C7EE41FABC0F34"> <span class="uicontrol"> Adicionar tag </span> <p>Especifica uma representação XPath dos dados XML analisados. Usando o documento Adobe XML de exemplo acima, na opção Item tag, ele pode ser mapeado usando a seguinte sintaxe: </p> <p> <code> /record/@displayurl&nbsp;-&gt;&nbsp;page-url 
       /record/metadata/meta[@name='title']/@content&nbsp;-&gt;&nbsp;title 
       /record/metadata/meta[@name='description']/@content&nbsp;-&gt;&nbsp;desc 
       /record/metadata/meta[@name='description']/@content&nbsp;-&gt;&nbsp;body </code> </p> <p>A sintaxe acima é traduzida como a seguinte: </p> <p> 
@@ -1330,7 +1278,7 @@ Antes que os efeitos da definição nova e ativada fiquem visíveis para os clie
       <li id="li_E35EAE3D284D46D485D9064D7BB6AB13"> <code> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;body </code> <p>O <span class="codeph"> atributo de </span> conteúdo de qualquer <span class="codeph"> meta- </span> elemento contido em um <span class="codeph"> elemento de metadados </span> , contido no <span class="codeph"> elemento record </span> , cujo atributo name é <span class="codeph"> descrição </span><span class="codeph"> </span>, mapeia para o campo de metadados . </p> </li> 
       </ul> </p> <p>XPath é uma notação relativamente complicada. Mais informações estão disponíveis no seguinte local: </p> <p>Consulte <a href="https://www.w3schools.com/xpath/" scope="external" format="html"> https://www.w3schools.com/xpath/ </a> </p> </li> 
       <li id="li_8147075D7ACD4811A7ED335F23FE62A6"> <span class="uicontrol"> Campo </span> <p>Define o valor do atributo name usado para cada tag <span class="codeph"> &lt;meta&gt; </span> gerada. </p> </li> 
-      <li id="li_2380199D63BF425A919606D8232FA6E2"> <span class="uicontrol"> Metadados? </span> <p>Faz com que <span class="uicontrol"> </span> o Campo se torne uma lista suspensa da qual você pode selecionar campos de metadados definidos para a conta atual. </p> <p>O <span class="uicontrol"> valor </span> de Campo pode ser um campo de metadados indefinido, se desejado. Um campo de metadados não definido às vezes é útil para criar conteúdo usado pelo <span class="wintitle"> Filtrar script </span>. </p> <p>Consulte <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Sobre o script de filtragem </a>. </p> <p>Quando o Conector de índice processa documentos XML com várias ocorrências em qualquer campo de mapa, os vários valores são concatenados em um único valor no documento em cache resultante. Por padrão, esses valores são combinados usando um delimitador de vírgula. No entanto, suponha que o <span class="wintitle"> valor de Campo correspondente </span> seja um campo de metadados definido. Além disso, esse campo tem o conjunto de atributos <span class="wintitle"> Permitir listas </span> . Nesse caso, o valor Delimitadores de Lista do campo, que é o primeiro delimitador definido, é usado na concatenação. </p> </li> 
+      <li id="li_2380199D63BF425A919606D8232FA6E2"> <span class="uicontrol"> Metadados? </span> <p>Faz com que <span class="uicontrol"> </span> o Campo se torne uma lista suspensa da qual você pode selecionar campos de metadados definidos para a conta atual. </p> <p>O <span class="uicontrol"> valor </span> de Campo pode ser um campo de metadados indefinido, se desejado. Um campo de metadados não definido às vezes é útil para criar conteúdo usado pelo <span class="wintitle"> Filtrar script </span>. </p> <p>Consulte <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Sobre o script de filtragem </a>. </p> <p>Quando o Conector de índice processa documentos XML com várias ocorrências em qualquer campo de mapa, os vários valores são concatenados em um único valor no documento em cache resultante. Por padrão, esses valores são combinados usando um delimitador de vírgula. No entanto, suponha que o <span class="wintitle"> valor de Campo correspondente </span> seja um campo de metadados definido. Além disso, esse campo tem o conjunto de atributos <span class="wintitle"> Lista de permissões </span> . Nesse caso, o valor Delimitadores de Lista do campo, que é o primeiro delimitador definido, é usado na concatenação. </p> </li> 
       <li id="li_DEA24003E97E406DA2510C43CCFDC70E"> <span class="uicontrol"> Chave primária? </span> <p>Somente uma definição de mapa é identificada como a chave primária. Esse campo se torna a referência exclusiva que é apresentada quando esse documento é adicionado ao índice. Esse valor é usado no URL do documento no Índice. </p> <p>Os <span class="uicontrol"> valores da Chave primária </span> devem ser exclusivos em todos os documentos representados pela configuração do Conector de índice - todos os duplicados encontrados serão ignorados. Se os documentos de origem não contiverem um único valor exclusivo para uso como Chave <span class="uicontrol"> primária </span>, mas dois ou mais campos juntos <i>puderem</i> formar um identificador exclusivo, você poderá definir a Chave <span class="uicontrol"> primária </span> combinando várias <span class="uicontrol"> definições de Tag </span> com uma barra vertical ("|") que delimita os valores. </p> </li> 
       <li id="li_DEA24003E97E406DA2510C43CCFDC81F"> <span class="uicontrol"> Remover HTML? </span> <p>Quando essa opção estiver marcada, todas as tags HTML encontradas nos dados desse campo serão removidas. </p> </li> 
       <li id="li_5E829D1D0DBD4BB7AAB5DB983053D248"> <span class="uicontrol"> Usar para Excluir? </span> <p>Usado apenas durante operações de Índice Incremental. Registros que correspondem a este padrão XPath identificam itens para exclusão. O <span class="uicontrol"> valor da Chave Primária </span> para cada registro é usado para construir solicitações "delete", como acontece com Excluir caminho de arquivo. </p> <p> <b>Observação</b>: Este recurso não está ativado por padrão. Entre em contato com o suporte técnico para ativar o recurso para uso. </p> </li> 
@@ -1351,10 +1299,9 @@ Antes que os efeitos da definição nova e ativada fiquem visíveis para os clie
       </tr> 
       <tr> 
       <td colname="col1"> <p>Caminho do arquivo </p> </td> 
-      <td colname="col2"> <p>Especifica o caminho para o documento XML primário que contém links ( 
-      <userinput>
+      <td colname="col2"> <p>Especifica o caminho para o documento XML primário que contém links ( <code>
         &lt;a&gt; 
-      </userinput>) a documentos XML individuais. </p> <p>O caminho é relativo à raiz do endereço do host. </p> </td> 
+      </code>) para documentos XML individuais. </p> <p>O caminho é relativo à raiz do endereço do host. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Protocolo </p> </td> 
@@ -1365,7 +1312,7 @@ Antes que os efeitos da definição nova e ativada fiquem visíveis para os clie
       <li id="li_2F967B5675254C949B31EAB19910751C"> FTP <p>Você deve inserir as credenciais de autenticação adequadas para acessar o servidor FTP. </p> </li> 
       <li id="li_C24BE4C1DE79488AA64C7133D78CD3A6"> SFTP <p>Você deve inserir as credenciais de autenticação adequadas para acessar o servidor SFTP. </p> </li> 
       <li id="li_7581C21CFC104986A361F62BD7A370C1"> Arquivo </li> 
-      </ul> </p> <p> <b>Observação</b>: A configuração Protocolo só é usada quando há informações especificadas nos campos Endereço do host e/ou Caminho do arquivo. documentos XML individuais são baixados usando HTTP ou HTTPS, de acordo com suas especificações de URL. </p> </td> 
+      </ul> </p> <p> <b>Observação</b>: A configuração Protocolo só é usada quando há informações especificadas nos campos Endereço do host e/ou Caminho do arquivo. Documentos XML individuais são baixados usando HTTP ou HTTPS, de acordo com suas especificações de URL. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Item </p> </td> 
@@ -1375,7 +1322,7 @@ Antes que os efeitos da definição nova e ativada fiquem visíveis para os clie
       <td colname="col1"> <p>Mapa </p> </td> 
       <td colname="col2"> <p>Permite que você especifique mapeamentos de coluna para metadados, usando números de coluna. </p> <p> 
       <ul id="ul_06F50CBA0AA64C7CB1AFAE076E629A64"> 
-      <li id="li_0FA2502869BA40DC93D790B79E15A9D2"> <span class="uicontrol"> Adicionar tag </span> <p>Especifica uma representação XPath dos dados XML analisados. Usando o exemplo do documento Adobe XML acima, sob a opção Item tag, é possível mapeá-lo usando a seguinte sintaxe: </p> <p> <code> /record/@displayurl&nbsp;-&gt;&nbsp;page-url 
+      <li id="li_0FA2502869BA40DC93D790B79E15A9D2"> <span class="uicontrol"> Adicionar tag </span> <p>Especifica uma representação XPath dos dados XML analisados. Usando o documento Adobe XML de exemplo acima, sob a opção Item tag, é possível mapeá-lo usando a seguinte sintaxe: </p> <p> <code> /record/@displayurl&nbsp;-&gt;&nbsp;page-url 
         /record/metadata/meta[@name='title']/@content&nbsp;-&gt;&nbsp;title 
         /record/metadata/meta[@name='description']/@content&nbsp;-&gt;&nbsp;desc 
         /record/metadata/meta[@name='description']/@content&nbsp;-&gt;&nbsp;body </code> </p> <p>A sintaxe acima é traduzida como a seguinte: </p> <p> 
@@ -1386,7 +1333,7 @@ Antes que os efeitos da definição nova e ativada fiquem visíveis para os clie
       <li id="li_7FA6A53DFD3D42A98B7BA17CC29DDB81"> <code> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;body </code> <p>O <span class="codeph"> atributo de </span> conteúdo de qualquer <span class="codeph"> meta- </span> elemento contido em um <span class="codeph"> elemento de metadados </span> , contido no <span class="codeph"> elemento record </span> , cujo atributo name é <span class="codeph"> descrição </span><span class="codeph"> </span>, mapeia para o campo de metadados . </p> </li> 
       </ul> </p> <p>XPath é uma notação relativamente complicada. Mais informações estão disponíveis no seguinte local: </p> <p>Consulte <a href="https://www.w3schools.com/xpath/" scope="external" format="html"> https://www.w3schools.com/xpath/ </a> </p> </li> 
       <li id="li_84999D07E0AE4265BC7928BBB49957B9"> <span class="uicontrol"> Campo </span> <p>Define o valor do atributo name usado para cada tag &lt;meta&gt; gerada. </p> </li> 
-      <li id="li_E125788D0F5242958BD790E26A675C20"> <span class="uicontrol"> Metadados? </span> <p>Faz com que <span class="uicontrol"> </span> o Campo se torne uma lista suspensa da qual você pode selecionar campos de metadados definidos para a conta atual. </p> <p>O <span class="uicontrol"> valor </span> de Campo pode ser um campo de metadados indefinido, se desejado. Um campo de metadados não definido às vezes é útil para criar conteúdo usado pelo <span class="wintitle"> Filtrar script </span>. </p> <p>Consulte <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Sobre o script de filtragem </a>. </p> <p>Quando o Conector de índice processa documentos XML com várias ocorrências em qualquer campo de mapa, os vários valores são concatenados em um único valor no documento em cache resultante. Por padrão, esses valores são combinados usando um delimitador de vírgula. No entanto, suponha que o <span class="wintitle"> valor de Campo correspondente </span> seja um campo de metadados definido. Além disso, esse campo tem o conjunto de atributos <span class="wintitle"> Permitir listas </span> . Nesse caso, o valor Delimitadores de Lista do campo, que é o primeiro delimitador definido, é usado na concatenação. </p> </li> 
+      <li id="li_E125788D0F5242958BD790E26A675C20"> <span class="uicontrol"> Metadados? </span> <p>Faz com que <span class="uicontrol"> </span> o Campo se torne uma lista suspensa da qual você pode selecionar campos de metadados definidos para a conta atual. </p> <p>O <span class="uicontrol"> valor </span> de Campo pode ser um campo de metadados indefinido, se desejado. Um campo de metadados não definido às vezes é útil para criar conteúdo usado pelo <span class="wintitle"> Filtrar script </span>. </p> <p>Consulte <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Sobre o script de filtragem </a>. </p> <p>Quando o Conector de índice processa documentos XML com várias ocorrências em qualquer campo de mapa, os vários valores são concatenados em um único valor no documento em cache resultante. Por padrão, esses valores são combinados usando um delimitador de vírgula. No entanto, suponha que o <span class="wintitle"> valor de Campo correspondente </span> seja um campo de metadados definido. Além disso, esse campo tem o conjunto de atributos <span class="wintitle"> Lista de permissões </span> . Nesse caso, o valor Delimitadores de Lista do campo, que é o primeiro delimitador definido, é usado na concatenação. </p> </li> 
       <li id="li_9F435EFB3EC74B409EC82A851824609F"> <span class="uicontrol"> Chave primária? </span> <p>Somente uma definição de mapa é identificada como a chave primária. Esse campo se torna a referência exclusiva que é apresentada quando esse documento é adicionado ao índice. Esse valor é usado no URL do documento no Índice. </p> <p>Os <span class="uicontrol"> valores da Chave primária </span> devem ser exclusivos em todos os documentos representados pela configuração do Conector de índice - todos os duplicados encontrados serão ignorados. Se os documentos de origem não contiverem um único valor exclusivo para uso como Chave <span class="uicontrol"> primária </span>, mas dois ou mais campos juntos <i>puderem</i> formar um identificador exclusivo, você poderá definir a Chave <span class="uicontrol"> primária </span> combinando várias <span class="uicontrol"> definições de Tag </span> com uma barra vertical ("|") que delimita os valores. </p> </li> 
       <li id="li_9F435EFB3EC74B409EC82A851824610G"> <span class="uicontrol"> Remover HTML? </span> <p>Quando essa opção estiver marcada, todas as tags HTML encontradas nos dados desse campo serão removidas. </p> </li> 
       <li id="li_6302D18971AD439FBECE27742649C56B"> <span class="uicontrol"> Ação </span> <p>Permite adicionar linhas ao mapa ou remover linhas do mapa. A ordem das linhas não é importante. </p> </li> 
