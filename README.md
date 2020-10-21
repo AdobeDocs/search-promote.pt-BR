@@ -1,9 +1,16 @@
 ---
-source-git-commit: aa5364886b5e09fdbf5840c058ac3f3f364344ab
+source-git-commit: 2c0ca6307586f4b63599856bc20aee196cb8b98f
+workflow-type: tm+mt
 translation-type: tm+mt
+source-wordcount: '509'
+ht-degree: 72%
 
 ---
 # Artigo do Contribute para o Search &amp; Promote
+
+| EXL-PR | EXL | Visualizar | Ativar | Publicado | Ajuda  |
+|--- |--- |--- |--- |--- |--- |
+| [![Status da compilação](https://docs.ci.corp.adobe.com/view/exl-pr/job/search-promote.en_pr-exl/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/search-promote.en_pr-exl/lastBuild/) | [![Status da compilação](https://docs.ci.corp.adobe.com/view/exl-pr/job/search-promote.en_exl/lastBuild/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/search-promote.en_exl/lastBuild/lastBuild) | [URL de pré-visualização](https://experienceleague.corp.adobe.com/docs/search-promote/using/sp-home.html?lang=en) | [ativate-exl](https://docs.ci.corp.adobe.com/job/activate-exl/build/) | [Live URL](https://experienceleague.adobe.com/docs/search-promote/using/sp-home.html?lang=en) | [Guia de criação](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/home.html?lang=en) |
 
 Agradecemos as contribuições de nossa comunidade e de funcionários da Adobe de fora das equipes de documentação.
 
@@ -13,7 +20,7 @@ Este projeto adotou o [Código de conduta aberto da Adobe](code-of-conduct.md) o
 
 ## Sobre suas contribuições para o conteúdo da Adobe
 
-Consulte o Guia [do colaborador do](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html)Adobe Docs.
+Consulte o Guia [do colaborador de](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html)Adobe Docs.
 
 A forma como você colabora depende de quem você é e do tipo de alterações que deseja fazer:
 
