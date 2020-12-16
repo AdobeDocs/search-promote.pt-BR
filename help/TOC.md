@@ -10,15 +10,15 @@ translation-type: tm+mt
 source-git-commit: 4f1daa8f4737e0e1f2693aa96ab067e552f51a0f
 workflow-type: tm+mt
 source-wordcount: '254'
-ht-degree: 10%
+ht-degree: 9%
 
 ---
 
 
-# Adobe Search and Promote Guide {#using}
+# Guia de pesquisa e promoção do Adobe {#using}
 
 + [Visão geral da documentação do Search &amp; Promote](sp-home.md)
-+ Release notes {#release-notes}
++ Notas de versão {#release-notes}
    + [Notas de versão do Search &amp; Promote 18.1.1 (13/02/2018)](c-searchpromote-release-notes/c-rn-02-13-18-version-1811.md)
    + [Notas de versão do Search &amp; Promote 17.11.1 (31/10/2017)](c-searchpromote-release-notes/c-rn-10-31-17-version-1711.md)
    + [Notas de versão do Search &amp; Promote 15.3.1 (24/03/2015)](c-searchpromote-release-notes/c-rn-03-19-15-version-153.md)
@@ -47,7 +47,7 @@ ht-degree: 10%
 + [Introdução ao Search &amp; Promote](c-getting-started.md)
 + [Início](c-about-home.md)
 + [Uso do histórico](t-using-the-history-option.md)
-+ Criação de uma pesquisa {#design}
++ Criando uma pesquisa {#design}
    + [Aspectos](c-about-design-menu/c-about-facets.md)
    + [Facet Rail](c-about-design-menu/c-about-facet-rails.md)
    + [Aspectos dinâmicos](c-about-design-menu/c-about-dynamic-facets.md)
@@ -58,14 +58,14 @@ ht-degree: 10%
    + [Modelos](c-about-design-menu/c-about-templates.md) de projeto
    + [Banners](c-about-design-menu/c-about-banners.md)
    + [Completar automaticamente](c-about-auto-complete.md)
-+ Aplicação de regras de pesquisa {#rules}
++ Aplicar regras de pesquisa {#rules}
    + [Regras de limpeza de query](c-about-rules-menu/c-about-query-cleaning-rules.md)
    + [Ocorrências diretas](c-about-rules-menu/c-about-direct-hits.md)
    + [Regras de pré-pesquisa](c-about-rules-menu/c-about-pre-search-rules.md)
    + [Regras de pós-pesquisa](c-about-rules-menu/c-about-post-search-rules.md)
    + [Regras de Negócios](c-about-rules-menu/c-about-business-rules.md)
    + [Regras de classificação](c-about-rules-menu/c-about-ranking-rules.md)
-+ Uso de linguística de pesquisa {#linguistics}
++ Usando linguística de pesquisa {#linguistics}
    + [Dicionários](c-about-linguistics-menu/c-about-dictionaries.md)
    + [Palavras e idioma](c-about-linguistics-menu/c-about-words-and-language.md)
    + [Você quis dizer](c-about-linguistics-menu/c-about-did-you-mean.md)
@@ -74,9 +74,9 @@ ht-degree: 10%
    + [Frases comuns](c-about-linguistics-menu/c-about-common-phrases.md)
 + [Simulador](c-about-simulator.md)
 + [Armazenamento temporário](c-about-staging.md)
-+ Geração de relatórios de pesquisa {#reports}
++ Gerando relatórios de pesquisa {#reports}
    + [Trabalhar com relatórios de pesquisa](c-about-reports-menu/c-about-reports-menu.md)
-   + [Data Views](c-about-reports-menu/c-about-data-views.md)
+   + [Visualizações de dados](c-about-reports-menu/c-about-data-views.md)
    + [Alertas](c-about-reports-menu/c-about-alerts.md)
 + Indexação de conteúdo {#index}
    + [Índice completo](c-about-index-menu/c-about-full-index.md)
@@ -87,7 +87,7 @@ ht-degree: 10%
    + [Controle remoto para indexação](c-about-index-menu/c-about-remote-control-for-indexing.md)
    + [Reversão para índices](c-about-index-menu/c-about-rollback-for-indexes.md)
    + [Atualização vertical](c-about-index-menu/c-about-vertical-updates.md)
-+ Configuring settings {#settings}
++ Configuração {#settings}
    + [Rastreamento](c-about-settings-menu/c-about-crawling-menu.md)
    + [Pesquisando](c-about-settings-menu/c-about-searching-menu.md)
    + [Metadados](c-about-settings-menu/c-about-metadata-menu.md)
