@@ -1,6 +1,6 @@
 ---
 description: 'null'
-seo-description: 'null'
+seo-description: nulo
 seo-title: Search&amp;Notas de versão do Promote 8.9 (19/07/2012)
 solution: Target
 title: Search&amp;Notas de versão do Promote 8.9 (19/07/2012)
@@ -8,11 +8,14 @@ topic: Release Notes,Site search and merchandising
 uuid: 3853c75d-19ed-4e36-9e81-dcbffe5f5b0c
 translation-type: tm+mt
 source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+workflow-type: tm+mt
+source-wordcount: '283'
+ht-degree: 67%
 
 ---
 
 
-# Search&amp;Promote 8.9 Release Notes (07/19/2012){#search-promote-release-notes}
+# Notas de versão do Search &amp; Promote 8.9 (19/07/2012){#search-promote-release-notes}
 
 **Novos recursos**
 
@@ -26,13 +29,13 @@ source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
 **Correções e aprimoramentos**
 
 * Adição de suporte para alteração da opção de classificação por uma regra comercial.
-* In the Help system `<search-description>` tag shows the body instead when the meta tag for the description has empty content.
+* No sistema de Ajuda, a tag `<search-description>` mostra o corpo em vez disso, quando a tag meta da descrição tem conteúdo vazio.
 * Adição da capacidade de rastrear as ocorrências da tabela aplicada de resultados adicionados por meio de ações baseadas em resultados.
 * Adição de suporte para envio de parâmetros de consulta via POST
 * Durante o rastreamento, uma operação final mirror_account pode ser ignorada em alguns casos.
-* Os URLs do Adobe Analytics não incluem argumentos de CGI e o código do Search&amp;Promote que faz as pesquisas do Adobe Analytics necessárias para retirar argumentos de CGI de chaves de URL.
+* Os URLs do Adobe Analytics não incluem argumentos CGI e o código de Search &amp; Promote que faz as pesquisas do Adobe Analytics necessárias para retirar argumentos CGI de chaves de URL de forma semelhante.
 * As regras de regravação desaparecem intermitentemente da interface de usuário depois de terem sido encaminhadas para ativação.
-* As contas do Search&amp;Promote com as configurações de Você quis dizer que foram definidas para fazer sugestões devido a baixos resultados podem ter resultados intermitentes.
+* As contas de Search &amp; Promote com as configurações &quot;Você quis dizer&quot; que foram definidas para fazer sugestões devido a resultados baixos podem ter resultados intermitentes.
 * A saída de teste da regra de regravação não tinha quebras de linha.
 * As páginas Regras de URL de pesquisa e Regras de URL de armazenamento da lista de rastreamento apontavam para a página de Histórico incorreta.
 * Clicar em Editar em algums banners não exibia a página Editar.
