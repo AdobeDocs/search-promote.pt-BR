@@ -8,6 +8,9 @@ topic: Index,Site search and merchandising
 uuid: 20e230c6-5c1a-4bf4-bff3-b8236d14ab21
 translation-type: tm+mt
 source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
+workflow-type: tm+mt
+source-wordcount: '1064'
+ht-degree: 1%
 
 ---
 
@@ -16,11 +19,11 @@ source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
 
 Sempre que seu site muda, você pode executar um script ou programa solicitando que o robô de pesquisa execute um índice usando o controle remoto.
 
-## Uso do controle remoto para indexação {#concept_C79B322190E84106A434E5C6D4A4118F}
+## Usando o controle remoto para indexação {#concept_C79B322190E84106A434E5C6D4A4118F}
 
 Normalmente, a solicitação de indexação do controle remoto provém de um script ou de um programa localizado no servidor.
 
-O robô executa as mesmas etapas de indexação como se tivesse sido iniciado manualmente a partir do [!DNL Index] menu. Para enviar uma solicitação de controle remoto, configure a senha e as sequências de caracteres de resposta necessárias.
+O robô executa as mesmas etapas de indexação como se tivesse sido iniciado manualmente pelo menu [!DNL Index]. Para enviar uma solicitação de controle remoto, configure a senha e as sequências de caracteres de resposta necessárias.
 
 ## Como fazer uma solicitação de controle remoto {#section_42FAB2BAB25A4E24BEA69566C6D1C70F}
 
@@ -60,32 +63,32 @@ ou
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> sp_a= sp9999999 </span> </p> </td> 
-   <td colname="col2"> <p> O número da sua conta. </p> <p>Você pode encontrar o número da sua conta em <span class="uicontrol"> Configurações <b></b> &gt; Opções </span> <span class="uicontrol"> da conta <b>&gt; Configurações</b> </span> <span class="uicontrol"> <b></b> </span>da conta. </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> sp_a= sp9999999  </span> </p> </td> 
+   <td colname="col2"> <p> O número da sua conta. </p> <p>Você pode encontrar seu número de conta em <span class="uicontrol"> <b>Settings</b> </span> &gt; <span class="uicontrol"> <b>Opções de Conta</b> </span> &gt; <span class="uicontrol"> <b>Configurações de Conta</b> </span>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> sp_lines= N </span> </p> </td> 
-   <td colname="col2"> <p>Permite verificar o status de um rastreamento de índice em execução. </p> <p> <span class="codeph">  N </span> é um número inteiro positivo ou <span class="codeph"> todos </span>. Se esse for um valor numérico, as últimas N <span class="codeph"> </span> linhas do arquivo de log de índice correspondente serão incluídas na resposta JSON. </p> <p>Se o valor for <span class="codeph"> tudo </span>, o arquivo inteiro será retornado. </p> <p>Se o valor for <span class="codeph"> 0 </span>, nenhuma informação de log será retornada. Esse valor é o padrão para uma consulta de status de índice em execução. </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> sp_lines= N  </span> </p> </td> 
+   <td colname="col2"> <p>Permite verificar o status de um rastreamento de índice em execução. </p> <p> <span class="codeph">  N  </span> é um número inteiro positivo ou  <span class="codeph"> todos  </span>. Se esse for um valor numérico, as últimas linhas <span class="codeph"> N </span> do arquivo de log de índice correspondente serão incluídas na resposta JSON. </p> <p>Se o valor for <span class="codeph"> todos os </span>, o arquivo inteiro será retornado. </p> <p>Se o valor for <span class="codeph"> 0 </span>, nenhuma informação de log será retornada. Esse valor é o padrão para um query de status de índice em execução. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> sp_operation= op </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> sp_operation= op  </span> </p> </td> 
    <td colname="col2"> <p>Permite que você especifique uma das seguintes operações de indexação que deseja executar: </p> <p> 
      <ul id="ul_6CA190AC41694BC293FC7C6BABA629FE"> 
-      <li id="li_EFC76E31D47E473F9A56B2EBA8A97CA1"> <span class="codeph"> full_index </span> <p>O robô de pesquisa executa um índice completo do seu site. </p> </li> 
-      <li id="li_A9ACE21718804A21B3DA7B84AB6729D3"> <span class="codeph"> incremental_index </span> <p>O robô de pesquisa executa um índice incremental usando a configuração definida em <span class="uicontrol"> Índice <b></b> &gt; Índice </span> <span class="uicontrol"> incremental <b>&gt;</b> </span> <span class="uicontrol"> <b></b></span>Configuração. </p> </li> 
-      <li id="li_722FE409AE454AD48ACE95C4CDC7A00B"> <span class="codeph"> vertical_index </span> <p>O robô de pesquisa executa uma atualização vertical usando a configuração definida em <span class="uicontrol"> Índice <b></b> &gt; Atualização </span> <span class="uicontrol"> vertical <b>&gt;</b> </span> <span class="uicontrol"> <b></b></span>Configuração. </p> <p>Consulte <a href="../c-about-index-menu/c-about-vertical-updates.md#concept_E65A70C9C2E04804BF24FBE1B3CAD899" format="dita" scope="local"> Sobre atualização</a>vertical. </p> </li> 
-      <li id="li_A40B513CE17043A4925CE3D4DE0B48A4"> <span class="codeph"> script_index </span> <p>O robô de pesquisa executa um índice incremental usando o arquivo de texto especificado em <span class="uicontrol"> Índice <b></b> &gt; Índice </span> <span class="uicontrol"> com script <b>&gt;</b> </span> <span class="uicontrol"> <b></b></span>Configuração. </p> </li> 
-      <li id="li_A0BC7F1373B14393997BAB7690FD3EF7"> <span class="codeph"> full_staged_index </span> <p>O robô de pesquisa executa um índice completo de etapas do seu site. </p> </li> 
-      <li id="li_47753E358457443A95B384A278FACA83"> <span class="codeph"> incremental_staged_index </span> <p>O robô de pesquisa executa um índice escalonado incremental usando a configuração definida em <span class="uicontrol"> Índice <b></b> &gt; Índice </span> <span class="uicontrol"> incremental <b>&gt;</b> </span> <span class="uicontrol"> <b></b></span>Configuração. </p> </li> 
-      <li id="li_C8B5F8F1208E438ABEFDF9129A6B14A3"> <span class="codeph"> vertical_staged_index </span> <p>O robô de pesquisa executa uma atualização de etapas verticais usando a configuração definida em <span class="uicontrol"> Índice <b></b> &gt; Atualização </span> <span class="uicontrol"> vertical <b>&gt;</b> </span> <span class="uicontrol"> <b></b></span>Configuração. </p> </li> 
-     </ul> </p> <p>Observação:  Para usar as Atualizações verticais, talvez seja necessário ativá-las em sua conta pelo representante de conta da Adobe ou pelo suporte da Adobe. </p> <p>Consulte <a href="../c-about-index-menu/c-about-vertical-updates.md#concept_E65A70C9C2E04804BF24FBE1B3CAD899" format="dita" scope="local"> Sobre atualização vertical </a>. </p> <p>Você pode anexar <span class="codeph"> _saved </span> a qualquer um dos valores <span class="codeph"> </span> sp_operation acima para que o robô de pesquisa tente usar conteúdo salvo. Por exemplo, você pode especificar o seguinte: </p> <p> <code class="syntax html"> sp_operation=full_index_saved </code> </p> <p>ou </p> <p> <code class="syntax html"> sp_operation=full_staged_index_saved </code> </p> <p>Ou, você pode anexar <span class="codeph"> _status </span> a qualquer um dos valores <span class="codeph"> sp_operation acima </span> para solicitar um relatório de status para a operação atual ou mais recente. Por exemplo, você pode especificar o seguinte: </p> <p> <code class="syntax html"> sp_operation=full_index_status </code> </p> <p>ou </p> <p> <code class="syntax html"> sp_operation=full_staged_index_status </code> </p> <p>e os resultados são retornados como um objeto JSON. Inclua <span class="codeph"> sp_lines=N </span> para incluir N linhas do arquivo de log associado. Se N for negativo, as últimas N linhas serão incluídas. </p> </td> 
+      <li id="li_EFC76E31D47E473F9A56B2EBA8A97CA1"> <span class="codeph"> full_index  </span> <p>O robô de pesquisa executa um índice completo do seu site. </p> </li> 
+      <li id="li_A9ACE21718804A21B3DA7B84AB6729D3"> <span class="codeph"> incremental_index  </span> <p>O robô de pesquisa executa um índice incremental usando a configuração definida em <span class="uicontrol"> <b>Index</b> </span> &gt; <span class="uicontrol"> <b>Índice Incremental</b> </span> &gt; <span class="uicontrol"> <b>Configuração</b></span>. </p> </li> 
+      <li id="li_722FE409AE454AD48ACE95C4CDC7A00B"> <span class="codeph"> vertical_index  </span> <p>O robô de pesquisa executa uma atualização vertical usando a configuração definida em <span class="uicontrol"> <b>Index</b> </span> &gt; <span class="uicontrol"> <b>Atualização vertical</b> </span> &gt; <span class="uicontrol"> <b>Configuração</b></span>. </p> <p>Consulte <a href="../c-about-index-menu/c-about-vertical-updates.md#concept_E65A70C9C2E04804BF24FBE1B3CAD899" format="dita" scope="local"> Sobre a Atualização Vertical</a>. </p> </li> 
+      <li id="li_A40B513CE17043A4925CE3D4DE0B48A4"> <span class="codeph"> script_index  </span> <p>O robô de pesquisa executa um índice incremental usando o arquivo de texto especificado em <span class="uicontrol"> <b>Index</b> </span> &gt; <span class="uicontrol"> <b>Índice Script</b> </span> &gt; <span class="uicontrol"> <b>Configuração</b></span>. </p> </li> 
+      <li id="li_A0BC7F1373B14393997BAB7690FD3EF7"> <span class="codeph"> full_staged_index  </span> <p>O robô de pesquisa executa um índice completo de etapas do seu site. </p> </li> 
+      <li id="li_47753E358457443A95B384A278FACA83"> <span class="codeph"> incremental_staged_index  </span> <p>O robô de pesquisa executa um índice escalonado incremental usando a configuração definida em <span class="uicontrol"> <b>Index</b> </span> &gt; <span class="uicontrol"> <b>Índice Incremental</b> </span> &gt; <span class="uicontrol"> <b>Configuração</b></span>. </p> </li> 
+      <li id="li_C8B5F8F1208E438ABEFDF9129A6B14A3"> <span class="codeph"> vertical_staged_index  </span> <p>O robô de pesquisa executa uma atualização de etapas verticais usando a configuração definida em <span class="uicontrol"> <b>Index</b> </span> &gt; <span class="uicontrol"> <b>Atualização vertical</b> </span> &gt; <span class="uicontrol"> <b>Configuração</b></span>. </p> </li> 
+     </ul> </p> <p>Observação:  Para usar as Atualizações verticais, talvez seja necessário ativá-las em sua conta pelo representante de conta do Adobe ou pelo Suporte ao Adobe. </p> <p>Consulte <a href="../c-about-index-menu/c-about-vertical-updates.md#concept_E65A70C9C2E04804BF24FBE1B3CAD899" format="dita" scope="local"> Sobre a atualização vertical </a>. </p> <p>Você pode anexar <span class="codeph"> _saved </span> a qualquer um dos valores <span class="codeph"> sp_operation </span> acima para que o robô de pesquisa tente usar o conteúdo salvo. Por exemplo, você pode especificar o seguinte: </p> <p> <code class="syntax html"> sp_operation=full_index_saved </code> </p> <p>ou </p> <p> <code class="syntax html"> sp_operation=full_staged_index_saved </code> </p> <p>Ou você pode anexar <span class="codeph"> _status </span> a qualquer um dos valores <span class="codeph"> sp_operation </span> acima para solicitar um relatório de status para a operação atual ou mais recente. Por exemplo, você pode especificar o seguinte: </p> <p> <code class="syntax html"> sp_operation=full_index_status </code> </p> <p>ou </p> <p> <code class="syntax html"> sp_operation=full_staged_index_status </code> </p> <p>e os resultados são retornados como um objeto JSON. Inclua <span class="codeph"> sp_lines=N </span> para incluir N linhas do arquivo de log associado. Se N for negativo, as últimas N linhas serão incluídas. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> sp_operation= pushlive </span> </p> </td> 
-   <td colname="col2"> <p> Permite que você envie ao vivo remotamente um índice de preparo. </p> <p>Qualquer tentativa de anexar <span class="codeph"> _salvo </span> à operação de envio ao vivo é ignorada. </p> <p>Quando você executa uma operação <span class="codeph"> </span> pushlive, uma string de texto de resposta OK, Priority ou Error é retornada ao servidor. Especifique essas sequências de caracteres de resposta na página <span class="wintitle"> Controle </span> remoto. </p> <p>Consulte <a href="../c-about-index-menu/c-about-remote-control-for-indexing.md#task_57C296258404448DA7A5ADC9B7232391" format="dita" scope="local"> Configuração do controle remoto para indexação</a>. </p> <p>Se você mover ao vivo quando não houver um índice de preparo, nada acontecerá e a sequência de caracteres de resposta OK será retornada. </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> sp_operation= pushlive  </span> </p> </td> 
+   <td colname="col2"> <p> Permite que você envie ao vivo remotamente um índice de preparo. </p> <p>Qualquer tentativa de anexar <span class="codeph"> _saved </span> à operação ativa de envio é ignorada. </p> <p>Quando você executa uma operação <span class="codeph"> pushlive </span>, uma string de texto de resposta OK, Priority ou Error é retornada ao servidor. Especifique essas sequências de caracteres de resposta na página <span class="wintitle"> Controle remoto </span>. </p> <p>Consulte <a href="../c-about-index-menu/c-about-remote-control-for-indexing.md#task_57C296258404448DA7A5ADC9B7232391" format="dita" scope="local"> Configurando o controle remoto para indexação</a>. </p> <p>Se você mover ao vivo quando não houver um índice de preparo, nada acontecerá e a sequência de caracteres de resposta OK será retornada. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> sp_password= xxxxx </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> sp_password= xxxxx  </span> </p> </td> 
    <td colname="col2"> <p>A senha do controle remoto. </p> </td> 
   </tr> 
  </tbody> 
@@ -133,7 +136,7 @@ Content-type: application/json; charset=utf-8
 }
 ```
 
-Para obter as primeiras dez linhas da listagem de log associadas a essa operação de índice, juntamente com seu status, a seguinte consulta é usada:
+Para obter as primeiras dez linhas da listagem de log associadas à operação de índice, juntamente com seu status, o seguinte query é usado:
 
 ```
 https://center.atomz.com/search/cgiindex.tk?sp_a=sp99999999&sp_password=my-password&sp_operation=full_index_status&sp_lines=10
@@ -172,11 +175,11 @@ Content-type: application/json; charset=utf-8
 }
 ```
 
-Note the `offset` value. Esse valor identifica a posição de deslocamento do arquivo no arquivo de log, onde a leitura ficou desativada. Para ler as *próximas* dez linhas no arquivo, você deve incluir, neste exemplo, `&sp_offset=672` a solicitação enviada ao servidor.
+Observe o valor `offset`. Esse valor identifica a posição de deslocamento do arquivo no arquivo de log, onde a leitura ficou desativada. Para ler as dez linhas *ao lado* no arquivo, inclua, neste exemplo, `&sp_offset=672` na solicitação enviada para o servidor.
 
 Usando `sp_offset`, você pode navegar efetivamente por um arquivo de log.
 
-Para obter as *últimas* dez linhas do log, juntamente com o status, especifique a contagem como um número negativo. Por exemplo, especifique `sp_lines=` com um valor de `-10` como no seguinte:
+Para obter as *last* dez linhas do log, juntamente com o status, especifique a contagem como um número negativo. Por exemplo, especifique `sp_lines=` com um valor de `-10` como no seguinte:
 
 ```
 https://center.atomz.com/search/cgiindex.tk?sp_a=sp99999999&sp_password=my-password&sp_operation=full_index_status&sp_lines=-10
@@ -214,16 +217,16 @@ Content-type: application/json; charset=utf-8
 }
 ```
 
-Observe que não há nenhum `offset` valor retornado aqui, pois essa operação terminou no final do arquivo e não há mais linhas para ler.
+Observe que não há valor `offset` retornado aqui, pois essa operação terminou no final do arquivo e não há mais linhas para ler.
 
-## Configuração do controle remoto para indexação {#task_57C296258404448DA7A5ADC9B7232391}
+## Configurando o controle remoto para indexação {#task_57C296258404448DA7A5ADC9B7232391}
 
 Sempre que seu site muda, você pode usar o Controle remoto para executar um script ou programa do servidor, solicitando que o robô de pesquisa execute um índice.
 
 **Configuração do controle remoto para indexação**
 
 1. No menu do produto, clique em **[!UICONTROL Index]** > **[!UICONTROL Remote Control]**.
-1. Na [!DNL Remote Control] página, defina cada opção de campo de configuração para poder enviar uma solicitação de indexação do servidor automaticamente para indexar seu site.
+1. Na página [!DNL Remote Control], defina cada opção de campo de configuração para poder enviar uma solicitação de indexação do servidor automaticamente para indexar seu site.
 
    <table> 
     <thead> 
