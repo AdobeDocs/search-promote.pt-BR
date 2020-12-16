@@ -20,13 +20,13 @@ ht-degree: 1%
 
 Com o índice de scripts, você pode gravar, atualizar e manter opções de indexação incrementais sem precisar fazer logon. O robô de pesquisa lê as instruções de um arquivo de texto hospedado em seu servidor.
 
-## Usando índice de script {#concept_34F58D551BC04BFB8ADC294B9DA9199D}
+## Usando o índice de scripts {#concept_34F58D551BC04BFB8ADC294B9DA9199D}
 
-## Sobre a configuração da indexação incremental por script {#section_161D254065E143F3A39F3FC09C400090}
+## Sobre a configuração da indexação incremental com script {#section_161D254065E143F3A39F3FC09C400090}
 
 Para usar o Índice com script, use a página Configuração de índice incremental com script para especificar o URL para um arquivo de script (um arquivo de texto simples) localizado no servidor. Por exemplo, `https://www.mysite.com/indexlist.txt`. Conforme o site muda, você pode adicionar blocos de comando ao arquivo de texto manualmente ou automaticamente (com um script acionado pela chegada de informações de um feed de notícias, marcador de ações ou outro arquivo alterado).
 
-Quando o índice incremental com script começa, o robô de pesquisa lê o arquivo de texto e executa os novos comandos encontrados nesse arquivo. Por padrão, o robô de pesquisa processa apenas os novos comandos, que são determinados pela data do arquivo. A menos que você verifique **[!UICONTROL Clear Date]** no momento em que configura o Índice de script, o robô de pesquisa &quot;lembra&quot; o especificador de data do bloco processado mais recentemente.
+Quando o índice incremental com script começa, o robô de pesquisa lê o arquivo de texto e executa os novos comandos encontrados nesse arquivo. Por padrão, o robô de pesquisa processa apenas os novos comandos, que são determinados pela data do arquivo. A menos que você marque **[!UICONTROL Clear Date]** no momento em que configurar o Índice de script, o robô de pesquisa &quot;se lembra&quot; do especificador de datas do bloco processado mais recentemente.
 
 ## Sobre o arquivo de script {#section_B312E40539F44C6583B4F9637D428E19}
 
@@ -50,16 +50,16 @@ Um zero à esquerda é necessário para todas as datas ordinais inferiores ao 10
    <td colname="col1"> <p>date-command </p> </td> 
    <td colname="col2"> <p>A primeira linha de cada start de bloco com um de dois comandos de data: </p> <p> 
      <ul id="ul_9C1B229B7F1846C490B853FC34989E77"> 
-      <li id="li_31FEF1A7163842BDBB0ABE779D07045A"> <span class="codeph"> date </span> <p>Use o comando "date" para indicar que o especificador de data consistirá em um dia, data, hora e fuso horário. </p> </li> 
-      <li id="li_0918D5B090014C1A852CB80BB7C2867C"> <span class="codeph"> segundos </span> <p>Use <span class="codeph"> segundos </span> para indicar que o especificador de datas consistirá em um tempo em cada segundo (por exemplo, 784111777). Ao usar <span class="codeph"> segundos </span>, verifique se o número de segundos aumenta entre blocos. </p> </li> 
+      <li id="li_31FEF1A7163842BDBB0ABE779D07045A"> <span class="codeph"> date  </span> <p>Use o comando "date" para indicar que o especificador de data consistirá em um dia, data, hora e fuso horário. </p> </li> 
+      <li id="li_0918D5B090014C1A852CB80BB7C2867C"> <span class="codeph"> segundos </span> <p>Use <span class="codeph"> segundos </span> para indicar que o especificador de data consistirá em um tempo em cada segundo (por exemplo, 784111777). Ao usar <span class="codeph"> segundos </span>, verifique se o número de segundos aumenta entre blocos. </p> </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>especificador de data </p> </td> 
-   <td colname="col2"> <p>O comando <span class="codeph"> date-specifier </span> geralmente registra a data e a hora ordinais (comando date) ou a hora em cada segundo de época (comando second) em que as informações de bloco foram adicionadas ao arquivo. Por exemplo: </p> <p> <code> date&nbsp;Sun,&nbsp;06&nbsp;Nov&nbsp;1994&nbsp;08:49:37&nbsp;GMT&nbsp;(HTTP&nbsp;1.1&nbsp;style) 
+   <td colname="col2"> <p>O comando <span class="codeph"> date-specifier </span> normalmente registra a data e a hora ordinais (comando date) ou o tempo em cada segundo de época (comando second) em que as informações de bloco foram adicionadas ao arquivo. Por exemplo: </p> <p> <code> date&nbsp;Sun,&nbsp;06&nbsp;Nov&nbsp;1994&nbsp;08:49:37&nbsp;GMT&nbsp;(HTTP&nbsp;1.1&nbsp;style) 
       date&nbsp;Sunday,&nbsp;06-Nov-94&nbsp;08:49:37&nbsp;GMT&nbsp;(HTTP&nbsp;1.0&nbsp;style) 
       date&nbsp;Sun&nbsp;Nov&nbsp;6&nbsp;08:49:37&nbsp;1994&nbsp;(Unix&nbsp;asctime()&nbsp;date&nbsp;style) 
-      seconds&nbsp;784111777&nbsp;(Unix&nbsp;epoch-seconds&nbsp;style) </code> </p> <p>Um zero à esquerda é necessário para todas as datas ordinais inferiores ao 10º ao usar o estilo HTTP 1.1. Por exemplo, 6 de novembro é 6 de nov, não 6 de nov. </p> <p>O robô de pesquisa "lembra" o especificador de datas do bloco processado mais recentemente e indexa apenas as informações que considera "mais recentes". (Tempo real não importa para o robô de busca. Em vez disso, o tempo em relação a outros tempos processados anteriormente é o que importa.) </p> <p>Depois que o robô de pesquisa lê um bloco com um especificador de data de 10:00 p.m, por exemplo, ele não lê nenhum bloco que registra horas antes das 22:00, independentemente de quando a operação de índice é executada. Na pior das hipóteses, você pode inserir erroneamente o ano "2040" em vez de "2004" no seu especificador de datas. Nesse caso, o robô de pesquisa indexa o bloco 2040 durante a próxima operação de indexação e, em seguida, recusa ler outros blocos de informação (a menos que um post-date 2040). Se isso acontecer, remova todos os blocos processados anteriormente do arquivo de texto, clique em <span class="uicontrol"> Limpar data </span>e, em seguida, coloque-o online. </p> </td> 
+      seconds&nbsp;784111777&nbsp;(Unix&nbsp;epoch-seconds&nbsp;style) </code> </p> <p>Um zero à esquerda é necessário para todas as datas ordinais inferiores ao 10º ao usar o estilo HTTP 1.1. Por exemplo, 6 de novembro é 6 de nov, não 6 de nov. </p> <p>O robô de pesquisa "lembra" o especificador de datas do bloco processado mais recentemente e indexa apenas as informações que considera "mais recentes". (Tempo real não importa para o robô de busca. Em vez disso, o tempo em relação a outros tempos processados anteriormente é o que importa.) </p> <p>Depois que o robô de pesquisa lê um bloco com um especificador de data de 10:00 p.m, por exemplo, ele não lê nenhum bloco que registra horas antes das 22:00, independentemente de quando a operação de índice é executada. Na pior das hipóteses, você pode inserir erroneamente o ano "2040" em vez de "2004" no seu especificador de datas. Nesse caso, o robô de pesquisa indexa o bloco 2040 durante a próxima operação de indexação e, em seguida, recusa ler outros blocos de informação (a menos que um post-date 2040). Se isso acontecer, remova todos os blocos processados anteriormente do arquivo de texto, clique em <span class="uicontrol"> Limpar data </span> e empurre-o ao vivo. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>linha de comentários </p> </td> 
@@ -73,19 +73,23 @@ Um zero à esquerda é necessário para todas as datas ordinais inferiores ao 10
       <li id="li_22181666628C48A28A6A0BA1F7CA8E77"> 
        <code>
          add 
-       </code> <p>Usar com URL. O robô de pesquisa indexa somente os URLs especificados que foram alterados desde a última operação de indexação. Além disso, o robô de pesquisa segue links contidos em documentos e indexa somente os documentos que foram alterados. </p> <p>Você pode seguir o URL com <code>
+       </code> <p>Usar com URL. O robô de pesquisa indexa somente os URLs especificados que foram alterados desde a última operação de indexação. Além disso, o robô de pesquisa segue links contidos em documentos e indexa somente os documentos que foram alterados. </p> <p>Você pode seguir o URL com 
+        <code>
           nofollow 
-        </code> ou <code>
+        </code> ou 
+        <code>
           noindex 
-        </code> palavras-chave, como no exemplo a seguir: </p> <p> <code> add&amp;nbsp;https://www.mydomain.com/&amp;nbsp;noindex </code> </p> </li> 
+        </code> palavras-chave como no seguinte exemplo: </p> <p> <code> add&amp;nbsp;https://www.mydomain.com/&amp;nbsp;noindex </code> </p> </li> 
       <li id="li_8E47BF07DB24417083883F5BF40D6B9E"> 
        <code>
          update 
-       </code> <p>Usar com máscara de URL. O robô de pesquisa encontra e atualiza todos os documentos que correspondem à máscara de URL especificada. </p> <p>Você pode seguir o URL com <code>
+       </code> <p>Usar com máscara de URL. O robô de pesquisa encontra e atualiza todos os documentos que correspondem à máscara de URL especificada. </p> <p>Você pode seguir o URL com 
+        <code>
           nofollow 
-        </code> ou <code>
+        </code> ou 
+        <code>
           noindex 
-        </code> palavras-chave, como no exemplo a seguir: </p> <p> <code> update&amp;nbsp;https://www.mydomain.com/products/ </code> </p> </li> 
+        </code> palavras-chave como no seguinte exemplo: </p> <p> <code> update&amp;nbsp;https://www.mydomain.com/products/ </code> </p> </li> 
       <li id="li_B3EC8B1670D54F66A1D8411A694EF7E4"> 
        <code>
          include 
@@ -104,33 +108,41 @@ Um zero à esquerda é necessário para todas as datas ordinais inferiores ao 10
          <li id="li_0C7051AC3B5A4C57A3E477F7B6246611"> 
           <code>
             include-days NNN 
-          </code> <p>O robô de pesquisa indexa todos os documentos que correspondem à máscara de URL especificada e são NNN dias ou mais antigos. </p> <p>Você pode seguir a máscara de URL com as palavras-chave <code>
+          </code> <p>O robô de pesquisa indexa todos os documentos que correspondem à máscara de URL especificada e são NNN dias ou mais antigos. </p> <p>Você pode seguir a máscara de URL com as palavras-chave 
+           <code>
              nofollow 
-           </code>, <code>
+           </code>, 
+           <code>
              noindex 
-           </code>e/ou <code>
+           </code>, e/ou 
+           <code>
              server-date 
            </code>. </p> </li> 
          <li id="li_983A10E2ED5D434EA9031F32143F4EF4"> 
           <code>
             include-date YYYY-MM-DD 
-          </code> <p> O robô de pesquisa indexa todos os documentos que correspondem à máscara de URL especificada e são tão antigos ou mais antigos que a data AAAA-MM-DD, onde "AAAA" é o ano de 4 dígitos, "MM" é o mês de um ou dois dígitos (1-12) e "DD" é o dia de um ou dois dígitos (1-31). </p> <p>Você pode seguir a máscara de URL com as palavras-chave <code>
+          </code> <p> O robô de pesquisa indexa todos os documentos que correspondem à máscara de URL especificada e são tão antigos ou mais antigos que a data AAAA-MM-DD, onde "AAAA" é o ano de 4 dígitos, "MM" é o mês de um ou dois dígitos (1-12) e "DD" é o dia de um ou dois dígitos (1-31). </p> <p>Você pode seguir a máscara de URL com as palavras-chave 
+           <code>
              nofollow 
-           </code>, <code>
+           </code>, 
+           <code>
              noindex 
-           </code>e/ou <code>
+           </code>, e/ou 
+           <code>
              server-date 
            </code>. </p> </li> 
          <li id="li_733CE1B748024CECA7FBE00D7BC7B88A"> 
           <code>
             exclude-days NNN 
-          </code> <p> Desabilita a indexação de todos os documentos que correspondem à máscara de URL especificada e são NNN dias ou mais antigos. </p> <p>Você pode seguir a máscara de URL com a palavra-chave <code>
+          </code> <p> Desabilita a indexação de todos os documentos que correspondem à máscara de URL especificada e são NNN dias ou mais antigos. </p> <p>Você pode seguir a máscara de URL com a palavra-chave 
+           <code>
              server-date 
            </code>. </p> </li> 
          <li id="li_90056A0B96CC4DA3854711860A15CE89"> 
           <code>
             exclude-date YYYY-MM-DD 
-          </code> <p>Desabilita a indexação de todos os documentos que correspondem à máscara de URL especificada e são tão antigos ou mais antigos que a data AAAA-MM-DD. </p> <p>Você pode seguir a máscara de URL com a palavra-chave <code>
+          </code> <p>Desabilita a indexação de todos os documentos que correspondem à máscara de URL especificada e são tão antigos ou mais antigos que a data AAAA-MM-DD. </p> <p>Você pode seguir a máscara de URL com a palavra-chave 
+           <code>
              server-date 
            </code>. </p> </li> 
         </ul> </p> </li> 
@@ -147,7 +159,7 @@ Um zero à esquerda é necessário para todas as datas ordinais inferiores ao 10
  </tbody> 
 </table>
 
-Consulte também [Sobre máscaras](../c-about-settings-menu/c-about-crawling-menu.md#concept_8039DFC53FF3410AA494D602F71BA164)de URL.
+Consulte também [Sobre máscaras de URL](../c-about-settings-menu/c-about-crawling-menu.md#concept_8039DFC53FF3410AA494D602F71BA164).
 
 ## Exemplo de arquivo de script {#section_9F580F20E7214751B157A28B392BD64E}
 
@@ -159,12 +171,12 @@ No exemplo de arquivo de script a seguir, o robô de pesquisa processa os blocos
 * Durante o rastreamento, exclua URLs que correspondem `housewares.htm` e `lightfixtures.htm`l do índice de pesquisa.
 
 * Inclua todos os outros diretórios e documentos em `www.mydomain.com`.
-* Atualize todos os documentos dentro dos diretórios `products` e `information` , pesquisando e indexando todos os links subsidiários que foram alterados desde a última operação de indexação.
+* Atualize todos os documentos nos diretórios `products` e `information`, pesquisando e indexando todos os links subsidiários que foram alterados desde a última operação de indexação.
 
 * Durante o rastreamento, exclua URLs na seção `archive` do site se eles tiverem data de 1 de janeiro de 1999 ou antes dela.
 * Exclua URLs que correspondem `housewares.html` e `lightfixtures.html` do índice de pesquisa.
 
-* Indexar arquivos no `help` diretório, mas não rastrear nem indexar links desses arquivos.
+* Indexar arquivos no diretório `help`, mas não rastrear nem indexar links desses arquivos.
 * Rastreie e indexe quaisquer outros arquivos encontrados para `www.mydomain.com`.
 
 ```
@@ -199,34 +211,34 @@ Você pode especificar um script criado que grava, atualiza e mantém um índice
 **Para configurar um índice incremental com script**
 
 1. No menu do produto, clique em **[!UICONTROL Index]** > **[!UICONTROL Scripted Index]** > **[!UICONTROL Configuration]**.
-1. Na **[!UICONTROL Scripted Incremental Index Configuration]** página, no **[!UICONTROL Script File URL]**, insira o URL para o script de arquivo de texto localizado no servidor.
+1. Na página **[!UICONTROL Scripted Incremental Index Configuration]**, em **[!UICONTROL Script File URL]**, insira o URL para o script de arquivo de texto localizado no servidor.
 
-   Consulte [Sobre o índice](../c-about-index-menu/c-about-scripted-index.md#concept_34F58D551BC04BFB8ADC294B9DA9199D)de script.
-1. (Opcional) Verifique **[!UICONTROL Clear Date]** se você não deseja que o robô de pesquisa &quot;lembre-se&quot; do especificador de datas do bloco processado mais recentemente.
+   Consulte [Sobre o índice de scripts](../c-about-index-menu/c-about-scripted-index.md#concept_34F58D551BC04BFB8ADC294B9DA9199D).
+1. (Opcional) Marque **[!UICONTROL Clear Date]** se não quiser que o robô de pesquisa &quot;lembre-se&quot; do especificador de datas do bloco processado mais recentemente.
 
-   Por padrão, o robô de pesquisa processa apenas novos blocos de comandos que são encontrados no arquivo de texto, que é determinado pela data do arquivo. Se você não quiser o padrão, marque **[!UICONTROL Clear Date]**.
+   Por padrão, o robô de pesquisa processa apenas novos blocos de comandos que são encontrados no arquivo de texto, que é determinado pela data do arquivo. Se não quiser o padrão, marque **[!UICONTROL Clear Date]**.
 1. Clique em **[!UICONTROL Save Changes]**.
 1. (Opcional) Execute um dos procedimentos a seguir:
 
-   * Clique **[!UICONTROL History]** para reverter quaisquer alterações feitas.
+   * Clique em **[!UICONTROL History]** para reverter quaisquer alterações feitas.
 
-      Consulte [Uso da opção](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Histórico.
+      Consulte [Usando a opção Histórico](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clique em **[!UICONTROL Live]**.
 
-      Consulte [Visualizar configurações](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)ativas.
+      Consulte [Ver definições ativas](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clique em **[!UICONTROL Push Live]**.
 
-      Consulte [Colocar configurações de estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
+      Consulte [Envio de configurações de estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Configurar a programação de índice incremental com script para um site ativo {#task_B3A87AC4AC784507859C23B9062BA11C}
+## Definir a programação de índice incremental com script para um site ativo {#task_B3A87AC4AC784507859C23B9062BA11C}
 
 Você pode programar a indexação incremental por script para que ocorra em intervalos regulares durante o dia.
 
 A hora básica selecionada é local de acordo com o fuso horário configurado nas Configurações da conta.
 
-Consulte [Definição das configurações](../c-about-settings-menu/c-about-account-options-menu.md#task_80A38D0C8E4F453395BD67B81E4B45D9)da sua conta.
+Consulte [Definição das definições da sua conta](../c-about-settings-menu/c-about-account-options-menu.md#task_80A38D0C8E4F453395BD67B81E4B45D9).
 
 Os servidores da Web normalmente ficam inativos para manutenção no meio da noite. Se o servidor estiver inativo durante um tempo de índice programado, o processo de indexação falhará. Certifique-se de selecionar uma hora do dia em que o servidor Web está disponível.
 
@@ -235,17 +247,17 @@ A programação de índice se aplica somente ao seu índice ativo; não é poss�
 **Para definir a programação de índice incremental com script para um site ativo**
 
 1. No menu do produto, clique em **[!UICONTROL Index]** > **[!UICONTROL Scripted Index]** > **[!UICONTROL Live Schedule]**.
-1. Na **[!UICONTROL Scripted Incremental Index Schedule]** página, na lista **[!UICONTROL Read the Scripted Incrementally Indexing File]** suspensa, selecione a frequência na qual você deseja que o arquivo de texto de índice incremental com script seja executado, em horas ou minutos.
-1. Na lista **[!UICONTROL Base Time]** suspensa, selecione a hora de início em que deseja gerar novamente um novo índice incremental com script.
+1. Na página **[!UICONTROL Scripted Incremental Index Schedule]**, na lista suspensa **[!UICONTROL Read the Scripted Incrementally Indexing File]**, selecione a frequência na qual deseja que o arquivo de texto de índice incremental com script seja executado, em horas ou minutos.
+1. Na lista suspensa **[!UICONTROL Base Time]**, selecione a hora de início na qual deseja gerar novamente um novo índice incremental com script.
 1. Clique em **[!UICONTROL Save Changes]**.
 
-## Execução de um índice incremental com script de um site ao vivo ou preparado {#task_6E6FC76EE1E84A5FADB3B67AD7B1DACB}
+## Execução de um índice incremental com script de um site ativo ou preparado {#task_6E6FC76EE1E84A5FADB3B67AD7B1DACB}
 
 Você pode usar o Índice Incremental com Script para indexar &quot;partes&quot; do site ao vivo ou preparado, como uma coleção de páginas alteradas frequentemente, tudo isso sem a necessidade de fazer logon.
 
 Para usar esse recurso, certifique-se de configurar um arquivo de texto de índice incremental com script.
 
-Consulte [Configuração de um índice](../c-about-index-menu/c-about-scripted-index.md#task_05AE040FE75E40FFAA5E10B6B6D4D255)incremental com script.
+Consulte [Configurar um índice incremental com script](../c-about-index-menu/c-about-scripted-index.md#task_05AE040FE75E40FFAA5E10B6B6D4D255).
 
 **Para executar um índice incremental com script de um site ao vivo ou preparado**
 
@@ -255,9 +267,9 @@ Consulte [Configuração de um índice](../c-about-index-menu/c-about-scripted-i
    * Clique em **[!UICONTROL Index]** > **[!UICONTROL Scripted Index]** > **[!UICONTROL Staged Index]**.
 
 1. Clique em **[!UICONTROL Scripted Index Now]**.
-1. (Opcional) Se ocorreram erros de indexação, clique em **[!UICONTROL View Errors]** para visualização o log associado.
+1. (Opcional) Se erros de indexação ocorreram, clique em **[!UICONTROL View Errors]** para visualização o log associado.
 
-## Exibição do log de índice incremental com script de um site ao vivo ou preparado {#task_CBFCE9B9A87B4DF7A2A35A6E83DE93D7}
+## Exibindo o log de índice incremental com script de um site ativo ou preparado {#task_CBFCE9B9A87B4DF7A2A35A6E83DE93D7}
 
 Quando um índice de script completo em tempo real ou um índice de script completo preparado for concluído, você poderá visualização seu log associado para solucionar quaisquer erros ocorridos.
 
@@ -273,7 +285,7 @@ Não é possível exportar registros nem salvá-los. No entanto, o log permanece
 
 1. Na página de log, na parte superior ou inferior, execute um dos procedimentos a seguir:
 
-   * Use as opções de navegação **[!UICONTROL First]**, **[!UICONTROL Prev]**, **[!UICONTROL Next]****[!UICONTROL Last]** ou **[!UICONTROL Go to line]** para percorrer o log.
+   * Use as opções de navegação **[!UICONTROL First]**, **[!UICONTROL Prev]**, **[!UICONTROL Next]**, **[!UICONTROL Last]** ou **[!UICONTROL Go to line]** para percorrer o registro.
 
    * Use as opções de exibição **[!UICONTROL Errors only]**, **[!UICONTROL Wrap line]** ou **[!UICONTROL Show]** para refinar o que você vê.
 
