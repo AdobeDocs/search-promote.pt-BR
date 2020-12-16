@@ -9,21 +9,24 @@ topic: Design,Site search and merchandising
 uuid: fb17a99e-d7b4-415e-ba1b-ca194fe41a5d
 translation-type: tm+mt
 source-git-commit: 7f1b5d94e8002992d62ec1e3dce11f9c5605fde8
+workflow-type: tm+mt
+source-wordcount: '419'
+ht-degree: 2%
 
 ---
 
 
 # Sobre a navegação da página{#about-page-navigation}
 
-Você pode usar **[!UICONTROL Page Navigation]** para personalizar o controle de navegação da página da sua camada de apresentação de pesquisa.
+Você pode usar **[!UICONTROL Page Navigation]** para personalizar o controle de navegação da página da camada de apresentação de pesquisa.
 
-## Uso da navegação da página {#concept_4488C73B2F59457CB76B658FF71B9E4B}
+## Usando a navegação da página {#concept_4488C73B2F59457CB76B658FF71B9E4B}
 
 Se a sua camada de apresentação tiver mais de um conjunto de resultados de pesquisa, o controle de navegação da página será para a pesquisa principal na página.
 
 ## Adicionar navegação de página da Web {#task_8FC098E36A7D495695F3FA4F85DA600C}
 
-Você pode usar [!DNL Page Navigation] para personalizar o controle de navegação da página da sua camada de apresentação de pesquisa.
+Você pode usar [!DNL Page Navigation] para personalizar o controle de navegação da página da camada de apresentação de pesquisa.
 
 <!-- 
 
@@ -33,9 +36,9 @@ t_configuring_web_page_navigation.xml
 
 **Para adicionar navegação de página da Web**
 
-1. No menu do programa, clique em **[!UICONTROL Design]** > **[!UICONTROL Navigation]** > **[!UICONTROL Page Navigation]**.
-1. Na [!DNL Page Navigation] página, clique em **[!UICONTROL Add New Page Navigation]**.
-1. Na [!DNL Add Page Navigation] página, defina as opções desejadas.
+1. No menu programa, clique em **[!UICONTROL Design]** > **[!UICONTROL Navigation]** > **[!UICONTROL Page Navigation]**.
+1. Na página [!DNL Page Navigation], clique em **[!UICONTROL Add New Page Navigation]**.
+1. Na página [!DNL Add Page Navigation], defina as opções desejadas.
 
    <!-- 
    r_page_navigation_options.xml
@@ -54,8 +57,8 @@ t_configuring_web_page_navigation.xml
       <td colname="col2"> <p> Especifica o número padrão de links de página que um cliente pode ver. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>Exibir todos os limites </p> </td> 
-      <td colname="col2"> <p>Especifica o número máximo de páginas que um cliente pode ver se a opção <span class="uicontrol"> Exibir todos</span> estiver selecionada. </p> </td> 
+      <td colname="col1"> <p>Visualização de todos os limites </p> </td> 
+      <td colname="col2"> <p>Especifica o número máximo de páginas que um cliente pode ver se <span class="uicontrol"> Visualização All</span> está selecionado. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Mostrar link para a primeira página </p> </td> 
@@ -83,21 +86,21 @@ t_configuring_web_page_navigation.xml
 1. Clique em **[!UICONTROL Add]**.
 1. (Opcional) Execute um dos procedimentos a seguir:
 
-   * Clique **[!UICONTROL History]** para reverter quaisquer alterações feitas.
+   * Clique em **[!UICONTROL History]** para reverter quaisquer alterações feitas.
 
-      Consulte [Uso da opção](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Histórico.
+      Consulte [Usando a opção Histórico](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clique em **[!UICONTROL Live]**.
 
-      Consulte [Visualizar configurações](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)ativas.
+      Consulte [Ver definições ativas](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clique em **[!UICONTROL Push Live]**.
 
-      Consulte [Colocar configurações de estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
+      Consulte [Envio de configurações de estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
 ## Editar navegação de página da Web {#task_D0938D15521F4139B23C643DA609F881}
 
-É possível editar [!DNL Page Navigation] para personalizar o controle de navegação da página da camada de apresentação de pesquisa.
+Você pode editar [!DNL Page Navigation] para personalizar o controle de navegação da página da camada de apresentação de pesquisa.
 
 <!-- 
 
@@ -109,23 +112,23 @@ Se a sua camada de apresentação tiver mais de um conjunto de resultados de pes
 
 **Para editar a navegação da página da Web**
 
-1. No menu do programa, clique em **[!UICONTROL Design]** > **[!UICONTROL Navigation]** > **[!UICONTROL Page Navigation]**.
-1. Na [!DNL Page Navigation] página, na tabela, clique **[!UICONTROL Edit]** na extremidade direita do nome de navegação da página.
-1. Na [!DNL Edit Page Navigation] página, defina as opções desejadas.
+1. No menu programa, clique em **[!UICONTROL Design]** > **[!UICONTROL Navigation]** > **[!UICONTROL Page Navigation]**.
+1. Na página [!DNL Page Navigation], na tabela, clique em **[!UICONTROL Edit]** à direita do nome de navegação da página.
+1. Na página [!DNL Edit Page Navigation], defina as opções desejadas.
 
-   Consulte a tabela de opções em [Adicionar navegação](../c-about-design-menu/c-about-page-navigation.md#task_8FC098E36A7D495695F3FA4F85DA600C)de página da Web.
+   Consulte a tabela de opções em [Adicionar navegação de página da Web](../c-about-design-menu/c-about-page-navigation.md#task_8FC098E36A7D495695F3FA4F85DA600C).
 1. Clique em **[!UICONTROL Save Changes]**.
 1. (Opcional) Execute um dos procedimentos a seguir:
 
-   * Clique **[!UICONTROL History]** para reverter quaisquer alterações feitas.
+   * Clique em **[!UICONTROL History]** para reverter quaisquer alterações feitas.
 
-      Consulte [Uso da opção](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Histórico.
+      Consulte [Usando a opção Histórico](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clique em **[!UICONTROL Live]**.
 
-      Consulte [Visualizar configurações](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)ativas.
+      Consulte [Ver definições ativas](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clique em **[!UICONTROL Push Live]**.
 
-      Consulte [Colocar configurações de estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
+      Consulte [Envio de configurações de estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
