@@ -8,6 +8,9 @@ topic: Appendices,Site search and merchandising
 uuid: 148914b5-33ef-41db-8404-67c03f6f0832
 translation-type: tm+mt
 source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+workflow-type: tm+mt
+source-wordcount: '767'
+ht-degree: 3%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
 
 O formato da data e hora é especificado com uma string de formato. A string de formato consiste em zero ou mais especificações de conversão (uma especificação de conversão consiste em um sinal de porcentagem e outro caractere) e caracteres comuns. Uma lista padrão é fornecida de strings de formato de data para cada campo de data.
 
-Você tem controle total sobre essa lista e pode adicioná-la ou modificá-la de acordo com as necessidades do site. A string de formato superior tem precedência e as strings de formato subsequentes só são usadas se a análise do conteúdo de determinada tag de metadados resultar em erro.
+Você tem controle total sobre essa lista e pode adicioná-la ou modificá-la de acordo com as necessidades do seu site. A string de formato superior tem precedência e as strings de formato subsequentes só são usadas se a análise do conteúdo de determinada tag de metadados resultar em erro.
 
 Por exemplo, suponha que você tenha especificado os seguintes formatos de data:
 
@@ -30,7 +33,7 @@ Por exemplo, suponha que você tenha especificado os seguintes formatos de data:
  </tbody> 
 </table>
 
-O primeiro formato, &quot;%B %d, %Y %T %Z&quot;, corresponde a datas como o seguinte &quot;20 de setembro de 2014 13:12:00 PDT&quot;. Se o conteúdo da tag de metadados não puder ser analisado com essa string de formato, o próximo formato disponível &quot;%b %d, %Y %T %Z&quot; será tentado. Esse formato corresponde a datas como as seguintes: &quot;20 de set de 2014 3:12:00 PDT&quot;. Se o conteúdo da tag de metadados não puder ser analisado com essa string de formato, a pesquisa/comercialização do site moverá para baixo a lista de strings de formato até encontrar uma string de formato que funcione.
+O primeiro formato, &quot;%B %d, %Y %T %Z&quot;, corresponde a datas como o seguinte &quot;20 de setembro de 2014 13:12:00 PDT&quot;. Se o conteúdo da tag de metadados não puder ser analisado com essa string de formato, o próximo formato disponível &quot;%b %d, %Y %T %Z&quot; será tentado. Esse formato corresponde a datas como as seguintes: &quot;20 de set de 2014 3:12:00 PDT&quot;. Se o conteúdo da tag de metadados não puder ser analisado com essa string de formato, a pesquisa/comercialização do site moverá para baixo a lista de strings de formato até que encontre uma string de formato que funcione.
 
 A tabela a seguir descreve as sequências de caracteres de formato de data disponíveis:
 
@@ -151,7 +154,7 @@ A tabela a seguir descreve as sequências de caracteres de formato de data dispo
 
 **Strings de formato padrão**
 
-As strings de formato padrão a seguir são usadas por modelos. É possível adicionar ou editar essa lista, conforme necessário.
+As strings de formato padrão a seguir são usadas por modelos. Você pode adicionar ou editar essa lista, conforme necessário.
 
 <table> 
  <thead> 
