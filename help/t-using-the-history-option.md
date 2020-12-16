@@ -8,6 +8,9 @@ topic: Using History,Site search and merchandising
 uuid: 48b9ee9d-cd61-41e7-b8c3-5f1665b9a9cb
 translation-type: tm+mt
 source-git-commit: 52c8d7985e7cb0aa35be1deabeb7cb92a55f07c2
+workflow-type: tm+mt
+source-wordcount: '263'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ O histórico mostra o seguinte para um determinado recurso:
 * Data em que a alteração foi efetuada.
 * Tipo de salvamento que foi feito.
 
-Você também pode usar [!DNL History] para reverter para uma alteração aplicada anteriormente que foi feita ao recurso. A entrada com um valor de versão em **negrito** representa a versão atual e está sempre na parte superior da lista.
+Você também pode usar [!DNL History] para reverter para uma alteração aplicada anteriormente que foi feita ao recurso. A entrada com um valor de versão **bold** representa a versão atual e está sempre na parte superior da lista.
 
 >[!NOTE]
 >
@@ -31,10 +34,10 @@ Você também pode usar [!DNL History] para reverter para uma alteração aplica
 
 **Para usar a opção Histórico**
 
-1. Dependendo do recurso que você está usando no momento, clique **[!UICONTROL History]** no canto superior direito da página ou janela que está aberta no momento.
+1. Dependendo do recurso que você está usando no momento, clique em **[!UICONTROL History]** no canto superior direito da página ou janela que está aberta no momento.
 1. (Opcional) Na janela Histórico, execute um dos procedimentos a seguir:
 
-   * Defina o número de revisões que deseja mostrar por página na lista suspensa Mostrar.
+   * Defina o número de revisões que você deseja mostrar por página na lista suspensa Mostrar.
    * Clique em um número de versão hipervinculado para reverter as configurações no recurso para uma data específica.
 
 1. Clique em **[!UICONTROL Close]**.
