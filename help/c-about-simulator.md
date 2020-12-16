@@ -8,6 +8,9 @@ topic: Simulator,Site search and merchandising
 uuid: 7ec8f5b9-3ab3-4b9a-bf8a-65d0ca1dfddb
 translation-type: tm+mt
 source-git-commit: 91ddead9f73b73ea1a20e26582998966f801d6ff
+workflow-type: tm+mt
+source-wordcount: '398'
+ht-degree: 1%
 
 ---
 
@@ -22,18 +25,18 @@ Use o Simulador para ver como seria sua pesquisa se você empurrasse tudo o que 
 
 Você também pode simular sua pesquisa atual ao vivo para fins de comparação. O simulador tem um depurador incorporado para mostrar quais regras de negócios estão sendo acionadas para uma determinada pesquisa. Se você desmarcar qualquer regra associada, o Simulador resimula a pesquisa do site como se essa regra não existisse. As regras são listadas da prioridade mais alta para a prioridade mais baixa, onde as regras de prioridade mais alta superam as regras de prioridade mais baixas.
 
-Consulte também [Adicionar uma nova regra](c-about-rules-menu/c-about-business-rules.md#task_BD3B31ED48BB4B1B8F1DCD3BFA2528E7)comercial.
+Consulte também [Adicionar uma nova regra de negócios](c-about-rules-menu/c-about-business-rules.md#task_BD3B31ED48BB4B1B8F1DCD3BFA2528E7).
 
-## Usando o simulador {#task_739E14F61F8D47B196515F815E3F3BD9}
+## Usando o Simulador {#task_739E14F61F8D47B196515F815E3F3BD9}
 
 Você pode usar o Simulador para ver como seria sua pesquisa se você empurrasse tudo o que está atualmente encenado ao vivo.
 
-Consulte [Adicionar uma nova regra](c-about-rules-menu/c-about-business-rules.md#task_BD3B31ED48BB4B1B8F1DCD3BFA2528E7)comercial.
+Consulte [Adicionar uma nova regra de negócios](c-about-rules-menu/c-about-business-rules.md#task_BD3B31ED48BB4B1B8F1DCD3BFA2528E7).
 
 **Para usar o simulador**
 
 1. No menu do produto, clique em **[!UICONTROL Simulator]**.
-1. Na lista **[!UICONTROL Options]** suspensa, selecione a opção que deseja executar.
+1. Na lista suspensa **[!UICONTROL Options]**, selecione a opção que deseja executar.
 
    <!-- 
    
@@ -73,7 +76,7 @@ Consulte [Adicionar uma nova regra](c-about-rules-menu/c-about-business-rules.md
         <ul id="ul_2A9901418212486A8EE67A78CB99CBE4"> 
         <li id="li_B210E954DF0D44C397718112C72C2103"> <b><span class="uicontrol">Dispositivo</span></b> <p>Simule os resultados da pesquisa em um telefone celular ou tablet. </p> </li> 
         <li id="li_90B64EAA0B57446A90CE22172E703594"> <b><span class="uicontrol">Resolução</span></b> <p>Com base no dispositivo selecionado, você pode escolher a resolução associada. </p> </li> 
-        <li id="li_042AF9FA3FA846EDB48F7296DB361515"> <b><span class="uicontrol">visualização horizontal</span></b> <p>Visualização como os resultados da pesquisa simulada aparecem horizontalmente no dispositivo selecionado. </p> </li> 
+        <li id="li_042AF9FA3FA846EDB48F7296DB361515"> <b><span class="uicontrol">Visualização horizontal</span></b> <p>Visualização como os resultados da pesquisa simulada aparecem horizontalmente no dispositivo selecionado. </p> </li> 
         </ul> </td> 
       </tr> 
     </tbody> 
