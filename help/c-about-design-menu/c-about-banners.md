@@ -19,7 +19,7 @@ ht-degree: 1%
 
 Você pode usar os Banners para gerenciar os anúncios de banner que estão em seu site.
 
-## Uso de banners {#concept_5BBE01FEC6134393B43CC917C8CC64DA}
+## Usando banners {#concept_5BBE01FEC6134393B43CC917C8CC64DA}
 
 <!-- 
 
@@ -31,7 +31,7 @@ Existem dois métodos que você pode usar para adicionar anúncios de banner ao 
 
 O primeiro método é adicionar banners por meio de Público alvo, Search &amp; Promote. Os banners são trechos de código HTML exibidos no momento em que um cliente pesquisa seu site. Seu banner pode incluir texto ou uma imagem no formato GIF, JPEG ou PNG, ou em uma combinação de ambos. Você pode selecionar de tamanhos predefinidos ou definir suas próprias dimensões personalizadas para se ajustar à sua página. O código HTML usado para exibir o banner também pode especificar itens como o estilo de fonte a ser usado e a borda. Este método de adicionar um banner oferta a funcionalidade básica e não requer software adicional.
 
-O segundo método é usar o Adobe Dynamic Media Classic, um serviço de gerenciamento dinâmico de mídia e publicação. Uma conta Adobe Dynamic Media Classic válida permite gerenciar e fornecer conteúdo de banner diretamente ao Público alvo, Search &amp; Promote, usando o Dynamic Media Classic. Na pesquisa/comercialização do site, você configura o acesso à sua conta do Dynamic Media Classic. Em seguida, abra o navegador de mídia do Dynamic Media Classic e escolha um ativo de mídia dinâmica que deseja servir como seu banner.
+O segundo método é usar o Adobe Dynamic Media Classic, um serviço de gerenciamento dinâmico de mídia e publicação. Uma conta Adobe Dynamic Media Classic válida permite gerenciar e fornecer conteúdo de banner diretamente ao Público alvo, Search &amp; Promote, usando o Dynamic Media Classic. Na pesquisa/comercialização do site, você configura o acesso à sua conta do Dynamic Media Classic. Em seguida, você abre o navegador de mídia do Dynamic Media Classic e escolhe um ativo de mídia dinâmica que deseja servir como seu banner.
 
 >[!NOTE]
 >
@@ -47,37 +47,37 @@ Os modelos são criados dinamicamente e arquivos de imagem em camadas endereçá
 >
 >Você também pode criar modelos a partir de designs baseados em layout usando a Publicação de modelo no Scene7 Publishing System e arquivos da Adobe Illustrator e Adobe InDesign.
 
-Consulte Publicação [de](https://help.adobe.com/en_US/scene7/using/WSFBFBAD30-2694-4b18-B7CE-894F9FC5CDDF.html) modelos no Guia do usuário do Dynamic Media Classic (Scene7).
+Consulte [Publicação de modelo](https://help.adobe.com/en_US/scene7/using/WSFBFBAD30-2694-4b18-B7CE-894F9FC5CDDF.html) no Guia do usuário do Dynamic Media Classic (Scene7).
 
 Um modelo pode conter qualquer número de camadas de imagem e camadas de texto. É possível converter um arquivo estático contendo camadas, como um arquivo PSD em camadas, em um modelo ou criar modelos no Dynamic Media Classic. Você pode criar camadas de texto em modelos usando fontes que foram carregadas no Scene7 Publishing System. Depois de adicionar texto a um modelo, é possível formatá-lo alterando sua justificação, fontes, tamanho da fonte e cor.
 
 Usando a tela Parâmetros no Dynamic Media Classic, é possível converter qualquer aspecto de um modelo em um parâmetro endereçável. Ao fazer isso, você pode alterar qual imagem em camadas usar ou qual valor de texto usar no modelo. Os parâmetros são passados com a string de URL, permitindo que você altere qualquer parâmetro para personalizar dinamicamente a imagem de resposta gerada do servidor de imagem.
 
-Você pode aprender mais sobre como usar o Dynamic Media Classic para criar modelos e parametrizar as propriedades nas camadas, para que possa usá-las em banners.
+Você pode aprender mais sobre como usar o Dynamic Media Classic para criar modelos e parametrizar as propriedades nas camadas para que possa usá-las em banners.
 
-Consulte Noções básicas [do](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) modelo no Guia do usuário do Dynamic Media Classic (Scene7).
+Consulte [Informações básicas sobre o modelo](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) no Guia do usuário do Dynamic Media Classic (Scene7).
 
 **Upload e publicação de ativos**
 
-Você deve fazer upload e publicar ativos no Dynamic Media Classic antes de usá-los para banners na pesquisa/comercialização do site. Esse pré-requisito também inclui todos os ativos que um modelo de imagem ou um modelo de Flash usa. Use sua conta do Dynamic Media Classic para carregar e publicar ativos digitais. Ou você pode usar a pesquisa/comercialização do site para carregar um ativo digital e, em seguida, fazer com que o Dynamic Media Classic publique-o automaticamente para você com base nas configurações de upload. Se você tentar escolher um ativo que ainda não foi carregado e publicado, você será notificado na interface do usuário e terá a opção de fazer upload dele antes de continuar.
+Você deve fazer upload e publicar ativos no Dynamic Media Classic antes de usá-los para banners em pesquisa/comercialização do site. Esse pré-requisito também inclui todos os ativos que um modelo de imagem ou um modelo de Flash usa. Use sua conta do Dynamic Media Classic para fazer upload e publicar ativos digitais. Ou você pode usar a pesquisa/comercialização do site para carregar um ativo digital e, em seguida, fazer com que o Dynamic Media Classic o publique automaticamente para você com base nas configurações de upload. Se você tentar escolher um ativo que ainda não foi carregado e publicado, você será notificado na interface do usuário e terá a opção de fazer upload dele antes de continuar.
 
 Você pode saber mais sobre como fazer upload e publicar ativos digitais usando o Scene7 Publishing System.
 
-Consulte [Fazer upload e publicar ativos](https://help.adobe.com/en_US/scene7/using/WS3673AD39-098B-4f08-8A24-CA51261B7366.html) no Guia do usuário do Dynamic Media Classic (Scene7).
+Consulte [Carregar e publicar ativos](https://help.adobe.com/en_US/scene7/using/WS3673AD39-098B-4f08-8A24-CA51261B7366.html) no Guia do usuário do Dynamic Media Classic (Scene7).
 
 >[!NOTE]
 >
 >Para usar a funcionalidade de upload no visualizador de ativos do Dynamic Media Classic, verifique se a conta do Dynamic Media Classic usada tem a função de &quot;Administrador de Empresas SPS&quot; já definida.
 
-Consulte Configuração [](https://help.adobe.com/en_US/scene7/using/WS662101DF-D697-47a7-A7D8-B52FD8E94438.html) administrativa no Guia do usuário do Dynamic Media Classic (Scene7).
+Consulte [Configuração de administração](https://help.adobe.com/en_US/scene7/using/WS662101DF-D697-47a7-A7D8-B52FD8E94438.html) no Guia do Usuário do Dynamic Media Classic (Scene7).
 
-**Alteração dos parâmetros de modelo do Dynamic Media Classic em um banner usando Regras de negócios**
+**Alteração dos parâmetros de modelo do Dynamic Media Classic em um banner usando regras de negócios**
 
-Se você tiver adicionado um ativo do Dynamic Media Classic como um banner, poderá usá-lo [!DNL Visual Rule Builder] em [!DNL Business Rules] para adicioná-lo a qualquer área de banner do seu site. Por exemplo, você adiciona o banner às páginas de resultados da pesquisa, assim como qualquer outro banner. Você também pode substituir os valores de parâmetro padrão nos modelos do Dynamic Media Classic, personalizando-os para suas necessidades específicas. Esse tipo de funcionalidade permite personalizar modelos do Dynamic Media Classic com diferentes mensagens de marketing e hiperlinks para diferentes pontos de extremidade.
+Se você tiver adicionado um ativo do Dynamic Media Classic como um banner, poderá usar [!DNL Visual Rule Builder] em [!DNL Business Rules] para adicioná-lo a qualquer área de banner do seu site. Por exemplo, você adiciona o banner às páginas de resultados da pesquisa, assim como qualquer outro banner. Você também pode substituir os valores de parâmetro padrão nos modelos do Dynamic Media Classic, personalizando-os para suas necessidades específicas. Esse tipo de funcionalidade permite personalizar modelos do Dynamic Media Classic com diferentes mensagens de marketing e hiperlinks para diferentes pontos de extremidade.
 
-Consulte também [Adicionar uma nova regra](../c-about-rules-menu/c-about-business-rules.md#task_BD3B31ED48BB4B1B8F1DCD3BFA2528E7)comercial.
+Consulte também [Adicionar uma nova regra de negócios](../c-about-rules-menu/c-about-business-rules.md#task_BD3B31ED48BB4B1B8F1DCD3BFA2528E7).
 
-Consulte também [Edição de uma regra](../c-about-rules-menu/c-about-business-rules.md#task_375CFA75D1D94D9E92A35DE1228E5087)comercial.
+Consulte também [Editar uma regra de negócios](../c-about-rules-menu/c-about-business-rules.md#task_375CFA75D1D94D9E92A35DE1228E5087).
 
 ## Adicionar um banner {#task_549D02B5F73B4158B105A94E39D937B7}
 
@@ -93,13 +93,13 @@ Se você tiver uma conta Adobe Dynamic Media Classic válida, poderá adicionar 
 
 Consulte [Adicionar um banner usando o Adobe Dynamic Media Classic](../c-about-design-menu/c-about-banners.md#task_AD1E0C00A9E04B1FA819EB93288786B3).
 
-Consulte [Configuração do acesso à sua conta](../c-about-settings-menu/c-about-account-options-menu.md#task_CEFF88C2033D41D0B2FE86C435EDAC6D)do Adobe Dynamic Media Classic.
+Consulte [Configurar acesso à sua conta Adobe Dynamic Media Classic](../c-about-settings-menu/c-about-account-options-menu.md#task_CEFF88C2033D41D0B2FE86C435EDAC6D).
 
 **Para adicionar um banner**
 
 1. No menu do produto, clique em **[!UICONTROL Design]** > **[!UICONTROL Banners]**.
-1. Na [!DNL Banners] página, na lista **[!UICONTROL Add Banner]** suspensa, selecione **[!UICONTROL HTML code]**.
-1. Na caixa de [!DNL Add Banner] diálogo, defina as opções desejadas.
+1. Na página [!DNL Banners], na lista suspensa **[!UICONTROL Add Banner]**, selecione **[!UICONTROL HTML code]**.
+1. Na caixa de diálogo [!DNL Add Banner], defina as opções desejadas.
 
    <table> 
     <thead> 
@@ -115,11 +115,13 @@ Consulte [Configuração do acesso à sua conta](../c-about-settings-menu/c-abou
       </tr> 
       <tr> 
       <td colname="col1"> <p>HTML do banner </p> </td> 
-      <td colname="col2"> <p> Permite colar o código HTML associado ao banner. </p> <p>Qualquer código HTML é aceitável, incluindo código CSS cercado por <code>
+      <td colname="col2"> <p> Permite colar o código HTML associado ao banner. </p> <p>Qualquer código HTML é aceitável, incluindo o código CSS delimitado por 
+        tags <code>
           &lt;style&gt; 
-        </code> tags, ou código JavaScript cercado por <code>
+        </code> ou código JavaScript cercado por 
+        tags <code>
           &lt;script&gt; 
-        </code> tags. Por exemplo, o seguinte bloco de código é para um banner de texto do tipo Parte superior horizontal: <code> &lt;div&nbsp;style="width:&nbsp;684px;&nbsp;background-image:&nbsp;url('https://www.brough.com/blackb.gif');&nbsp; 
+        </code>. Por exemplo, o seguinte bloco de código é para um banner de texto do tipo Parte superior horizontal: <code> &lt;div&nbsp;style="width:&nbsp;684px;&nbsp;background-image:&nbsp;url('https://www.brough.com/blackb.gif');&nbsp; 
           padding-top:&nbsp;10px;&nbsp;padding-bottom:&nbsp;10px;&nbsp;color:&nbsp;white;&nbsp;font-family:&nbsp;verdana;&nbsp; 
           text-align:&nbsp;center;&nbsp;font-size:&nbsp;20px;"&gt;&nbsp;Sound&nbsp;Study&nbsp;ships&nbsp;free!&nbsp;&lt;/div&gt; </code>No exemplo a seguir, o bloco de código é para uma imagem de apresentação completa: <code> &lt;img&amp;nbsp;src='https://geometrixx.com/images/GEOAds/geometrixx-beauty-home-01.jpg'&amp;nbsp;border="0"&amp;nbsp;/&gt; </code> </p> </td> 
       </tr> 
@@ -127,10 +129,10 @@ Consulte [Configuração do acesso à sua conta](../c-about-settings-menu/c-abou
       <td colname="col1"> <p>Tipo </p> </td> 
       <td colname="col2"> <p>Especifica os seguintes tipos de banners: 
         <ul id="ul_6423AEDB9E664049989EB529D63C4A62"> 
-          <li id="li_BF6CD60B3ED748D49CFFB9C5D607661C"> <span class="uicontrol"> [novo tipo] </span> <p>Permite que você especifique o tipo de banner desejado, incluindo as dimensões e o nome. </p> </li> 
-          <li id="li_1A29AB22AD644E60A12298187B5E898E"> <span class="uicontrol"> Apresentação completa </span> <p>A dimensão definida desse tipo de banner tem 680 pixels de largura e 650 pixels de altura. Como opção, você pode especificar o nome do tipo ou aceitar o nome padrão que é o nome do próprio tipo de banner. </p> </li> 
-          <li id="li_2BE06D013CB54DDE851051BFC038BB57"> <span class="uicontrol"> Parte superior horizontal </span> <p> O banner é posicionado na área superior do site. Esse tipo é útil se você pretende adicionar hiperlinks à esquerda ou à direita do banner. A dimensão definida desse tipo de banner tem 468 pixels de largura e 60 pixels de altura. Como opção, você pode especificar o nome do tipo ou aceitar o nome padrão que é o nome do próprio tipo de banner. </p> </li> 
-          <li id="li_EC35AB92234749F08AA8A9BD26D0EA8D"> <span class="uicontrol"> Parte superior horizontal - Largura total </span> <p>Esse tipo é o padrão ao adicionar um novo banner. O banner é posicionado na área superior do site e ocupa a largura total da página. A dimensão definida desse tipo de banner tem 670 pixels de largura e 150 pixels de altura. Como opção, você pode especificar o nome do tipo ou aceitar o nome padrão que é o nome do próprio tipo de banner. </p> </li> 
+          <li id="li_BF6CD60B3ED748D49CFFB9C5D607661C"> <span class="uicontrol"> [novo tipo]  </span> <p>Permite que você especifique o tipo de banner desejado, incluindo as dimensões e o nome. </p> </li> 
+          <li id="li_1A29AB22AD644E60A12298187B5E898E"> <span class="uicontrol"> Apresentação completa  </span> <p>A dimensão definida desse tipo de banner tem 680 pixels de largura e 650 pixels de altura. Como opção, você pode especificar o nome do tipo ou aceitar o nome padrão que é o nome do próprio tipo de banner. </p> </li> 
+          <li id="li_2BE06D013CB54DDE851051BFC038BB57"> <span class="uicontrol"> Parte superior horizontal  </span> <p> O banner é posicionado na área superior do site. Esse tipo é útil se você pretende adicionar hiperlinks à esquerda ou à direita do banner. A dimensão definida desse tipo de banner tem 468 pixels de largura e 60 pixels de altura. Como opção, você pode especificar o nome do tipo ou aceitar o nome padrão que é o nome do próprio tipo de banner. </p> </li> 
+          <li id="li_EC35AB92234749F08AA8A9BD26D0EA8D"> <span class="uicontrol"> Parte superior horizontal - Largura total  </span> <p>Esse tipo é o padrão ao adicionar um novo banner. O banner é posicionado na área superior do site e ocupa a largura total da página. A dimensão definida desse tipo de banner tem 670 pixels de largura e 150 pixels de altura. Como opção, você pode especificar o nome do tipo ou aceitar o nome padrão que é o nome do próprio tipo de banner. </p> </li> 
         </ul> </p> </td> 
       </tr> 
       <tr> 
@@ -143,21 +145,21 @@ Consulte [Configuração do acesso à sua conta](../c-about-settings-menu/c-abou
 1. Clique em **[!UICONTROL Save]**.
 1. (Opcional) Execute um dos procedimentos a seguir:
 
-   * Clique **[!UICONTROL History]** para reverter quaisquer alterações feitas.
+   * Clique em **[!UICONTROL History]** para reverter quaisquer alterações feitas.
 
-      Consulte [Uso da opção](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Histórico.
+      Consulte [Usando a opção Histórico](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clique em **[!UICONTROL Live]**.
 
-      Consulte [Visualizar configurações](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)ativas.
+      Consulte [Ver definições ativas](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clique em **[!UICONTROL Push Live]**.
 
-      Consulte [Colocar configurações de estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
+      Consulte [Envio de configurações de estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Edição de um banner {#task_D4081083BE7B40F5A003D1A2F1435AEA}
+## Editar um banner {#task_D4081083BE7B40F5A003D1A2F1435AEA}
 
-Use [!DNL Edit Banner] para alterar coisas como nome do banner, HTML do banner, tipo de banner e quaisquer tags associadas.
+Use [!DNL Edit Banner] para alterar coisas como o nome do banner, o HTML do banner, o tipo de banner e quaisquer tags associadas.
 
 <!-- 
 
@@ -172,30 +174,30 @@ Consulte também [Editar um banner usando o Adobe Dynamic Media Classic](../c-ab
 **Para editar um banner**
 
 1. No menu do produto, clique em **[!UICONTROL Design]** > **[!UICONTROL Banners]**.
-1. Na [!DNL Banners] página, clique em ![](assets/icon_edit_16.gif).
+1. Na página [!DNL Banners], clique em ![](assets/icon_edit_16.gif).
 
    acima de uma miniatura do banner que você deseja editar.
-1. Na [!DNL Edit Banner] página, defina as opções desejadas.
+1. Na página [!DNL Edit Banner], defina as opções desejadas.
 
    Consulte a tabela de opções em [Adicionar um banner](../c-about-design-menu/c-about-banners.md#task_549D02B5F73B4158B105A94E39D937B7).
 1. Quando terminar de editar o banner, clique em **[!UICONTROL Save]**.
 1. (Opcional) Execute um dos procedimentos a seguir:
 
-   * Clique **[!UICONTROL History]** para reverter quaisquer alterações feitas.
+   * Clique em **[!UICONTROL History]** para reverter quaisquer alterações feitas.
 
-      Consulte [Uso da opção](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Histórico.
+      Consulte [Usando a opção Histórico](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clique em **[!UICONTROL Live]**.
 
-      Consulte [Visualizar configurações](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)ativas.
+      Consulte [Ver definições ativas](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clique em **[!UICONTROL Push Live]**.
 
-      Consulte [Colocar configurações de estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
+      Consulte [Envio de configurações de estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
 ## Adicionar um banner usando o Adobe Dynamic Media Classic {#task_AD1E0C00A9E04B1FA819EB93288786B3}
 
-Você pode usar [!DNL Banners] para gerenciar os anúncios de banner em seu site. Ao adicionar um banner usando o Adobe Dynamic Media Classic, você pode escolher qualquer ativo digital que tenha carregado no Scene7 Publishing System.
+Você pode usar [!DNL Banners] para gerenciar os anúncios de banner em seu site. Ao adicionar um banner usando o Adobe Dynamic Media Classic, você pode escolher qualquer ativo digital carregado no Scene7 Publishing System.
 
 <!-- 
 
@@ -205,13 +207,13 @@ t_adding_a_banner_using_adobe_scene7.xml
 
 Para adicionar um banner usando o Adobe Dynamic Media Classic, verifique se você configurou o acesso à sua conta válida do Dynamic Media Classic.
 
-Consulte [Configuração do acesso à sua conta](../c-about-settings-menu/c-about-account-options-menu.md#task_CEFF88C2033D41D0B2FE86C435EDAC6D)do Adobe Dynamic Media Classic.
+Consulte [Configurar acesso à sua conta Adobe Dynamic Media Classic](../c-about-settings-menu/c-about-account-options-menu.md#task_CEFF88C2033D41D0B2FE86C435EDAC6D).
 
 **Para adicionar um banner usando o Adobe Dynamic Media Classic**
 
 1. No menu do produto, clique em **[!UICONTROL Design]** > **[!UICONTROL Banners.]**
-1. Na [!DNL Banners] página, na lista **[!UICONTROL Add Banner]** suspensa, clique em **[!UICONTROL Adobe Scene7]**.
-1. Na caixa de diálogo [!DNL Pick an Asset] , no painel esquerdo, use as opções de navegação na interface do usuário para localizar a pasta que contém o ativo digital que você deseja usar para um banner.
+1. Na página [!DNL Banners], na lista suspensa **[!UICONTROL Add Banner]**, clique em **[!UICONTROL Adobe Scene7]**.
+1. Na caixa de diálogo [!DNL Pick an Asset], no painel esquerdo, use as opções de navegação na interface do usuário para localizar a pasta que contém o ativo digital que você deseja usar para um banner.
 
    Com exceção das opções de navegação de ativos, todas as outras opções dependem do ativo digital que você selecionou para adicionar ou editar.
 
@@ -219,7 +221,7 @@ Consulte [Configuração do acesso à sua conta](../c-about-settings-menu/c-abou
 
    >[!NOTE]
    >
-   >As opções de navegação do ativo não aparecem quando você edita o banner na caixa de [!DNL Change Parameters] diálogo.
+   >As opções de navegação de ativos não aparecem quando você edita o banner na caixa de diálogo [!DNL Change Parameters].
 
    Consulte [Editar um banner usando o Adobe Dynamic Media Classic](../c-about-design-menu/c-about-banners.md#task_C3E782477FBF428ABEA220751781ACA9).
 
@@ -235,7 +237,7 @@ Consulte [Configuração do acesso à sua conta](../c-about-settings-menu/c-abou
     <tbody> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/S7_folders.png"> </p> </td> 
-      <td colname="col2"> <p>Permite selecionar a conta do Dynamic Media Classic para sua empresa específica na lista suspensa e também navegar pelas pastas de ativos digitais dentro dessa conta. </p> <p>Quando você seleciona uma pasta, o painel direito da caixa de diálogo <span class="wintitle"> Selecionar um ativo </span> mostra todos os ativos digitais disponíveis contidos nessa pasta. </p> </td> 
+      <td colname="col2"> <p>Permite que você selecione a conta do Dynamic Media Classic para sua empresa específica na lista suspensa e também navegue pelas pastas de ativos digitais dentro dessa conta. </p> <p>Quando você seleciona uma pasta, o painel direito da caixa de diálogo <span class="wintitle"> Selecionar um ativo </span> mostra todos os ativos digitais disponíveis contidos nessa pasta. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/s7_folderhistory.png"> </p> </td> 
@@ -243,7 +245,7 @@ Consulte [Configuração do acesso à sua conta](../c-about-settings-menu/c-abou
       </tr> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/s7_reloadfolder.png"> </p> </td> 
-      <td colname="col2"> <p>Atualiza a lista de ativos digitais exibidos para uma pasta selecionada. </p> <p>Talvez seja necessário clicar nesse controle se você mover, excluir ou renomear um ativo selecionado usando a lista suspensa <span class="uicontrol"> Ações </span> . </p> </td> 
+      <td colname="col2"> <p>Atualiza a lista de ativos digitais exibidos para uma pasta selecionada. </p> <p>Talvez seja necessário clicar nesse controle se você mover, excluir ou renomear um ativo selecionado usando a lista suspensa <span class="uicontrol"> Ações </span>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/s7_list_or_grid.png"> </p> </td> 
@@ -255,7 +257,7 @@ Consulte [Configuração do acesso à sua conta](../c-about-settings-menu/c-abou
       </tr> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/s7_upload.png"> </p> </td> 
-      <td colname="col2"> <p>Abre a caixa de diálogo <span class="wintitle"> Carregar </span> , na qual é possível carregar um ativo digital selecionado do seu desktop ou de um servidor externo para que você possa usá-lo como um banner. </p> <p>Após carregar o ativo, uma tarefa de publicação é agendada automaticamente para você no Scene7 Publishing System. </p> <p>Consulte a tabela de opções em <a href="../c-about-design-menu/c-about-banners.md#task_AD1E0C00A9E04B1FA819EB93288786B3" type="reference" format="dita" scope="local"> Adicionar um banner usando o Adobe Dynamic Media Classic </a>. </p> <p>Você pode saber mais sobre como fazer upload e publicar ativos digitais usando o Scene7 Publishing System. </p> <p>Consulte <a href="https://help.adobe.com/en_US/scene7/using/WS3673AD39-098B-4f08-8A24-CA51261B7366.html" scope="external" format="html"> Fazer upload e publicar ativos </a> no Guia do usuário do Scene7 Publishing System. </p> </td> 
+      <td colname="col2"> <p>Abre a caixa de diálogo <span class="wintitle"> Carregar </span>, na qual é possível carregar um ativo digital selecionado do seu desktop ou de um servidor externo para que você possa usá-lo como um banner. </p> <p>Após carregar o ativo, uma tarefa de publicação é agendada automaticamente para você no Scene7 Publishing System. </p> <p>Consulte a tabela de opções em <a href="../c-about-design-menu/c-about-banners.md#task_AD1E0C00A9E04B1FA819EB93288786B3" type="reference" format="dita" scope="local"> Adicionar um banner usando o Adobe Dynamic Media Classic </a>. </p> <p>Você pode saber mais sobre como fazer upload e publicar ativos digitais usando o Scene7 Publishing System. </p> <p>Consulte <a href="https://help.adobe.com/en_US/scene7/using/WS3673AD39-098B-4f08-8A24-CA51261B7366.html" scope="external" format="html"> Fazer upload e publicar ativos </a> no Guia do usuário do Scene7 Publishing System. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/s7_searchfield.png"> </p> </td> 
@@ -409,9 +411,9 @@ Consulte [Configuração do acesso à sua conta](../c-about-settings-menu/c-abou
    >
    >Esteja ciente de que quaisquer alterações feitas nos parâmetros podem ser substituídas pelas regras de negócios. Os parâmetros só servem como padrões quando não são criadas regras de negócios que alterariam os parâmetros.
 
-   Consulte [Adicionar uma nova regra](../c-about-rules-menu/c-about-business-rules.md#task_BD3B31ED48BB4B1B8F1DCD3BFA2528E7)comercial.
+   Consulte [Adicionar uma nova regra de negócios](../c-about-rules-menu/c-about-business-rules.md#task_BD3B31ED48BB4B1B8F1DCD3BFA2528E7).
 
-   See [Editing a business rule](../c-about-rules-menu/c-about-business-rules.md#task_375CFA75D1D94D9E92A35DE1228E5087).
+   Consulte [Editar uma regra de negócios](../c-about-rules-menu/c-about-business-rules.md#task_375CFA75D1D94D9E92A35DE1228E5087).
 
    **Alternar opções de visibilidade da camada**
 
@@ -432,13 +434,13 @@ Consulte [Configuração do acesso à sua conta](../c-about-settings-menu/c-abou
     </tbody> 
     </table>
 
-   (Opcional) Se o ativo digital que você deseja usar para um banner não estiver disponível na pasta selecionada, talvez seja necessário carregá-lo. Clique **[!UICONTROL Upload]** e selecione o arquivo e as opções desejadas. O arquivo é carregado na pasta selecionada.
+   (Opcional) Se o ativo digital que você deseja usar para um banner não estiver disponível na pasta selecionada, talvez seja necessário carregá-lo. Clique em **[!UICONTROL Upload]** e selecione o arquivo e as opções desejadas. O arquivo é carregado na pasta selecionada.
 
    >[!NOTE]
    >
    >Se você quiser usar a funcionalidade de upload no visualizador de ativos da Scene7, verifique se a conta da Scene7 usada tem a função de &quot;Administrador de Empresas da SPS&quot; já definida.
 
-   Consulte Configuração [](https://help.adobe.com/en_US/scene7/using/WS662101DF-D697-47a7-A7D8-B52FD8E94438.html) administrativa no Guia do usuário do sistema de publicação da Scene7.
+   Consulte [Instalação da administração](https://help.adobe.com/en_US/scene7/using/WS662101DF-D697-47a7-A7D8-B52FD8E94438.html) no Guia do usuário do Scene7 Publishing System.
 
    **Opções básicas**
 
@@ -469,7 +471,7 @@ Consulte [Configuração do acesso à sua conta](../c-about-settings-menu/c-abou
 
    Ao carregar arquivos de imagem PostScript (EPS) ou Illustrator (AI), você pode formatá-los de várias maneiras. Você pode rasterizar os arquivos, convertê-los em FXG para Publicação de modelo, manter o plano de fundo transparente, escolher uma resolução e escolher um espaço de cor.
 
-   PSD (arquivos de Documento Photoshop) são usados com mais frequência no Dynamic Media Classic para criar modelos. Ao carregar um arquivo PSD, você pode criar um modelo do Dynamic Media Classic automaticamente a partir do arquivo (selecione a **[!UICONTROL Create Template]** opção).
+   PSD (arquivos de Documento Photoshop) são usados com mais frequência no Dynamic Media Classic para criar modelos. Ao carregar um arquivo PSD, você pode criar um modelo do Dynamic Media Classic automaticamente a partir do arquivo (selecione a opção **[!UICONTROL Create Template]**).
 
    O Scene7 Publishing System cria várias imagens de um arquivo PSD com camadas se você usar o arquivo para criar um modelo; cria uma imagem para cada camada.
 
@@ -487,8 +489,8 @@ Consulte [Configuração do acesso à sua conta](../c-about-settings-menu/c-abou
       <td colname="col02"> <p>Perfil de cores </p> </td> 
       <td colname="col2"> <p> Permite escolher entre as seguintes opções: </p> 
         <ul id="ul_6927BC08CA2647EDB2C85DAD2B82AE31"> 
-        <li id="li_CA3F44FF9C0F4CE987DCB0AF9303C2E4"> <span class="uicontrol"> Converter em SRGB </span> <p>Converte em SRGB (Padrão Vermelho Verde Azul). SRGB é o espaço de cores recomendado para exibir imagens em páginas da Web. </p> </li> 
-        <li id="li_FCCEE6B14CCD4246ADA152932010ABF1"> <span class="uicontrol"> Manter espaço de cor original </span> <p>Mantém o espaço de cor original. </p> </li> 
+        <li id="li_CA3F44FF9C0F4CE987DCB0AF9303C2E4"> <span class="uicontrol"> Converter em SRGB  </span> <p>Converte em SRGB (Padrão Vermelho Verde Azul). SRGB é o espaço de cores recomendado para exibir imagens em páginas da Web. </p> </li> 
+        <li id="li_FCCEE6B14CCD4246ADA152932010ABF1"> <span class="uicontrol"> Manter espaço de cor original  </span> <p>Mantém o espaço de cor original. </p> </li> 
         </ul> </td> 
       </tr> 
       <tr> 
@@ -499,7 +501,7 @@ Consulte [Configuração do acesso à sua conta](../c-about-settings-menu/c-abou
       <tr> 
       <td colname="col1"> <p>Opções de PostScript </p> <p>Opções do Illustrator </p> </td> 
       <td colname="col02"> <p>Processando </p> </td> 
-      <td colname="col2"> <p> <span class="uicontrol"> A opção Rasterizar </span> converte gráficos vetoriais no arquivo para o formato de bitmap. </p> </td> 
+      <td colname="col2"> <p> <span class="uicontrol"> A  </span> opção Rasterizar converte gráficos vetoriais no arquivo em formato de bitmap. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p> Opções de Postscript </p> <p>Opções do Illustrator </p> </td> 
@@ -511,10 +513,10 @@ Consulte [Configuração do acesso à sua conta](../c-about-settings-menu/c-abou
       <td colname="col02"> <p> Espaço da cor </p> </td> 
       <td colname="col2"> <p>Permite escolher um espaço de cor para o arquivo Illustrator. O espaço de cores RGB é preferível para visualização online. </p> <p>É possível escolher entre as seguintes opções de espaço de cor: </p> 
         <ul id="ul_0E83E2762A574480B243F963A7FB2ACD"> 
-        <li id="li_B9FEC7D220D04CCABACD30839051DAE4"> <span class="uicontrol"> Detectar automaticamente </span> <p> Mantém o espaço de cores do arquivo PDF. </p> </li> 
-        <li id="li_ED0EB3B12BCF41C7AFC435447010B6FF"> <span class="uicontrol"> Forçar como RGB </span> <p> Converte para o espaço de cores RGB. </p> </li> 
-        <li id="li_3FB5DD8887C540BC97148A4D63B38F72"> <span class="uicontrol"> Forçar como CMYK </span> <p> Converte para o espaço de cores CMYK. </p> </li> 
-        <li id="li_6C018D3A4B254880AD41896E9F4AF3D9"> <span class="uicontrol"> Forçar como escala de cinza </span> <p> Converte para o espaço de cor Escala de cinza. </p> </li> 
+        <li id="li_B9FEC7D220D04CCABACD30839051DAE4"> <span class="uicontrol"> Detectar automaticamente  </span> <p> Mantém o espaço de cores do arquivo PDF. </p> </li> 
+        <li id="li_ED0EB3B12BCF41C7AFC435447010B6FF"> <span class="uicontrol"> Forçar como RGB  </span> <p> Converte para o espaço de cores RGB. </p> </li> 
+        <li id="li_3FB5DD8887C540BC97148A4D63B38F72"> <span class="uicontrol"> Forçar como CMYK  </span> <p> Converte para o espaço de cores CMYK. </p> </li> 
+        <li id="li_6C018D3A4B254880AD41896E9F4AF3D9"> <span class="uicontrol"> Forçar como escala de cinza  </span> <p> Converte para o espaço de cor Escala de cinza. </p> </li> 
         </ul> </td> 
       </tr> 
       <tr> 
@@ -547,10 +549,10 @@ Consulte [Configuração do acesso à sua conta](../c-about-settings-menu/c-abou
       <td colname="col02"> <p> Nomenclatura de camada </p> </td> 
       <td colname="col2"> <p>As camadas no arquivo PSD são carregadas como imagens separadas. Você pode selecionar entre as seguintes opções para decidir como deseja nomear essas imagens no Scene7 Publishing System: </p> 
         <ul id="ul_C2A25177A07740CA90B32C638304D39F"> 
-        <li id="li_477D5BFF7238454BBF0E04B22DE378F7"> <span class="uicontrol"> Usar o nome da camada do arquivo PSD </span> <p>Nomeia as imagens após seus nomes de camada no arquivo PSD. Por exemplo, uma camada chamada <span class="codeph"> Tag de preço </span> no arquivo PSD original se torna uma imagem chamada <span class="codeph"> Tag de preço </span>. No entanto, se os nomes de camada no arquivo PSD forem nomes de camada padrão do Photoshop (Plano de fundo, Camada 1, Camada 2 e assim por diante), as imagens serão nomeadas após seus números de camada no arquivo PSD, não seus nomes de camada padrão. </p> </li> 
-        <li id="li_EB4173B884FC41328CFBDE27DA6D43AA"> <span class="uicontrol"> Usar o nome do arquivo PSD e o número do anexo </span> <p>Nomeia as imagens após seus números de camada no arquivo PSD, ignorando os nomes das camadas originais. As imagens são nomeadas com o nome de arquivo Photoshop e um número de camada anexado. Por exemplo, a segunda camada de um arquivo chamado <span class="codeph"> Spring Ad.psd </span> é chamada <span class="codeph"> Spring Ad_2 </span> mesmo se ela tiver um nome não padrão no Photoshop. </p> </li> 
-        <li id="li_10B2D2DE2FD24BD08DB56D1D95ABA53D"> <span class="uicontrol"> Usar nome de arquivo PSD e nome ou número da camada </span> <p>Nomeia as imagens após o arquivo PSD seguido do nome da camada ou do número da camada. O número da camada será usado se os nomes da camada no arquivo PSD forem nomes padrão da camada Photoshop. Por exemplo, uma camada chamada <span class="codeph"> Tag de preço </span> em um arquivo PSD chamado <span class="codeph"> SpringAd </span> é chamada <span class="codeph"> Spring Ad_Price Tag </span>. Uma camada com o nome padrão <span class="codeph"> Camada 2 </span> é chamada <span class="codeph"> Spring Ad_2 </span>. </p> </li> 
-        <li id="li_5E57AC0719D4484B9C9BD14DB42B4455"> <span class="uicontrol"> Criar pasta com base no nome de arquivo PSD </span> <p>Cria uma pasta para as imagens de camada usando o nome de arquivo do PSD. </p> </li> 
+        <li id="li_477D5BFF7238454BBF0E04B22DE378F7"> <span class="uicontrol"> Usar o nome da camada do arquivo PSD  </span> <p>Nomeia as imagens após seus nomes de camada no arquivo PSD. Por exemplo, uma camada chamada <span class="codeph"> Tag de preço </span> no arquivo PSD original se torna uma imagem chamada <span class="codeph"> Tag de preço </span>. No entanto, se os nomes de camada no arquivo PSD forem nomes de camada padrão do Photoshop (Plano de fundo, Camada 1, Camada 2 e assim por diante), as imagens serão nomeadas após seus números de camada no arquivo PSD, não seus nomes de camada padrão. </p> </li> 
+        <li id="li_EB4173B884FC41328CFBDE27DA6D43AA"> <span class="uicontrol"> Usar o nome do arquivo PSD e o número do anexo  </span> <p>Nomeia as imagens após seus números de camada no arquivo PSD, ignorando os nomes das camadas originais. As imagens são nomeadas com o nome de arquivo Photoshop e um número de camada anexado. Por exemplo, a segunda camada de um arquivo chamado <span class="codeph"> Spring Ad.psd </span> é chamada de <span class="codeph"> Spring Ad_2 </span> mesmo que tenha um nome não padrão no Photoshop. </p> </li> 
+        <li id="li_10B2D2DE2FD24BD08DB56D1D95ABA53D"> <span class="uicontrol"> Usar nome de arquivo PSD e nome ou número da camada  </span> <p>Nomeia as imagens após o arquivo PSD seguido do nome da camada ou do número da camada. O número da camada será usado se os nomes da camada no arquivo PSD forem nomes padrão da camada Photoshop. Por exemplo, uma camada chamada <span class="codeph"> Tag de preço </span> em um arquivo PSD chamado <span class="codeph"> SpringAd </span> é chamada de <span class="codeph"> Tag Ad_Price </span>. Uma camada com o nome padrão <span class="codeph"> Camada 2 </span> é chamada <span class="codeph"> Spring Ad_2 </span>. </p> </li> 
+        <li id="li_5E57AC0719D4484B9C9BD14DB42B4455"> <span class="uicontrol"> Criar pasta com base no nome de arquivo PSD  </span> <p>Cria uma pasta para as imagens de camada usando o nome de arquivo do PSD. </p> </li> 
         </ul> </td> 
       </tr> 
       <tr> 
@@ -561,7 +563,7 @@ Consulte [Configuração do acesso à sua conta](../c-about-settings-menu/c-abou
       <tr> 
       <td colname="col1"> <p>Opções de PDF </p> </td> 
       <td colname="col02"> <p>Processando </p> </td> 
-      <td colname="col2"> <p> <span class="uicontrol"> A opção Rasterizar </span> irrompe as páginas no arquivo PDF e converte gráficos vetoriais em imagens de bitmap. 
+      <td colname="col2"> <p> <span class="uicontrol"> A  </span> opção Rasterizar remove as páginas do arquivo PDF e converte gráficos vetoriais em imagens de bitmap.  
         <!--Choose this option to create an eCatalog. (This option is thedefault.)--> </p> </td> 
       </tr> 
       <tr> 
@@ -574,10 +576,10 @@ Consulte [Configuração do acesso à sua conta](../c-about-settings-menu/c-abou
       <td colname="col02"> <p> Espaço da cor </p> </td> 
       <td colname="col2"> <p>Permite escolher um espaço de cor para o arquivo PDF. A maioria dos arquivos PDF tem imagens coloridas RGB e CMYK. O espaço de cores RGB é preferível para visualização online. </p> <p>É possível escolher entre as seguintes opções de espaço de cor: </p> 
         <ul id="ul_44A8C39DEB21473F9375E3962F14D3C6"> 
-        <li id="li_1046FA0017934C5EB7C0100F8F78507D"> <span class="uicontrol"> Detectar automaticamente </span> <p> Mantém o espaço de cores do arquivo PDF. </p> </li> 
-        <li id="li_561CCF705EDD451993D2DA2EB33F05F7"> <span class="uicontrol"> Forçar como RGB </span> <p> Converte para o espaço de cores RGB. </p> </li> 
-        <li id="li_D9E8CF61C40140979484EDEF7DAD2C44"> <span class="uicontrol"> Forçar como CMYK </span> <p> Converte para o espaço de cores CMYK. </p> </li> 
-        <li id="li_F3606B45C0F84BA594263EA12243F67A"> <span class="uicontrol"> Forçar como escala de cinza </span> <p> Converte para o espaço de cor Escala de cinza. </p> </li> 
+        <li id="li_1046FA0017934C5EB7C0100F8F78507D"> <span class="uicontrol"> Detectar automaticamente  </span> <p> Mantém o espaço de cores do arquivo PDF. </p> </li> 
+        <li id="li_561CCF705EDD451993D2DA2EB33F05F7"> <span class="uicontrol"> Forçar como RGB  </span> <p> Converte para o espaço de cores RGB. </p> </li> 
+        <li id="li_D9E8CF61C40140979484EDEF7DAD2C44"> <span class="uicontrol"> Forçar como CMYK  </span> <p> Converte para o espaço de cores CMYK. </p> </li> 
+        <li id="li_F3606B45C0F84BA594263EA12243F67A"> <span class="uicontrol"> Forçar como escala de cinza  </span> <p> Converte para o espaço de cor Escala de cinza. </p> </li> 
         </ul> </td> 
       </tr> 
       <tr> 
@@ -595,36 +597,36 @@ Consulte [Configuração do acesso à sua conta](../c-about-settings-menu/c-abou
 
 1. No painel direito, clique na imagem, modelo ou arquivo de Flash desejado.
 
-   A janela [!DNL Pick An Asset] pop-up é exibida.
-1. (Opcional) Na janela [!DNL Pick An Asset] [!DNL Actions] pop-up, na lista suspensa, execute um dos procedimentos a seguir:
+   A janela pop-up [!DNL Pick An Asset] é exibida.
+1. (Opcional) Na janela pop-up [!DNL Pick An Asset], na lista suspensa [!DNL Actions], execute um dos procedimentos a seguir:
 
-   * Clique em **[!UICONTROL Move]**. Na caixa de diálogo [!DNL Select a folder to move to] , selecione a pasta na qual deseja mover o ativo digital. Clique em **[!UICONTROL Move]**.
+   * Clique em **[!UICONTROL Move]**. Na caixa de diálogo [!DNL Select a folder to move to], selecione a pasta na qual deseja mover o ativo digital. Clique em **[!UICONTROL Move]**.
 
       Você também pode selecionar vários ativos digitais que deseja mover para outra pasta.
 
-   * Clique em **[!UICONTROL Delete]**. Na caixa de [!DNL Delete Selected Assets] diálogo, clique em **[!UICONTROL Delete]**.
+   * Clique em **[!UICONTROL Delete]**. Na caixa de diálogo [!DNL Delete Selected Assets], clique em **[!UICONTROL Delete]**.
 
       Você também pode selecionar vários ativos digitais que deseja excluir da pasta.
 
-   * Clique em **[!UICONTROL Rename]**. Na caixa de diálogo [!DNL Enter a new name for] , no campo de texto, digite um novo nome para o ativo digital. Clique em **[!UICONTROL Rename]**.
+   * Clique em **[!UICONTROL Rename]**. Na caixa de diálogo [!DNL Enter a new name for], no campo de texto, digite um novo nome para o ativo digital. Clique em **[!UICONTROL Rename]**.
 
-1. (Opcional) Dependendo do ativo digital selecionado, no painel esquerdo da janela pop-up, defina as opções desejadas. [!DNL Pick an Asset]
+1. (Opcional) Dependendo do ativo digital selecionado, no painel esquerdo da janela pop-up [!DNL Pick an Asset], defina as opções desejadas.
 1. Clique no ativo para selecioná-lo para uso como um banner.
 1. (Opcional) Execute um dos procedimentos a seguir:
 
-   * Clique **[!UICONTROL History]** para reverter quaisquer alterações feitas.
+   * Clique em **[!UICONTROL History]** para reverter quaisquer alterações feitas.
 
-      Consulte [Uso da opção](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Histórico.
+      Consulte [Usando a opção Histórico](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clique em **[!UICONTROL Live]**.
 
-      Consulte [Visualizar configurações](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)ativas.
+      Consulte [Ver definições ativas](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clique em **[!UICONTROL Push Live]**.
 
-      Consulte [Colocar configurações de estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
+      Consulte [Envio de configurações de estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Edição de um banner usando o Adobe Dynamic Media Classic {#task_C3E782477FBF428ABEA220751781ACA9}
+## Editar um banner usando o Adobe Dynamic Media Classic {#task_C3E782477FBF428ABEA220751781ACA9}
 
 Use [!DNL Edit Banner] para alterar as propriedades e os parâmetros de um banner que você adicionou usando o Adobe Dynamic Media Classic.
 
@@ -636,27 +638,27 @@ t_editing_a_banner_using_adobe_scene7.xml
 
 Se você adicionou um banner adicionando código HTML, edite-o usando a pesquisa/comercialização do site.
 
-Consulte também [Edição de banner](../c-about-design-menu/c-about-banners.md#task_D4081083BE7B40F5A003D1A2F1435AEA).
+Consulte também [Editar um banner](../c-about-design-menu/c-about-banners.md#task_D4081083BE7B40F5A003D1A2F1435AEA).
 
 **Para editar um banner usando o Adobe Dynamic Media Classic**
 
 1. No menu do produto, clique em **[!UICONTROL Design]** > **[!UICONTROL Banners]**.
-1. Na [!DNL Banners] página, clique ![](assets/icon_edit_16.gif) acima de uma miniatura do banner que tem um ícone S7 no canto inferior esquerdo da janela do banner.
-1. Na [!DNL Change Parameter] página, defina as opções desejadas.
+1. Na página [!DNL Banners], clique em ![](assets/icon_edit_16.gif) acima de uma miniatura do banner que tem um ícone S7 no canto inferior esquerdo da janela do banner.
+1. Na página [!DNL Change Parameter], defina as opções desejadas.
 1. Quando terminar de editar o banner, clique em **[!UICONTROL Save]**.
 1. (Opcional) Execute um dos procedimentos a seguir:
 
-   * Clique **[!UICONTROL History]** para reverter quaisquer alterações feitas.
+   * Clique em **[!UICONTROL History]** para reverter quaisquer alterações feitas.
 
-      Consulte [Uso da opção](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Histórico.
+      Consulte [Usando a opção Histórico](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clique em **[!UICONTROL Live]**.
 
-      Consulte [Visualizar configurações](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)ativas.
+      Consulte [Ver definições ativas](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clique em **[!UICONTROL Push Live]**.
 
-      Consulte [Colocar configurações de estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
+      Consulte [Envio de configurações de estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
 ## Excluindo banners {#task_32F3BADC481E4E8984B2AA04B96052EB}
 
@@ -673,35 +675,35 @@ t_deleting_banners.xml
 1. No menu do produto, clique em **[!UICONTROL Design]** > **[!UICONTROL Banners]**.
 1. (Opcional) Execute um ou mais dos procedimentos a seguir:
 
-   * Na [!DNL Banners] página, selecione o tipo de banner que deseja localizar na lista **[!UICONTROL Find banner of type]** suspensa. Se desejar, especifique um nome de tag no campo de **[!UICONTROL with tag]** texto ou um nome de tipo de banner no campo de **[!UICONTROL with name]** texto. Clique em **[!UICONTROL Find.]**
+   * Na página [!DNL Banners], selecione o tipo de banner que deseja localizar na lista suspensa **[!UICONTROL Find banner of type]**. Se desejar, especifique um nome de tag no campo de texto **[!UICONTROL with tag]** ou um nome de tipo de banner no campo de texto **[!UICONTROL with name]**. Clique em **[!UICONTROL Find.]**
 
-   * Na lista **[!UICONTROL Sort]** suspensa, selecione como deseja solicitar a lista dos banners.
-   * Na lista **[!UICONTROL Show]** suspensa, selecione o número de banners que deseja carregar na página atual que está sendo exibida.
+   * Na lista suspensa **[!UICONTROL Sort]**, selecione como deseja solicitar a lista dos banners.
+   * Na lista suspensa **[!UICONTROL Show]**, selecione o número de banners que deseja carregar na página atual que está sendo exibida.
 
 1. Faça uma das seguintes opções:
 
    * No canto superior esquerdo de qualquer caixa de banner, clique na caixa de seleção de cada banner que deseja excluir.
-   * Na barra superior da [!DNL Banners] página, marque **[!UICONTROL Select all]** para selecionar cada banner carregado na página exibida no momento.
+   * Na barra superior da página [!DNL Banners], marque **[!UICONTROL Select all]** para selecionar cada banner carregado na página exibida no momento.
 
-1. Na lista **[!UICONTROL Bulk Actions]** suspensa, clique em **[!UICONTROL Delete]**.
-1. Na caixa de [!DNL Confirmation Action] diálogo, clique em **[!UICONTROL OK]**.
+1. Na lista suspensa **[!UICONTROL Bulk Actions]**, clique em **[!UICONTROL Delete]**.
+1. Na caixa de diálogo [!DNL Confirmation Action], clique em **[!UICONTROL OK]**.
 1. (Opcional) Execute um dos procedimentos a seguir:
 
-   * Clique **[!UICONTROL History]** para reverter quaisquer alterações feitas.
+   * Clique em **[!UICONTROL History]** para reverter quaisquer alterações feitas.
 
-      Consulte [Uso da opção](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Histórico.
+      Consulte [Usando a opção Histórico](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clique em **[!UICONTROL Live]**.
 
-      Consulte [Visualizar configurações](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)ativas.
+      Consulte [Ver definições ativas](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clique em **[!UICONTROL Push Live]**.
 
-      Consulte [Colocar configurações de estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
+      Consulte [Envio de configurações de estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
 ## Visualizar banners {#task_6AB1F81A984A4DC2ACACD1FE030545E2}
 
-Você pode navegar pelos banners que você adicionou à [!DNL Banners] página para visualização em tamanho normal. Nenhum CSS no modelo que afete o banner é exibido.
+Você pode navegar pelos banners que você adicionou à página [!DNL Banners] para visualização do tamanho total. Nenhum CSS no modelo que afete o banner é exibido.
 
 <!-- 
 
@@ -714,18 +716,18 @@ t_previewing_banners.xml
 1. No menu do produto, clique em **[!UICONTROL Design]** > **[!UICONTROL Banners]**.
 1. (Opcional) Execute um ou mais dos procedimentos a seguir:
 
-   * Na [!DNL Banners] página, selecione o tipo de banner que deseja localizar na lista **[!UICONTROL Find banner of type]** suspensa. Se desejar, especifique um nome de tag no campo de **[!UICONTROL with tag]** texto ou um nome de tipo de banner no campo de **[!UICONTROL with name]** texto. Clique em **[!UICONTROL Find.]**
+   * Na página [!DNL Banners], selecione o tipo de banner que deseja localizar na lista suspensa **[!UICONTROL Find banner of type]**. Se desejar, especifique um nome de tag no campo de texto **[!UICONTROL with tag]** ou um nome de tipo de banner no campo de texto **[!UICONTROL with name]**. Clique em **[!UICONTROL Find.]**
 
-   * Na lista **[!UICONTROL Sort]** suspensa, selecione como deseja solicitar a lista dos banners.
-   * Na lista **[!UICONTROL Show]** suspensa, selecione o número de banners que deseja carregar na página atual que está sendo exibida.
+   * Na lista suspensa **[!UICONTROL Sort]**, selecione como deseja solicitar a lista dos banners.
+   * Na lista suspensa **[!UICONTROL Show]**, selecione o número de banners que deseja carregar na página atual que está sendo exibida.
 
-1. Na [!DNL Banners] página, clique na miniatura do banner para visualização do tamanho total.
+1. Na página [!DNL Banners], clique na miniatura do banner para visualização do tamanho total.
 1. Faça uma das seguintes opções:
 
    * Na caixa de diálogo pré-visualização do banner, clique na seta para a esquerda ou direita para navegar e visualização os banners de tamanho inteiro que você adicionou.
-   * Clique no botão Fechar para fechar a caixa de diálogo pré-visualização do banner e voltar para a [!DNL Banners] página.
+   * Clique no botão Fechar para fechar a caixa de diálogo pré-visualização do banner e retornar à página [!DNL Banners].
 
-## Publicar banners ao vivo {#task_161F4FEC8362474296A566E64BF05B97}
+## Colocando banners ao vivo {#task_161F4FEC8362474296A566E64BF05B97}
 
 Você pode enviar um ou mais banners selecionados ao vivo para seu site.
 
@@ -735,27 +737,27 @@ t_pushing_banners_live.xml
 
  -->
 
-Ou, se preferir, você pode colocar ao vivo todas as alterações em qualquer banner, usando a **[!UICONTROL Push Live]** opção próxima à parte inferior da [!DNL Banners] página.
+Ou, se preferir, você pode mover ao vivo todas as alterações para qualquer banner, usando a opção **[!UICONTROL Push Live]** próxima à parte inferior da página [!DNL Banners].
 
-Consulte [Colocar configurações de estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
+Consulte [Envio de configurações de estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
 **Para enviar banners ao vivo**
 
 1. No menu do produto, clique em **[!UICONTROL Design]** > **[!UICONTROL Banners]**.
 1. (Opcional) Execute um ou mais dos procedimentos a seguir:
 
-   * Na [!DNL Banners] página, selecione o tipo de banner que deseja localizar na lista **[!UICONTROL Find banner of type]** suspensa. Se desejar, especifique um nome de tag no campo de **[!UICONTROL with tag]** texto ou um nome de tipo de banner no campo de **[!UICONTROL with name]** texto. Clique em **[!UICONTROL Find]**.
+   * Na página [!DNL Banners], selecione o tipo de banner que deseja localizar na lista suspensa **[!UICONTROL Find banner of type]**. Se desejar, especifique um nome de tag no campo de texto **[!UICONTROL with tag]** ou um nome de tipo de banner no campo de texto **[!UICONTROL with name]**. Clique em **[!UICONTROL Find]**.
 
-   * Na lista **[!UICONTROL Sort]** suspensa, selecione como deseja solicitar a lista dos banners.
-   * Na lista **[!UICONTROL Show]** suspensa, selecione o número de banners que deseja carregar na página atual que está sendo exibida.
+   * Na lista suspensa **[!UICONTROL Sort]**, selecione como deseja solicitar a lista dos banners.
+   * Na lista suspensa **[!UICONTROL Show]**, selecione o número de banners que deseja carregar na página atual que está sendo exibida.
 
 1. Faça uma das seguintes opções:
 
    * No canto superior esquerdo de qualquer caixa de banner, clique na caixa de seleção de cada banner que deseja excluir.
-   * Na barra superior da [!DNL Banner] página, marque **[!UICONTROL Select all]** para selecionar cada banner carregado na página exibida no momento.
+   * Na barra superior da página [!DNL Banner], marque **[!UICONTROL Select all]** para selecionar cada banner carregado na página exibida no momento.
 
-1. Na lista **[!UICONTROL Bulk Actions]** suspensa, clique em **[!UICONTROL Push live]**.
-1. Na caixa de [!DNL Confirmation Action] diálogo, clique em **[!UICONTROL OK]**.
-1. (Opcional) Na [!DNL Banners] página, clique **[!UICONTROL History]** para reverter as alterações feitas.
+1. Na lista suspensa **[!UICONTROL Bulk Actions]**, clique em **[!UICONTROL Push live]**.
+1. Na caixa de diálogo [!DNL Confirmation Action], clique em **[!UICONTROL OK]**.
+1. (Opcional) Na página [!DNL Banners], clique em **[!UICONTROL History]** para reverter quaisquer alterações feitas.
 
-   Consulte [Uso da opção](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Histórico.
+   Consulte [Usando a opção Histórico](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
