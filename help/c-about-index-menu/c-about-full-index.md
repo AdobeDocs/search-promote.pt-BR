@@ -9,6 +9,9 @@ topic: Index,Site search and merchandising
 uuid: dce1eafd-5aea-4945-8305-8f9e7dc392df
 translation-type: tm+mt
 source-git-commit: 7af85dd37f06fe506e5f57e28a25385ca7ab3db5
+workflow-type: tm+mt
+source-wordcount: '795'
+ht-degree: 1%
 
 ---
 
@@ -17,9 +20,9 @@ source-git-commit: 7af85dd37f06fe506e5f57e28a25385ca7ab3db5
 
 Você pode usar o Índice completo para indexar todas as páginas do seu site temporário ou ao vivo. A indexação ajuda seus clientes a encontrar mais facilmente o que estão procurando ou o que precisam ao realizar uma pesquisa.
 
-## Usando índice completo {#concept_C69BD21863FD4856B49326F35DB570D3}
+## Usando o Índice Completo {#concept_C69BD21863FD4856B49326F35DB570D3}
 
-Quando você gera um índice completo, as informações de status são exibidas, como hora de início, tempo decorrido e erros durante o processo de indexação. As informações sobre o status do último índice também são exibidas.
+Quando você gera um índice completo, as informações de status são exibidas, como tempo de start, tempo decorrido e erros durante o processo de indexação. As informações sobre o status do último índice também são exibidas.
 
 Se você tiver alterado uma configuração de conta que exija uma regeneração de índice, o status poderá ser &quot;Regenerando&quot;. Durante a regeneração, as configurações da conta são aplicadas para criar um índice de site atualizado.
 
@@ -27,13 +30,13 @@ Você pode interromper ou reiniciar o processo de indexação a qualquer momento
 
 Enquanto o novo índice é criado para um site ao vivo, os clientes podem continuar a pesquisar seu site usando seu último índice. As informações sobre o status do último índice também são exibidas.
 
-## Configurar o agendamento de índice completo para um site ao vivo {#task_6760F3256D004A228B38968DF15421F0}
+## Configurar o agendamento de índice completo para um site ativo {#task_6760F3256D004A228B38968DF15421F0}
 
 Você pode especificar a hora e os dias em que deseja rastrear seu site e atualizar o índice.
 
 A hora selecionada é local de acordo com o fuso horário configurado nas Configurações da conta.
 
-Consulte [Definição das configurações](../c-about-settings-menu/c-about-account-options-menu.md#task_80A38D0C8E4F453395BD67B81E4B45D9)da sua conta.
+Consulte [Definição das definições da sua conta](../c-about-settings-menu/c-about-account-options-menu.md#task_80A38D0C8E4F453395BD67B81E4B45D9).
 
 Os servidores da Web normalmente ficam inativos para manutenção no meio da noite. Se o servidor estiver inativo durante um tempo de índice programado, o processo de indexação falhará. Certifique-se de selecionar uma hora do dia em que o servidor Web está disponível.
 
@@ -42,11 +45,11 @@ A programação de índice se aplica somente ao seu índice ativo; não é poss�
 **Para definir o agendamento de índice completo para um site ativo**
 
 1. No menu do produto, clique em **[!UICONTROL Index]** > **[!UICONTROL Full Index]** > **[!UICONTROL Live Schedule]**.
-1. Na lista **[!UICONTROL Time]** suspensa, selecione a hora em que deseja que a indexação completa seja iniciada.
+1. Na lista suspensa **[!UICONTROL Time]**, selecione a hora em que deseja que a indexação completa seja start.
 1. Selecione um ou mais dias para que a indexação completa seja executada.
 1. Clique em **[!UICONTROL Save Changes]**.
 
-## Execução de um índice completo de um site ao vivo ou preparado {#task_F7FE04D8A1654A7787FCCA31B45EB42D}
+## Executar um índice completo de um site ativo ou preparado {#task_F7FE04D8A1654A7787FCCA31B45EB42D}
 
 Você pode usar o Índice completo para indexar todas as páginas do seu site temporário ou ao vivo. A indexação ajuda seus clientes a encontrar mais facilmente o que estão procurando ou o que precisam ao realizar uma pesquisa.
 
@@ -95,15 +98,15 @@ Você pode usar o Índice completo para indexar todas as páginas do seu site te
     </table>
 
 1. Clique em **[!UICONTROL Full Index Now]**.
-1. (Opcional) Se ocorreram erros de indexação, clique em **[!UICONTROL View Errors]** para exibir o log associado.
+1. (Opcional) Se erros de indexação ocorreram, clique em **[!UICONTROL View Errors]** para visualização o log associado.
 
-## Visualizando o log de índice completo de um site ao vivo ou preparado {#task_02E5E944C56B4EB19CC1FF321F3221B8}
+## Exibindo o log de índice completo de um site ao vivo ou preparado {#task_02E5E944C56B4EB19CC1FF321F3221B8}
 
-Quando um índice completo em tempo real ou um índice completo preparado estiver concluído, você poderá exibir seu log associado para solucionar quaisquer erros que ocorreram.
+Quando um índice completo em tempo real ou um índice completo preparado estiver concluído, você poderá visualização seu log associado para solucionar quaisquer erros que ocorreram.
 
 Não é possível exportar registros nem salvá-los. O log permanece disponível para exibição até que o novo índice ocorra.
 
-**Para exibir o log de índice completo de um site ao vivo ou preparado**
+**Para visualização do log de índice completo de um site ao vivo ou preparado**
 
 1. No menu do produto, execute um dos procedimentos a seguir:
 
@@ -113,7 +116,7 @@ Não é possível exportar registros nem salvá-los. O log permanece disponível
 
 1. Na página de log, na parte superior ou inferior, execute um dos procedimentos a seguir:
 
-   * Use as opções de navegação **[!UICONTROL First]**, **[!UICONTROL Prev]**, **[!UICONTROL Next]****[!UICONTROL Last]** ou **[!UICONTROL Go to line]** para percorrer o log.
+   * Use as opções de navegação **[!UICONTROL First]**, **[!UICONTROL Prev]**, **[!UICONTROL Next]**, **[!UICONTROL Last]** ou **[!UICONTROL Go to line]** para percorrer o registro.
 
    * Use as opções de exibição **[!UICONTROL Errors only]**, **[!UICONTROL Wrap line]** ou **[!UICONTROL Show]** para refinar o que você vê.
 
