@@ -20,7 +20,7 @@ ht-degree: 1%
 
 Você pode usar o Índice incremental para indexar &quot;partes&quot; do site ao vivo ou em etapas, como uma coleção de páginas alteradas com frequência.
 
-## Usando índice incremental {#concept_A7770F0552D14C47B3DDB65DB78FFFEE}
+## Usando o Índice Incremental {#concept_A7770F0552D14C47B3DDB65DB78FFFEE}
 
 Um índice incremental demora apenas segundos para ser executado e é útil em sites de grande capacidade que podem levar muitas horas para ser indexados completamente.
 
@@ -30,14 +30,14 @@ Você pode interromper ou reiniciar o processo de indexação incremental a qual
 
 Enquanto o novo índice incremental é criado para seu site ativo, os clientes podem continuar a pesquisar seu site usando seu último índice incremental.
 
-## Configuração de um índice incremental de um site preparado {#task_46A367B0786C4C90BFFA5D3F95FD86C0}
+## Configurar um índice incremental de um site preparado {#task_46A367B0786C4C90BFFA5D3F95FD86C0}
 
 Você pode configurar quais páginas de site deseja incluir no índice incremental especificando URLs de site e máscaras de URL.
 
 **Para configurar um índice incremental de um site preparado**
 
 1. No menu do produto, clique em **[!UICONTROL Index]** > **[!UICONTROL Incremental Index]** > **[!UICONTROL Configuration]**.
-1. Na **[!UICONTROL Incremental Index Configuration]** página, use os vários campos para especificar quais páginas você deseja indexar.
+1. Na página **[!UICONTROL Incremental Index Configuration]**, use os vários campos para especificar quais páginas você deseja indexar.
 
    <table> 
     <thead> 
@@ -57,25 +57,29 @@ Você pode configurar quais páginas de site deseja incluir no índice increment
           <li id="li_32C2B21DE75C4459908384CC44822F7D"> 
           <code>
             noindex 
-          </code> <p>Se você não quiser indexar o texto na página que corresponde a um URL especificado, mas quiser seguir os links da página, adicione <code>
+          </code> <p>Se você não quiser indexar o texto na página que corresponde a um URL especificado, mas quiser seguir os links da página, adicione 
+            <code>
               noindex 
-            </code> após o URL como no exemplo a seguir: </p> <p> 
+            </code> após o URL, como no exemplo a seguir: </p> <p> 
             <code>
               https://www.mydomain.com/products/new.html noindex 
-            </code> </p> <p>Certifique-se <code>
+            </code> </p> <p>Certifique-se de separar 
+            <code>
               noindex 
-            </code> de separar o URL com um espaço; uma vírgula não é um separador válido. </p> </li> 
+            </code> do URL com um espaço; uma vírgula não é um separador válido. </p> </li> 
           <li id="li_33AB62B669084BF7B976F4308715E435"> 
           <code>
             nofollow 
-          </code> <p>Se você quiser indexar o texto na página que corresponde ao URL especificado, mas não quiser seguir os links da página, adicione <code>
+          </code> <p>Se você quiser indexar o texto na página que corresponde ao URL especificado, mas não quiser seguir os links da página, adicione 
+            <code>
               nofollow 
-            </code> após o URL como no exemplo a seguir: </p> <p> 
+            </code> após o URL, como no exemplo a seguir: </p> <p> 
             <code>
               https://www.mydomain.com/products/new.html nofollow 
-            </code> </p> <p> Certifique-se <code>
+            </code> </p> <p> Certifique-se de separar 
+            <code>
               nofollow 
-            </code> de separar o URL com um espaço; uma vírgula não é um separador válido. </p> </li> 
+            </code> do URL com um espaço; uma vírgula não é um separador válido. </p> </li> 
         </ul> </p> </td> 
       </tr> 
       <tr> 
@@ -86,9 +90,11 @@ Você pode configurar quais páginas de site deseja incluir no índice increment
       </code> </p> <p>Você também pode usar expressões regulares como no exemplo a seguir: </p> <p> 
       <code>
         regexp ^https://www\.mydomain\.com/products/household/.*\.html$ 
-      </code> </p> <p>Consulte <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Expressões</a>regulares. </p> <p>Você também pode usar as palavras-chave <code>
+      </code> </p> <p>Consulte <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Expressões regulares</a>. </p> <p>Você também pode usar as palavras-chave 
+      <code>
         nofollow 
-      </code> e <code>
+      </code> e 
+      <code>
         noindex 
       </code> conforme descrito em <span class="uicontrol"> Adicionar ou atualizar URLs </span> acima. </p> </td> 
       </tr> 
@@ -100,15 +106,19 @@ Você pode configurar quais páginas de site deseja incluir no índice increment
       </code> </p> <p> 
       <code>
         exclude https://www.mydomain.com/products/ 
-      </code> </p> <p>indexa as páginas <code>
+      </code> </p> <p>indexa as páginas 
+      <code>
         lightbulbs1.html 
-      </code> e <code>
+      </code> e 
+      <code>
         lightbulbs2.html 
-      </code>. No entanto, ele não indexa nenhuma outra página listada no diretório products. </p> <p>Uma máscara de URL que aparece primeiro sempre tem precedência sobre uma que aparece mais tarde na lista. Além disso, se o robô de pesquisa encontrar um documento que corresponda a uma máscara de inclusão e uma máscara de exclusão, a máscara listada primeiro terá prioridade. </p> <p>Você também pode usar as palavras-chave <code>
+      </code>. No entanto, ele não indexa nenhuma outra página listada no diretório products. </p> <p>Uma máscara de URL que aparece primeiro sempre tem precedência sobre uma que aparece mais tarde na lista. Além disso, se o robô de pesquisa encontrar um documento que corresponda a uma máscara de inclusão e uma máscara de exclusão, a máscara listada primeiro terá prioridade. </p> <p>Você também pode usar as palavras-chave 
+      <code>
         nofollow 
-      </code> e <code>
+      </code> e 
+      <code>
         noindex 
-      </code> conforme descrito em <span class="uicontrol"> Adicionar ou atualizar URLs </span> acima. </p> <p>Consulte <a href="../c-about-settings-menu/c-about-crawling-menu.md#concept_8039DFC53FF3410AA494D602F71BA164" type="concept" format="dita" scope="local"> Sobre máscaras</a>de URL. </p> </td> 
+      </code> conforme descrito em <span class="uicontrol"> Adicionar ou atualizar URLs </span> acima. </p> <p>Consulte <a href="../c-about-settings-menu/c-about-crawling-menu.md#concept_8039DFC53FF3410AA494D602F71BA164" type="concept" format="dita" scope="local"> Sobre máscaras de URL</a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Incluir e excluir máscaras de data </p> </td> 
@@ -141,7 +151,8 @@ Você pode configurar quais páginas de site deseja incluir no índice increment
       <li id="li_172692DEDA8744B3AA492701D24C2D80"> 
       <code>
         exclude-days NNN 
-      </code> <p>Desabilite a indexação de todos os documentos que correspondem à máscara de URL especificada e são dias NNN ou mais antigos. </p> <p>Como opção, você pode seguir a máscara de URL pela palavra-chave <code>
+      </code> <p>Desabilite a indexação de todos os documentos que correspondem à máscara de URL especificada e são dias NNN ou mais antigos. </p> <p>Como opção, você pode seguir a máscara de URL pela palavra-chave 
+        <code>
           server-date 
         </code>. </p> <p>O exemplo de máscara a seguir exclui todos os arquivos PDF com 90 dias de idade ou mais do índice: </p> <p> 
         <code>
@@ -150,13 +161,14 @@ Você pode configurar quais páginas de site deseja incluir no índice increment
       <li id="li_26078517744D4AECBE1351008926CBAE"> 
       <code>
         exclude-date YYYY-MM-DD 
-      </code> <p>Desabilite a indexação de todos os documentos que correspondem à máscara de URL especificada e são tão antigos ou mais antigos que a data AAAA-MM-DD. </p> <p>Como opção, você pode seguir a máscara de URL pela palavra-chave <code>
+      </code> <p>Desabilite a indexação de todos os documentos que correspondem à máscara de URL especificada e são tão antigos ou mais antigos que a data AAAA-MM-DD. </p> <p>Como opção, você pode seguir a máscara de URL pela palavra-chave 
+        <code>
           server-date 
         </code>. </p> <p>O exemplo de máscara a seguir exclui todos os documentos na pasta /archive/ datados de 23 de abril de 2004 ou antes: </p> <p> 
         <code>
           exclude-date 2004-04-23 https://www.mydomain.com/archive/ 
         </code> </p> </li> 
-      </ul> </p> <p>Consulte <a href="../c-about-settings-menu/c-about-crawling-menu.md#concept_F4F1F58A646F4A86B8650EC46FDCEF66" type="concept" format="dita" scope="local"> Sobre máscaras</a>de data. </p> </td> 
+      </ul> </p> <p>Consulte <a href="../c-about-settings-menu/c-about-crawling-menu.md#concept_F4F1F58A646F4A86B8650EC46FDCEF66" type="concept" format="dita" scope="local"> Sobre máscaras de data</a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Excluir URLs </p> </td> 
@@ -170,7 +182,7 @@ Você pode configurar quais páginas de site deseja incluir no índice increment
       </code> </p> <p>Você também pode usar expressões regulares como no exemplo a seguir: </p> <p> 
       <code>
         regexp ^https://www\.mydomain\.com/products/199[567]/.*$ 
-      </code> </p> <p>Consulte <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Expressões</a>regulares. </p> </td> 
+      </code> </p> <p>Consulte <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Expressões regulares</a>. </p> </td> 
       </tr> 
     </tbody> 
     </table>
@@ -178,25 +190,25 @@ Você pode configurar quais páginas de site deseja incluir no índice increment
 1. Clique em **[!UICONTROL Save Changes]**.
 1. (Opcional) Execute um dos procedimentos a seguir:
 
-   * Clique **[!UICONTROL History]** para reverter quaisquer alterações feitas.
+   * Clique em **[!UICONTROL History]** para reverter quaisquer alterações feitas.
 
-      Consulte [Uso da opção](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Histórico.
+      Consulte [Usando a opção Histórico](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clique em **[!UICONTROL Live]**.
 
-      Consulte [Visualizar configurações](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)ativas.
+      Consulte [Ver definições ativas](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clique em **[!UICONTROL Push Live]**.
 
-      Consulte [Colocar configurações de estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
+      Consulte [Envio de configurações de estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Definir a programação de índice incremental para um site ao vivo {#task_2A46BA189ECC4317A9D5C6E99A336F33}
+## Definir o agendamento de índice incremental para um site ativo {#task_2A46BA189ECC4317A9D5C6E99A336F33}
 
 Você pode selecionar a frequência do Índice Incremental e o tempo base que é usado para rastrear e atualizar seu índice incremental.
 
 A hora selecionada é local de acordo com o fuso horário configurado nas Configurações da conta.
 
-Consulte [Definição das configurações](../c-about-settings-menu/c-about-account-options-menu.md#task_80A38D0C8E4F453395BD67B81E4B45D9)da sua conta.
+Consulte [Definição das definições da sua conta](../c-about-settings-menu/c-about-account-options-menu.md#task_80A38D0C8E4F453395BD67B81E4B45D9).
 
 Os servidores da Web normalmente ficam inativos para manutenção no meio da noite. Se o servidor estiver inativo durante um tempo de índice programado, o processo de indexação falhará. Certifique-se de selecionar uma hora do dia em que o servidor Web está disponível.
 
@@ -205,11 +217,11 @@ A programação de índice se aplica somente ao seu índice ativo; não é poss�
 **Para definir a programação de índice incremental para um site ativo**
 
 1. No menu do produto, clique em **[!UICONTROL Index]** > **[!UICONTROL Incremental Index]** > **[!UICONTROL Live Schedule]**.
-1. Na página Na **[!UICONTROL Incremental Index Schedule]** , na lista **[!UICONTROL Incrementally Index]** suspensa, selecione a frequência de indexação em horas ou minutos.
-1. Na lista **[!UICONTROL Base Time]** suspensa, selecione a hora de início em que deseja gerar novamente um novo índice incremental.
+1. Na página **[!UICONTROL Incremental Index Schedule]**, na lista suspensa **[!UICONTROL Incrementally Index]**, selecione a frequência de indexação em horas ou minutos.
+1. Na lista suspensa **[!UICONTROL Base Time]**, selecione a hora de início quando deseja gerar novamente um novo índice incremental.
 1. Clique em **[!UICONTROL Save Changes]**.
 
-## Execução de um índice incremental de um site ao vivo ou preparado {#task_9BFB6157F3884B2FAECB7E0E9CA318CB}
+## Execução de um índice incremental de um site ativo ou preparado {#task_9BFB6157F3884B2FAECB7E0E9CA318CB}
 
 Você pode usar o Índice incremental para indexar &quot;partes&quot; do site ao vivo ou em etapas, como uma coleção de páginas alteradas com frequência.
 
@@ -222,7 +234,7 @@ Você pode usar o Índice incremental para indexar &quot;partes&quot; do site ao
    * Clique em **[!UICONTROL Index]** > **[!UICONTROL Incremental Index]** > **[!UICONTROL Staged Index]**.
 
 1. Clique em **[!UICONTROL Incremental Index Now]**.
-1. (Opcional) Se ocorreram erros de indexação, clique em **[!UICONTROL View Errors]** para visualização o log associado.
+1. (Opcional) Se erros de indexação ocorreram, clique em **[!UICONTROL View Errors]** para visualização o log associado.
 
 ## Exibindo o log de índice incremental de um site ao vivo ou preparado {#task_E668E1F1240C476DAA1CA783DC728232}
 
@@ -241,7 +253,7 @@ Não é possível exportar registros nem salvá-los. O log permanece disponível
 
 1. Na página de log, na parte superior ou inferior, execute um dos procedimentos a seguir:
 
-   * Use as opções de navegação **[!UICONTROL First]**, **[!UICONTROL Prev]**, **[!UICONTROL Next]****[!UICONTROL Last]** ou **[!UICONTROL Go to line]** para percorrer o log.
+   * Use as opções de navegação **[!UICONTROL First]**, **[!UICONTROL Prev]**, **[!UICONTROL Next]**, **[!UICONTROL Last]** ou **[!UICONTROL Go to line]** para percorrer o registro.
 
    * Use as opções de exibição **[!UICONTROL Errors only]**, **[!UICONTROL Wrap line]** ou **[!UICONTROL Show]** para refinar o que você vê.
 
