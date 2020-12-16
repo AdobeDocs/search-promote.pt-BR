@@ -1,6 +1,6 @@
 ---
 description: 'null'
-seo-description: 'null'
+seo-description: nulo
 seo-title: Search&amp;Notas de versão do Promote 8.15.0 (19/6/2014)
 solution: Target
 title: Search&amp;Notas de versão do Promote 8.15.0 (19/6/2014)
@@ -8,11 +8,14 @@ topic: Release Notes,Site search and merchandising
 uuid: bb250450-48b4-4563-84b9-66f2c3dc063a
 translation-type: tm+mt
 source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+workflow-type: tm+mt
+source-wordcount: '108'
+ht-degree: 58%
 
 ---
 
 
-# Search&amp;Promote 8.15.0 Release Notes (6/19/2014){#search-promote-release-notes}
+# Notas de versão do Search &amp; Promote 8.15.0 (19/6/2014){#search-promote-release-notes}
 
 **Novos recursos**
 
