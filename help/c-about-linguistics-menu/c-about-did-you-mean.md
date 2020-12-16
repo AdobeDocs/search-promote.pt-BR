@@ -8,17 +8,20 @@ topic: Linguistics,Site search and merchandising
 uuid: c5973541-3d6b-4fc9-bad4-66d4d3559fe8
 translation-type: tm+mt
 source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+workflow-type: tm+mt
+source-wordcount: '776'
+ht-degree: 2%
 
 ---
 
 
-# About Did You Mean{#about-did-you-mean}
+# Sobre você quis dizer{#about-did-you-mean}
 
 Você pode configurar a opção Você quis dizer para que os clientes recebam sugestões para termos de pesquisa válidos quando tentarem pesquisas que falharam. As sugestões são formadas procurando por correções de ortografia e digitação nos termos de pesquisa que resultam em uma pesquisa válida.
 
-## A Configuração Você quis dizer {#task_B539D6A0043547EFB1CA19B67E762371}
+## Configuração significa {#task_B539D6A0043547EFB1CA19B67E762371}
 
-Você pode adaptar como [!DNL site search/merchandising] faz sugestões de pesquisa quando a consulta de um cliente retorna resultados de pesquisa não ou mínimos.
+Você pode adaptar como [!DNL site search/merchandising] faz sugestões de pesquisa quando o query de um cliente retorna resultados de pesquisa não ou mínimos.
 
 <!-- 
 
@@ -29,11 +32,11 @@ t_configuring_did_you_mean.xml
 **Para configurar Você quis dizer**
 
 1. No menu do produto, clique em **[!UICONTROL Linguistics]** > **[!UICONTROL Did You Mean]**.
-1. Na [!DNL Did You Mean] página, no campo de texto **Remover essas palavras de sugestões** , digite palavras separadas por linha ou espaço para filtrar sugestões indesejadas.
+1. Na página [!DNL Did You Mean], no campo de texto **Remover essas palavras do campo Sugestões**, digite palavras separadas por linha ou espaço para filtrar sugestões indesejadas.
 
    Essas são palavras no índice de pesquisa que não aparecem como termos de pesquisa alternativos recomendados. É possível excluir qualquer palavra que corresponda a um padrão por meio do uso de expressões regulares. Caso contrário, apenas a palavra exata será removida.
 
-1. Defina as opções **Você quis dizer** .
+1. Defina as opções **Você quis dizer** que deseja.
 
    <!-- 
    
@@ -51,7 +54,7 @@ t_configuring_did_you_mean.xml
     <tbody> 
       <tr> 
       <td colname="col1"> <p>Algoritmo de sugestão </p> </td> 
-      <td colname="col2"> <p>Ajusta até onde o software vai para encontrar sugestões. Se um usuário cometer um erro de uma letra, todos os algoritmos apresentam as mesmas sugestões. O motivo é que basta apenas uma edição para chegar a uma sugestão funcional e todos os algoritmos encontram palavras próximas ao original. Mas quando os termos de pesquisa originais não são semelhantes aos termos existentes no índice, os Algoritmos de Sugestão <b>Deep</b> e <b>Bad Spellers</b> continuam a procurar possíveis sugestões. Esse cenário é útil se um cliente tentar um nome adequado, difícil de digitar, e exibir os nomes. No entanto, se você quiser que sugestões semelhantes sejam exibidas, poderá escolher o algoritmo <b>Rápido</b> . </p> </td> 
+      <td colname="col2"> <p>Ajusta até onde o software vai para encontrar sugestões. Se um usuário cometer um erro de uma letra, todos os algoritmos apresentam as mesmas sugestões. O motivo é que basta apenas uma edição para chegar a uma sugestão funcional e todos os algoritmos encontram palavras próximas ao original. Mas quando os termos de pesquisa originais não são semelhantes aos termos existentes no índice, os algoritmos de sugestão <b>Deep</b> e <b>Bad Spellers</b> continuam a procurar possíveis sugestões. Esse cenário é útil se um cliente tentar um nome adequado, difícil de digitar, e exibir os nomes. No entanto, se quiser que sugestões semelhantes sejam exibidas, escolha o algoritmo <b>Quick</b>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Contagem padrão de sugestões para mostrar </p> </td> 
@@ -71,15 +74,15 @@ t_configuring_did_you_mean.xml
       </tr> 
       <tr> 
       <td colname="col1"> <p>Fazer sugestões devido aos baixos resultados </p> </td> 
-      <td colname="col2"> <p>Se um cliente pesquisar por um termo que produza menos de dez resultados, o mecanismo de pesquisa verificará se ele tem uma sugestão que pode gerar mais de 100 resultados. Se isso ocorrer, você poderá usar as seguintes tags para indicar ao usuário que, embora ele tenha resultados, ele pode ter desejado procurar algo diferente: </p> <p> <code>&nbsp;&lt;guided-if-suggestion-low-results&gt; &nbsp;&nbsp;You&nbsp;have&nbsp;a&nbsp;low&nbsp;result&nbsp;count&nbsp;for&nbsp;&lt;Search&nbsp;for&nbsp;guided-param&nbsp;gsname="q"&gt;.&nbsp;&nbsp;Did&nbsp;you&nbsp;mean:&nbsp;&lt;guided-suggestion&gt;&lt;guided-suggestion-link&gt;&lt;guided-suggestion&nbsp;/&gt;&lt;/guided-suggestion-link&gt;&lt;guided-if-not-last&gt;,&nbsp;&lt;/guided-if-not-last&gt;&lt;/guided-suggestions&gt;&nbsp;&lt;/guided-if-suggestion-low-results&gt;</code> </p> <p> No cenário acima, o número de sugestões é controlado pelo valor especificado na contagem Padrão de sugestões a serem exibidas <span class="uicontrol"></span>. Os limites baixo e alto são configuráveis pelas opções abaixo. </p> </td> 
+      <td colname="col2"> <p>Se um cliente pesquisar por um termo que produza menos de dez resultados, o mecanismo de pesquisa verificará se ele tem uma sugestão que pode gerar mais de 100 resultados. Se isso ocorrer, você poderá usar as seguintes tags para indicar ao usuário que, embora ele tenha resultados, ele pode ter desejado procurar algo diferente: </p> <p> <code>&nbsp;&lt;guided-if-suggestion-low-results&gt; &nbsp;&nbsp;You&nbsp;have&nbsp;a&nbsp;low&nbsp;result&nbsp;count&nbsp;for&nbsp;&lt;Search&nbsp;for&nbsp;guided-param&nbsp;gsname="q"&gt;.&nbsp;&nbsp;Did&nbsp;you&nbsp;mean:&nbsp;&lt;guided-suggestion&gt;&lt;guided-suggestion-link&gt;&lt;guided-suggestion&nbsp;/&gt;&lt;/guided-suggestion-link&gt;&lt;guided-if-not-last&gt;,&nbsp;&lt;/guided-if-not-last&gt;&lt;/guided-suggestions&gt;&nbsp;&lt;/guided-if-suggestion-low-results&gt;</code> </p> <p> No cenário acima, o número de sugestões é controlado pelo valor especificado em <span class="uicontrol"> Contagem padrão de sugestões para mostrar</span>. Os limites baixo e alto são configuráveis pelas opções abaixo. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Fazer sugestões quando os resultados iniciais forem menores que </p> </td> 
-      <td colname="col2"> <p>Controla o número de resultados quando o sistema começa a oferecer sugestões. </p> <p>Essa opção aparece somente quando você marca <span class="uicontrol"> Fazer sugestões devido a baixos resultados</span>. </p> <p>O padrão é 10. </p> </td> 
+      <td colname="col2"> <p>Controla o número de resultados quando o sistema é start para sugestões de oferta. </p> <p>Essa opção aparece somente quando você marca <span class="uicontrol"> Fazer sugestões devido a baixos resultados</span>. </p> <p>O padrão é 10. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Uma sugestão deve gerar pelo menos tantos resultados </p> </td> 
-      <td colname="col2"> <p>Filtra as sugestões que são feitas devido aos baixos resultados na pesquisa primária pela contagem de resultados. </p> <p>Essa opção aparece somente quando você marca <span class="uicontrol"> Fazer sugestões devido a baixos resultados</span>. </p> <p>O padrão é 100. </p> </td> 
+      <td colname="col2"> <p>Sugestões de filtros que são feitas devido aos baixos resultados na pesquisa primária pela contagem de resultados. </p> <p>Essa opção aparece somente quando você marca <span class="uicontrol"> Fazer sugestões devido a baixos resultados</span>. </p> <p>O padrão é 100. </p> </td> 
       </tr> 
     </tbody> 
     </table>
@@ -87,15 +90,15 @@ t_configuring_did_you_mean.xml
 1. Clique em **Salvar alterações**.
 1. (Opcional) Execute um dos procedimentos a seguir:
 
-   * Clique **[!UICONTROL History]** para reverter quaisquer alterações feitas.
+   * Clique em **[!UICONTROL History]** para reverter quaisquer alterações feitas.
 
-      Consulte [Uso da opção](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Histórico.
+      Consulte [Usando a opção Histórico](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clique em **[!UICONTROL Live]**.
 
-      Consulte [Visualizar configurações](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)ativas.
+      Consulte [Ver definições ativas](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clique em **[!UICONTROL Push Live]**.
 
-      Consulte [Colocar configurações de estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
+      Consulte [Envio de configurações de estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
