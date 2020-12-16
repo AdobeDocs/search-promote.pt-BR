@@ -8,13 +8,16 @@ topic: Design,Site search and merchandising
 uuid: f5805d3e-43bf-4e13-95df-b6bd6b762d11
 translation-type: tm+mt
 source-git-commit: 60cedaac1846e384a37699a42bf7fda33828e1c0
+workflow-type: tm+mt
+source-wordcount: '2661'
+ht-degree: 1%
 
 ---
 
 
 # Sobre Modelos{#about-templates}
 
-Você pode usar **[!UICONTROL Templates]** para gerenciar seus modelos de apresentação e de transporte.
+Você pode usar **[!UICONTROL Templates]** para gerenciar seus modelos de apresentação e modelos de transporte.
 
 ## Sobre Modelos {#concept_06EB481B14864E18A8AE2BCD1D6EF0B5}
 
@@ -28,33 +31,33 @@ Você pode adicionar, editar, copiar, renomear ou excluir modelos de apresentaç
 
 É possível reverter quaisquer alterações feitas nos modelos usando o recurso Histórico na lista suspensa do nome do modelo na tabela Modelos.
 
-Você pode reduzir o peso da página de um modelo de apresentação marcando a caixa de **[!UICONTROL Minimize]** seleção correspondente do modelo na tabela do modelo. Ao reduzir o peso da página do modelo, você minimiza dinamicamente o JavaScript e o CSS em linha. Você também remove o espaço em branco redundante no HTML. Minimizar o peso da página do modelo de apresentação pode ajudar a fornecer os resultados da pesquisa mais rapidamente.
+Você pode reduzir o peso de página de um modelo de apresentação marcando a caixa de seleção **[!UICONTROL Minimize]** correspondente do modelo na tabela de modelo. Ao reduzir o peso de página do modelo, você minimiza dinamicamente o JavaScript e o CSS em linha. Você também remove o espaço em branco redundante no HTML. Minimizar o peso de página do modelo de apresentação pode ajudar a fornecer seus resultados de pesquisa mais rapidamente.
 
-Você pode visualizar a aparência do modelo minimizado clicando na lista suspensa ao lado do nome do arquivo e, em seguida, clicando em **[!UICONTROL Preview minimized]**. Se você minimizar o modelo de apresentação principal, lembre-se de ativar a minimização para modelos incluídos (com `guided-include` tag), pois essa opção não é herdada.
+Você pode pré-visualização a aparência do modelo minimizado clicando na lista suspensa ao lado do nome do arquivo e clicando em **[!UICONTROL Preview minimized]**. Se você minimizar o modelo de apresentação principal, lembre-se de ativar a minimização para modelos incluídos (com a tag `guided-include`) porque essa opção não é herdada.
 
 Mesmo se você minimizar um modelo de apresentação, ainda poderá editar a versão &quot;não minimizada&quot; do mesmo modelo.
 
 Você pode usar as regras de pré-pesquisa, pós-pesquisa e de negócios para determinar quando usar um de seus outros modelos de apresentação. É comum ter uma regra como &quot;Para cada pesquisa, defina o modelo direcionado como xxxx&quot;. Com tal regra em vigor, quando você altera o modelo &quot;Padrão&quot; na tabela Modelos, ele parece não ter efeito.
 
-See [About Pre-Search Rules](../c-about-rules-menu/c-about-pre-search-rules.md#concept_5BF84BB6FACB4645BA9CB7496A01CD1F).
+Consulte [Sobre regras de pré-pesquisa](../c-about-rules-menu/c-about-pre-search-rules.md#concept_5BF84BB6FACB4645BA9CB7496A01CD1F).
 
-See [About Post-Search Rules](../c-about-rules-menu/c-about-post-search-rules.md#concept_AF6ADFCC0ADF4A788003964939917FDE).
+Consulte [Sobre as regras pós-pesquisa](../c-about-rules-menu/c-about-post-search-rules.md#concept_AF6ADFCC0ADF4A788003964939917FDE).
 
-See [About Business Rules](../c-about-rules-menu/c-about-business-rules.md#concept_2A93D76216754D3D8412CDEA00BD26BD).
+Consulte [Sobre Regras de Negócios](../c-about-rules-menu/c-about-business-rules.md#concept_2A93D76216754D3D8412CDEA00BD26BD).
 
-## Sobre modelos de apresentação {#section_ACDDEA5C499E481C828A517C230D4596}
+## Sobre os modelos de apresentação {#section_ACDDEA5C499E481C828A517C230D4596}
 
 Os modelos de apresentação são modelos HTML que um cliente vê quando está visualizando os resultados de sua pesquisa em seu site.
 
-Na camada de apresentação, você pode ter um único modelo de apresentação que apresenta os resultados de várias pesquisas de várias fontes. Você pode definir quantos modelos de apresentação desejar e até mesmo definir modelos de apresentação que outros modelos compartilham usando `include` comandos. O modelo de apresentação é onde todos os componentes do Design, como facetas, menus e navegações estruturais, se juntam. Para exibir os vários componentes de design, você deve usar tags de modelo de apresentação.
+Na camada de apresentação, você pode ter um único modelo de apresentação que apresenta os resultados de várias pesquisas de várias fontes. Você pode definir quantos modelos de apresentação desejar e até mesmo definir modelos de apresentação que outros modelos compartilham usando os comandos `include`. O modelo de apresentação é onde todos os componentes do Design, como facetas, menus e navegações estruturais, se juntam. Para exibir os vários componentes de design, você deve usar tags de modelo de apresentação.
 
-Consulte Tags de modelo de [apresentação](../c-appendices/c-templates.md#reference_F1BBF616BCEC4AD7B2548ECD3CA74C64)
+Consulte [Tags de modelo de apresentação](../c-appendices/c-templates.md#reference_F1BBF616BCEC4AD7B2548ECD3CA74C64)
 
 Quando você tem mais de um modelo de apresentação, define em que condições os vários modelos de apresentação são usados. Você pode selecionar qual modelo de apresentação usar com base nos parâmetros CGI e cookies recebidos. Ou você pode alternar qual modelo de apresentação está usando com base no resultado de uma pesquisa anterior.
 
-Ao usar vários modelos de apresentação, certifique-se de indicar qual modelo deseja que os resultados da pesquisa apareçam inicialmente. É possível fazer isso usando a **[!UICONTROL Default]** coluna da tabela Modelos.
+Ao usar vários modelos de apresentação, certifique-se de indicar qual modelo deseja que os resultados da pesquisa apareçam inicialmente. Você pode fazer isso usando a coluna **[!UICONTROL Default]** da tabela Modelos.
 
-## Sobre modelos de transporte {#section_35FD3E8AAA4E4695A737DB7E00C3258B}
+## Sobre os modelos de transporte {#section_35FD3E8AAA4E4695A737DB7E00C3258B}
 
 Os modelos de transporte podem ser modelos XML ou JSON que transmitem dados da pesquisa de back-end para a camada de apresentação da Pesquisa guiada.
 
@@ -62,7 +65,7 @@ Por padrão, sua conta está configurada para usar modelos de transporte XML. No
 
 Na camada de apresentação, você pode ter um único modelo de apresentação que apresenta os resultados de várias pesquisas. Cada pesquisa pode usar o mesmo modelo de transporte ou um modelo de transporte personalizado para passar os dados para a camada de apresentação. Como o modelo de transporte é usado apenas para passar dados para a camada de apresentação, ele não deve ter nenhum HTML usado para exibir os resultados da pesquisa. O modelo usa tags de modelo de transporte para passar os resultados da pesquisa e os resultados para preencher os aspectos. Dentro dessas tags, as tags padrão do modelo de pesquisa são usadas para exibir os valores reais.
 
-Consulte [Pesquisar marcas](../c-appendices/c-templates.md#reference_F7AA3FF602314E42842BBC740D2CA1A4)de modelo.
+Consulte [Pesquisar marcas de modelo](../c-appendices/c-templates.md#reference_F7AA3FF602314E42842BBC740D2CA1A4).
 
 **Tags específicas do modelo de transporte XML**
 
@@ -80,7 +83,7 @@ Consulte [Pesquisar marcas](../c-appendices/c-templates.md#reference_F7AA3FF6023
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;general&gt;&lt;/general&gt; </span> </p> </td> 
-   <td colname="col2"> <p>Esse conjunto de tags delimita tags de modelo de pesquisa que fornecem dados de resumo com base no conjunto de resultados. Normalmente, essas tags contêm tags de pesquisa para o número total de resultados, o resultado mais baixo e o resultado mais alto. Você pode definir qualquer número de campos globais adicionais que desejar com a tag de campo <span class="codeph"> geral </span> . </p> <p> <b>Exemplo</b> </p> <p> <code> &nbsp;&nbsp;&nbsp;&nbsp;&lt;general&gt; 
+   <td colname="col2"> <p>Esse conjunto de tags delimita tags de modelo de pesquisa que fornecem dados de resumo com base no conjunto de resultados. Normalmente, essas tags contêm tags de pesquisa para o número total de resultados, o resultado mais baixo e o resultado mais alto. Você pode definir qualquer número de campos globais adicionais que desejar com a tag <span class="codeph"> general-field </span>. </p> <p> <b>Exemplo</b> </p> <p> <code> &nbsp;&nbsp;&nbsp;&nbsp;&lt;general&gt; 
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;total&gt;&lt;search-total&nbsp;/&gt;&lt;/total&gt; 
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;lower&gt;&lt;search-lower&nbsp;/&gt;&lt;/lower&gt; 
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;upper&gt;&lt;search-upper&nbsp;/&gt;&lt;/upper&gt; 
@@ -92,8 +95,8 @@ Consulte [Pesquisar marcas](../c-appendices/c-templates.md#reference_F7AA3FF6023
    <td colname="col2"> <p>Esse conjunto de tags está envolvido nos resultados da pesquisa, de modo que a Pesquisa guiada saiba onde procurá-las. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;resultado&gt;&lt;/resultado&gt; </span> </p> </td> 
-   <td colname="col2"> <p>Esse conjunto de tags é vinculado a cada resultado de pesquisa, de modo que a Pesquisa guiada reconheça onde o conteúdo de um único resultado de pesquisa começa e termina. </p> <p> <b>Exemplo</b> </p> <p> <code> &nbsp;&nbsp;&nbsp;&nbsp;&lt;results&gt; 
+   <td colname="col1"> <p> <span class="codeph"> &lt;result&gt;&lt;/result&gt; </span> </p> </td> 
+   <td colname="col2"> <p>Esse conjunto de tags é envolvido em cada resultado de pesquisa, de modo que a Pesquisa guiada reconheça onde o conteúdo de um único resultado de pesquisa é start e termina. </p> <p> <b>Exemplo</b> </p> <p> <code> &nbsp;&nbsp;&nbsp;&nbsp;&lt;results&gt; 
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;search-results&gt; 
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;result&gt; 
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;index&gt;&lt;search-index&nbsp;/&gt;&lt;/index&gt; 
@@ -119,12 +122,12 @@ Consulte [Pesquisar marcas](../c-appendices/c-templates.md#reference_F7AA3FF6023
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/results&gt; </code> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;facetas&gt;&lt;/facetas&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;facets&gt;&lt;/facets&gt; </span> </p> </td> 
    <td colname="col2"> <p>Esse conjunto de tags transmite os resultados que preenchem as facetas. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;facet name="name"&gt;&lt;/facet&gt; </span> </p> </td> 
-   <td colname="col2"> <p>Cada faceta deve ter suas próprias marcas de aspecto, onde o parâmetro name corresponde ao nome da faceta. As tags de pesquisa são usadas dentro das tags de aspecto para os valores de aspecto. </p> <p>Consulte <a href="../c-about-design-menu/c-about-facets.md#concept_FA912B3B41EE493DB2F492D188457FF5" type="concept" format="dita" scope="local"> Sobre aspectos </a>. </p> <p> <b>Exemplo</b> </p> <p> <code> &nbsp;&nbsp;&nbsp;&nbsp;&lt;facets&gt; 
+   <td colname="col2"> <p>Cada faceta deve ter suas próprias marcas de aspecto, onde o parâmetro name corresponde ao nome da faceta. As tags de pesquisa são usadas dentro das tags de aspecto para os valores de aspecto. </p> <p>Consulte <a href="../c-about-design-menu/c-about-facets.md#concept_FA912B3B41EE493DB2F492D188457FF5" type="concept" format="dita" scope="local"> Sobre os aspectos </a>. </p> <p> <b>Exemplo</b> </p> <p> <code> &nbsp;&nbsp;&nbsp;&nbsp;&lt;facets&gt; 
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;facet&nbsp;name="brand"&gt; 
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;values&gt;&lt;search-field-value-list&nbsp;name="brand"&nbsp;quotes="no"&nbsp;commas="yes"&nbsp;data="values"&nbsp;sortby="values"&nbsp;/&gt;&lt;/values&gt; 
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;counts&gt;&lt;search-field-value-list&nbsp;name="brand"&nbsp;quotes="no"&nbsp;commas="yes"&nbsp;data="counts"&nbsp;sortby="values"&nbsp;/&gt;&lt;/counts&gt; 
@@ -136,11 +139,11 @@ Consulte [Pesquisar marcas](../c-appendices/c-templates.md#reference_F7AA3FF6023
       &nbsp;&nbsp;&nbsp;&nbsp;&lt;/facets&gt; </code> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;sugestões&gt;&lt;/sugestões&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;suggestions&gt;&lt;/suggestions&gt; </span> </p> </td> 
    <td colname="col2"> <p>Esse conjunto de tags vincula suas sugestões de Você quis dizer para que a Pesquisa guiada reconheça quais nós XML contêm sugestões. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;sugestão&gt;&lt;/sugestão&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;suggestion&gt;&lt;/suggestion&gt; </span> </p> </td> 
    <td colname="col2"> <p>Esse conjunto de tags vincula cada sugestão Você quis dizer. </p> <p> <b>Exemplo</b> </p> <p> <code> &nbsp;&nbsp;&nbsp;&nbsp;&lt;search-if-suggestions&gt; 
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;suggestions&gt; 
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;search-suggestions&gt; 
@@ -335,9 +338,9 @@ Se você for novo no JSON, poderá usar os seguintes links e exemplos para ajud�
 } 
 ```
 
-## Adicionar uma nova apresentação ou um novo arquivo de modelo de transporte {#task_73199757B6E748CAA604902FF913F012}
+## Adicionar um novo arquivo de apresentação ou modelo de transporte {#task_73199757B6E748CAA604902FF913F012}
 
-Você pode usar **[!UICONTROL Add Template]** para adicionar modelos de apresentação (.tmpl) ou modelos de transporte (.tpl) à [!DNL Templates] página.
+Você pode usar **[!UICONTROL Add Template]** para adicionar modelos de apresentação (.tmpl) ou modelos de transporte (.tpl) à página [!DNL Templates].
 
 <!-- 
 
@@ -348,8 +351,8 @@ t_adding_a_new_presentation_or_transport_template_file.xml
 **Para adicionar uma nova apresentação ou um novo arquivo de modelo de transporte**
 
 1. No menu do produto, clique em **[!UICONTROL Design]** > **[!UICONTROL Templates]**.
-1. Na [!DNL Templates] página, clique em **[!UICONTROL Add New Template]**.
-1. Na caixa de [!DNL Add Template] diálogo, defina as opções desejadas.
+1. Na página [!DNL Templates], clique em **[!UICONTROL Add New Template]**.
+1. Na caixa de diálogo [!DNL Add Template], defina as opções desejadas.
 
    <!-- 
    
@@ -362,25 +365,25 @@ t_adding_a_new_presentation_or_transport_template_file.xml
    | Novo nome de arquivo | Especifica o nome do modelo que você deseja adicionar. A extensão de arquivo adequada é adicionada automaticamente ao nome do arquivo, com base no tipo de modelo selecionado.  Os modelos de apresentação têm uma extensão de arquivo .tmpl; Os modelos de transporte têm uma extensão de arquivo .tpl. |
    | Novo tipo de modelo | Permite que você escolha uma apresentação ou um modelo de transporte que deseja adicionar.  Consulte [Sobre Modelos](../c-about-design-menu/c-about-templates.md). |
 
-   Consulte também [Edição de uma apresentação ou de um modelo](../c-about-design-menu/c-about-templates.md#task_800E0E2265C34C028C92FEB5A1243EC3)de transporte.
+   Consulte também [Editar uma apresentação ou um modelo de transporte](../c-about-design-menu/c-about-templates.md#task_800E0E2265C34C028C92FEB5A1243EC3).
 1. Clique em **[!UICONTROL Add]**.
-1. (Opcional) Na [!DNL Templates] página, execute um dos procedimentos a seguir:
+1. (Opcional) Na página [!DNL Templates], execute um dos procedimentos a seguir:
 
-   * Clique **[!UICONTROL History]** para reverter quaisquer alterações feitas.
+   * Clique em **[!UICONTROL History]** para reverter quaisquer alterações feitas.
 
-      Consulte [Uso da opção](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Histórico.
+      Consulte [Usando a opção Histórico](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clique em **[!UICONTROL Live]**.
 
-      Consulte [Visualizar configurações](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)ativas.
+      Consulte [Ver definições ativas](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clique em **[!UICONTROL Push Live]**.
 
-      Consulte [Colocar configurações de estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
+      Consulte [Envio de configurações de estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
 ## Editar uma apresentação ou um modelo de transporte {#task_800E0E2265C34C028C92FEB5A1243EC3}
 
-Você pode usar o Editor de modelos para exibir e editar o conteúdo de sua apresentação e os arquivos de modelo de transporte.
+Você pode usar o Editor de modelos para visualização e edição do conteúdo da apresentação e dos arquivos de modelo de transporte.
 
 <!-- 
 
@@ -388,44 +391,44 @@ t_editing_a_template.xml
 
  -->
 
-Você pode editar e testar a apresentação em etapas e os modelos de transporte, enquanto os visitantes do seu site continuam a usar as versões ao vivo dos seus modelos. Você testa seu modelo preparado usando a versão preparada do URL do domínio de pesquisa. Por exemplo, você pode testar o modelo de transporte preparado executando uma consulta preparada ( `sp_staged=1`) com `sp_t` o nome definido para o modelo de transporte. Quando estiver satisfeito com a forma como o layout é exibido, você pode usar **[!UICONTROL Push Live]** de dentro do editor de modelo para colocar o modelo ao vivo. Depois que o modelo é exibido, os visitantes do site começam a usá-lo.
+Você pode editar e testar os modelos de apresentação e transporte preparados, enquanto os visitantes do site continuam a usar as versões ao vivo dos modelos. Você testa seu modelo preparado usando a versão preparada do URL do domínio de pesquisa. Por exemplo, você pode testar seu modelo de transporte preparado executando um query preparado ( `sp_staged=1`) com `sp_t` que está definido para o nome do modelo de transporte. Quando estiver satisfeito com a forma como o layout é exibido, você pode usar **[!UICONTROL Push Live]** no editor de modelo para colocar o modelo online. Depois que o modelo é exibido, os visitantes do site começam a usá-lo.
 
 Use a referência de tag do modelo de apresentação para saber como conectar o modelo de apresentação aos componentes de Pesquisa guiada, como facetas, navegações estruturais e menus.
 
-Consulte Tags de modelo de [apresentação](../c-appendices/c-templates.md#reference_F1BBF616BCEC4AD7B2548ECD3CA74C64)
+Consulte [Tags de modelo de apresentação](../c-appendices/c-templates.md#reference_F1BBF616BCEC4AD7B2548ECD3CA74C64)
 
 Use a referência de tag do modelo de transporte para saber mais sobre as tags a serem usadas nos modelos de transporte.
 
-Consulte Tags de modelo [de transporte](../c-appendices/c-templates.md#reference_227D199F5A7248049BE1D405C0584751)
+Consulte [Tags de modelo de transporte](../c-appendices/c-templates.md#reference_227D199F5A7248049BE1D405C0584751)
 
 **[!UICONTROL To edit a presentation or a transport template]**
 
 1. No menu do produto, clique em **[!UICONTROL Design]** > **[!UICONTROL Templates]**.
-1. Na [!DNL Templates] página, clique em uma apresentação ou no nome de um arquivo de modelo de transporte.
-1. Na [!DNL Template Editor] página, faça as alterações desejadas nas tags e na codificação.
+1. Na página [!DNL Templates], clique em uma apresentação ou em um nome de arquivo de modelo de transporte.
+1. Na página [!DNL Template Editor], faça as alterações desejadas para as tags e a codificação.
 
-   Tenha cuidado com as mudanças que você faz no [!DNL Template Editor]; não há nenhum recurso Desfazer. Se você fizer uma alteração indesejada e quiser voltar à versão anterior do arquivo, clique em **[!UICONTROL Cancel]** para retornar à tabela de modelos (assumindo que não salvou nenhuma de suas alterações até esse ponto). Se você já salvou as alterações, poderá usá-las **[!UICONTROL History]** no editor para revertê-las.
+   Tenha cuidado com as alterações feitas em [!DNL Template Editor]; não há nenhum recurso Desfazer. Se você fizer uma alteração indesejada e quiser voltar à versão anterior do arquivo, clique em **[!UICONTROL Cancel]** para retornar à tabela de modelos (assumindo que não salvou nenhuma de suas alterações até esse ponto). Se você já salvou suas alterações, poderá usar **[!UICONTROL History]** no editor para reverter essas alterações.
 1. (Opcional) Clique em **[!UICONTROL Insert Symbol]** para inserir caracteres e símbolos especiais que não tenham teclas correspondentes em teclados em inglês dos EUA.
 1. Clique em **[!UICONTROL Save Changes]**.
 1. (Opcional) Execute um dos procedimentos a seguir:
 
-   * Clique **[!UICONTROL History]** para reverter quaisquer alterações feitas.
+   * Clique em **[!UICONTROL History]** para reverter quaisquer alterações feitas.
 
-      Consulte [Uso da opção](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Histórico.
+      Consulte [Usando a opção Histórico](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clique em **[!UICONTROL Live]**.
 
-      Consulte [Visualizar configurações](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)ativas.
+      Consulte [Ver definições ativas](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clique em **[!UICONTROL Push Live]**.
 
-      Consulte [Colocar configurações de estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
+      Consulte [Envio de configurações de estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
 1. Feche a página Editor de modelos quando terminar; você retornará à página Modelos.
 
 ## Copiando uma apresentação ou um arquivo de modelo de transporte {#task_B744AB3384C84DD59C33CD25E18C2C90}
 
-Você pode usar **[!UICONTROL Copy Template]** para economizar tempo duplicando um modelo de Apresentação existente (.tmpl) ou um modelo de Transporte (.tpl) e adicioná-lo à página Modelos.
+Você pode usar **[!UICONTROL Copy Template]** para economizar tempo duplicando um modelo de Apresentação existente (.tmpl) ou modelo de Transporte (.tpl) e adicioná-lo à página Modelos.
 
 <!-- 
 
@@ -437,27 +440,27 @@ t_copying_a_presentation_or_a_transport_template.xml
 
 Você deve ter um modelo já adicionado para poder copiar um modelo.
 
-Consulte [Adicionar uma nova apresentação ou arquivo](../c-about-design-menu/c-about-templates.md#task_73199757B6E748CAA604902FF913F012)de modelo de transporte.
+Consulte [Adicionar um novo arquivo de apresentação ou modelo de transporte](../c-about-design-menu/c-about-templates.md#task_73199757B6E748CAA604902FF913F012).
 
 **Para copiar uma apresentação ou um arquivo de modelo de transporte**
 
 1. No menu do produto, clique em **[!UICONTROL Design]** > **[!UICONTROL Templates]**.
-1. Na [!DNL Templates] página, na lista suspensa ao lado do nome do modelo que você deseja copiar, clique em **[!UICONTROL Copy]**.
-1. Na caixa de [!DNL Copy Template] diálogo, defina uma ou mais das opções desejadas.
+1. Na página [!DNL Templates], na lista suspensa ao lado do nome do modelo que você deseja copiar, clique em **[!UICONTROL Copy]**.
+1. Na caixa de diálogo [!DNL Copy Template], defina uma ou mais das opções desejadas.
 1. Clique em **[!UICONTROL Copy]**.
 1. (Opcional) Execute um dos procedimentos a seguir:
 
-   * Clique **[!UICONTROL History]** para reverter quaisquer alterações feitas.
+   * Clique em **[!UICONTROL History]** para reverter quaisquer alterações feitas.
 
-      Consulte [Uso da opção](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Histórico.
+      Consulte [Usando a opção Histórico](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clique em **[!UICONTROL Live]**.
 
-      Consulte [Visualizar configurações](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)ativas.
+      Consulte [Ver definições ativas](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clique em **[!UICONTROL Push Live]**.
 
-      Consulte [Colocar configurações de estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
+      Consulte [Envio de configurações de estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
 ## Renomear uma apresentação ou um arquivo de modelo de transporte {#task_CC30050FC2DE4898BF44379D8378EB31}
 
@@ -473,27 +476,27 @@ Você também pode alterar o tipo de modelo, se desejado.
 
 Você já deve ter um modelo adicionado para renomear um modelo.
 
-Consulte [Adicionar uma nova apresentação ou arquivo](../c-about-design-menu/c-about-templates.md#task_73199757B6E748CAA604902FF913F012)de modelo de transporte.
+Consulte [Adicionar um novo arquivo de apresentação ou modelo de transporte](../c-about-design-menu/c-about-templates.md#task_73199757B6E748CAA604902FF913F012).
 
 **Para renomear uma apresentação ou um arquivo de modelo de transporte**
 
 1. No menu do produto, clique em **[!UICONTROL Design]** > **[!UICONTROL Templates]**.
-1. Na [!DNL Templates] página, na lista suspensa ao lado do nome de um modelo que você deseja renomear, clique em **[!UICONTROL Rename]**.
-1. Na caixa de [!DNL Rename Template] diálogo, defina uma ou mais das opções desejadas.
+1. Na página [!DNL Templates], na lista suspensa ao lado do nome do modelo que você deseja renomear, clique em **[!UICONTROL Rename]**.
+1. Na caixa de diálogo [!DNL Rename Template], defina uma ou mais das opções desejadas.
 1. Clique em **[!UICONTROL Rename]**.
 1. (Opcional) Execute um dos procedimentos a seguir:
 
-   * Clique **[!UICONTROL History]** para reverter quaisquer alterações feitas.
+   * Clique em **[!UICONTROL History]** para reverter quaisquer alterações feitas.
 
-      Consulte [Uso da opção](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Histórico.
+      Consulte [Usando a opção Histórico](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clique em **[!UICONTROL Live]**.
 
-      Consulte [Visualizar configurações](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)ativas.
+      Consulte [Ver definições ativas](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clique em **[!UICONTROL Push Live]**.
 
-      Consulte [Colocar configurações de estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
+      Consulte [Envio de configurações de estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
 ## Excluindo uma apresentação ou um arquivo de modelo de transporte {#task_67E532C2B83A449687737E3B06C5AA58}
 
@@ -507,36 +510,36 @@ t_deleting_a_presentation_or_a_transport_template_file.xml
 
 Você já pode ter uma versão correspondente do modelo preparado que é enviado ao vivo. Em caso positivo, certifique-se de colocar o modelo excluído ao vivo usando **[!UICONTROL Staging]** para que ele também seja excluído do ambiente ativo. Ou você pode usar **[!UICONTROL Push Live]** na página Modelos.
 
-Consulte [Sobre armazenamento temporário](../c-about-staging.md#concept_08B8F3CA1F4241108F14BA7FC7806CA7)
+Consulte [Sobre o armazenamento temporário](../c-about-staging.md#concept_08B8F3CA1F4241108F14BA7FC7806CA7)
 
-Consulte [Colocar configurações de estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)
+Consulte [Envio de configurações de estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)
 
 Você já deve ter um modelo adicionado para poder excluir um modelo.
 
-Consulte [Adicionar uma nova apresentação ou arquivo de modelo de transporte](../c-about-design-menu/c-about-templates.md#task_73199757B6E748CAA604902FF913F012)
+Consulte [Adicionar uma nova apresentação ou ficheiro de modelo de transporte](../c-about-design-menu/c-about-templates.md#task_73199757B6E748CAA604902FF913F012)
 
 **Para excluir uma apresentação ou um arquivo de modelo de transporte**
 
 1. No menu do produto, clique em **[!UICONTROL Design]** > **[!UICONTROL Templates]**.
-1. Na [!DNL Templates] página, na lista suspensa ao lado do nome do modelo que você deseja excluir, clique em **[!UICONTROL Delete]**.
-1. Na caixa de [!DNL Delete Template] diálogo, clique em **[!UICONTROL Delete.]**
+1. Na página [!DNL Templates], na lista suspensa ao lado do nome do modelo que você deseja excluir, clique em **[!UICONTROL Delete]**.
+1. Na caixa de diálogo [!DNL Delete Template], clique em **[!UICONTROL Delete.]**
 1. (Opcional) Execute um dos procedimentos a seguir:
 
-   * Clique **[!UICONTROL History]** para reverter quaisquer alterações feitas.
+   * Clique em **[!UICONTROL History]** para reverter quaisquer alterações feitas.
 
-      Consulte [Uso da opção](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Histórico.
+      Consulte [Usando a opção Histórico](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clique em **[!UICONTROL Live]**.
 
-      Consulte [Visualizar configurações](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)ativas.
+      Consulte [Ver definições ativas](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clique em **[!UICONTROL Push Live]**.
 
-      Consulte [Colocar configurações de estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
+      Consulte [Envio de configurações de estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## A visualização do modelo de apresentação foi minimizada {#task_1757B6207CC74221AE4BFFE5674D320B}
+## Visualizar o modelo de apresentação minimizado {#task_1757B6207CC74221AE4BFFE5674D320B}
 
-Você pode usar **[!UICONTROL Preview minimized]** para ver como seria a espessura reduzida de uma página de um modelo de apresentação se optar por minimizá-lo.
+Você pode usar **[!UICONTROL Preview minimized]** para ver como seria o peso de página reduzido de um modelo de apresentação se optar por minimizá-lo.
 
 <!-- 
 
@@ -544,43 +547,43 @@ t_previewing_the_presentation_template_minimized.xml
 
  -->
 
-Se você minimizar o modelo de apresentação principal, lembre-se de ativar a minimização para modelos incluídos (com tag de inclusão guiada), pois essa opção não é herdada.
+Se você minimizar o modelo de apresentação principal, lembre-se de ativar a minimização para modelos incluídos (com tag de inclusão guiada) porque essa opção não é herdada.
 
-Consulte [Reduzindo o peso da página de um modelo de apresentação em...](../c-about-design-menu/c-about-templates.md#task_B09BB3CE89714DEAAE8D9A899CF3009E)
+Consulte [Reduzindo o peso de página de um modelo de apresentação em...](../c-about-design-menu/c-about-templates.md#task_B09BB3CE89714DEAAE8D9A899CF3009E)
 
-Você já deve ter um modelo adicionado para visualizar o modelo minimizado.
+Você deve ter um modelo já adicionado à pré-visualização de minimizar o modelo.
 
-Consulte [Adicionar uma nova apresentação ou arquivo de modelo de transporte](../c-about-design-menu/c-about-templates.md#task_73199757B6E748CAA604902FF913F012)
+Consulte [Adicionar uma nova apresentação ou ficheiro de modelo de transporte](../c-about-design-menu/c-about-templates.md#task_73199757B6E748CAA604902FF913F012)
 
-Você pode visualizar o código XML de um arquivo de modelo de transporte.
+Você pode pré-visualização o código XML de um arquivo de modelo de transporte.
 
 Consulte [Visualizar o XML de um arquivo de modelo de transporte](../c-about-design-menu/c-about-templates.md#task_58C6C52078E14AD88D2B2F0B3C439AE8)
 
-**Para visualizar o modelo de apresentação minimizado**
+**Para minimizar a pré-visualização do modelo de apresentação**
 
 1. No menu do produto, clique em **[!UICONTROL Design]** > **[!UICONTROL Templates]**.
-1. Na [!DNL Templates] página, na lista suspensa ao lado do nome do modelo de apresentação, clique em **[!UICONTROL Preview minimized]**.
+1. Na página [!DNL Templates], na lista suspensa ao lado do nome do modelo de apresentação, clique em **[!UICONTROL Preview minimized]**.
 
-   Use a **[!UICONTROL Type]** coluna na tabela Modelos para classificar os modelos por Apresentação e Transporte.
-1. (Opcional) Na [!DNL Preview Minimized Template] página, marque **[!UICONTROL Wrap lines]** para ler as tags na janela definida.
+   Use a coluna **[!UICONTROL Type]** na tabela Modelos para classificar os modelos por Apresentação e Transporte.
+1. (Opcional) Na página [!DNL Preview Minimized Template], marque **[!UICONTROL Wrap lines]** para ler as tags na janela definida.
 1. Clique em **[!UICONTROL Close]**.
 1. (Opcional) Execute um dos procedimentos a seguir:
 
-   * Clique **[!UICONTROL History]** para reverter quaisquer alterações feitas.
+   * Clique em **[!UICONTROL History]** para reverter quaisquer alterações feitas.
 
-      Consulte [Uso da opção](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Histórico.
+      Consulte [Usando a opção Histórico](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clique em **[!UICONTROL Live]**.
 
-      Consulte [Visualizar configurações](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)ativas.
+      Consulte [Ver definições ativas](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clique em **[!UICONTROL Push Live]**.
 
-      Consulte [Colocar configurações de estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
+      Consulte [Envio de configurações de estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Redução do peso da página de um modelo de apresentação em seu site {#task_B09BB3CE89714DEAAE8D9A899CF3009E}
+## Redução do peso de página de um modelo de apresentação em seu site {#task_B09BB3CE89714DEAAE8D9A899CF3009E}
 
-Você pode reduzir a espessura da página de um modelo de apresentação usando a **[!UICONTROL Minimize]** opção na tabela de modelo.
+Você pode reduzir o peso de página de um modelo de apresentação usando a opção **[!UICONTROL Minimize]** na tabela de modelo.
 
 <!-- 
 
@@ -588,31 +591,31 @@ t_reducing_the_page_weight_of_a_presentation_template.xml
 
  -->
 
-Ao reduzir o peso da página do modelo, você minimiza dinamicamente o JavaScript e o CSS em linha. Você também remove o espaço em branco redundante no HTML. Minimizar o peso da página do modelo de apresentação pode ajudar a fornecer os resultados da pesquisa mais rapidamente.
+Ao reduzir o peso de página do modelo, você minimiza dinamicamente o JavaScript e o CSS em linha. Você também remove o espaço em branco redundante no HTML. Minimizar o peso de página do modelo de apresentação pode ajudar a fornecer seus resultados de pesquisa mais rapidamente.
 
-Você também pode visualizar a aparência do modelo de apresentação minimizado usando **[!UICONTROL Preview minimized]**.
+Você também pode pré-visualização a aparência do modelo de apresentação minimizado usando **[!UICONTROL Preview minimized]**.
 
 Consulte [Visualizar o modelo de apresentação minimizado](../c-about-design-menu/c-about-templates.md#task_1757B6207CC74221AE4BFFE5674D320B).
 
 **[!UICONTROL To reduce the page weight of a presentation template on your website]**
 
 1. No menu do produto, clique em **[!UICONTROL Design]** > **[!UICONTROL Templates]**.
-1. Na [!DNL Templates] página, na [!DNL Minimize] coluna, marque a caixa de seleção de um ou mais arquivos de modelo de apresentação que você deseja enviar como mínimo em seu site.
+1. Na página [!DNL Templates], na coluna [!DNL Minimize], marque a caixa de seleção de um ou mais arquivos de modelo de apresentação que você deseja mover como minimizar em seu site.
 
-   Use a **[!UICONTROL Type]** coluna na [!DNL Templates] tabela para classificar os modelos por Apresentação e Transporte.
+   Use a coluna **[!UICONTROL Type]** na tabela [!DNL Templates] para classificar os modelos por Apresentação e Transporte.
 1. (Opcional) Execute um dos procedimentos a seguir:
 
-   * Clique **[!UICONTROL History]** para reverter quaisquer alterações feitas.
+   * Clique em **[!UICONTROL History]** para reverter quaisquer alterações feitas.
 
-      Consulte [Uso da opção](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Histórico.
+      Consulte [Usando a opção Histórico](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clique em **[!UICONTROL Live]**.
 
-      Consulte [Visualizar configurações](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)ativas.
+      Consulte [Ver definições ativas](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clique em **[!UICONTROL Push Live]**.
 
-      Consulte [Colocar configurações de estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
+      Consulte [Envio de configurações de estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
 ## Configurar o arquivo de modelo de apresentação padrão para usar em seu site {#task_C1E8CE817E4D43E096167A347C54DD53}
 
@@ -626,33 +629,33 @@ t_setting_the_default_presentation_template_file_to_use.xml
 
 Você pode usar as regras de pré-pesquisa, pós-pesquisa e de negócios para determinar quando um de seus outros modelos de apresentação deve ser usado.
 
-See [About Pre-Search Rules](../c-about-rules-menu/c-about-pre-search-rules.md#concept_5BF84BB6FACB4645BA9CB7496A01CD1F).
+Consulte [Sobre regras de pré-pesquisa](../c-about-rules-menu/c-about-pre-search-rules.md#concept_5BF84BB6FACB4645BA9CB7496A01CD1F).
 
-See [About Post-Search Rules](../c-about-rules-menu/c-about-post-search-rules.md#concept_AF6ADFCC0ADF4A788003964939917FDE).
+Consulte [Sobre as regras pós-pesquisa](../c-about-rules-menu/c-about-post-search-rules.md#concept_AF6ADFCC0ADF4A788003964939917FDE).
 
-See [About Business Rules](../c-about-rules-menu/c-about-business-rules.md#concept_2A93D76216754D3D8412CDEA00BD26BD).
+Consulte [Sobre Regras de Negócios](../c-about-rules-menu/c-about-business-rules.md#concept_2A93D76216754D3D8412CDEA00BD26BD).
 
 É comum ter uma regra como &quot;Para cada pesquisa, defina o modelo de apresentação direcionada como xxxx.&quot; Com tal regra em vigor, a alteração do modelo &quot;padrão&quot; na página Modelos parece não ter efeito.
 
 **[!UICONTROL To set the default presentation template file to use on your website]**
 
 1. No menu do produto, clique em **[!UICONTROL Design]** > **[!UICONTROL Templates]**.
-1. Na [!DNL Templates] página, na [!DNL Default] coluna, clique no botão de opção para o arquivo de modelo de apresentação correspondente que você deseja servir como padrão.
+1. Na página [!DNL Templates], na coluna [!DNL Default], clique no botão de opção para o arquivo de modelo de apresentação correspondente que você deseja servir como padrão.
 
-   Use a **[!UICONTROL Type]** coluna na [!DNL Templates] tabela para classificar os modelos por Apresentação e Transporte.
+   Use a coluna **[!UICONTROL Type]** na tabela [!DNL Templates] para classificar os modelos por Apresentação e Transporte.
 1. (Opcional) Execute um dos procedimentos a seguir:
 
-   * Clique **[!UICONTROL History]** para reverter quaisquer alterações feitas.
+   * Clique em **[!UICONTROL History]** para reverter quaisquer alterações feitas.
 
-      Consulte [Uso da opção](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Histórico.
+      Consulte [Usando a opção Histórico](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clique em **[!UICONTROL Live]**.
 
-      Consulte [Visualizar configurações](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)ativas.
+      Consulte [Ver definições ativas](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clique em **[!UICONTROL Push Live]**.
 
-      Consulte [Colocar configurações de estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
+      Consulte [Envio de configurações de estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
 ## Visualização do XML de um arquivo de modelo de transporte {#task_58C6C52078E14AD88D2B2F0B3C439AE8}
 
@@ -664,32 +667,32 @@ t_previewing_the_xml_of_a_transport_template_file.xml
 
  -->
 
-Você deve ter um modelo de transporte já adicionado para visualizar o XML do modelo.
+Você deve ter um modelo de transporte já adicionado à pré-visualização do XML do modelo.
 
-Consulte [Adicionar uma nova apresentação ou arquivo](../c-about-design-menu/c-about-templates.md#task_73199757B6E748CAA604902FF913F012)de modelo de transporte.
+Consulte [Adicionar um novo arquivo de apresentação ou modelo de transporte](../c-about-design-menu/c-about-templates.md#task_73199757B6E748CAA604902FF913F012).
 
-É possível visualizar arquivos de modelo de apresentação minimizados para exibir a espessura reduzida da página.
+Você pode pré-visualização arquivos de modelo de apresentação minimizados para visualização de pesos de página reduzidos.
 
 Consulte [Visualizar o modelo de apresentação minimizado](../c-about-design-menu/c-about-templates.md#task_1757B6207CC74221AE4BFFE5674D320B).
 
-**Para visualizar o XML de um arquivo de modelo de transporte**
+**Para pré-visualização do XML de um arquivo de modelo de transporte**
 
 1. No menu do produto, clique em **[!UICONTROL Design]** > **[!UICONTROL Templates]**.
-1. Na [!DNL Templates] página, na lista suspensa ao lado do nome de um modelo de transporte, clique em **[!UICONTROL Preview]**.
+1. Na página [!DNL Templates], na lista suspensa ao lado do nome de um modelo de transporte, clique em **[!UICONTROL Preview]**.
 
-   Use a **[!UICONTROL Type]** coluna na [!DNL Templates] tabela para classificar os modelos por Apresentação e Transporte.
+   Use a coluna **[!UICONTROL Type]** na tabela [!DNL Templates] para classificar os modelos por Apresentação e Transporte.
 1. Feche a janela de visualização e volte para [!DNL site search/merchandising].
 1. (Opcional) Execute um dos procedimentos a seguir:
 
-   * Clique **[!UICONTROL History]** para reverter quaisquer alterações feitas.
+   * Clique em **[!UICONTROL History]** para reverter quaisquer alterações feitas.
 
-      Consulte [Uso da opção](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Histórico.
+      Consulte [Usando a opção Histórico](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clique em **[!UICONTROL Live]**.
 
-      Consulte [Visualizar configurações](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)ativas.
+      Consulte [Ver definições ativas](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clique em **[!UICONTROL Push Live]**.
 
-      Consulte [Colocar configurações de estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
+      Consulte [Envio de configurações de estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
