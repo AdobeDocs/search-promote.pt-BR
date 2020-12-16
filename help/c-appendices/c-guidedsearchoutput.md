@@ -8,6 +8,9 @@ topic: Appendices,Site search and merchandising
 uuid: 234fd563-f249-42b0-88ca-c89b44f8df77
 translation-type: tm+mt
 source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
+workflow-type: tm+mt
+source-wordcount: '6298'
+ht-degree: 2%
 
 ---
 
@@ -16,27 +19,27 @@ source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
 
 É possível personalizar a saída em qualquer formato baseado em texto, incluindo XML ou JSON.
 
-## Uso da saída da pesquisa guiada {#concept_2A1BA3AD413848A1AC2A3ABC4FFE481F}
+## Usando a saída de pesquisa guiada {#concept_2A1BA3AD413848A1AC2A3ABC4FFE481F}
 
 O formato de saída é personalizável para suportar a facetagem, a classificação e outras decisões específicas de implementação tomadas durante o processo de design. Você pode adaptar o próprio formato para simplificar o desenvolvimento do front-end do cliente, se necessário.
 
-A saída inteira está contida em `<result>` tags, e a maioria dos dados dinâmicos está entre `<![CDATA[ ]]>` tags. Essa organização permite que os resultados contenham HTML e outras entidades não XML.
+A saída inteira está contida em `<result>` tags, e a maioria dos dados dinâmicos está incluída em `<![CDATA[ ]]>` tags. Essa organização permite que os resultados contenham HTML e outras entidades não XML.
 
-Quando os links para outras páginas são fornecidos, eles são apresentados na forma de um URL relativo. Esse resultado também inclui os parâmetros da string de consulta passados para gerar o resultado desejado.
+Quando os links para outras páginas são fornecidos, eles são apresentados na forma de um URL relativo. Esse resultado também inclui os parâmetros da string de query que são passados para gerar o resultado desejado.
 
-## Noções básicas sobre a implementação da Pesquisa guiada {#section_95483980930C4325BAB50A40BD47245A}
+## Compreensão de uma implementação de pesquisa guiada {#section_95483980930C4325BAB50A40BD47245A}
 
-Quando você iniciar uma implementação de Pesquisa guiada, lembre-se de que isso [!DNL Adobe Search&Promote] é responsável pela Camada de negócios. Ou seja, a lógica que envolve os resultados e facetas que são mostrados a um cliente em um determinado momento.
+Quando você iniciar uma implementação de Pesquisa guiada, lembre-se de que [!DNL Adobe Search&Promote] é responsável pela Camada comercial. Ou seja, a lógica que envolve os resultados e facetas que são mostrados a um cliente em um determinado momento.
 
-Quando você implementa o front-end do aplicativo Web que analisa e exibe os resultados como HTML, restrinja a funcionalidade para exibir somente. Em outras palavras, qualquer lógica do lado do servidor usada para criar a Camada de apresentação não toma as decisões sobre o que apresentar ao cliente, a menos que seja necessário. As Regras de negócios não funcionarão como esperado se o script front-end estiver alterando os resultados da pesquisa.
+Ao implementar o front-end de Aplicação web que analisa e exibe os resultados como HTML, restrinja a funcionalidade para exibir apenas. Em outras palavras, qualquer lógica do lado do servidor usada para criar a Camada de apresentação não toma as decisões sobre o que apresentar ao cliente, a menos que seja necessário. As Regras de negócios não funcionarão como esperado se o script front-end estiver alterando os resultados da pesquisa.
 
-[!DNL Adobe Search&Promote] mantém o estado do usuário das opções de refinamento de pesquisa selecionadas por meio dos parâmetros de URL. Todos os `<link>` nós contêm os parâmetros relevantes das seleções do cliente. Esses parâmetros podem incluir trilhas de navegação, paginação, classificação e seleções de facetas. Quando aplicável, `<undolink>` os nós são retornados para permitir que um cliente faça &quot;back out&quot; de uma seleção. Aspectos e navegações estruturais oferecem esses tipos de links.
+[!DNL Adobe Search&Promote] mantém o estado do usuário das opções de refinamento de pesquisa selecionadas por meio dos parâmetros de URL. Todos os nós `<link>` contêm os parâmetros relevantes das seleções do cliente. Esses parâmetros podem incluir trilhas de navegação, paginação, classificação e seleções de facetas. Quando aplicável, os nós `<undolink>` são retornados para permitir que um cliente faça &quot;back out&quot; de uma seleção. Aspectos e navegações estruturais ofertas nesses tipos de links.
 
-## Trabalhar com o Search Server {#section_8DBEACDECD714E59BDED6315E6041B8D}
+## Trabalhando com o Search Server {#section_8DBEACDECD714E59BDED6315E6041B8D}
 
 Uma API semelhante a REST é usada com a qual você pode interagir para realizar pesquisas e receber resultados. Os formatos mais comuns usados para os resultados são XML ou JSON.
 
-O URI de base está associado a uma conta específica e a um ambiente de preparo ou ao vivo. Você pode solicitar vários aliases para o URI básico do seu gerente de conta. Por exemplo, uma empresa ficcional chamada Megacorp tem os dois URLs básicos a seguir associados à conta:
+O URI de base está associado a uma conta específica e a um ambiente em tempo real ou temporário. Você pode solicitar vários aliases para o URI básico do seu gerente de conta. Por exemplo, uma empresa ficcional chamada Megacorp tem os seguintes dois URLs básicos associados à conta:
 
 * `https://search.megacorp.com `
 * `https://stage.megacorp.com`
@@ -59,14 +62,14 @@ Um terceiro formato, chamado de formato SEO, também é suportado quando uma bar
 
 Sempre que o formato SEO for usado para enviar uma solicitação, todos os links de saída serão retornados no mesmo formato.
 
-## Parâmetros de consulta de pesquisa {#section_7ADA5E130E3040C9BE85D0D68EDD3223}
+## Parâmetros do query de pesquisa {#section_7ADA5E130E3040C9BE85D0D68EDD3223}
 
-A tabela a seguir descreve os parâmetros padrão de consulta de pesquisa &quot;predefinidos&quot; que você pode usar. As regras de processamento e as regras de negócios podem ser criadas com base em parâmetros de consulta definidos pelo usuário para implementar uma lógica de negócios personalizada relevante para a sua empresa. Você pode trabalhar com a equipe de consultoria para obter documentação sobre esses parâmetros.
+A tabela a seguir descreve os parâmetros padrão de query de pesquisa &quot;predefinidos&quot; que você pode usar. As regras de processamento e as regras de negócios podem ser criadas com base em parâmetros de query definidos pelo usuário para implementar uma lógica comercial personalizada relevante para a sua empresa. Você pode trabalhar com a equipe de consultoria para obter documentação sobre esses parâmetros.
 
 <table> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> <p>Parâmetro de consulta de pesquisa </p> </th> 
+   <th colname="col1" class="entry"> <p>Parâmetro query de pesquisa </p> </th> 
    <th colname="col2" class="entry"> <p>Exemplo </p> </th> 
    <th colname="col3" class="entry"> <p>Descrição </p> </th> 
   </tr> 
@@ -74,56 +77,56 @@ A tabela a seguir descreve os parâmetros padrão de consulta de pesquisa &quot;
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> q </span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph"> q= string </span> </p> </td> 
-   <td colname="col3"> <p> Especifica a string de consulta para a pesquisa. Esse parâmetro mapeia para o parâmetro de pesquisa de backend <span class="codeph"> sp_q </span> . </p> </td> 
+   <td colname="col2"> <p> <span class="codeph"> q= string  </span> </p> </td> 
+   <td colname="col3"> <p> Especifica a string de query para a pesquisa. Esse parâmetro mapeia para o parâmetro de pesquisa back-end <span class="codeph"> sp_q </span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> q# </span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph"> q#= string </span> </p> </td> 
-   <td colname="col3"> <p>Parâmetros <span class="codeph"> q </span> e <span class="codeph"> x numerados </span> permitem lapidar ou pesquisar em um determinado campo. </p> <p>O parâmetro <span class="codeph"> q </span> define o termo que você está procurando na faceta como o parâmetro <span class="codeph"> x numerado correspondente denota </span> . Por exemplo, se você tiver duas facetas com nome de tamanho e cor, você pode ter algo como o seguinte: </p> <p> <span class="codeph"> q1=small;x1=size;q2=red;x2=color </span> </p> <p>Esse parâmetro mapeia para os parâmetros de pesquisa de backend <span class="codeph"> sp_q_exato_# </span> . </p> </td> 
+   <td colname="col2"> <p> <span class="codeph"> q#= string  </span> </p> </td> 
+   <td colname="col3"> <p>Os parâmetros numerados <span class="codeph"> q </span> e <span class="codeph"> x </span> permitem lapidar ou pesquisar dentro de um determinado campo. </p> <p>O parâmetro <span class="codeph"> q </span> define o termo que você está procurando na faceta como o parâmetro correspondente numerado <span class="codeph"> x </span> indica. Por exemplo, se você tiver duas facetas com nome de tamanho e cor, você pode ter algo como o seguinte: </p> <p> <span class="codeph"> q1=small;x1=size;q2=red;x2=color  </span> </p> <p>Esse parâmetro mapeia para os parâmetros de pesquisa back-end <span class="codeph"> sp_q_exato_# </span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> x# </span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph"> x#= string </span> </p> </td> 
-   <td colname="col3"> <p> Parâmetros <span class="codeph"> q </span> e <span class="codeph"> x numerados </span> permitem lapidar ou pesquisar em um determinado campo. </p> <p>O parâmetro <span class="codeph"> q </span> define o termo que você está procurando na faceta como o parâmetro <span class="codeph"> x numerado correspondente denota </span> . Por exemplo, se você tiver duas facetas com nome de tamanho e cor, você pode ter algo como o seguinte: </p> <p> <span class="codeph"> q1=small;x1=size;q2=red;x2=color </span> </p> <p>Esse parâmetro mapeia para os parâmetros de pesquisa de backend <span class="codeph"> sp_x_# </span> . </p> </td> 
+   <td colname="col2"> <p> <span class="codeph"> x#= string  </span> </p> </td> 
+   <td colname="col3"> <p> Os parâmetros numerados <span class="codeph"> q </span> e <span class="codeph"> x </span> permitem lapidar ou pesquisar dentro de um determinado campo. </p> <p>O parâmetro <span class="codeph"> q </span> define o termo que você está procurando na faceta como o parâmetro correspondente numerado <span class="codeph"> x </span> indica. Por exemplo, se você tiver duas facetas com nome de tamanho e cor, você pode ter algo como o seguinte: </p> <p> <span class="codeph"> q1=small;x1=size;q2=red;x2=color  </span> </p> <p>Esse parâmetro mapeia para os parâmetros de pesquisa back-end <span class="codeph"> sp_x_# </span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> coleção </span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph"> collection= string </span> </p> </td> 
-   <td colname="col3"> <p> Especifica a coleção a ser usada para a pesquisa. Esse parâmetro mapeia para o parâmetro de pesquisa <span class="codeph"> sp_k </span> backend. </p> </td> 
+   <td colname="col2"> <p> <span class="codeph"> collection= string  </span> </p> </td> 
+   <td colname="col3"> <p> Especifica a coleção a ser usada para a pesquisa. Esse parâmetro mapeia para o parâmetro de pesquisa back-end <span class="codeph"> sp_k </span>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> count </span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph"> count= número </span> </p> </td> 
-   <td colname="col3"> <p> Especifica a contagem total de resultados que são mostrados. O padrão é definido em <span class="uicontrol"> Configurações </span> &gt; <span class="uicontrol"> Pesquisar </span> &gt; <span class="uicontrol"> Pesquisas </span>. Esse parâmetro mapeia para o parâmetro de pesquisa <span class="codeph"> sp_c </span> backend. </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> count  </span> </p> </td> 
+   <td colname="col2"> <p> <span class="codeph"> count= número  </span> </p> </td> 
+   <td colname="col3"> <p> Especifica a contagem total de resultados que são mostrados. O padrão é definido em <span class="uicontrol"> Settings </span> &gt; <span class="uicontrol"> Searching </span> &gt; <span class="uicontrol"> Searches </span>. Esse parâmetro mapeia para o parâmetro de pesquisa back-end <span class="codeph"> sp_c </span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> page </span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph"> page= número </span> </p> </td> 
+   <td colname="col2"> <p> <span class="codeph"> page= número  </span> </p> </td> 
    <td colname="col3"> <p> Especifica a página de resultados que são retornados. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> classificação </span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph"> classificação= campo </span> </p> </td> 
-   <td colname="col3"> <p> Especifica o campo de classificação a ser usado para classificação estática. O campo deve ser do tipo Classificação com relevância maior que 0. Esse parâmetro mapeia para o parâmetro de backend <span class="codeph"> sp_sr </span> . </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> classificação  </span> </p> </td> 
+   <td colname="col2"> <p> <span class="codeph"> classificação= campo  </span> </p> </td> 
+   <td colname="col3"> <p> Especifica o campo de classificação a ser usado para classificação estática. O campo deve ser do tipo Classificação com relevância maior que 0. Esse parâmetro mapeia para o parâmetro back-end <span class="codeph"> sp_sr </span>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> gs_store </span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph"> gs_store= string </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> gs_store  </span> </p> </td> 
+   <td colname="col2"> <p> <span class="codeph"> gs_store= string  </span> </p> </td> 
    <td colname="col3"> <p> Especifica a loja a ser pesquisada. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> espécie </span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph"> sort= número </span> </p> </td> 
-   <td colname="col3"> <p> Especifica a ordem de classificação. "0" é o padrão e classifica por pontuação de relevância; "1" ordena por data; "-1" não classifica. </p> <p>Os usuários podem especificar um nome de campo para o valor do parâmetro <span class="codeph"> sp_s </span> . Por exemplo, <span class="codeph"> sp_s=title </span> classifica os resultados de acordo com os valores contidos no campo de título. Quando um nome de campo é usado para o valor de um parâmetro <span class="codeph"> sp_s </span> , os resultados são classificados por esse campo e depois classificados por relevância. </p> <p>Para ativar esse recurso, faça o seguinte: </p> 
+   <td colname="col1"> <p> <span class="codeph"> espécie  </span> </p> </td> 
+   <td colname="col2"> <p> <span class="codeph"> sort= número  </span> </p> </td> 
+   <td colname="col3"> <p> Especifica a ordem de classificação. "0" é o padrão e classifica por pontuação de relevância; "1" ordena por data; "-1" não classifica. </p> <p>Os usuários podem especificar um nome de campo para o valor do parâmetro <span class="codeph"> sp_s </span>. Por exemplo, <span class="codeph"> sp_s=title </span> classifica os resultados de acordo com os valores contidos no campo de título. Quando um nome de campo é usado para o valor de um parâmetro <span class="codeph"> sp_s </span>, os resultados são classificados por esse campo e depois classificados por relevância. </p> <p>Para ativar esse recurso, faça o seguinte: </p> 
     <ol id="ol_3894F81EA7BF4827A84DE8662111ABEF"> 
      <li id="li_C040C0B88F174A4885E1A8E721FD032A">No menu do produto, clique em <span class="uicontrol"> Configurações </span> &gt; <span class="uicontrol"> Metadados </span> &gt; <span class="uicontrol"> Definições </span>. </li> 
-     <li id="li_2E83C3A46D1B4BF991EABAD9D3E52B7D">Na página Definições <span class="wintitle"> preparadas </span> , execute um dos procedimentos a seguir: 
+     <li id="li_2E83C3A46D1B4BF991EABAD9D3E52B7D">Na página <span class="wintitle"> Definições preparadas </span>, execute um dos procedimentos a seguir: 
       <ul id="ul_8018FEE10E0A4C96A74F84A897080580"> 
-       <li id="li_E9A7CE43E2734F4D9522A1283CA111FB">Click <span class="uicontrol"> Add New Field </span>. </li> 
+       <li id="li_E9A7CE43E2734F4D9522A1283CA111FB">Clique em <span class="uicontrol"> Adicionar novo campo </span>. </li> 
        <li id="li_9D2434A321924FBD874569CA9AD2EEF7">Clique em <span class="uicontrol"> Editar </span> para obter um nome de campo específico. </li> 
       </ul> </li> 
-     <li id="li_90D5E3F4AC0A4A6189934A5589F69903">Na lista <span class="wintitle"> suspensa Classificação </span> , clique em <span class="uicontrol"> Crescente </span> ou <span class="uicontrol"> Decrescente </span>. <p>Esse parâmetro mapeia para o parâmetro de pesquisa de backend <span class="codeph"> sp_s </span> . </p> </li> 
+     <li id="li_90D5E3F4AC0A4A6189934A5589F69903">Na lista suspensa <span class="wintitle"> Classificação </span>, clique em <span class="uicontrol"> Crescente </span> ou <span class="uicontrol"> Decrescente </span>. <p>Esse parâmetro mapeia para o parâmetro de pesquisa back-end <span class="codeph"> sp_s </span>. </p> </li> 
     </ol> </td> 
   </tr> 
  </tbody> 
@@ -135,26 +138,26 @@ Veja a seguir recomendações para integração com seu sistema.
 
 * Comunicando-se com o servidor de pesquisa.
 
-   Você pode se comunicar com os servidores da [!DNL Adobe Search&Promote] Web usando solicitações http GET. Seus servidores geram essas solicitações ou no lado do cliente executando uma solicitação Ajax.
+   Você pode se comunicar com os servidores da Web [!DNL Adobe Search&Promote] usando solicitações de GET http. Seus servidores geram essas solicitações ou no lado do cliente executando uma solicitação Ajax.
 * Salvando o histórico de pesquisa.
 
 [!DNL Adobe Search&Promote] é apátrida onde todo o estado é passado na solicitação http.
 * Analisando os resultados retornados.
 
-   É recomendável usar um analisador XML baseado em SAX para analisar a resposta XML. Se você estiver gerando uma solicitação Ajax, configure [!DNL Adobe Search&Promote] para retornar respostas JSON para essas solicitações para facilitar a análise da resposta.
+   É recomendável usar um analisador XML baseado em SAX para analisar a resposta XML. Se você estiver gerando uma solicitação Ajax, configure [!DNL Adobe Search&Promote] para retornar respostas JSON para essas solicitações, a fim de facilitar a análise da resposta.
 
 ## Saída JSON de pesquisa guiada {#reference_EB8182A564DE4374BB84158F2AABEF74}
 
 Tabelas que descrevem a saída de resposta JSON padrão.
 
-Consulte também Saída [JSON de pesquisa](../c-appendices/c-guidedsearchoutput.md#reference_EB8182A564DE4374BB84158F2AABEF74)guiada.
+Consulte também [Saída JSON de pesquisa guiada](../c-appendices/c-guidedsearchoutput.md#reference_EB8182A564DE4374BB84158F2AABEF74).
 
 Você pode revisar a resposta JSON para o seguinte:
 
 * [Banners](../c-appendices/c-guidedsearchoutput.md#section_88519CAAD25F4BD49D5E517077745B0E)
 * [Trilha](../c-appendices/c-guidedsearchoutput.md#section_A7DB0F1DA9ED4CBCAE18395122F3E01E)
 * [Aspectos](../c-appendices/c-guidedsearchoutput.md#section_65932C95931743A1BFAF1DF16D7E6D92)
-* [Cabeçalho e consulta](../c-appendices/c-guidedsearchoutput.md#section_1D57062259CA46E0B4F598FA4EB37065)
+* [Cabeçalho e Query](../c-appendices/c-guidedsearchoutput.md#section_1D57062259CA46E0B4F598FA4EB37065)
 * [Paginação](../c-appendices/c-guidedsearchoutput.md#section_504E7AB570BD49AF9839530DC438EE96)
 * [Pesquisas recentes](../c-appendices/c-guidedsearchoutput.md#section_525816A0355C48F8970D89B8FC3F1FFF)
 * [Resultados](../c-appendices/c-guidedsearchoutput.md#section_41AC56BB0A084BF59379B06C8BEF2157)
@@ -189,7 +192,7 @@ Exemplo:
    <td colname="col2"> <p> Um nó de banner individual. Você pode ter vários nós de banner. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;área&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;area&gt; </span> </p> </td> 
    <td colname="col2"> <p> A área na página da Web onde o banner é exibido. </p> </td> 
   </tr> 
   <tr> 
@@ -199,7 +202,7 @@ Exemplo:
  </tbody> 
 </table>
 
-## Trilha {#section_A7DB0F1DA9ED4CBCAE18395122F3E01E}
+## Trilha de navegação {#section_A7DB0F1DA9ED4CBCAE18395122F3E01E}
 
 No exemplo a seguir, cada vez que o cliente se restringe ainda mais pelas facetas, a seleção é adicionada à navegação estrutural. Cada item é representado como um `<breadcrumb-item>`.
 
@@ -228,7 +231,7 @@ Exemplo:
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;link&gt; </span> </p> </td> 
-   <td colname="col2"> <p> Um link relativo para os resultados da pesquisa que mostra a exibição desejada. Clicar em um link de navegação estrutural leva o cliente a uma visualização em que todos os refinamentos subsequentes são removidos. Outras opções também estão disponíveis. </p> </td> 
+   <td colname="col2"> <p> Um link relativo para os resultados da pesquisa que mostra a visualização desejada. Clicar em um link de navegação estrutural leva o cliente até uma visualização onde todos os refinamentos subsequentes são removidos. Outras opções também estão disponíveis. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;value&gt; </span> </p> </td> 
@@ -243,7 +246,7 @@ As facetas são opções de refinamento que oferecem aos clientes a capacidade d
 
 É comum ocultar ou mostrar as facetas de categorização à medida que um cliente se desloca para baixo na categorização. O nível mais alto de categorização (categoria) é conhecido como Nível 1. Quando um cliente clica em uma opção de Camada 1, as opções de refinamento de Camada 2 (subcategoria) aparecem e as opções de Camada 1 desaparecem. Quando um cliente clica em uma opção de Camada 2, as opções de refinamento de Camada 3 (subcategoria) são exibidas e as opções de Camada 2 desaparecem. Como observado acima, essas opções são ocultas e exibidas - seu aplicativo da Web não é afetado por elas.
 
-Cada aspecto está contido em `<facet-item>` tags. No exemplo a seguir, ele mostra uma faceta que permite ao cliente refinar os resultados da pesquisa por &quot;feriado&quot;.
+Cada aspecto está contido nas tags `<facet-item>`. No exemplo a seguir, ele mostra uma faceta que permite ao cliente refinar os resultados da pesquisa por &quot;feriado&quot;.
 
 Exemplo:
 
@@ -354,7 +357,7 @@ Exemplo:
  </tbody> 
 </table>
 
-## Cabeçalho e consulta {#section_1D57062259CA46E0B4F598FA4EB37065}
+## Cabeçalho e Query {#section_1D57062259CA46E0B4F598FA4EB37065}
 
 Exemplo:
 
@@ -373,26 +376,26 @@ Usadas em conjunto, essas tags apresentam uma mensagem como: &quot;Mostrando os 
 <table> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> <p>Tags no cabeçalho e na consulta </p> </th> 
+   <th colname="col1" class="entry"> <p>Tags no cabeçalho e no query </p> </th> 
    <th colname="col2" class="entry"> <p>Descrição </p> </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;user-query&gt; </span> </p> </td> 
-   <td colname="col2"> <p> A consulta de palavra-chave enviada com a solicitação. </p> </td> 
+   <td colname="col2"> <p> O query de palavra-chave enviado com a solicitação. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;resultados inferiores&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;lower-results&gt; </span> </p> </td> 
    <td colname="col2"> <p> O número do item do primeiro resultado nesta página. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;resultados superiores&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;upper-results&gt; </span> </p> </td> 
    <td colname="col2"> <p> O número do item do último resultado desta página. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;total-results&gt; </span> </p> </td> 
-   <td colname="col2"> <p> O número total de resultados que correspondem à consulta do usuário. </p> </td> 
+   <td colname="col2"> <p> O número total de resultados que correspondem ao query do usuário. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;custom-field&gt; </span> </p> </td> 
@@ -456,11 +459,11 @@ Exemplo:
    <td colname="col2"> <p> Contém um link relativo para a última página do conjunto de resultados, a menos que o cliente esteja visualizando a última página. Nesse caso, está em branco. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;page position="x" </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;page position="x"&gt;</span> </p> </td> 
    <td colname="col2"> <p> Contém um link relativo para um número de página específico. Dez números de página contíguos são mostrados. Na página 1, seriam as páginas 1 a 10. No final do conjunto de resultados (neste caso, 39), seriam as páginas 30-39. Por exemplo, no centro do conjunto de resultados, página 15, seriam as páginas 11-20. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> seleted="true"&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> seleted="true"&gt;  </span> </p> </td> 
    <td colname="col2"> <p> Aplicado como um atributo à página selecionada no momento. </p> </td> 
   </tr> 
  </tbody> 
@@ -490,11 +493,11 @@ Exemplo:
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;pesquisa recente&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;recent-search&gt; </span> </p> </td> 
    <td colname="col2"> <p> Um nó de pesquisa recente individual. Você pode ter vários nós de pesquisa recentes. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;termo de pesquisa&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;search-term&gt; </span> </p> </td> 
    <td colname="col2"> <p> O termo que o cliente pesquisou anteriormente. </p> </td> 
   </tr> 
   <tr> 
@@ -510,7 +513,7 @@ O conjunto Resultados é uma área personalizável da resposta JSON. Cada índic
 
 O formato Resultados é personalizado com base nos metadados específicos da sua implementação. Todos os dados por resultado para exibição nos resultados, incluindo URLs de imagem em miniatura, estão contidos aqui.
 
-Além disso, é possível configurar várias zonas de resultado dentro da página, como &quot;Resultados em destaque&quot;, ou separar as seções de resultados &quot;Produtos&quot; e &quot;Conteúdo&quot;. Nesses casos, várias zonas de resultado são fornecidas no HTML, embora as facetas estejam associadas apenas ao conjunto de resultados principal.
+Além disso, é possível configurar várias zonas de resultado dentro da página, como &quot;Resultados em destaque&quot;, ou separar as seções de resultados &quot;Produtos&quot; e &quot;Conteúdo&quot;. Nesses casos, várias zonas de resultado são fornecidas no HTML, embora as facetas estejam associadas apenas ao conjunto de resultados primário.
 
 Exemplo:
 
@@ -637,7 +640,7 @@ traditions-to-start-this-year-parties-photo-160-FF1107HOLIA01.jpg]]></large-thum
    <td colname="col2"> <p> O número de série do resultado dentro desse conjunto de resultados. Neste exemplo, onde dez resultados são mostrados por página, na página 2 dos resultados, o primeiro item teria um índice de 11. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;resultado-título&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;result-title&gt; </span> </p> </td> 
    <td colname="col2"> <p> O título voltado para o cliente para esta página. </p> </td> 
   </tr> 
   <tr> 
@@ -685,10 +688,10 @@ Exemplo:
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;include-tnt-mbox&gt; </span> </p> </td> 
-   <td colname="col2"> <p> Opcional. Quando presente no JSON, um valor de 1 indica que sua conta está vinculada ao <span class="keyword"> Test&amp;Target </span> e tem pelo menos uma regra de negócios que está em um teste A:B. </p> </td> 
+   <td colname="col2"> <p> Opcional. Quando presente no JSON, um valor de 1 indica que sua conta está vinculada a <span class="keyword"> Test&amp;Público alvo </span> e tem pelo menos uma regra de negócios que está em um teste A:B. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;completar automaticamente&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;autocomplete&gt; </span> </p> </td> 
    <td colname="col2"> <p> Opcional. Ao usar o preenchimento automático, esse nó está presente para indicar que o CSS e o JavaScript estão presentes na página, juntamente com o conteúdo que está no formulário. Normalmente, esses campos não são alterados a menos que alguém tenha alterado uma configuração de preenchimento automático. Nesses casos, o campo xxx_cache_ver é incrementado para forçar uma invalidação do conteúdo em cache no navegador do cliente. </p> </td> 
   </tr> 
   <tr> 
@@ -712,7 +715,7 @@ Exemplo:
 
 ## Classificar {#section_558853CD376F4D71BACF211D53085D55}
 
-O exemplo a seguir mostra os dados de um menu de classificação de três opções. O menu permite que o cliente classifique por relevância, título ou classificação. O item atualmente selecionado inclui um atributo &quot;seleted=true&quot;. &quot;. Sempre ofereça uma opção de relevância para permitir que um cliente retorne aos resultados de pesquisa padrão que foram exibidos originalmente.
+O exemplo a seguir mostra os dados de um menu de classificação de três opções. O menu permite que o cliente classifique por relevância, título ou classificação. O item atualmente selecionado inclui um atributo &quot;seleted=true&quot;. &quot;. Sempre oferta uma opção de relevância para permitir que um cliente retorne aos resultados de pesquisa padrão que foram exibidos originalmente.
 
 Exemplo:
 
@@ -750,7 +753,7 @@ Exemplo:
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;value&gt; </span> </p> </td> 
-   <td colname="col2"> <p> Representa o valor do parâmetro da string de consulta "classificar" para essa opção. Essa tag não é necessária se o valor <span class="codeph"> &lt;link&gt; </span> for usado. </p> </td> 
+   <td colname="col2"> <p> Representa o valor do parâmetro de string de query "sort" para essa opção. Essa tag não é necessária se o valor <span class="codeph"> &lt;link&gt; </span> for usado. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;link&gt; </span> </p> </td> 
@@ -761,7 +764,7 @@ Exemplo:
 
 ## Sugestões {#section_6EC104E1DDD94AC799B65E6E61A2FB3C}
 
-As sugestões são retornadas quando há apenas alguns resultados ou nenhum resultado. Este nó contém termos que geram consultas bem-sucedidas e podem ser exibidos em uma página &quot;Sem Resultados&quot;. O link também é retornado para que um cliente possa ir para a nova consulta.
+As sugestões são retornadas quando há apenas alguns resultados ou nenhum resultado. Este nó contém termos que geram query bem-sucedidos e podem ser exibidos em uma página &quot;Sem Resultados&quot;. O link também é retornado para que um cliente possa pular para o novo query.
 
 Exemplo:
 
@@ -813,7 +816,7 @@ Exemplo:
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;zona&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;zone&gt; </span> </p> </td> 
    <td colname="col2"> <p> Um nó de zona individual. Você pode ter vários nós de zona. </p> </td> 
   </tr> 
   <tr> 
@@ -821,7 +824,7 @@ Exemplo:
    <td colname="col2"> <p> O nome da zona. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;mostrar&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;display&gt; </span> </p> </td> 
    <td colname="col2"> <p> 1 ou 0 para indicar se a zona é ou não exibida. O conteúdo real da zona pode ser uma área estática na sua página da Web ou nos resultados da pesquisa, como os melhores vendedores ou produtos relacionados. </p> </td> 
   </tr> 
  </tbody> 
@@ -836,7 +839,7 @@ Você pode revisar a resposta XML para o seguinte:
 * [Banners](../c-appendices/c-guidedsearchoutput.md#section_6A19EC26DD3B494194AAA788151B78B5)
 * [Trilha](../c-appendices/c-guidedsearchoutput.md#section_E48A71B0EBDB4EDDA7587009AD865488)
 * [Aspectos](../c-appendices/c-guidedsearchoutput.md#section_5CEB1F966C004FFEA3CF675638966E25)
-* [Cabeçalho e consulta](../c-appendices/c-guidedsearchoutput.md#section_802835E19BCB48239C6770A1B72DFFF8)
+* [Cabeçalho e Query](../c-appendices/c-guidedsearchoutput.md#section_802835E19BCB48239C6770A1B72DFFF8)
 * [Paginação](../c-appendices/c-guidedsearchoutput.md#section_72DB86DDE1284B1EA295CFFBC16A3150)
 * [Pesquisas recentes](../c-appendices/c-guidedsearchoutput.md#section_BCA2DDD17F264CF6BA11634E1A514E28)
 * [Resultados](../c-appendices/c-guidedsearchoutput.md#section_EC496F5CA2634158891455E2F6DF6833)
@@ -871,7 +874,7 @@ Exemplo:
    <td colname="col2"> <p> Um nó de banner individual. Você pode ter vários nós de banner. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;área&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;area&gt; </span> </p> </td> 
    <td colname="col2"> <p> A área na página da Web onde o banner é exibido. </p> </td> 
   </tr> 
   <tr> 
@@ -881,7 +884,7 @@ Exemplo:
  </tbody> 
 </table>
 
-## Trilha {#section_E48A71B0EBDB4EDDA7587009AD865488}
+## Trilha de navegação {#section_E48A71B0EBDB4EDDA7587009AD865488}
 
 No exemplo a seguir, cada vez que o cliente se restringe ainda mais pelas facetas, a seleção é adicionada à navegação estrutural. Cada item é representado como um `<breadcrumb-item>`.
 
@@ -910,7 +913,7 @@ Exemplo:
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;link&gt; </span> </p> </td> 
-   <td colname="col2"> <p> Um link relativo para os resultados da pesquisa que mostra a exibição desejada. Clicar em um link de navegação estrutural leva o cliente a uma visualização em que todos os refinamentos subsequentes são removidos. Outras opções também estão disponíveis. </p> </td> 
+   <td colname="col2"> <p> Um link relativo para os resultados da pesquisa que mostra a visualização desejada. Clicar em um link de navegação estrutural leva o cliente até uma visualização onde todos os refinamentos subsequentes são removidos. Outras opções também estão disponíveis. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;value&gt; </span> </p> </td> 
@@ -925,7 +928,7 @@ As facetas são opções de refinamento que oferecem aos clientes a capacidade d
 
 É comum ocultar ou mostrar as facetas de categorização à medida que um cliente se desloca para baixo na categorização. O nível mais alto de categorização (categoria) é conhecido como Nível 1. Quando um cliente clica em uma opção de Camada 1, as opções de refinamento de Camada 2 (subcategoria) aparecem e as opções de Camada 1 desaparecem. Quando um cliente clica em uma opção de Camada 2, as opções de refinamento de Camada 3 (subcategoria) são exibidas e as opções de Camada 2 desaparecem. Como observado acima, essas opções são ocultas e exibidas - seu aplicativo da Web não é afetado por elas.
 
-Cada aspecto está contido em `<facet-item>` tags. No exemplo a seguir, ele mostra uma faceta que permite ao cliente refinar os resultados da pesquisa por &quot;feriado&quot;.
+Cada aspecto está contido nas tags `<facet-item>`. No exemplo a seguir, ele mostra uma faceta que permite ao cliente refinar os resultados da pesquisa por &quot;feriado&quot;.
 
 Exemplo:
 
@@ -1036,7 +1039,7 @@ Exemplo:
  </tbody> 
 </table>
 
-## Cabeçalho e consulta {#section_802835E19BCB48239C6770A1B72DFFF8}
+## Cabeçalho e Query {#section_802835E19BCB48239C6770A1B72DFFF8}
 
 Exemplo:
 
@@ -1056,26 +1059,26 @@ Usadas em conjunto, essas tags apresentam uma mensagem como: &quot;Mostrando os 
 <table> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> <p>Tags no cabeçalho e na consulta </p> </th> 
+   <th colname="col1" class="entry"> <p>Tags no cabeçalho e no Query </p> </th> 
    <th colname="col2" class="entry"> <p>Descrição </p> </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;user-query&gt; </span> </p> </td> 
-   <td colname="col2"> <p> A consulta de palavra-chave enviada com a solicitação. </p> </td> 
+   <td colname="col2"> <p> O query de palavra-chave enviado com a solicitação. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;resultados inferiores&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;lower-results&gt; </span> </p> </td> 
    <td colname="col2"> <p> O número do item do primeiro resultado nesta página. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;resultados superiores&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;upper-results&gt; </span> </p> </td> 
    <td colname="col2"> <p> O número do item do último resultado desta página. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;total-results&gt; </span> </p> </td> 
-   <td colname="col2"> <p> O número total de resultados que correspondem à consulta do usuário. </p> </td> 
+   <td colname="col2"> <p> O número total de resultados que correspondem ao query do usuário. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;custom-field&gt; </span> </p> </td> 
@@ -1139,11 +1142,11 @@ Exemplo:
    <td colname="col2"> <p> Contém um link relativo para a última página do conjunto de resultados, a menos que o cliente esteja visualizando a última página. Nesse caso, está em branco. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;page position="x" </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;page position="x"&gt;</span> </p> </td> 
    <td colname="col2"> <p> Contém um link relativo para um número de página específico. Dez números de página contíguos são mostrados. Na página 1, seriam as páginas 1 a 10. No final do conjunto de resultados (neste caso, 39), seriam as páginas 30-39. Por exemplo, no centro do conjunto de resultados, página 15, seriam as páginas 11-20. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> seleted="true"&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> seleted="true"&gt;  </span> </p> </td> 
    <td colname="col2"> <p> Aplicado como um atributo à página selecionada no momento. </p> </td> 
   </tr> 
  </tbody> 
@@ -1173,11 +1176,11 @@ Exemplo:
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;pesquisa recente&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;recent-search&gt; </span> </p> </td> 
    <td colname="col2"> <p> Um nó de pesquisa recente individual. Você pode ter vários nós de pesquisa recentes. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;termo de pesquisa&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;search-term&gt; </span> </p> </td> 
    <td colname="col2"> <p> O termo que o cliente pesquisou anteriormente. </p> </td> 
   </tr> 
   <tr> 
@@ -1193,7 +1196,7 @@ O conjunto Resultados é uma área personalizável da resposta XML. Cada índice
 
 O formato Resultados é personalizado com base nos metadados específicos da sua implementação. Todos os dados por resultado para exibição nos resultados, incluindo URLs de imagem em miniatura, estão contidos aqui.
 
-Além disso, é possível configurar várias zonas de resultado dentro da página, como &quot;Resultados em destaque&quot;, ou separar as seções de resultados &quot;Produtos&quot; e &quot;Conteúdo&quot;. Nesses casos, várias zonas de resultado são fornecidas no HTML, embora as facetas estejam associadas apenas ao conjunto de resultados principal.
+Além disso, é possível configurar várias zonas de resultado dentro da página, como &quot;Resultados em destaque&quot;, ou separar as seções de resultados &quot;Produtos&quot; e &quot;Conteúdo&quot;. Nesses casos, várias zonas de resultado são fornecidas no HTML, embora as facetas estejam associadas apenas ao conjunto de resultados primário.
 
 Exemplo:
 
@@ -1320,7 +1323,7 @@ traditions-to-start-this-year-parties-photo-160-FF1107HOLIA01.jpg]]></large-thum
    <td colname="col2"> <p> O número de série do resultado dentro desse conjunto de resultados. Neste exemplo, onde dez resultados são mostrados por página, na página 2 dos resultados, o primeiro item teria um índice de 11. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;resultado-título&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;result-title&gt; </span> </p> </td> 
    <td colname="col2"> <p> O título voltado para o cliente para esta página. </p> </td> 
   </tr> 
   <tr> 
@@ -1368,10 +1371,10 @@ Exemplo:
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;include-tnt-mbox&gt; </span> </p> </td> 
-   <td colname="col2"> <p> Opcional. Quando presente no XML, um valor de 1 indica que sua conta está vinculada ao <span class="keyword"> Test&amp;Target </span> e tem pelo menos uma regra de negócios que está em um teste A:B. </p> </td> 
+   <td colname="col2"> <p> Opcional. Quando presente no XML, um valor de 1 indica que sua conta está vinculada a <span class="keyword"> Test&amp;Público alvo </span> e tem pelo menos uma regra de negócios que está em um teste A:B. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;completar automaticamente&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;autocomplete&gt; </span> </p> </td> 
    <td colname="col2"> <p> Opcional. Ao usar o preenchimento automático, esse nó está presente para indicar que o CSS e o JavaScript estão presentes na página, juntamente com o conteúdo que está no formulário. Normalmente, esses campos não são alterados a menos que alguém tenha alterado uma configuração de preenchimento automático. Nesses casos, o campo xxx_cache_ver é incrementado para forçar uma invalidação do conteúdo em cache no navegador do cliente. </p> </td> 
   </tr> 
   <tr> 
@@ -1395,7 +1398,7 @@ Exemplo:
 
 ## Classificar {#section_32DC50A103BF491BA3665A5CADCCAADE}
 
-O exemplo a seguir mostra os dados de um menu de classificação de três opções. O menu permite que o cliente classifique por relevância, título ou classificação. O item atualmente selecionado inclui um atributo &quot;seleted=true&quot;. &quot;. Sempre ofereça uma opção de relevância para permitir que um cliente retorne aos resultados de pesquisa padrão que foram exibidos originalmente.
+O exemplo a seguir mostra os dados de um menu de classificação de três opções. O menu permite que o cliente classifique por relevância, título ou classificação. O item atualmente selecionado inclui um atributo &quot;seleted=true&quot;. &quot;. Sempre oferta uma opção de relevância para permitir que um cliente retorne aos resultados de pesquisa padrão que foram exibidos originalmente.
 
 Exemplo:
 
@@ -1433,7 +1436,7 @@ Exemplo:
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;value&gt; </span> </p> </td> 
-   <td colname="col2"> <p> Representa o valor do parâmetro da string de consulta "classificar" para essa opção. Essa tag não é necessária se o valor <span class="codeph"> &lt;link&gt; </span> for usado. </p> </td> 
+   <td colname="col2"> <p> Representa o valor do parâmetro de string de query "sort" para essa opção. Essa tag não é necessária se o valor <span class="codeph"> &lt;link&gt; </span> for usado. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;link&gt; </span> </p> </td> 
@@ -1444,7 +1447,7 @@ Exemplo:
 
 ## Sugestões {#section_D81BCE46F0AF443695DF9C4BA084B716}
 
-As sugestões são retornadas quando há apenas alguns resultados ou nenhum resultado. Este nó contém termos que geram consultas bem-sucedidas e podem ser exibidos em uma página &quot;Sem Resultados&quot;. O link também é retornado para que um cliente possa ir para a nova consulta.
+As sugestões são retornadas quando há apenas alguns resultados ou nenhum resultado. Este nó contém termos que geram query bem-sucedidos e podem ser exibidos em uma página &quot;Sem Resultados&quot;. O link também é retornado para que um cliente possa pular para o novo query.
 
 Exemplo:
 
@@ -1496,7 +1499,7 @@ Exemplo:
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;zona&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;zone&gt; </span> </p> </td> 
    <td colname="col2"> <p> Um nó de zona individual. Você pode ter vários nós de zona. </p> </td> 
   </tr> 
   <tr> 
@@ -1504,15 +1507,15 @@ Exemplo:
    <td colname="col2"> <p> O nome da zona. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;mostrar&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;display&gt; </span> </p> </td> 
    <td colname="col2"> <p> 1 ou 0 para indicar se a zona é ou não exibida. O conteúdo real da zona pode ser uma área estática na sua página da Web ou nos resultados da pesquisa, como os melhores vendedores ou produtos relacionados. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Saída XML de pesquisa guiada para o Adobe Experience Manager {#reference_DBE13C606C3A4BB185DE53F88D0D3048}
+## Saída XML de pesquisa guiada para Adobe Experience Manager {#reference_DBE13C606C3A4BB185DE53F88D0D3048}
 
-Tabelas que descrevem a saída de resposta XML padrão para o AEM (Adobe Experience Manager).
+Tabelas que descrevem a saída de resposta XML padrão para AEM (Adobe Experience Manager).
 
 Consulte também . [Saída XML de pesquisa guiada](../c-appendices/c-guidedsearchoutput.md#reference_D93E859A277643068B10AE7A61C973EA)
 
@@ -1584,7 +1587,7 @@ A seguir está um exemplo de um banner colocado na área das páginas chamada &q
 
 ## Trilha de navegação {#section_49EA7043FBE44315A79A4E738BE30114}
 
-Várias navegações estruturais são suportadas. Você pode definir navegações estruturais e seu comportamento correspondente em **[!UICONTROL Design]** > **[!UICONTROL Navigation]** > **[!UICONTROL Breadcrumbs]**. Além disso, é necessário atribuir um nome exclusivo para cada navegação estrutural definida. O nó XML de navegação estrutural repete todas as navegações estruturais definidas. É recomendável que você exiba apenas uma navegação estrutural nos resultados da pesquisa.
+Várias navegações estruturais são suportadas. Você pode definir navegações estruturais e seu comportamento correspondente em **[!UICONTROL Design]** > **[!UICONTROL Navigation]** > **[!UICONTROL Breadcrumbs]**. Além disso, é necessário atribuir um nome exclusivo para cada navegação estrutural definida. O nó de navegação XML repete todas as navegações estruturais definidas. É recomendável que você exiba apenas uma navegação estrutural nos resultados da pesquisa.
 
 No exemplo a seguir, cada vez que o cliente se restringe ainda mais pelas facetas, a seleção é adicionada à navegação estrutural. Cada item é representado como um `<breadcrumb-item>`.
 
@@ -1630,7 +1633,7 @@ Exemplo de nó de navegação estrutural:
   <tr> 
    <td colname="col1"> <p>name </p> </td> 
    <td colname="col2"> <p>trilha </p> </td> 
-   <td colname="col3"> <p> O nome da trilha de navegação. </p> </td> 
+   <td colname="col3"> <p> O nome da navegação estrutural. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>item de navegação estrutural </p> </td> 
@@ -1640,7 +1643,7 @@ Exemplo de nó de navegação estrutural:
   <tr> 
    <td colname="col1"> <p>link </p> </td> 
    <td colname="col2"> <p>item de navegação estrutural </p> </td> 
-   <td colname="col3"> <p> Um link relativo para os resultados da pesquisa que mostra a exibição desejada. Clicar em um link de navegação estrutural leva o cliente a uma visualização em que todos os refinamentos subsequentes são removidos. Outras opções também estão disponíveis, como soltar e remover. </p> </td> 
+   <td colname="col3"> <p> Um link relativo para os resultados da pesquisa que mostra a visualização desejada. Clicar em um link de navegação estrutural leva o cliente até uma visualização onde todos os refinamentos subsequentes são removidos. Outras opções também estão disponíveis, como soltar e remover. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>value </p> </td> 
@@ -1650,7 +1653,7 @@ Exemplo de nó de navegação estrutural:
   <tr> 
    <td colname="col1"> <p>label </p> </td> 
    <td colname="col2"> <p>item de navegação estrutural </p> </td> 
-   <td colname="col3"> <p> A tag label gera um rótulo para um valor de navegação estrutural detalhando qual aspecto foi selecionado para gerar esse item de navegação estrutural. É usado apenas no contexto de um bloco guided-breadcrumb. Para a etapa de termo de consulta, isso está em branco. </p> </td> 
+   <td colname="col3"> <p> A tag label gera um rótulo para um valor de navegação estrutural detalhando qual aspecto foi selecionado para gerar esse item de navegação estrutural. É usado apenas no contexto de um bloco guided-breadcrumb. Para a etapa de termo do query, isso está em branco. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1696,7 +1699,7 @@ As facetas são opções de refinamento que oferecem aos clientes a capacidade d
 
 É comum ocultar ou mostrar as facetas de categorização à medida que um cliente se desloca para baixo na categorização. O nível mais alto de categorização (categoria) é conhecido como Nível 1. Quando um cliente clica em uma opção de Camada 1, as opções de refinamento de Camada 2 (subcategoria) aparecem e as opções de Camada 1 desaparecem. Quando um cliente clica em uma opção de Camada 2, as opções de refinamento de Camada 3 (subcategoria) são exibidas e as opções de Camada 2 desaparecem. Como observado acima, essas opções são ocultas e exibidas; seu aplicativo da Web não os afeta.
 
-Cada aspecto está contido em `<facet-item>` tags. No exemplo a seguir, ele mostra uma faceta que permite ao cliente refinar os resultados da pesquisa por &quot;feriado&quot;.
+Cada aspecto está contido nas tags `<facet-item>`. No exemplo a seguir, ele mostra uma faceta que permite ao cliente refinar os resultados da pesquisa por &quot;feriado&quot;.
 
 Exemplo de bloco de facetas:
 
@@ -1789,7 +1792,7 @@ Exemplo de bloco de facetas:
   <tr> 
    <td colname="col1"> <p>facetas </p> </td> 
    <td colname="col2"> <p>resultados do cliente </p> </td> 
-   <td colname="col3"> <p>O nó facetas do contêiner que tem 0-n nós filhos representando cada aspecto. </p> </td> 
+   <td colname="col3"> <p>O nó facetas do container que tem 0-n nós filhos representando cada aspecto. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>faceta </p> </td> 
@@ -1863,7 +1866,7 @@ Os menus para classificar os resultados são suportados e a alteração do núme
 
 Nó de menus de exemplo:
 
-O exemplo a seguir mostra os dados de um menu de classificação de três opções e de um menu de navegação. O menu de classificação permite que o cliente classifique por relevância, título ou classificação. O item atualmente selecionado inclui um atributo &quot;seleted=true&quot;. &quot;. Sempre ofereça uma opção de relevância para permitir que um cliente retorne aos resultados de pesquisa padrão que foram exibidos originalmente.
+O exemplo a seguir mostra os dados de um menu de classificação de três opções e de um menu de navegação. O menu de classificação permite que o cliente classifique por relevância, título ou classificação. O item atualmente selecionado inclui um atributo &quot;seleted=true&quot;. &quot;. Sempre oferta uma opção de relevância para permitir que um cliente retorne aos resultados de pesquisa padrão que foram exibidos originalmente.
 
 ```xml
 <menus> 
@@ -1948,7 +1951,7 @@ O exemplo a seguir mostra os dados de um menu de classificação de três opçõ
   <tr> 
    <td colname="col1"> <p>Todos os aplicativos </p> </td> 
    <td colname="col2"> <p>menus </p> </td> 
-   <td colname="col3"> <p>Uma única instância de um menu (corresponde a um menu definido em <span class="uicontrol"> Design </span> &gt; <span class="uicontrol"> Navegação </span> &gt; <span class="uicontrol"> Menus </span>). </p> </td> 
+   <td colname="col3"> <p>Instância única de um menu (corresponde a um menu definido em <span class="uicontrol"> Design </span> &gt; <span class="uicontrol"> Navegação </span> &gt; <span class="uicontrol"> Menus </span>). </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>name </p> </td> 
@@ -1968,7 +1971,7 @@ O exemplo a seguir mostra os dados de um menu de classificação de três opçõ
   <tr> 
    <td colname="col1"> <p>value </p> </td> 
    <td colname="col2"> <p>item </p> </td> 
-   <td colname="col3"> <p>Representa o valor do item de menu (o valor do parâmetro de consulta que o menu também está definido). Essa tag não é necessária se o valor &lt;link&gt; for usado. </p> </td> 
+   <td colname="col3"> <p>Representa o valor do item de menu (o valor do parâmetro do query que o menu também está definido). Essa tag não é necessária se o valor &lt;link&gt; for usado. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>link </p> </td> 
@@ -2036,7 +2039,7 @@ Exemplo de paginação:
 
 ## Consulta {#section_3DAA1013F09742869B80F6A361816E6C}
 
-Exemplo de nó de consulta:
+Exemplo de nó de query:
 
 ```xml
     <query> 
@@ -2059,12 +2062,12 @@ Exemplo de nó de consulta:
   <tr> 
    <td colname="col1"> <p>query </p> </td> 
    <td colname="col2"> <p>resultados do cliente </p> </td> 
-   <td colname="col3"> <p> Um nó global que fornece uma visão geral da consulta. </p> </td> 
+   <td colname="col3"> <p> Um nó global que fornece uma visão geral do query. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>consulta do usuário </p> </td> 
+   <td colname="col1"> <p>query do usuário </p> </td> 
    <td colname="col2"> <p>query </p> </td> 
-   <td colname="col3"> <p> A palavra-chave que foi pesquisada. Se você <span class="uicontrol"> quis dizer procurar </span> automaticamente um termo sugerido devido ao termo original não resultar em resultados, ele será refletido na nova palavra-chave que foi pesquisada (consulte o nó de sugestões para obter a palavra-chave original). </p> </td> 
+   <td colname="col3"> <p> A palavra-chave que foi pesquisada. Se <span class="uicontrol"> Você quis dizer </span> pesquisou automaticamente um termo sugerido devido ao termo original que não produziu resultados, ele será refletido na nova palavra-chave que foi pesquisada (consulte o nó de sugestões para obter a palavra-chave original). </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>resultados mais baixos </p> </td> 
@@ -2077,9 +2080,9 @@ Exemplo de nó de consulta:
    <td colname="col3"> <p> O número do item do último resultado desta página. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>total de resultados </p> </td> 
+   <td colname="col1"> <p>resultados totais </p> </td> 
    <td colname="col2"> <p>query </p> </td> 
-   <td colname="col3"> <p> O número total de resultados que correspondem à consulta do usuário. </p> </td> 
+   <td colname="col3"> <p> O número total de resultados que correspondem ao query do usuário. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -2143,7 +2146,7 @@ O conjunto Resultados é uma área personalizável da resposta XML. Cada índice
 
 O formato de resultados é personalizado com base nos metadados específicos da sua implementação. Todos os dados por resultado para exibição nos resultados, incluindo URLs de imagem em miniatura, estão contidos aqui.
 
-Além disso, é possível configurar várias zonas de resultado dentro da página, como &quot;Resultados em destaque&quot;, ou separar as seções de resultados &quot;Produtos&quot; e &quot;Conteúdo&quot;. Nesses casos, várias zonas de resultado são fornecidas no HTML, embora as facetas estejam associadas apenas ao conjunto de resultados principal.
+Além disso, é possível configurar várias zonas de resultado dentro da página, como &quot;Resultados em destaque&quot;, ou separar as seções de resultados &quot;Produtos&quot; e &quot;Conteúdo&quot;. Nesses casos, várias zonas de resultado são fornecidas no HTML, embora as facetas estejam associadas apenas ao conjunto de resultados primário.
 
 Exemplo de nó de resultados:
 
@@ -2203,7 +2206,7 @@ Exemplo de nó de resultados:
   <tr> 
    <td colname="col1"> <p>resultados </p> </td> 
    <td colname="col2"> <p>resultados do cliente </p> </td> 
-   <td colname="col3"> <p>O nó do contêiner para conjuntos de resultados 0-n. Conjuntos de resultados zero significa que você está em uma página de aterrissagem especial sem resultados. </p> </td> 
+   <td colname="col3"> <p>O nó do container para os conjuntos de resultados 0-n. Conjuntos de resultados zero significa que você está em uma landing page especial sem resultados. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>conjunto de resultados </p> </td> 
@@ -2230,7 +2233,7 @@ Exemplo de nó de resultados:
 
 ## Formulário de pesquisa {#section_9E4B99D4FEDC49629F6C7E866F3A7493}
 
-O Formulário de pesquisa é incluído no conjunto de resultados para permitir que os clientes criem seus formulários de pesquisa dinamicamente. Esta etapa é opcional. A maioria dos clientes tem um formulário de pesquisa fixo. No entanto, permite que os clientes determinem se o formulário de pesquisa precisa de uma mbox Test&amp;Target, com base em ter pelo menos uma regra de negócios que faça um teste A:B. Da mesma forma, permite que os clientes escolham automaticamente o CSS e o JavaScript de preenchimento automático mais recente.
+O Formulário de pesquisa é incluído no conjunto de resultados para permitir que os clientes criem seus formulários de pesquisa dinamicamente. Esta etapa é opcional. A maioria dos clientes tem um formulário de pesquisa fixo. No entanto, permite que os clientes determinem se o formulário de pesquisa precisa de uma mbox Test&amp;Público alvo, com base em ter pelo menos uma regra comercial que faça um teste A:B. Da mesma forma, permite que os clientes escolham automaticamente o CSS e o JavaScript de preenchimento automático mais recente.
 
 Exemplo de XML de formulário de pesquisa:
 
@@ -2270,7 +2273,7 @@ Exemplo de XML de formulário de pesquisa:
   <tr> 
    <td colname="col1"> <p>include-tnt-mbox </p> </td> 
    <td colname="col2"> <p> formulário de pesquisa </p> </td> 
-   <td colname="col3"> <p>Tecnicamente, você só precisa de uma mbox no formulário de pesquisa quando tem pelo menos uma regra comercial fazendo um teste A:B do Test&amp;Target. Este nó indica se você precisa de uma mbox ou se não permite reduzir o número de ocorrências nos servidores do Test&amp;Target. </p> </td> 
+   <td colname="col3"> <p>Tecnicamente, você só precisa de uma mbox no formulário de pesquisa quando tem pelo menos uma regra comercial fazendo um teste A:B do Test&amp;Público alvo. Este nó indica se você precisa de uma mbox ou se não permite reduzir o número de ocorrências nos servidores do Test&amp;Público alvo. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>preenchimento automático </p> </td> 
@@ -2302,9 +2305,9 @@ Exemplo de XML de formulário de pesquisa:
 
 ## Sugestões {#section_2899FACB9AD84F60B3687C1B4EF09E15}
 
-Os clientes podem configurar a funcionalidade de três maneiras: **[!UICONTROL Did You Mean]** faça sugestões devido a nenhum resultado, pesquise automaticamente a primeira sugestão quando não houver resultados ou faça sugestões devido a baixos resultados (quando as sugestões tiverem uma contagem de resultados mais alta). Todas as sugestões produzem resultados.
+Os clientes podem configurar a funcionalidade **[!UICONTROL Did You Mean]** de três maneiras: faça sugestões devido a nenhum resultado, pesquise automaticamente a primeira sugestão quando não houver resultados ou faça sugestões devido a baixos resultados (quando as sugestões tiverem uma contagem de resultados mais alta). Todas as sugestões produzem resultados.
 
-Esse nó de sugestões contém os termos que geram consultas bem-sucedidas. O link também é retornado para que um cliente possa ir para a nova consulta.
+Esse nó de sugestões contém os termos que geram query bem-sucedidos. O link também é retornado para que um cliente possa pular para o novo query.
 
 Exemplo de saída para fazer sugestão devido a 0 resultados:
 
@@ -2362,9 +2365,9 @@ Exemplo de saída para fazer sugestão devido a baixos resultados:
    <td colname="col3"> <p> Se presente, indica se a pesquisa/comercialização do site pesquisou automaticamente um novo termo devido a nenhum resultado. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>consulta de procedimento </p> </td> 
+   <td colname="col1"> <p>query </p> </td> 
    <td colname="col2"> <p>sugestões </p> </td> 
-   <td colname="col3"> <p> Quando a pesquisa/comercialização do site pesquisa automaticamente em relação à primeira sugestão, a consulta do usuário no nó de consulta mostra a palavra-chave que é pesquisada. Este nó mostra o termo de consulta original. Combinar os dois permite que os clientes criem estruturas como "Procurando por arco em vez de arco". </p> </td> 
+   <td colname="col3"> <p> Quando a pesquisa/comercialização do site pesquisa automaticamente com a primeira sugestão, o query do usuário no nó query mostra a palavra-chave que é pesquisada. Esse nó mostra o termo original do query. Combinar os dois permite que os clientes criem estruturas como "Procurando por arco em vez de arco". </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>sugestões-resultados baixos </p> </td> 
@@ -2391,7 +2394,7 @@ Exemplo de saída para fazer sugestão devido a baixos resultados:
 
 ## Modelo {#section_1E2BB2F274B04F5491A4CCCC38F507BD}
 
-A capacidade de alternar uma experiência de pesquisa de clientes com base nos resultados é suportada. Parte disso envolve alternar entre diferentes modelos com um layout diferente dos resultados da pesquisa. Por exemplo, você pode ter um modelo com uma exibição em grade de produtos para quando tiver muitos produtos. Ou você pode ter um modelo de &quot;destaque&quot; ao exibir um único resultado que tenha mais detalhes. Você também pode ter um modelo &quot;sem resultados&quot; quando uma pesquisa não produz resultados. O nó do modelo indica qual modelo é usado para exibir os resultados da pesquisa.
+A capacidade de alternar uma experiência de pesquisa de clientes com base nos resultados é suportada. Parte disso envolve alternar entre diferentes modelos com um layout diferente dos resultados da pesquisa. Por exemplo, você pode ter um modelo com uma visualização de grade de produtos para quando tiver muitos produtos. Ou você pode ter um modelo de &quot;destaque&quot; ao exibir um único resultado que tenha mais detalhes. Você também pode ter um modelo &quot;sem resultados&quot; quando uma pesquisa não produz resultados. O nó do modelo indica qual modelo é usado para exibir os resultados da pesquisa.
 
 Exemplo de modelo:
 
@@ -2456,7 +2459,7 @@ Exemplo de nós de zona:
    <td colname="col3"> <p>O nome da zona. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>mostrar </p> </td> 
+   <td colname="col1"> <p>display </p> </td> 
    <td colname="col2"> <p>1 ou 0, indicando se a zona correspondente ao nome da zona é exibida ou oculta. </p> </td> 
    <td colname="col3"> <p> </p> </td> 
   </tr> 
@@ -2465,7 +2468,7 @@ Exemplo de nós de zona:
 
 ## Exemplos {#reference_64B7D8D228AF4B8D90EDF4DE507B0F84}
 
-Exemplo de saída para uma pesquisa * em um site ficcional chamado Geometrixx e um exemplo de modelo de apresentação usado para produzir a saída de exemplo.
+Exemplo de saída para uma pesquisa * em um site ficcional chamado Geometrixx e um modelo de apresentação de exemplo que é usado para produzir a saída de exemplo.
 
 * [Exemplo de saída](../c-appendices/c-guidedsearchoutput.md#section_515C000A18B847D59097D0A9CCC02636)
 * [Exemplo de modelo de apresentação](../c-appendices/c-guidedsearchoutput.md#section_AD42571DFB88491AA7F0FDF0929EBE97)
