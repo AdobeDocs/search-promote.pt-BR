@@ -1,6 +1,6 @@
 ---
 description: 'null'
-seo-description: 'null'
+seo-description: nulo
 seo-title: Pesquisar formulários
 solution: Target
 title: Pesquisar formulários
@@ -8,6 +8,9 @@ topic: Appendices,Site search and merchandising
 uuid: 91153e3a-c437-47f3-8c2a-d9ac02965b8c
 translation-type: tm+mt
 source-git-commit: 4542702e1d2ba04c70d9f6b24bfa32e1f1c6acb5
+workflow-type: tm+mt
+source-wordcount: '2921'
+ht-degree: 0%
 
 ---
 
@@ -48,7 +51,7 @@ O exemplo a seguir mostra quatro nomes de coleção diferentes e as áreas assoc
    <td colname="col2"> <p>https://www.mycompany.com/news/ </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Sobre a Adobe </p> </td> 
+   <td colname="col1"> <p>Sobre o Adobe </p> </td> 
    <td colname="col2"> <p>https://www.mycompany.com/company/ </p> </td> 
   </tr> 
  </tbody> 
@@ -84,9 +87,9 @@ O formulário de pesquisa da caixa de seleção é gerado com o seguinte código
 <input type="checkbox" name="sp_k" value="About Adobe">About Adobe<br>
 ```
 
-## Search results {#section_BBDD5B44E2B349BC88D937F44583D350}
+## Resultados da pesquisa {#section_BBDD5B44E2B349BC88D937F44583D350}
 
-A tag do modelo de pesquisa `<search-input-collections>` gera o HTML da caixa de lista da coleção nos resultados da pesquisa e seleciona automaticamente a coleção especificada na pesquisa. Caso deseje gerar caixas de seleção, use a `<search-input>` tag em vez da `<input>` tag da seguinte maneira:
+A tag do modelo de pesquisa `<search-input-collections>` gera o HTML da caixa de lista da coleção nos resultados da pesquisa e seleciona automaticamente a coleção especificada na pesquisa. Caso deseje gerar caixas de seleção, use a tag `<search-input>` em vez da tag `<input>` da seguinte maneira:
 
 ```
 <search-input type="checkbox" name="sp_k" value="">All of Adobe<br> 
@@ -96,7 +99,7 @@ A tag do modelo de pesquisa `<search-input-collections>` gera o HTML da caixa de
 <search-input type="checkbox" name="sp_k" value="About Adobe">About Adobe<br>
 ```
 
-A `<search-input>` tag gera uma `<input>` tag e inclui o `checked` atributo se a coleção foi especificada na pesquisa.
+A tag `<search-input>` gera uma tag `<input>` e inclui o atributo `checked` se a coleção foi especificada na pesquisa.
 
 ## Uso de quadros com formulários {#reference_82CDDDA1E37042E4849EBF7EA05407C5}
 
@@ -115,7 +118,7 @@ Se o site usa quadros, você pode especificar um quadro de público alvo para li
 
 Se o site não usar quadros, provavelmente você não deseja alterar o nome do público alvo padrão.
 
-Se você criar um modelo de resultados de pesquisa personalizado para seu site, poderá substituir a configuração especificada usando o `target` atributo da `<search-link>` tag .
+Se você criar um modelo de resultados de pesquisa personalizado para seu site, poderá substituir a configuração especificada usando o atributo `target` da tag `<search-link>`.
 
 O processo de configuração de conjuntos de quadros é o seguinte:
 
@@ -131,27 +134,27 @@ O processo de configuração de conjuntos de quadros é o seguinte:
   <tr> 
    <td colname="col1"> <p>1 </p> </td> 
    <td colname="col02"> <p>Adicione o formulário ao quadro desejado em sua página da Web. </p> </td> 
-   <td colname="col2"> <p> <a href="#section_BAA8A502BB2243F8B5FF9783CDF2BFFD" type="section" format="dita" scope="local"> Adicionando o código de formulário de pesquisa a um quadro em seu... </a> </p> </td> 
+   <td colname="col2"> <p> <a href="#section_BAA8A502BB2243F8B5FF9783CDF2BFFD" type="section" format="dita" scope="local"> Adicionando o código de formulário de pesquisa a um quadro em seu...  </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>2 </p> </td> 
    <td colname="col02"> <p>Defina o quadro do público alvo para a página de resultados da pesquisa. </p> </td> 
-   <td colname="col2"> <p> <a scope="local" href="#section_532CACB90888467093D95EACB64FDFA1" type="section" format="dita"> Configuração do quadro do público alvo para a página de resultados da pesquisa </a> </p> </td> 
+   <td colname="col2"> <p> <a scope="local" href="#section_532CACB90888467093D95EACB64FDFA1" type="section" format="dita"> Configuração do quadro do público alvo para a página de resultados da pesquisa  </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>3 </p> </td> 
    <td colname="col02"> <p>Defina o público alvo para links feitos na página de resultados da pesquisa. </p> </td> 
-   <td colname="col2"> <p> <a scope="local" href="#section_523248C5AC424D878321C21A23A5CD66" type="section" format="dita"> Definindo o público alvo para links feitos a partir dos resultados da pesquisa... </a> </p> </td> 
+   <td colname="col2"> <p> <a scope="local" href="#section_523248C5AC424D878321C21A23A5CD66" type="section" format="dita"> Definindo o público alvo para links feitos a partir dos resultados da pesquisa...  </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>4 </p> </td> 
    <td colname="col02"> <p>Edite as páginas de quadro de navegação para evitar que elas sejam indexadas. </p> </td> 
-   <td colname="col2"> <p> <a scope="local" href="#section_C62E5F0EE1294D5EBD97E123E54433FC" type="section" format="dita"> Editando as páginas de quadro de navegação para evitar que elas sejam... </a> </p> </td> 
+   <td colname="col2"> <p> <a scope="local" href="#section_C62E5F0EE1294D5EBD97E123E54433FC" type="section" format="dita"> Editando as páginas de quadro de navegação para evitar que elas sejam...  </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>5 </p> </td> 
    <td colname="col02"> <p>Teste o formulário de pesquisa. </p> </td> 
-   <td colname="col2"> <p> <a scope="local" href="#section_43D8D4A7BF524DC480DFE5442F6A2E3C" type="section" format="dita"> Teste do formulário de pesquisa </a> </p> </td> 
+   <td colname="col2"> <p> <a scope="local" href="#section_43D8D4A7BF524DC480DFE5442F6A2E3C" type="section" format="dita"> Teste do formulário de pesquisa  </a> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -171,7 +174,7 @@ O processo de configuração de conjuntos de quadros é o seguinte:
    </form>
    ```
 
-1. Na [!DNL Standard Form Source] página, selecione e copie o código do formulário de pesquisa HTML que aparece no campo de texto.
+1. Na página [!DNL Standard Form Source], selecione e copie o código de formulário de pesquisa HTML que aparece no campo de texto.
 1. Cole o código do formulário de pesquisa no quadro desejado no conjunto de quadros.
 
    No exemplo abaixo, o código do formulário de pesquisa é colado no quadro de navegação - o quadro vertical estreito no lado esquerdo da tela.
@@ -200,7 +203,7 @@ Quando um cliente realiza uma pesquisa em seu site, os resultados da pesquisa s�
 
 Você pode definir o quadro de destino editando diretamente o modelo.
 
-Se os resultados da pesquisa forem exibidos no quadro &quot;corpo&quot;, você provavelmente também deseja que os links sejam abertos no quadro &quot;corpo&quot;. Como esse é o mesmo quadro, o valor do público alvo `"_self"` que é a configuração padrão, não é necessário fazer alterações.
+Se os resultados da pesquisa forem exibidos no quadro &quot;corpo&quot;, você provavelmente também desejará que os links sejam abertos no quadro &quot;corpo&quot;. Como esse é o mesmo quadro, o valor `"_self"` do público alvo, que é a configuração padrão, não é necessário fazer alterações.
 
 Você também pode definir o quadro de destino para links de resultados. A seguir estão vários exemplos do que você pode fazer:
 
@@ -213,22 +216,22 @@ O nome do público alvo pode ser o nome de um quadro especificado em seu HTML ou
 
 * `target="_self"` Padrão. Abra os links na mesma janela em que os resultados da pesquisa residem. Nesse caso, a janela original de resultados da pesquisa. Use essa opção para substituir um público alvo base atribuído globalmente.
 
-* `target="_parent"` Abrir links no conjunto de quadros pai da página de links. Se o documento não tiver um pai, isso funcionará como `"_self"` por padrão.
+* `target="_parent"` Abrir links no conjunto de quadros pai da página de links. Se o documento não tiver pai, isso funcionará como `"_self"` por padrão.
 
 * `target="_top"` Abra os links na janela inteira. Se o documento já estiver na parte superior, isso funcionará como `"_self"` por padrão. Use essa opção para sair de um aninhamento arbitrariamente profundo de quadros.
 
-Por exemplo, para definir o quadro de destino do `_blank` público alvo, é possível editar o modelo da seguinte maneira:
+Por exemplo, para definir o quadro de destino do público alvo `_blank` você pode editar o modelo da seguinte maneira:
 
 1. No menu do produto, clique em **[!UICONTROL Design]** > **[!UICONTROL Templates]**.
 
-1. Na [!DNL Staged Templates] página, na tabela, clique no nome do modelo com o quadro de destino.
-1. Localize a `<search-link>` tag . Your default `<search-link>` tag should look similar to the following:
+1. Na página [!DNL Staged Templates], na tabela, clique no nome do modelo com o quadro de destino direcionado.
+1. Localize a tag `<search-link>`. Sua tag padrão `<search-link>` deve ser semelhante ao seguinte:
 
    `<search-link><search-title length=100></search-link>`
 
-1. Adicione o público alvo de quadro à `<search-link>` tag . No exemplo acima, digite `target="_blank"`. Certifique-se de incluir o sublinhado e as aspas em torno do valor do público alvo.
+1. Adicione o público alvo de quadro à tag `<search-link>`. No exemplo acima, digite `target="_blank"`. Certifique-se de incluir o sublinhado e as aspas em torno do valor do público alvo.
 
-   A `<search-link>` tag agora é exibida da seguinte maneira:
+   A tag `<search-link>` agora é exibida da seguinte maneira:
 
    `<search-link target="_blank"><search-title length=100></search-link>`
 
@@ -236,7 +239,7 @@ Quando um visitante do site seleciona um link de resultados de pesquisa, a pági
 
 ## Editar as páginas de quadro de navegação para evitar que elas sejam indexadas {#section_C62E5F0EE1294D5EBD97E123E54433FC}
 
-Geralmente, você deseja excluir seus quadros de navegação de serem indexados com os resultados da pesquisa. Para realizar essa funcionalidade, você pode adicionar `noindex` meta tag a essas páginas.
+Geralmente, você deseja excluir seus quadros de navegação de serem indexados com os resultados da pesquisa. Para realizar essa funcionalidade, você pode adicionar `noindex` uma tag meta a essas páginas.
 
 1. Abra a fonte da página HTML do quadro de navegação.
 1. Adicione a seguinte tag meta na seção `<head>` do seu HTML:
@@ -254,7 +257,7 @@ Geralmente, você deseja excluir seus quadros de navegação de serem indexados 
    </head>
    ```
 
-## Teste do formulário de pesquisa {#section_43D8D4A7BF524DC480DFE5442F6A2E3C}
+## Testando o formulário de pesquisa {#section_43D8D4A7BF524DC480DFE5442F6A2E3C}
 
 1. Vá para seu site e navegue até um formulário.
 1. No campo de pesquisa, insira alguns termos de pesquisa e clique em **[!UICONTROL Search]**.
@@ -264,6 +267,7 @@ Geralmente, você deseja excluir seus quadros de navegação de serem indexados 
    * A página de resultados da pesquisa é exibida no quadro de público alvo especificado.
    * Os links dos resultados da pesquisa estão no quadro de público alvo especificado.
    * Os resultados do quadro de navegação não são exibidos.
+
    Se tiver problemas com quadros após testar o formulário de pesquisa, entre em contato com o Suporte ao cliente.
 
 ## Exemplo de formulário de pesquisa avançada {#reference_82E1051918744EBA88A01E9E6AE42C4A}
@@ -286,9 +290,9 @@ Usando o formulário de pesquisa avançada a seguir, o restante desse tópico mo
 
 Você pode visualização todo o código HTML do formulário de pesquisa avançada da amostra acima.
 
-Consulte Código [HTML do formulário de pesquisa](#reference_9AAD4A46B68D4D48865508982CB86DB9)avançada.
+Consulte [Código HTML do formulário de pesquisa avançada](#reference_9AAD4A46B68D4D48865508982CB86DB9).
 
-Consulte [Configuração do CSS](../c-about-auto-complete.md#task_EECE35DEB6C94F4A8A5B42B4DED76D96)de Completar automaticamente.
+Consulte [Configurando o CSS de Completar automaticamente](../c-about-auto-complete.md#task_EECE35DEB6C94F4A8A5B42B4DED76D96).
 
 Consulte [Copiando o código HTML do formulário de pesquisa no...](../c-about-auto-complete.md#task_A3A01EA800F24C0AA33902387E0362C7).
 
@@ -304,41 +308,41 @@ Consulte [Copiando o código HTML do formulário de pesquisa no...](../c-about-a
  <tbody> 
   <tr> 
    <td colname="col2"> <p>Ativar as opções avançadas do formulário de pesquisa (campo oculto) </p> </td> 
-   <td colname="col1"> <p> <span class="codeph"> sp_advanced </span> </p> </td> 
-   <td colname="col3"> <p> <span class="syntax html codeph"> &lt;input type=hidden name="sp_advanced" value=1&gt; </span> </p> </td> 
-   <td colname="col4"> <p>Ative ou desative as opções de pesquisa avançada. Por exemplo, é possível colocar um formulário de pesquisa padrão no home page com um link para uma segunda página que contenha um formulário avançado. Nesse caso, você colocaria uma cópia do formulário padrão dentro de <span class="codeph"> &lt;search-if-not-advanced&gt;...&lt;/search-if-not-advanced&gt; </span> marcas de modelo. </p> <p>Um cliente que realiza uma pesquisa a partir do formulário padrão vê um formulário de pesquisa padrão quando os resultados da pesquisa são exibidos. Na tela do formulário de pesquisa avançada, inclua a tag <span class="codeph"> &lt;input type=hidden name="sp_advanced" value=1&gt; </span> com as outras opções de formulário avançadas. </p> <p>Você também inclui uma cópia do formulário de pesquisa avançada dentro de &lt;search-if-advanced&gt;... &lt;/search-if-advanced&gt; marcas de modelo. Um cliente que realiza uma pesquisa a partir de um formulário de pesquisa avançada visualiza um formulário de pesquisa avançada quando os resultados da pesquisa são exibidos. </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> sp_advanced  </span> </p> </td> 
+   <td colname="col3"> <p> <span class="syntax html codeph"> &lt;input type="hidden" name="sp_advanced" value="1"&gt; </span> </p> </td> 
+   <td colname="col4"> <p>Ative ou desative as opções de pesquisa avançada. Por exemplo, é possível colocar um formulário de pesquisa padrão no home page com um link para uma segunda página que contenha um formulário avançado. Nesse caso, você colocaria uma cópia do formulário padrão dentro de <span class="codeph"> &lt;search-if-not-advanced&gt;...&lt;/search-if-not-advanced&gt; </span> marcas de modelo. </p> <p>Um cliente que realiza uma pesquisa a partir do formulário padrão vê um formulário de pesquisa padrão quando os resultados da pesquisa são exibidos. Na tela de formulário de pesquisa avançada, você inclui a tag <span class="codeph"> &lt;input type=hidden name="sp_advanced" value=1&gt; </span> com as outras opções de formulário avançadas. </p> <p>Você também inclui uma cópia do formulário de pesquisa avançada dentro de &lt;search-if-advanced&gt;... &lt;/search-if-advanced&gt; marcas de modelo. Um cliente que realiza uma pesquisa a partir de um formulário de pesquisa avançada visualiza um formulário de pesquisa avançada quando os resultados da pesquisa são exibidos. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col2"> <p> Corresponder qualquer, tudo ou frase </p> </td> 
-   <td colname="col1"> <p> <span class="codeph"> sp_p </span> </p> <p> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> sp_p  </span> </p> <p> </p> </td> 
    <td colname="col3"> <p> <code class="syntax html"> &lt;!--&nbsp;Allow&nbsp;"any,"&nbsp;"all,"&nbsp;or&nbsp;"phrase"&nbsp;--&gt; 
       &lt;input&nbsp;type=radio&nbsp;name="sp_p"&nbsp;value="any"&gt;Any&nbsp;word 
       &lt;input&nbsp;type=radio&nbsp;name="sp_p"&nbsp;value="all"&nbsp;checked&gt;All&nbsp;words 
       &lt;input&nbsp;type=radio&nbsp;name="sp_p"&nbsp;value="phrase"&gt;Exact&nbsp;phrase </code> </p> </td> 
-   <td colname="col4"> <p>Permita que o cliente especifique que "qualquer palavra", "todas as palavras" ou "a frase exata" devem estar presentes para que um documento corresponda. Quando o parâmetro <span class="codeph"> sp_p </span> é especificado, os clientes não precisam usar "+", "-" ou ambos no query de pesquisa. </p> <p> Se o parâmetro <span class="codeph"> sp_p </span> for omitido, ou se estiver definido como "" ou "any", os clientes ainda poderão usar os especificadores "+" e "-". Se o parâmetro <span class="codeph"> sp_p </span> estiver definido como "all" ou "frase", os valores "+" e "-" especificados serão ignorados. </p> <p>Você pode saber mais sobre como usar "+" e "-" em uma pesquisa. </p> <p>Consulte <a href="../c-about-settings-menu/c-about-searching-menu.md#concept_207105CF26B1448F8A3D223787C56AB8" type="concept" format="dita" scope="local">Sobre pesquisadores </a>. </p> </td> 
+   <td colname="col4"> <p>Permita que o cliente especifique que "qualquer palavra", "todas as palavras" ou "a frase exata" devem estar presentes para que um documento corresponda. Quando o parâmetro <span class="codeph"> sp_p </span> é especificado, os clientes não precisam usar "+", "-" ou ambos no query de pesquisa. </p> <p> Se o parâmetro <span class="codeph"> sp_p </span> for omitido, ou se estiver definido como "" ou "any", os clientes ainda poderão usar os especificadores "+" e "-". Se o parâmetro <span class="codeph"> sp_p </span> estiver definido como "all" ou "frase", então "+" e "-" especificados serão ignorados. </p> <p>Você pode saber mais sobre como usar "+" e "-" em uma pesquisa. </p> <p>Consulte <a href="../c-about-settings-menu/c-about-searching-menu.md#concept_207105CF26B1448F8A3D223787C56AB8" type="concept" format="dita" scope="local">Sobre pesquisadores </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col2"> <p> Correspondência de som parecido </p> </td> 
-   <td colname="col1"> <p> <span class="codeph"> sp_w </span> </p> <p>e </p> <p> <span class="codeph"> sp_w_control </span> </p> <p> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> sp_w  </span> </p> <p>e </p> <p> <span class="codeph"> sp_w_control  </span> </p> <p> </p> </td> 
    <td colname="col3"> <p> <code class="syntax html"> &lt;!--&nbsp;Checkbox&nbsp;enables&nbsp;sound-alike&nbsp;matching&nbsp;--&gt; 
       &lt;input&nbsp;type=hidden&nbsp;name="sp_w_control"&nbsp;value=1&gt; 
       &lt;input&nbsp;type=checkbox&nbsp;name="sp_w"&nbsp;value="alike"&gt;&nbsp;Sound-alike&nbsp;matching </code> </p> </td> 
-   <td colname="col4"> <p>Permite que os clientes ativem ou desativem a correspondência de som. A correspondência de som permite que query de pesquisa com erros ortográficos correspondam a palavras que "soam da mesma forma" em seus documentos. </p> <p>Quando o parâmetro <span class="codeph"> sp_w_control </span> é definido como 1 e o parâmetro <span class="codeph"> sp_w </span> é definido como "similar", a caixa de seleção gerada é selecionada, permitindo a correspondência de som por padrão. </p> <p>Se o parâmetro <span class="codeph"> sp_w </span> estiver definido como "", a caixa de seleção não será selecionada. </p> <p>Se você não ativou a correspondência de som semelhante durante a operação de indexação mais recente, a correspondência de som semelhante não é possível e o parâmetro <span class="codeph"> sp_w </span> é ignorado. Para ativar a correspondência de som, no menu do produto, clique em <span class="uicontrol"> Linguística </span> &gt; <span class="uicontrol"> Palavras e idioma </span> &gt; <span class="uicontrol"> Correspondência de som semelhante </span>. </p> <p>Você também pode atribuir os parâmetros <span class="codeph"> sp_w </span> e <span class="codeph"> sp_w_control </span> da seguinte maneira: </p> <p> <code class="syntax html"> &lt;!--&nbsp;Checkbox&nbsp;disables&nbsp;sound-alike&nbsp;matching&nbsp;--&gt; 
+   <td colname="col4"> <p>Permite que os clientes ativem ou desativem a correspondência de som. A correspondência de som permite que query de pesquisa com erros ortográficos correspondam a palavras que "soam da mesma forma" em seus documentos. </p> <p>Quando o parâmetro <span class="codeph"> sp_w_control </span> estiver definido como 1 e o parâmetro <span class="codeph"> sp_w </span> estiver definido como "similar", a caixa de seleção gerada será selecionada, permitindo a correspondência de som por padrão. </p> <p>Se o parâmetro <span class="codeph"> sp_w </span> estiver definido como "", a caixa de seleção não será selecionada. </p> <p>Se você não ativou a correspondência de som semelhante durante a operação de indexação mais recente, a correspondência de som semelhante não é possível e o parâmetro <span class="codeph"> sp_w </span> é ignorado. Para ativar a correspondência de som, no menu do produto, clique em <span class="uicontrol"> Linguística </span> &gt; <span class="uicontrol"> Palavras e idiomas </span> &gt; <span class="uicontrol"> Correspondência de som semelhante a </span>. </p> <p>Você também pode atribuir os parâmetros <span class="codeph"> sp_w </span> e <span class="codeph"> sp_w_control </span> da seguinte maneira: </p> <p> <code class="syntax html"> &lt;!--&nbsp;Checkbox&nbsp;disables&nbsp;sound-alike&nbsp;matching&nbsp;--&gt; 
       &lt;input&nbsp;type=hidden&nbsp;name="sp_w_control"&nbsp;value=0&gt; 
       &lt;input&nbsp;type=checkbox&nbsp;name="sp_w"&nbsp;value="exact"&gt; 
-      No&nbsp;sound-alike&nbsp;matching </code> </p> <p>Nesse caso, quando o parâmetro <span class="codeph"> sp_w_control </span> é definido como 0 e o parâmetro <span class="codeph"> sp_w </span> é definido como "exato", a correspondência de som é desativada por padrão. Se o parâmetro <span class="codeph"> sp_w </span> estiver definido como "", a correspondência de som semelhante é ativada. </p> </td> 
+      No&nbsp;sound-alike&nbsp;matching </code> </p> <p>Nesse caso, quando o parâmetro <span class="codeph"> sp_w_control </span> está definido como 0 e o parâmetro <span class="codeph"> sp_w </span> está definido como "exato", a correspondência de som semelhante está desativada por padrão. Se o parâmetro <span class="codeph"> sp_w </span> estiver definido como "", a correspondência de som semelhante está ativada. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col2"> <p>Correspondência de intervalo de datas </p> </td> 
-   <td colname="col1"> <p> <span class="codeph"> sp_d </span> </p> <p> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> sp_d  </span> </p> <p> </p> </td> 
    <td colname="col3"> <p> <code class="syntax html"> &lt;!--Specifies&nbsp;type&nbsp;of&nbsp;date&nbsp;range&nbsp;searching&nbsp;to&nbsp;perform.--&gt; 
       &lt;input&nbsp;type=radio&nbsp;name="sp_d"&nbsp;value="custom"&nbsp;checked&gt; 
       &lt;input&nbsp;type=radio&nbsp;name="sp_d"&nbsp;value="specific"&gt; </code> </p> </td> 
-   <td colname="col4"> <p>O parâmetro <span class="codeph"> sp_d </span> especifica um intervalo de dados personalizado que corresponde a executar ou um intervalo de datas específico que corresponde a executar. </p> <p>No formulário de pesquisa avançada padrão, essa opção é apresentada como um grupo de botões de opção com uma lista suspensa de intervalos de datas "personalizados", conforme gerado com um parâmetro <span class="codeph"> sp_date_range </span> . Ele também inclui e um grupo de datas "específicas" de start e término que são geradas com <span class="codeph"> sp_start_day </span>, <span class="codeph"> sp_start_month </span>, <span class="codeph"> sp_start_year </span>, <span class="codeph"> sp_end_day </span>, <span class="codeph"> sp_end_month </span><span class="codeph"> </span> e parâmetros _end_year. </p> <p>Um intervalo de datas "personalizado" é um intervalo nomeado de datas para pesquisa. Por exemplo, "Qualquer hora", "Hoje", "Dentro do último ano" e assim por diante. </p> <p>Um intervalo de datas "específico" consiste em uma data de start e uma data de término. Por exemplo, de "8 de setembro de 2009 a 18 de outubro de 2011". </p> </td> 
+   <td colname="col4"> <p>O parâmetro <span class="codeph"> sp_d </span> especifica um intervalo de dados personalizado que corresponde a executar ou um intervalo de datas específico que corresponde a executar. </p> <p>No formulário de pesquisa avançada padrão, essa opção é apresentada como um grupo de botões de opção com uma lista suspensa de intervalos de datas "personalizados", conforme gerado com um parâmetro <span class="codeph"> sp_date_range </span>. Também inclui e um grupo de datas "específicas" de start e término que são geradas com <span class="codeph"> sp_start_day </span>, <span class="codeph"> sp_start_month </span>, <span class="codeph"> sp_start_year </span>, <span class="codeph"> sp_end_day </span>, <span class="codeph"> sp_end_month&gt; e <span class="codeph"> parâmetros sp_end_year </span>.</span> </p> <p>Um intervalo de datas "personalizado" é um intervalo nomeado de datas para pesquisa. Por exemplo, "Qualquer hora", "Hoje", "Dentro do último ano" e assim por diante. </p> <p>Um intervalo de datas "específico" consiste em uma data de start e uma data de término. Por exemplo, de "8 de setembro de 2009 a 18 de outubro de 2011". </p> </td> 
   </tr> 
   <tr> 
    <td colname="col2"> <p>Correspondência de intervalo de datas: intervalo de datas personalizado </p> </td> 
-   <td colname="col1"> <p> <span class="codeph"> sp_date_range </span> </p> <p> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> sp_date_range  </span> </p> <p> </p> </td> 
    <td colname="col3"> <p> <code class="syntax html"> &lt;!--Selection&nbsp;list&nbsp;for&nbsp;custom&nbsp;date&nbsp;range.--&gt; 
       &lt;select&nbsp;name="sp_date_range"&nbsp;size=1&gt; 
       &lt;option&nbsp;value=-1&nbsp;selected&gt;Anytime&lt;/option&gt; 
@@ -364,19 +368,19 @@ Consulte [Copiando o código HTML do formulário de pesquisa no...](../c-about-a
   </tr> 
   <tr> 
    <td colname="col2"> <p>Correspondência de intervalo de datas: Datas do start </p> </td> 
-   <td colname="col1"> <p> <span class="codeph"> sp_start_day, sp_start_month, sp_start_year </span> </p> <p> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> sp_start_day, sp_start_month, sp_start_year  </span> </p> <p> </p> </td> 
    <td colname="col3"> </td> 
-   <td colname="col4"> <p>Esse triplo de valores numéricos especifica a data de start de um intervalo de datas específico a ser pesquisado. Certifique-se de especificar todos os três valores, pois uma data parcialmente especificada é ignorada. </p> <p>É legal especificar apenas a data de start, apenas a data de término ou a data de start e a data de término. Se apenas a data do start for especificada, a pesquisa incluirá documentos correspondentes datados na data ou após a data do start. Se apenas a data final for especificada, a pesquisa incluirá documentos correspondentes na data final ou antes dela. Se a data e a data de start forem especificadas, a pesquisa incluirá documentos correspondentes da data do start até a data de término. </p> <p>Todas as datas são pesquisadas em relação ao Tempo médio de Greenwich. </p> </td> 
+   <td colname="col4"> <p>Esse triplo de valores numéricos especifica a data de start de um intervalo de datas específico a ser pesquisado. Certifique-se de especificar todos os três valores porque uma data parcialmente especificada é ignorada. </p> <p>É legal especificar apenas a data de start, apenas a data de término ou a data de start e a data de término. Se apenas a data do start for especificada, a pesquisa incluirá documentos correspondentes datados na data ou após a data do start. Se apenas a data final for especificada, a pesquisa incluirá documentos correspondentes na data final ou antes dela. Se a data e a data de start forem especificadas, a pesquisa incluirá documentos correspondentes da data do start até a data de término. </p> <p>Todas as datas são pesquisadas em relação ao Tempo médio de Greenwich. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col2"> <p> Correspondência de intervalo de datas: datas finais </p> </td> 
-   <td colname="col1"> <p> <span class="codeph"> sp_end_day, sp_end_month, sp_end_year </span> </p> <p> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> sp_end_day, sp_end_month, sp_end_year  </span> </p> <p> </p> </td> 
    <td colname="col3"> </td> 
    <td colname="col4"> <p>Esse triplo de valores numéricos especifica a data final do intervalo de datas específico a ser pesquisado. Certifique-se de especificar todos os três valores porque uma data parcialmente especificada é ignorada. </p> <p>É legal especificar apenas a data de start, apenas a data de término ou a data de start e término. Se apenas a data do start for especificada, a pesquisa incluirá documentos correspondentes datados na data ou após a data do start. Se apenas a data final for especificada, a pesquisa incluirá documentos correspondentes na data final ou antes dela. Se tanto o start quanto a data final forem especificados, a pesquisa incluirá documentos correspondentes da data do start até a data final. </p> <p>Todas as datas são pesquisadas em relação ao Tempo médio de Greenwich. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col2"> <p>No campo de pesquisa </p> </td> 
-   <td colname="col1"> <p> <span class="codeph"> sp_x </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> sp_x  </span> </p> </td> 
    <td colname="col3"> <p> <code class="syntax html"> &lt;!--&nbsp;List&nbsp;box&nbsp;selects&nbsp;the&nbsp;search&nbsp;field&nbsp;--&gt; 
       Within&nbsp;&lt;select&nbsp;name="sp_x"&nbsp;size=1&gt; 
       &lt;option&nbsp;value="any"&nbsp;selected&gt;Anywhere&lt;/option&gt; 
@@ -389,11 +393,11 @@ Consulte [Copiando o código HTML do formulário de pesquisa no...](../c-about-a
       &lt;option&nbsp;value="target"&gt;Target&lt;/option&gt; 
       &lt;option&nbsp;value="date"&gt;Date&lt;/option&gt;* 
       &lt;/select&gt; </code> </p> </td> 
-   <td colname="col4"> <p>A caixa de <span class="codeph"> lista </span> sp_x permite que seus clientes especifiquem o campo no qual pesquisar as strings de query. </p> <p>Os clientes podem escolher todos os campos, o título, a descrição do documento, as palavras-chave do documento, o corpo, o texto alternativo, o URL do documento, a data ou as palavras-chave do público alvo. </p> <p>Quando o parâmetro <span class="codeph"> sp_x </span> é usado, os clientes não precisam especificar "title:", "desc:", "keys:", "body:", "alt:", "url:" e "público alvo:" em strings de query de pesquisa. </p> <p>Se o parâmetro <span class="codeph"> sp_x </span> for omitido, ou se estiver definido como "" ou "any", os clientes ainda poderão usar as strings do especificador de campo. Se o parâmetro <span class="codeph"> sp_x </span> estiver definido para um campo específico, todas as outras strings de especificador de campo serão ignoradas. </p> <p>Consulte <a href="../c-about-settings-menu/c-about-searching-menu.md#concept_207105CF26B1448F8A3D223787C56AB8" type="concept" format="dita" scope="local">Sobre pesquisadores </a>. </p> </td> 
+   <td colname="col4"> <p>A caixa de lista <span class="codeph"> sp_x </span> permite que seus clientes especifiquem o campo no qual pesquisar as sequências de query. </p> <p>Os clientes podem escolher todos os campos, o título, a descrição do documento, as palavras-chave do documento, o corpo, o texto alternativo, o URL do documento, a data ou as palavras-chave do público alvo. </p> <p>Quando o parâmetro <span class="codeph"> sp_x </span> é usado, os clientes não precisam especificar "title:", "desc:", "keys:", "body:", "alt:", "url:" e "público alvo:" em strings de query de pesquisa. </p> <p>Se o parâmetro <span class="codeph"> sp_x </span> for omitido, ou se estiver definido como "" ou "any", os clientes ainda poderão usar as strings do especificador de campo. Se o parâmetro <span class="codeph"> sp_x </span> estiver definido como um campo específico, todas as outras strings de especificador de campo serão ignoradas. </p> <p>Consulte <a href="../c-about-settings-menu/c-about-searching-menu.md#concept_207105CF26B1448F8A3D223787C56AB8" type="concept" format="dita" scope="local">Sobre pesquisadores </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col2"> <p>Mostrar contagem de resultados </p> </td> 
-   <td colname="col1"> <p> <span class="codeph"> sp_c </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> sp_c  </span> </p> </td> 
    <td colname="col3"> <p> <code class="syntax html"> &lt;!--&nbsp;List&nbsp;box&nbsp;selects&nbsp;number&nbsp;of&nbsp;results&nbsp;to&nbsp;show&nbsp;per&nbsp;page&nbsp;--&gt; 
       Show&nbsp;&lt;select&nbsp;name="sp_c"&nbsp;size=1&gt; 
       &lt;option&nbsp;value=5&gt;5&lt;/option&gt; 
@@ -406,7 +410,7 @@ Consulte [Copiando o código HTML do formulário de pesquisa no...](../c-about-a
   </tr> 
   <tr> 
    <td colname="col2"> <p>Mostrar ou ocultar resumos </p> </td> 
-   <td colname="col1"> <p> <span class="codeph"> sp_m </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> sp_m  </span> </p> </td> 
    <td colname="col3"> <p> <code class="syntax html"> &lt;!--&nbsp;Show&nbsp;or&nbsp;hide&nbsp;summaries&nbsp;in&nbsp;search&nbsp;results&nbsp;--&gt; 
       &lt;select&nbsp;name="sp_m"&nbsp;size=1&gt; 
       &lt;option&nbsp;value=1&nbsp;selected&gt;with&lt;/option&gt; 
@@ -418,7 +422,7 @@ Consulte [Copiando o código HTML do formulário de pesquisa no...](../c-about-a
   </tr> 
   <tr> 
    <td colname="col2"> <p>Classificar por resultados </p> </td> 
-   <td colname="col1"> <p> <span class="codeph"> sp_s </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> sp_s  </span> </p> </td> 
    <td colname="col3"> <p> <code class="syntax html"> &lt;!--&nbsp;Sort&nbsp;results&nbsp;by&nbsp;relevance&nbsp;or&nbsp;by&nbsp;date&nbsp;--&gt; 
       Sort&nbsp;by&nbsp;&lt;select&nbsp;name="sp_s"&nbsp;size=1&gt; 
       &lt;option&nbsp;value=0&nbsp;selected&gt;relevance&lt;/option&gt; 
@@ -435,9 +439,9 @@ Consulte [Copiando o código HTML do formulário de pesquisa no...](../c-about-a
 
 O código de formulário HTML usado para produzir o formulário de pesquisa avançada que é exibido na parte superior do tópico de formulário de pesquisa avançada Amostra.
 
-Consulte [Amostra de formulário](#reference_82E1051918744EBA88A01E9E6AE42C4A)de pesquisa avançada.
+Consulte [Exemplo de formulário de pesquisa avançada](#reference_82E1051918744EBA88A01E9E6AE42C4A).
 
-Se você usar esse código, lembre-se de substituir o `sp_a` valor de `sp99999999` por seu número de conta real.
+Se você usar esse código, lembre-se de substituir o valor `sp_a` de `sp99999999` pelo número da sua conta real.
 
 Para localizar o número da sua conta, no menu do produto, clique em **[!UICONTROL Settings]** > **[!UICONTROL Account Options]** > **[!UICONTROL Account Settings]**.
 
@@ -635,7 +639,7 @@ Sound-alike matching
 
 Você pode adicionar o código HTML do formulário de pesquisa avançada ao modelo de forma que a opção padrão para qualquer parâmetro seja a mesma da pesquisa anterior.
 
-Em outras palavras, se um cliente clicar no botão de opção, você pode garantir que o botão de opção seja selecionado por padrão quando os resultados da pesquisa forem exibidos. **[!UICONTROL Exact phrase]**
+Em outras palavras, se um cliente clicar no botão de opção **[!UICONTROL Exact phrase]**, você pode garantir que o botão de opção seja selecionado por padrão quando os resultados da pesquisa forem exibidos.
 
 Essa funcionalidade é realizada removendo todos os especificadores &quot;marcados&quot; ou &quot;selecionados&quot; das tags HTML padrão e substituindo as seguintes tags HTML:
 
@@ -653,7 +657,7 @@ com as seguintes tags de modelo correspondentes:
 * `</search-option>`
 * `</search-select>`
 
-Para fazer isso, use o código a seguir como a `<form>` tag do modelo de pesquisa.
+Para fazer isso, use o seguinte código como a tag `<form>` no modelo de pesquisa.
 
 ```
 <!-- Adobe Target results section.--> 
