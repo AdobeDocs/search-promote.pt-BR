@@ -8,15 +8,18 @@ topic: Rules,Site search and merchandising
 uuid: f2186f54-7a39-4f46-bb29-5115d5a17f07
 translation-type: tm+mt
 source-git-commit: fc1f0b15a15a9d0308494fc23c5b4258442c8aab
+workflow-type: tm+mt
+source-wordcount: '3127'
+ht-degree: 1%
 
 ---
 
 
-# Sobre regras comerciais{#about-business-rules}
+# Sobre regras de negócios{#about-business-rules}
 
 Você pode usar as Regras de negócios para comercializar sua pesquisa.
 
-## Usando regras de negócios {#concept_2A93D76216754D3D8412CDEA00BD26BD}
+## Usando Regras de Negócios {#concept_2A93D76216754D3D8412CDEA00BD26BD}
 
 Por exemplo, você pode configurar quando os banners são exibidos ou quais resultados são exibidos e em que ordem. Você também pode configurar a posição de um item em sua faceta e qual modelo é usado para uma determinada pesquisa. As regras são executadas na ordem em que foram definidas; quanto maior o número do pedido de uma regra, mais tarde ela será executada no processo, superando as regras anteriores. Você pode arrastar e soltar as regras para alterar sua ordem ou pode reorganizá-las inserindo um novo número na caixa de texto Ordem das regras.
 
@@ -61,7 +64,7 @@ Além disso, por padrão, as regras são executadas sempre que seus acionadores 
 
 ## Adicionando uma nova regra de negócios {#task_BD3B31ED48BB4B1B8F1DCD3BFA2528E7}
 
-Você pode usar [!DNL Visual Rule Builder] ou [!DNL Advanced Rule Builder] adicionar regras de negócios que ajustem a experiência de pesquisa do cliente.
+Você pode usar [!DNL Visual Rule Builder] ou [!DNL Advanced Rule Builder] para adicionar regras de negócios que ajustem a experiência de pesquisa do cliente.
 
 **Para adicionar uma nova regra de negócios**
 
@@ -69,20 +72,20 @@ As etapas a seguir pressupõem que você esteja usando o Construtor de regras vi
 
 1. Faça uma das seguintes opções:
 
-   * No menu do produto, clique em **[!UICONTROL Rules]** > **[!UICONTROL Business Rules]**. Na [!DNL Business Rules] página, clique em **[!UICONTROL Add New Rule]**.
+   * No menu do produto, clique em **[!UICONTROL Rules]** > **[!UICONTROL Business Rules]**. Na página [!DNL Business Rules], clique em **[!UICONTROL Add New Rule]**.
 
-   * No menu do produto, clique em **[!UICONTROL Simulator]**. Na **[!UICONTROL Simulator for Today]** página, clique **[!UICONTROL Add New Rule]** à direita do menu **[!UICONTROL Options]** suspenso.
+   * No menu do produto, clique em **[!UICONTROL Simulator]**. Na página **[!UICONTROL Simulator for Today]**, clique em **[!UICONTROL Add New Rule]** à direita do menu suspenso **[!UICONTROL Options]**.
 
-      Se a **[!UICONTROL Add New Rule]** opção não estiver visível na página, no menu **[!UICONTROL Options]** suspenso, clique em **[!UICONTROL Simulate Staged]**.
+      Se a opção **[!UICONTROL Add New Rule]** não estiver visível na página, no menu suspenso **[!UICONTROL Options]**, clique em **[!UICONTROL Simulate Staged]**.
 
       ![](assets/Simulator.png)
 
-1. No campo de **[!UICONTROL Name]** texto, digite o novo nome da regra de negócios.
+1. No campo de texto **[!UICONTROL Name]**, digite o novo nome da regra de negócios.
 
-   Não clique **[!UICONTROL Save Rule]** ainda.
-1. (Opcional) Se você gerenciar um grande número de regras de negócios, poderá marcar regras de negócios com rótulos específicos. No **[!UICONTROL Tags]** campo, insira um ou mais rótulos de tags, Use uma vírgula, uma Guia ou Enter como delimitador.
+   Ainda não clique em **[!UICONTROL Save Rule]**.
+1. (Opcional) Se você gerenciar um grande número de regras de negócios, poderá marcar regras de negócios com rótulos específicos. No campo **[!UICONTROL Tags]**, insira um ou mais rótulos de tags, Use uma vírgula, uma Guia ou Enter como delimitador.
 
-   Na [!DNL Business Rules] página, use o **[!UICONTROL Filter by tag]** recurso para filtrar por regras que correspondam a um determinado rótulo. 1. Na [!DNL Business Rule Builder] página, defina os acionadores e as ações que deseja usar.
+   Na página [!DNL Business Rules], use o recurso **[!UICONTROL Filter by tag]** para filtrar as regras que correspondem a um determinado rótulo. 1. Na página [!DNL Business Rule Builder], defina os acionadores e as ações que deseja usar.
 
    **Opções de acionador**
 
@@ -96,7 +99,7 @@ As etapas a seguir pressupõem que você esteja usando o Construtor de regras vi
 
       `if a OR b OR c then ...`
 
-   * Uma resposta em que uma combinação personalizada de acionadores é especificada. Ou seja, você combina acionadores individuais ou &quot;condições&quot; com `AND` operadores e `OR` operadores.
+   * Uma resposta em que uma combinação personalizada de acionadores é especificada. Ou seja, você combina acionadores individuais ou &quot;condições&quot; com operadores `AND` e operadores `OR`.
 
       Também é possível alterar a precedência da avaliação adicionando combinações de parênteses esquerdo e direito, como no exemplo a seguir:
 
@@ -104,7 +107,7 @@ As etapas a seguir pressupõem que você esteja usando o Construtor de regras vi
 
       >[!NOTE]
       >
-      >Se você combinar `AND` operadores com `OR` operadores em um conjunto de regras de negócios Personalizado, certifique-se de especificar parênteses apropriadamente para garantir que os acionadores sejam avaliados na ordem correta.
+      >Se você combinar operadores `AND` com operadores `OR` em um conjunto de regras de negócios personalizado, certifique-se de especificar parênteses apropriadamente para garantir que os acionadores sejam avaliados na ordem correta.
 
       Esse recurso específico de personalizar uma combinação de acionadores não está ativado por padrão. Entre em contato com o suporte técnico para ativar este recurso para uso.
    <table> 
@@ -120,7 +123,7 @@ As etapas a seguir pressupõem que você esteja usando o Construtor de regras vi
       <td colname="col2"> <p>O acionador é verdadeiro quando o termo de pesquisa corresponde a determinada palavra-chave que diferencia maiúsculas de minúsculas. O acionador é verdadeiro para a palavra-chave e para todos os seus sinônimos, conforme definido no dicionário de Linguística. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p> Corresponde a Query </p> </td> 
+      <td colname="col1"> <p> Corresponde a query </p> </td> 
       <td colname="col2"> <p> O acionador é verdadeiro quando todos os parâmetros de pesquisa correspondem. </p> </td> 
       </tr> 
       <tr> 
@@ -130,7 +133,7 @@ As etapas a seguir pressupõem que você esteja usando o Construtor de regras vi
       </tr> 
       <tr> 
       <td colname="col1"> <p>O grupo de resultados está presente </p> </td> 
-      <td colname="col2"> <p> O acionador é verdadeiro quando o grupo de resultados definido pela pesquisa fornecida está presente no conjunto de resultados. O grupo inteiro deve estar presente no conjunto de resultados para que esse acionador seja atendido (os resultados podem aparecer em qualquer página). O grupo de resultados é dinâmico e pode ser alterado após operações de índice dependendo de quais resultados correspondem aos critérios de pesquisa originais. </p> </td> 
+      <td colname="col2"> <p> O acionador é verdadeiro quando o grupo de resultados definido pela pesquisa fornecida está presente no conjunto de resultados. O grupo inteiro deve estar presente no conjunto de resultados para que esse acionador seja atendido (os resultados podem aparecer em qualquer página). O grupo de resultados é dinâmico e pode ser alterado após operações de índice, dependendo de quais resultados correspondem aos critérios de pesquisa originais. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p> Resultado presente </p> </td> 
@@ -227,109 +230,109 @@ As etapas a seguir pressupõem que você esteja usando o Construtor de regras vi
 
    Dependendo do painel do construtor de regras que esteja ativo (desdobrado), você também pode fazer o seguinte para definir acionadores e ações.
 
-   * Quando o **[!UICONTROL Triggers]** painel for desdobrado - na área de modelo de apresentação da página do Construtor de regras de negócios, clique com o botão direito do mouse em qualquer resultado de pesquisa ou aspecto de pesquisa e clique em **[!UICONTROL Add "result present" trigger]**.
+   * Quando o painel **[!UICONTROL Triggers]** for desdobrado - na área do modelo de apresentação da página do Construtor de regras de negócios, clique com o botão direito do mouse em qualquer resultado de pesquisa ou aspecto de pesquisa e, em seguida, clique em **[!UICONTROL Add "result present" trigger]**.
 
       No painel Acionadores, clique no &quot;X&quot; à esquerda de um acionador para removê-lo da lista de acionadores.
 
-   * Quando o **[!UICONTROL Actions]** painel for desdobrado - na área de modelo de apresentação da página do Construtor de regras de negócios, clique com o botão direito do mouse em um resultado de pesquisa. Clique **[!UICONTROL Add Result]**, **[!UICONTROL Remove Result]**, **[!UICONTROL Push to bottom]** ou **[!UICONTROL Push to #`<n>`]** (onde `<n>` é um numeral).
+   * Quando o painel **[!UICONTROL Actions]** for desdobrado - na área do modelo de apresentação da página do Construtor de regras de negócios, clique com o botão direito do mouse em um resultado de pesquisa. Clique em **[!UICONTROL Add Result]**, **[!UICONTROL Remove Result]**, **[!UICONTROL Push to bottom]** ou **[!UICONTROL Push to #`<n>`]** (em que `<n>` é um numeral).
 
 
-1. (Opcional) Em qualquer painel do Construtor de regras de negócios ( [!DNL Triggers], [!DNL Actions]ou [!DNL Schedule]), execute um dos procedimentos a seguir:
+1. (Opcional) Em qualquer painel do Business Rule Builder ( [!DNL Triggers], [!DNL Actions] ou [!DNL Schedule]), execute um dos seguintes procedimentos:
 
-   * Na área do modelo de apresentação da área de página do Construtor de regras de negócios, clique com o botão direito do mouse em um banner e clique em **[!UICONTROL Select different banner]**. Na **[!UICONTROL Pick Banner]** página, clique **[!UICONTROL Pick this banner]** abaixo da miniatura do banner para adicioná-la ao modelo de apresentação. Somente os banners que correspondem ao tamanho e à área do banner original no modelo de apresentação estão disponíveis para seleção.
+   * Na área de modelo de apresentação da área de página do Construtor de regras de negócios, clique com o botão direito do mouse em um banner e, em seguida, clique em **[!UICONTROL Select different banner]**. Na página **[!UICONTROL Pick Banner]**, clique em **[!UICONTROL Pick this banner]** abaixo da miniatura do banner para adicioná-la ao modelo de apresentação. Somente os banners que correspondem ao tamanho e à área do banner original no modelo de apresentação estão disponíveis para seleção.
 
-      A ação de adicionar banner é adicionada ao [!DNL Actions] painel.
+      A ação de adicionar banner é adicionada ao painel [!DNL Actions].
 
-   * Na área do modelo de apresentação da [!DNL Business Rule Builder] página, clique com o botão direito do mouse em um banner de modelo do Adobe Dynamic Media Classic cujos parâmetros você deseja alterar e clique em **[!UICONTROL Add banner commands]**. Na caixa de [!DNL Change Parameters] diálogo, defina as opções de parâmetro desejadas.
+   * Na área do modelo de apresentação da página [!DNL Business Rule Builder], clique com o botão direito do mouse em um banner de modelo do Adobe Dynamic Media Classic cujos parâmetros você deseja alterar e clique em **[!UICONTROL Add banner commands]**. Na caixa de diálogo [!DNL Change Parameters], defina as opções de parâmetro desejadas.
 
       Consulte a tabela de opções em [Adicionar um banner usando o Adobe Dynamic Media Classic](../c-about-design-menu/c-about-banners.md#task_AD1E0C00A9E04B1FA819EB93288786B3).
 
       Clique em **[!UICONTROL Save]**.
 
-      As alterações de parâmetro são adicionadas ao [!DNL Actions] painel.
+      As alterações de parâmetro são adicionadas ao painel [!DNL Actions].
 
       Consulte também [Editar um banner usando o Adobe Dynamic Media Classic](../c-about-design-menu/c-about-banners.md#task_C3E782477FBF428ABEA220751781ACA9).
 
    * Na área do modelo de apresentação da página do Construtor de regras de negócios, clique com o botão direito do mouse em um banner que você deseja excluir da página e clique em **[!UICONTROL Remove banner]**. A ação de remoção do banner é adicionada ao painel Ações.
 
-1. (Opcional) No **[!UICONTROL Schedule]** painel, execute um dos procedimentos a seguir:
+1. (Opcional) No painel **[!UICONTROL Schedule]**, execute um dos procedimentos a seguir:
 
    * Clique em **[!UICONTROL Run Indefinitely]** para que a regra seja executada sempre que seus acionadores associados forem atendidos. Essa opção é o padrão.
-   * Clique em **[!UICONTROL Fixed Schedule]** e especifique a data e a hora do start, a data e a hora de término para a regra ser executada sempre que seu acionador associado for atendido.
+   * Clique em **[!UICONTROL Fixed Schedule]** e especifique a data e a hora do start, a data e a hora de término da regra a ser executada sempre que seu acionador associado for atendido.
 
 1. Clique em **[!UICONTROL Save Rule]**.
-1. (Opcional) Na [!DNL Business Rules] página, execute um dos procedimentos a seguir:
+1. (Opcional) Na página [!DNL Business Rules], execute um dos procedimentos a seguir:
 
-   * Clique **[!UICONTROL History]** para reverter quaisquer alterações feitas.
+   * Clique em **[!UICONTROL History]** para reverter quaisquer alterações feitas.
 
-      Consulte [Uso da opção](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Histórico.
+      Consulte [Usando a opção Histórico](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clique em **[!UICONTROL Live]**.
 
-      Consulte [Visualizar configurações](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)ativas.
+      Consulte [Ver definições ativas](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clique em **[!UICONTROL Push Live]**.
 
-      Consulte [Colocar configurações de estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
+      Consulte [Envio de configurações de estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Editar uma regra de negócios {#task_375CFA75D1D94D9E92A35DE1228E5087}
+## Editando uma regra de negócios {#task_375CFA75D1D94D9E92A35DE1228E5087}
 
 Você pode usar o Construtor de regras visual ou o Construtor de regras avançado para editar regras de negócios que você adicionou.
 
 **Para editar uma nova regra de negócios**
 
 1. No menu do produto, clique em **[!UICONTROL Rules]** > **[!UICONTROL Business Rules]**.
-1. Na [!DNL Business Rules] página, execute um dos procedimentos a seguir:
+1. Na página [!DNL Business Rules], execute um dos procedimentos a seguir:
 
-   * Na [!DNL Name] coluna, clique no nome de uma regra de negócios que você deseja alterar.
+   * Na coluna [!DNL Name], clique no nome de uma regra de negócios que você deseja alterar.
 
       A regra de negócios é aberta na interface padrão especificada em **[!UICONTROL Settings]** > **[!UICONTROL My Profile]** > **[!UICONTROL My Preferences]**.
 
    * Na lista suspensa, ao lado do nome de uma regra de negócios que você deseja editar, clique em **[!UICONTROL Edit in advanced mode]** ou **[!UICONTROL Edit in visual mode]**.
 
-1. No campo de [!DNL Name] texto, digite o novo nome da regra de negócios.
+1. No campo de texto [!DNL Name], digite o novo nome da regra de negócios.
 
-   Não clique **[!UICONTROL Save Rule]** ainda. 1. Na [!DNL Business Rule Builder] página, defina os acionadores e as ações que deseja usar.
+   Ainda não clique em **[!UICONTROL Save Rule]**. 1. Na página [!DNL Business Rule Builder], defina os acionadores e as ações que deseja usar.
 
-   Consulte a tabela de opções em [Adicionar uma nova regra](../c-about-rules-menu/c-about-business-rules.md#task_BD3B31ED48BB4B1B8F1DCD3BFA2528E7)comercial.
-1. (Opcional) Em qualquer **[!UICONTROL Business Rule Builder]** painel ( [!DNL Triggers], [!DNL Actions]ou [!DNL Schedule], execute um dos procedimentos a seguir:
+   Consulte a tabela de opções em [Adicionar uma nova regra de negócios](../c-about-rules-menu/c-about-business-rules.md#task_BD3B31ED48BB4B1B8F1DCD3BFA2528E7).
+1. (Opcional) Em qualquer painel **[!UICONTROL Business Rule Builder]** ( [!DNL Triggers], [!DNL Actions] ou [!DNL Schedule], execute um dos procedimentos a seguir:
 
-   * Na área do modelo de apresentação da [!DNL Business Rule Builder] página, clique com o botão direito do mouse em um banner e clique em **[!UICONTROL Select different banner]**. Na página [!DNL Pick Banner page], clique **[!UICONTROL Pick this banner]** abaixo da miniatura do banner para adicioná-la ao modelo de apresentação. Somente os banners que correspondem ao tamanho e à área do banner original no modelo de apresentação estão disponíveis para seleção.
+   * Na área do modelo de apresentação da página [!DNL Business Rule Builder], clique com o botão direito do mouse em um banner e, em seguida, clique em **[!UICONTROL Select different banner]**. Em [!DNL Pick Banner page], clique em **[!UICONTROL Pick this banner]** abaixo da miniatura do banner para adicioná-la ao modelo de apresentação. Somente os banners que correspondem ao tamanho e à área do banner original no modelo de apresentação estão disponíveis para seleção.
 
-      A ação de adicionar banner é adicionada ao [!DNL Actions] painel.
+      A ação de adicionar banner é adicionada ao painel [!DNL Actions].
 
-   * Na área do modelo de apresentação da [!DNL Business Rule Builder] página, clique com o botão direito do mouse em um banner de modelo do Adobe Dynamic Media Classic cujos parâmetros você deseja alterar e clique em **[!UICONTROL Add banner commands]**. Na caixa de [!DNL Change Parameters] diálogo, defina as opções de parâmetro desejadas.
+   * Na área do modelo de apresentação da página [!DNL Business Rule Builder], clique com o botão direito do mouse em um banner de modelo do Adobe Dynamic Media Classic cujos parâmetros você deseja alterar e clique em **[!UICONTROL Add banner commands]**. Na caixa de diálogo [!DNL Change Parameters], defina as opções de parâmetro desejadas.
 
       Consulte a tabela de opções em [Adicionar um banner usando o Adobe Dynamic Media Classic](../c-about-design-menu/c-about-banners.md#task_AD1E0C00A9E04B1FA819EB93288786B3).
 
       Clique em **[!UICONTROL Save]**.
 
-      As alterações de parâmetro são adicionadas ao [!DNL Actions] painel.
+      As alterações de parâmetro são adicionadas ao painel [!DNL Actions].
 
       Consulte também [Editar um banner usando o Adobe Dynamic Media Classic](../c-about-design-menu/c-about-banners.md#task_C3E782477FBF428ABEA220751781ACA9).
 
-   * Na área do modelo de apresentação da [!DNL Business Rule Builder] página, clique com o botão direito do mouse em um banner que você deseja excluir da página e clique em **[!UICONTROL Remove banner]**. A ação de remoção do banner é adicionada ao [!DNL Actions] painel.
+   * Na área do modelo de apresentação da página [!DNL Business Rule Builder], clique com o botão direito do mouse em um banner que você deseja excluir da página e clique em **[!UICONTROL Remove banner]**. A ação de remoção do banner é adicionada ao painel [!DNL Actions].
 
-1. (Opcional) No [!DNL Schedule] painel, execute um dos procedimentos a seguir:
+1. (Opcional) No painel [!DNL Schedule], execute um dos procedimentos a seguir:
 
    * Clique em **[!UICONTROL Run Indefinitely]** para que a regra seja executada sempre que seus acionadores associados forem atendidos. Essa opção é o padrão.
-   * Clique em **[!UICONTROL Fixed Schedule]** e especifique a data e a hora do start, a data e a hora de término para a regra ser executada sempre que seu acionador associado for atendido.
+   * Clique em **[!UICONTROL Fixed Schedule]** e especifique a data e a hora do start, a data e a hora de término da regra a ser executada sempre que seu acionador associado for atendido.
 
 1. Clique em **[!UICONTROL Save Rule]**.
 
-   A [!DNL Business Rule Builder] página é fechada e você é redirecionado para a **[!UICONTROL Business Rule]** página. Suas regras aparecem na tabela. Clique no cabeçalho da **[!UICONTROL Modified]** coluna para classificar as regras por data de edição. 1. (Opcional) Execute um dos procedimentos a seguir:
+   A página [!DNL Business Rule Builder] é fechada e você retorna à página **[!UICONTROL Business Rule]**. Suas regras aparecem na tabela. Clique no cabeçalho da coluna **[!UICONTROL Modified]** para classificar as regras por data de edição. 1. (Opcional) Execute um dos procedimentos a seguir:
 
-   * Clique **[!UICONTROL History]** para reverter quaisquer alterações feitas.
+   * Clique em **[!UICONTROL History]** para reverter quaisquer alterações feitas.
 
-      Consulte [Uso da opção](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Histórico.
+      Consulte [Usando a opção Histórico](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clique em **[!UICONTROL Live]**.
 
-      Consulte [Visualizar configurações](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)ativas.
+      Consulte [Ver definições ativas](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clique em **[!UICONTROL Push Live]**.
 
-      Consulte [Colocar configurações de estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
+      Consulte [Envio de configurações de estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
 ## Copiando uma regra de negócios {#task_89F1879C71A54EE9B7454439302C03EC}
 
@@ -338,10 +341,10 @@ Você pode copiar uma regra de negócios existente para usar como base para uma 
 **Para copiar uma regra de negócios**
 
 1. No menu do produto, clique em **[!UICONTROL Rules]** > **[!UICONTROL Business Rules]**.
-1. Na **[!UICONTROL Business Rules]** página, na lista suspensa ao lado do nome de uma regra de negócios que você deseja copiar, clique em **[!UICONTROL Copy rule]**.
+1. Na página **[!UICONTROL Business Rules]**, na lista suspensa ao lado do nome de uma regra de negócios que você deseja copiar, clique em **[!UICONTROL Copy rule]**.
 1. Edite a regra de negócios copiada como de costume.
 
-   See [Editing a business rule](../c-about-rules-menu/c-about-business-rules.md#task_375CFA75D1D94D9E92A35DE1228E5087).
+   Consulte [Editar uma regra de negócios](../c-about-rules-menu/c-about-business-rules.md#task_375CFA75D1D94D9E92A35DE1228E5087).
 
 ## Aprovação de regras de negócios {#task_BD569D18BF664272B8692294C162E2C1}
 
@@ -350,23 +353,23 @@ Você pode ativar regras de negócios que tenham status WIP (Trabalho em andamen
 **Para aprovar regras de negócios**
 
 1. No menu do produto, clique em **[!UICONTROL Rule]** > **[!UICONTROL Business Rules]**.
-1. Na [!DNL Business Rules] página, usando o cabeçalho da coluna de status na [!DNL Status] coluna da tabela de regras de negócios, classifique as regras que têm um status de **[!UICONTROL WIP]** ou **[!UICONTROL suspended]**.
+1. Na página [!DNL Business Rules], usando o cabeçalho da coluna de status na coluna [!DNL Status] da tabela de regras de negócios, classifique as regras que têm um status de **[!UICONTROL WIP]** ou **[!UICONTROL suspended]**.
 
-   Use o cabeçalho da coluna da caixa de seleção no lado esquerdo da tabela para verificar todas as regras que estão sendo exibidas na página ou apenas aquelas que têm um status igual **[!UICONTROL WIP]** ou **[!UICONTROL suspended]**. 1. Na barra de menus próxima à parte superior da página, clique em **[!UICONTROL Approve]**.
-1. Na caixa de **[!UICONTROL Confirm Action]** diálogo, clique em **[!UICONTROL OK]**.
+   Use o cabeçalho da coluna da caixa de seleção no lado esquerdo da tabela para verificar todas as regras que estão sendo exibidas na página ou apenas aquelas que têm um status de **[!UICONTROL WIP]** ou **[!UICONTROL suspended]**. 1. Na barra de menus próxima à parte superior da página, clique em **[!UICONTROL Approve]**.
+1. Na caixa de diálogo **[!UICONTROL Confirm Action]**, clique em **[!UICONTROL OK]**.
 1. (Opcional) Execute um dos procedimentos a seguir:
 
-   * Clique **[!UICONTROL History]** para reverter quaisquer alterações feitas.
+   * Clique em **[!UICONTROL History]** para reverter quaisquer alterações feitas.
 
-      Consulte [Uso da opção](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Histórico.
+      Consulte [Usando a opção Histórico](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clique em **[!UICONTROL Live]**.
 
-      Consulte [Visualizar configurações](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)ativas.
+      Consulte [Ver definições ativas](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clique em **[!UICONTROL Push Live]**.
 
-      Consulte [Colocar configurações de estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
+      Consulte [Envio de configurações de estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
 ## Suspender regras de negócios {#task_364E1FFB905141C08E306C8F1794A20E}
 
@@ -377,60 +380,60 @@ Ao suspender uma regra, você indica na interface do usuário que a tornou tempo
 **Para suspender as regras de negócios**
 
 1. No menu do produto, clique em **[!UICONTROL Rule]** > **[!UICONTROL Business Rules]**.
-1. Na [!DNL Business Rules] página, usando o status na coluna Status da tabela de regras de negócios, na coluna à esquerda da tabela, verifique as regras que têm o status **[!UICONTROL WIP]** ou **[!UICONTROL approved]**.
+1. Na página [!DNL Business Rules], usando o status na coluna Status da tabela de regras de negócios, na coluna à esquerda da tabela, verifique as regras que têm o status **[!UICONTROL WIP]** ou **[!UICONTROL approved]**.
 1. Na barra de menus próxima à parte superior da página, clique em **[!UICONTROL Suspend]**.
-1. Na caixa de **[!UICONTROL Confirm Action]** diálogo, clique em **[!UICONTROL OK]**.
+1. Na caixa de diálogo **[!UICONTROL Confirm Action]**, clique em **[!UICONTROL OK]**.
 1. (Opcional) Execute um dos procedimentos a seguir:
 
-   * Clique **[!UICONTROL History]** para reverter quaisquer alterações feitas.
+   * Clique em **[!UICONTROL History]** para reverter quaisquer alterações feitas.
 
-      Consulte [Uso da opção](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Histórico.
+      Consulte [Usando a opção Histórico](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clique em **[!UICONTROL Live]**.
 
-      Consulte [Visualizar configurações](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)ativas.
+      Consulte [Ver definições ativas](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clique em **[!UICONTROL Push Live]**.
 
-      Consulte [Colocar configurações de estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
+      Consulte [Envio de configurações de estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Retomar regras comerciais {#task_E67D678C765B436EA2A3D6ADD7A49ABA}
+## Retomar regras de negócios {#task_E67D678C765B436EA2A3D6ADD7A49ABA}
 
 Você pode retomar as regras de negócios para reativar uma regra suspensa. Após retomar a regra de negócios, seu status é definido como WIP (Trabalho em andamento).
 
 **Para retomar as regras de negócios**
 
 1. No menu do produto, clique em **[!UICONTROL Rule]** > **[!UICONTROL Business Rules]**.
-1. Na [!DNL Business Rules] página, usando o status na coluna Status da tabela de regras de negócios, na coluna à esquerda da tabela, verifique as regras que têm o status de **[!UICONTROL suspended]**.
+1. Na página [!DNL Business Rules], usando o status na coluna Status da tabela de regras de negócios, na coluna à esquerda da tabela, verifique as regras que têm o status **[!UICONTROL suspended]**.
 1. Na barra de menus próxima à parte superior da página, clique em **[!UICONTROL Resume]**.
-1. Na caixa de [!DNL Confirm Action] diálogo, clique em **[!UICONTROL OK]**.
+1. Na caixa de diálogo [!DNL Confirm Action], clique em **[!UICONTROL OK]**.
 1. (Opcional) Execute um dos procedimentos a seguir:
 
-   * Clique **[!UICONTROL History]** para reverter quaisquer alterações feitas.
+   * Clique em **[!UICONTROL History]** para reverter quaisquer alterações feitas.
 
-      Consulte [Uso da opção](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Histórico.
+      Consulte [Usando a opção Histórico](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clique em **[!UICONTROL Live]**.
 
-      Consulte [Visualizar configurações](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)ativas.
+      Consulte [Ver definições ativas](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clique em **[!UICONTROL Push Live]**.
 
-      Consulte [Colocar configurações de estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
+      Consulte [Envio de configurações de estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
 ## Alteração da ordem em que as regras de negócios são executadas {#task_FE3B1C17307F49B49050C2EC5A063991}
 
 É possível reordenar as regras de negócios para alterar a ordem em que são executadas nos modelos de apresentação.
 
-As regras de negócio são aplicadas na ordem em que foram definidas; quanto maior o número do pedido de uma regra, mais tarde ela será executada no processo, superando as regras anteriores. Você reorganiza as regras digitando um novo número na coluna Ordem da tabela na [!DNL Business Rules] página. Também é possível usar as regras de arrastar e soltar para alterar a ordem de execução.
+As regras de negócio são aplicadas na ordem em que foram definidas; quanto maior o número do pedido de uma regra, mais tarde ela será executada no processo, superando as regras anteriores. Você reorganiza as regras digitando um novo número na coluna Ordem da tabela na página [!DNL Business Rules]. Também é possível usar as regras de arrastar e soltar para alterar a ordem de execução.
 
 **Para alterar a ordem em que as regras de negócios são executadas**
 
 1. No menu do produto, clique em **[!UICONTROL Rule]** > **[!UICONTROL Business Rules]**.
-1. Na [!DNL Business Rules] página, na tabela, execute um dos procedimentos a seguir:
+1. Na página [!DNL Business Rules], na tabela, execute um dos procedimentos a seguir:
 
-   * Clique no cabeçalho da **[!UICONTROL Order]** coluna para classificar as regras em ordem crescente ou decrescente.
-   * Na **[!UICONTROL Order]** coluna, no campo de texto à esquerda do nome de uma regra de negócios, digite o número do pedido que você deseja que a regra execute.
+   * Clique no cabeçalho da coluna **[!UICONTROL Order]** para classificar as regras em ordem crescente ou decrescente.
+   * Na coluna **[!UICONTROL Order]**, no campo de texto à esquerda do nome de uma regra de negócios, digite o número do pedido que deseja que a regra execute.
    * Arraste e solte uma linha de tabela na posição em que deseja que a regra seja executada. Todos os números de pedido são atualizados para refletir a nova ordem em que as regras são executadas.
 
 1. Clique em **[!UICONTROL Save Changes]**.
@@ -438,17 +441,17 @@ As regras de negócio são aplicadas na ordem em que foram definidas; quanto mai
    Suas regras de negócios serão executadas na ordem especificada. A exceção ocorre se houver uma regra de negócios de redirecionamento especificada. Se e quando a regra de negócios de redirecionamento for acionada ou atingida, o processamento da regra de negócios será interrompido para permitir o redirecionamento.
 1. (Opcional) Execute um dos procedimentos a seguir:
 
-   * Clique **[!UICONTROL History]** para reverter quaisquer alterações feitas.
+   * Clique em **[!UICONTROL History]** para reverter quaisquer alterações feitas.
 
-      Consulte [Uso da opção](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Histórico.
+      Consulte [Usando a opção Histórico](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clique em **[!UICONTROL Live]**.
 
-      Consulte [Visualizar configurações](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)ativas.
+      Consulte [Ver definições ativas](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clique em **[!UICONTROL Push Live]**.
 
-      Consulte [Colocar configurações de estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
+      Consulte [Envio de configurações de estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
 ## Excluindo regras de negócios {#task_AE37B42412044541BCC6D46CF8793DFF}
 
@@ -457,23 +460,23 @@ Você pode deletar regras comerciais cujo status é WIP, suspenso ou aprovado, u
 **Para excluir regras de negócios**
 
 1. No menu do produto, clique em **[!UICONTROL Rules]** > **[!UICONTROL Business Rules]**.
-1. Na [!DNL Business Rules] página, execute um dos procedimentos a seguir:
+1. Na página [!DNL Business Rules], execute um dos procedimentos a seguir:
 
    * Use o cabeçalho da coluna da caixa de seleção para marcar todas as regras que estão sendo exibidas na página.
    * Verifique somente as regras de negócios que deseja excluir, com base no status na coluna Status da tabela.
 
-1. Na lista [!DNL Bulk Actions] suspensa, clique em **[!UICONTROL Delete]**.
-1. Na caixa de [!DNL Confirm Action] diálogo, clique em **[!UICONTROL OK]**.
+1. Na lista suspensa [!DNL Bulk Actions], clique em **[!UICONTROL Delete]**.
+1. Na caixa de diálogo [!DNL Confirm Action], clique em **[!UICONTROL OK]**.
 1. (Opcional) Execute um dos procedimentos a seguir:
 
-   * Clique **[!UICONTROL History]** para reverter quaisquer alterações feitas.
+   * Clique em **[!UICONTROL History]** para reverter quaisquer alterações feitas.
 
-      Consulte [Uso da opção](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Histórico.
+      Consulte [Usando a opção Histórico](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Clique em **[!UICONTROL Live]**.
 
-      Consulte [Visualizar configurações](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)ativas.
+      Consulte [Ver definições ativas](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F).
 
    * Clique em **[!UICONTROL Push Live]**.
 
-      Consulte [Colocar configurações de estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
+      Consulte [Envio de configurações de estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
