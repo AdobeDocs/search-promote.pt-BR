@@ -1,72 +1,70 @@
 ---
-description: Você pode usar o Índice de nova classificação para atualizar as informações de classificação do site sem precisar pesquisar novamente o site.
-seo-description: Você pode usar o Índice de nova classificação para atualizar as informações de classificação do site sem precisar pesquisar novamente o site.
-seo-title: Sobre Índice de nova classificação
+description: Você pode usar o Índice de nova classificação para atualizar as informações de classificação do site sem precisar rastrear novamente o site.
 solution: Target
 subtopic: Re-Rank Index
-title: Sobre Índice de nova classificação
-topic: Index,Site search and merchandising
+title: Sobre o Índice de Nova Classificação
+topic: Índice,Pesquisa e comercialização do site
 uuid: 5c2a4c12-5e06-4fcc-897c-c12fcc5d7aa8
 translation-type: tm+mt
-source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '348'
 ht-degree: 1%
 
 ---
 
 
-# Sobre o Índice de nova classificação{#about-re-rank-index}
+# Sobre o Índice de Nova Classificação{#about-re-rank-index}
 
-Você pode usar [!DNL Re-Rank Index] para atualizar as informações de classificação do site sem precisar pesquisar novamente o site.
+Você pode usar [!DNL Re-Rank Index] para atualizar as informações de classificação do site sem precisar rastrear novamente o site.
 
-## Usando Índice de nova classificação {#concept_147B0A9FCD51451787DA898E06F7C692}
+## Usando o Índice de Nova Classificação {#concept_147B0A9FCD51451787DA898E06F7C692}
 
-Você pode usar essa opção sempre que fizer alterações em determinadas configurações de Classificação de conta. As informações de opção de conta atualizadas são usadas para gerar novos dados de classificação de site. A nova classificação permite que você faça alterações na classificação do site de forma rápida e eficiente.
+Você pode usar essa opção sempre que fizer alterações em determinadas configurações de Classificação de conta. As informações da opção de conta atualizada são usadas para gerar novos dados de classificação de site. A nova classificação permite que você faça alterações de forma rápida e eficiente na classificação do seu site.
 
-Por padrão, qualquer conteúdo novo ou alterado do site não é incluído no índice. Para incluir tal conteúdo, execute um índice completo ou incremental.
+Por padrão, qualquer conteúdo novo ou alterado do site não é incluído no índice. Para incluir esse conteúdo, execute um índice completo ou incremental.
 
-Consulte [Executando um índice completo de um site ao vivo ou preparado...](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
+Consulte [Executar um índice completo de um site ativo ou temporário...](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
 
-Consulte [Executando um índice incremental de um site ao vivo ou preparado...](../c-about-index-menu/c-about-incremental-index.md#task_9BFB6157F3884B2FAECB7E0E9CA318CB).
+Consulte [Executar um índice incremental de um site ativo ou temporário...](../c-about-index-menu/c-about-incremental-index.md#task_9BFB6157F3884B2FAECB7E0E9CA318CB).
 
-## Classificar novamente o índice de um site ao vivo ou preparado {#task_02E190CF700742FEACAFFD5986B0353A}
+## Re-classificar o índice de um site em tempo real ou temporário {#task_02E190CF700742FEACAFFD5986B0353A}
 
-Você pode usar [!DNL Re-Rank Index] para atualizar as informações de classificação do site sem precisar pesquisar novamente o site.
+Você pode usar [!DNL Re-Rank Index] para atualizar as informações de classificação do site sem precisar rastrear novamente o site.
 
-**Para classificar novamente o índice de um site ao vivo ou preparado**
+**Para classificar novamente o índice de um site ao vivo ou em etapas**
 
-1. No menu do produto, execute um dos procedimentos a seguir:
+1. No menu do produto, siga um destes procedimentos:
 
    * Clique em **[!UICONTROL Index]** > **[!UICONTROL Re-Rank Index]** > **[!UICONTROL Live Re-Rank]**.
 
    * Clique em **[!UICONTROL Index]** > **[!UICONTROL Re-Rank Index]** > **[!UICONTROL Staged Re-Rank]**.
 
 1. Na página [!DNL Re-Rank], clique em **[!UICONTROL Re-Rank Now]**.
-1. (Opcional) Execute um dos procedimentos a seguir:
+1. (Opcional) Siga um destes procedimentos:
 
-   * Se você optou por executar **[!UICONTROL Live Re-Rank]**, clique em **[!UICONTROL View Last Crawl]** para revisar as estatísticas de desempenho da última nova classificação de índice ao vivo que foi realizada.
+   * Se você optou por executar **[!UICONTROL Live Re-Rank]**, clique em **[!UICONTROL View Last Crawl]** para revisar as estatísticas de desempenho da última reclassificação do índice ao vivo que foi executada.
 
-   * Enquanto a nova classificação estiver sendo processada, clique em **[!UICONTROL Stop Re-Rank Now]** para interromper o processo de nova classificação do índice.
-   * Se erros de indexação ocorreram após a nova classificação de um site preparado, clique em **[!UICONTROL View Errors]** para visualização no log associado.
+   * Enquanto a nova classificação está sendo processada, clique em **[!UICONTROL Stop Re-Rank Now]** para interromper o processo de nova classificação do índice.
+   * Se ocorreram erros de indexação após a reclassificação de um site preparado, clique em **[!UICONTROL View Errors]** para exibir o log associado.
 
-## Visualizando o log de índice reclassificado de um site ao vivo ou preparado {#task_3C76107DFAC1495FACD3ABB0A688208D}
+## Visualização do log de índice reclassificado de um site ativo ou preparado {#task_3C76107DFAC1495FACD3ABB0A688208D}
 
-Quando uma nova classificação de índice ao vivo ou um índice preparado for concluído, você poderá visualização seu log associado para solucionar quaisquer erros que ocorreram.
+Quando uma nova classificação de índice ao vivo ou uma nova classificação de índice preparada estiver concluída, você poderá exibir seu log associado para solucionar todos os erros que ocorreram.
 
-Não é possível exportar registros nem salvá-los. No entanto, o log permanece disponível para exibição até que o novo índice ocorra.
+Não é possível exportar logs nem salvá-los. No entanto, o log permanece disponível para exibição até que o novo índice ocorra.
 
-**Para visualização do log de índice de nova classificação de um site ao vivo ou preparado**
+**Para exibir o log de índice de nova classificação de um site ativo ou em preparo**
 
-1. No menu do produto, execute um dos procedimentos a seguir:
+1. No menu do produto, siga um destes procedimentos:
 
    * Clique em **[!UICONTROL Index]** > **[!UICONTROL Re-Rank Index]** > **[!UICONTROL Live Log]**.
 
    * Clique em **[!UICONTROL Index]** > **[!UICONTROL Re-Rank Index]** > **[!UICONTROL Staged Log]**.
 
-1. Na página de log, na parte superior ou inferior, execute um dos procedimentos a seguir:
+1. Na página de log, na parte superior ou inferior, execute um dos seguintes procedimentos:
 
-   * Use as opções de navegação **[!UICONTROL First]**, **[!UICONTROL Prev]**, **[!UICONTROL Next]**, **[!UICONTROL Last]** ou **[!UICONTROL Go to line]** para percorrer o registro.
+   * Use as opções de navegação **[!UICONTROL First]**, **[!UICONTROL Prev]**, **[!UICONTROL Next]**, **[!UICONTROL Last]** ou **[!UICONTROL Go to line]** para percorrer o log.
 
    * Use as opções de exibição **[!UICONTROL Errors only]**, **[!UICONTROL Wrap line]** ou **[!UICONTROL Show]** para refinar o que você vê.
 
