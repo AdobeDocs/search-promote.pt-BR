@@ -3,10 +3,8 @@ title: Anúncio de fim de serviço do Adobe Search & Promote
 description: Saiba mais sobre o anúncio de Fim de serviço do Search & Promote Adobe.
 feature: null
 role: Administrador,Profissional de negócios,Engenheiro de dados,Desenvolvedor
-hide: true
-hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: aa10a950262e5d1828da3d2e417dd5a5b752029b
+source-git-commit: e3a31b27ea130dc25be6691dd06e29686a97c5e4
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%
