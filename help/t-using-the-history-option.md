@@ -1,15 +1,13 @@
 ---
-description: Você pode usar o Histórico para revisar uma lista de todas as revisões feitas em um recurso implementado, como uma faceta, trilha de navegação, banner ou modelo, para nomear alguns.
-seo-description: Você pode usar o Histórico para revisar uma lista de todas as revisões feitas em um recurso implementado, como uma faceta, trilha de navegação, banner ou modelo, para nomear alguns.
-seo-title: Uso da opção Histórico
+description: Você pode usar o Histórico para revisar uma lista de todas as revisões feitas em um recurso implementado, como uma faceta, navegação estrutural, banner ou template, para nomear algumas.
 solution: Target
 title: Uso da opção Histórico
-topic: Using History,Site search and merchandising
+topic: Utilização do Histórico, Pesquisa e comercialização do site
 uuid: 48b9ee9d-cd61-41e7-b8c3-5f1665b9a9cb
 translation-type: tm+mt
-source-git-commit: 52c8d7985e7cb0aa35be1deabeb7cb92a55f07c2
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '234'
 ht-degree: 0%
 
 ---
@@ -17,7 +15,7 @@ ht-degree: 0%
 
 # Uso da opção Histórico{#using-the-history-option}
 
-Você pode usar o Histórico para revisar uma lista de todas as revisões feitas em um recurso implementado, como uma faceta, trilha de navegação, banner ou modelo, para nomear alguns.
+Você pode usar o Histórico para revisar uma lista de todas as revisões feitas em um recurso implementado, como uma faceta, navegação estrutural, banner ou template, para nomear algumas.
 
 O histórico mostra o seguinte para um determinado recurso:
 
@@ -26,7 +24,7 @@ O histórico mostra o seguinte para um determinado recurso:
 * Data em que a alteração foi efetuada.
 * Tipo de salvamento que foi feito.
 
-Você também pode usar [!DNL History] para reverter para uma alteração aplicada anteriormente que foi feita ao recurso. A entrada com um valor de versão **bold** representa a versão atual e está sempre na parte superior da lista.
+Você também pode usar [!DNL History] para reverter para uma alteração aplicada anteriormente que foi feita no recurso. A entrada com um valor de versão **bold** representa a versão atual e está sempre no topo da lista.
 
 >[!NOTE]
 >
@@ -35,9 +33,9 @@ Você também pode usar [!DNL History] para reverter para uma alteração aplica
 **Para usar a opção Histórico**
 
 1. Dependendo do recurso que você está usando no momento, clique em **[!UICONTROL History]** no canto superior direito da página ou janela que está aberta no momento.
-1. (Opcional) Na janela Histórico, execute um dos procedimentos a seguir:
+1. (Opcional) Na janela Histórico, execute um dos seguintes procedimentos:
 
-   * Defina o número de revisões que você deseja mostrar por página na lista suspensa Mostrar.
-   * Clique em um número de versão hipervinculado para reverter as configurações no recurso para uma data específica.
+   * Defina o número de revisões que deseja exibir por página na lista suspensa Mostrar .
+   * Clique em um número de versão com hiperlink para reverter as configurações no recurso para uma data específica.
 
 1. Clique em **[!UICONTROL Close]**.
