@@ -1,16 +1,14 @@
 ---
-description: 'null'
-seo-description: nulo
-seo-title: Search&amp;Notas de versão do Promote 8.8 (26/04/2012)
+description: Search& amp; Notas de versão do Promote 8.8.
 solution: Target
-title: Search&amp;Notas de versão do Promote 8.8 (26/04/2012)
-topic: Release Notes,Site search and merchandising
+title: Search& amp; Notas de versão do Promote 8.8 (26/04/2012)
+topic: Notas de versão, Pesquisa e comercialização do site
 uuid: ddb9f1af-92a4-4f85-be8f-a36f34d31add
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '324'
-ht-degree: 70%
+source-wordcount: '328'
+ht-degree: 68%
 
 ---
 
@@ -22,12 +20,12 @@ ht-degree: 70%
 * Lapidamento dinâmico
 
    A habilidade de lapidar dinamicamente contra um conjunto de atributos de forma livre associados a cada página do conteúdo do site, que mudam potencialmente (novos atributos são adicionados, os antigos são removidos ou renomeados) de índice a índice. O lapidamento dinâmico mapeia automaticamente as facetas de slot com as facetas reais. A camada Pesquisa guiada ajuda a facilitar este recurso com regras de negócios.
-* interface do usuário do Adobe Search &amp; Promote
+* Interface do usuário do Adobe Search &amp; Promote
 
-   Implementada a interface do usuário do Adobe em todas as páginas da Web do Search &amp; Promote.
-* Integração mais estreita com o portal de logon do Adobe
+   Implementação da interface do usuário do Adobe em todas as páginas da Web do Adobe Search &amp; Promote.
+* Integração mais estreita com o portal de login do Adobe
 
-   Os clientes do Search &amp; Promote Adobe podem usar exclusivamente o portal de login do Adobe. Os clientes atuais [!DNL Adobe Publish], Adobe SiteSearch e Atomz continuarão a usar o logon antigo.
+   Os clientes do Adobe Search &amp; Promote podem usar o portal de login do Adobe exclusivamente. Os clientes atuais [!DNL Adobe Publish], Adobe SiteSearch e Atomz continuarão a usar o logon antigo.
 * Novo analisador morfológico para suporte de chinês e japonês
 
    O analisador morfológico é aplicado no índice e no tempo de pesquisa para oferecer suporte a chinês e japonês.
@@ -40,9 +38,9 @@ ht-degree: 70%
 
 **Correções e aprimoramentos**
 
-* Correção de um problema ao colocar um banner ao vivo usando o Stage Manager que resultava em funcionalidade relacionada ao Dynamic Media Classic quebrada ao vivo.
+* Corrigido o forçar um banner ativo usando o Stage Manager que resultava em funcionalidade relacionada ao Dynamic Media Classic quebrada no ativo.
 * Corrigimos um problema em que editar uma regra com o acionador &quot;Parâmetro de consulta não existe&quot; era traduzido incorretamente para &quot;Palavra-chave contém&quot;.
-* Correção de um problema em que não era possível Editar parâmetro pela segunda vez.
+* Correção de um problema em que não era possível editar o parâmetro pela segunda vez.
 * Corrigimos um problema com o Index Connector em que duas ou mais definições de mapas não apontavam para os mesmos metadados/valor de campo.
 * Corrigimos problemas com a lentidão de alguns documentos em PDF. A atualização para o 3.03 resolve as falhas recentes.
 * Adicionamos a possibilidade de descrições de regras mais curtas (por exemplo, não mostrar field_table no gerenciador).
