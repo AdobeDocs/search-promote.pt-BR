@@ -1,23 +1,21 @@
 ---
-description: Use o menu Design para criar a apresentação para a sua página de resultados de Pesquisa.
-seo-description: Use o menu Design para criar a apresentação para a sua página de resultados de Pesquisa.
-seo-title: Criar sua página de resultados da pesquisa
+description: Use o menu Design para criar a apresentação para sua página de resultados da Pesquisa.
 solution: Target
-title: Criar sua página de resultados da pesquisa
-topic: Design,Site search and merchandising
+title: Criação da página de resultados da pesquisa
+topic: Design,Pesquisa e comercialização do site
 uuid: 61cb3ead-705e-45b7-a365-2c694d160d0a
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '69'
-ht-degree: 4%
+source-wordcount: '56'
+ht-degree: 5%
 
 ---
 
 
-# Criar sua página de resultados de pesquisa{#designing-your-search-results-page}
+# Criação da página de resultados da pesquisa{#designing-your-search-results-page}
 
-Use o menu Design para criar a apresentação para a sua página de resultados de Pesquisa.
+Use o menu Design para criar a apresentação para sua página de resultados da Pesquisa.
 
 + [Aspectos](c-about-facets.md)
 + [Sobre o Facet Rail](c-about-facet-rails.md)
