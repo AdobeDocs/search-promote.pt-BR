@@ -1,16 +1,14 @@
 ---
-description: 'null'
-seo-description: nulo
-seo-title: Search&amp;Notas de versão do Promote 8.9.3 (01/11/2012)
+description: Search& amp; Notas de versão do Promote 8.9.3.
 solution: Target
-title: Search&amp;Notas de versão do Promote 8.9.3 (01/11/2012)
-topic: Release Notes,Site search and merchandising
+title: Search& amp; Notas de versão do Promote 8.9.3 (01/11/2012)
+topic: Notas de versão, Pesquisa e comercialização do site
 uuid: 7bc7bcb6-f47f-4e05-94e5-a22a13a187b7
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '285'
-ht-degree: 84%
+source-wordcount: '289'
+ht-degree: 82%
 
 ---
 
@@ -37,7 +35,7 @@ ht-degree: 84%
    <td colname="col2"> <p> Adicionado suporte para alternar a classificação de tipos de colunas aninhadas. </p> <p>Consulte <a href="../c-about-design-menu/c-about-facet-rails.md#concept_1FDC8BCDFFC84A0889DA670F63D5F6DB" format="dita" scope="local">Sobre o Facet Rail</a>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Campo de notas nas regras de classificação </p> </td> 
+   <td colname="col1"> <p>Campo Notas nas regras de classificação </p> </td> 
    <td colname="col2"> <p> 
      <!--3063772--> Adicionado um campo de <span class="wintitle">Notas</span> de várias linhas para a caixa de diálogo <span class="wintitle">Adicionar métrica de classificação</span> e na caixa de diálogo <span class="wintitle">Editar métrica de classificação</span> para classificar regras e definições de regras de grupo. </p> <p>Notas de regra de classificação são exibidas na página <span class="wintitle">Definir Regras de classificação</span>. Notas de regras de grupo aparecem ao editar a definição. </p> <p>Consulte <a href="../c-about-rules-menu/c-about-ranking-rules.md#concept_F555C076759B4E81B925441CFE707397" format="dita" scope="local">Sobre regras de classificação</a>. </p> </td> 
   </tr> 
@@ -68,7 +66,7 @@ ht-degree: 84%
 
    Consulte [Sobre banners](../c-about-design-menu/c-about-banners.md#concept_5BBE01FEC6134393B43CC917C8CC64DA).
 
-* **[!UICONTROL Did You Mean]** o cache de query de pesquisa agora está desativado.
+* **[!UICONTROL Did You Mean]** o armazenamento em cache da consulta de pesquisa agora está desativado.
 
    Consulte [Sobre você quis dizer](../c-about-linguistics-menu/c-about-did-you-mean.md#concept_7D4F3C29EF184B538B8AE2ECAE0CDC5E).
 
