@@ -1,16 +1,14 @@
 ---
-description: 'null'
-seo-description: nulo
-seo-title: Search&amp;Notas de versão do Promote 8.15.0 (19/6/2014)
+description: Search& amp; Notas de versão do Promote 8.15.0.
 solution: Target
-title: Search&amp;Notas de versão do Promote 8.15.0 (19/6/2014)
-topic: Release Notes,Site search and merchandising
+title: Search& amp; Notas de versão do Promote 8.15.0 (19/6/2014)
+topic: Notas de versão, Pesquisa e comercialização do site
 uuid: bb250450-48b4-4563-84b9-66f2c3dc063a
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '108'
-ht-degree: 58%
+source-wordcount: '112'
+ht-degree: 54%
 
 ---
 
@@ -19,7 +17,7 @@ ht-degree: 58%
 
 **Novos recursos**
 
-* Derivação de frases - Agora há suporte para a definição de sinônimos em uma frase.  Para habilitar e usar este recurso no [!DNL Adobe Search&Promote], entre em contato com seu Gerente técnico de contas da Adobe.
+* Derivação de frases - Agora a derivação de sinônimos dentro de uma frase é suportada.  Para habilitar e usar este recurso no [!DNL Adobe Search&Promote], entre em contato com seu Gerente técnico de contas da Adobe.
 
    Consulte também **[!UICONTROL Alternate Word Forms]** na tabela de opções em [Configuração da correspondência dos termos de pesquisa com o conteúdo da Web...](../c-about-linguistics-menu/c-about-words-and-language.md#task_351A9144A51F4B41923BDBACDEF3B616).
 
