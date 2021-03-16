@@ -1,16 +1,14 @@
 ---
-description: 'null'
-seo-description: nulo
-seo-title: Search&amp;Notas de versão do Promote 8.13.0 (16/04/2014)
+description: Search& amp; Notas de versão do Promote 8.13.0.
 solution: Target
-title: Search&amp;Notas de versão do Promote 8.13.0 (16/04/2014)
-topic: Release Notes,Site search and merchandising
+title: Search& amp; Notas de versão do Promote 8.13.0 (16/04/2014)
+topic: Notas de versão, Pesquisa e comercialização do site
 uuid: b3524992-ff00-4a7c-a404-078242456734
 translation-type: tm+mt
-source-git-commit: 9d5ac055d665b39d09b28063179d74a389d7f830
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 57%
+source-wordcount: '330'
+ht-degree: 56%
 
 ---
 
@@ -23,31 +21,31 @@ ht-degree: 57%
 
 **Correções**
 
-* Alteração do campo de descrição da visualização de dados para usar a tag `<search-display-field>` em vez de `<search-description>`.
+* Alteração do campo de descrição da exibição de dados para usar a tag `<search-display-field>` em vez de `<search-description>`.
 * Adição de um recurso dentro do Conector de índice para tornar a Chave primeira o encadeamento de dois ou mais campos.
 * Alteração do script AttributeLoader-Regen-Enabled `attributeloader-regen.pl`. Não possui mais valores codificados em HTML.
 * Tempo de índice e tempo de busca de caractere invisível agora são correspondentes para consultas de pesquisa de variedades.
 * A adição de uma regra empresarial poderia resultar em um erro quando os Aspectos dinâmicos estavam habilitados.
 
-   Consulte [Sobre Regras de Negócios](../c-about-rules-menu/c-about-business-rules.md#concept_2A93D76216754D3D8412CDEA00BD26BD).
+   Consulte [Sobre as Regras de Negócios](../c-about-rules-menu/c-about-business-rules.md#concept_2A93D76216754D3D8412CDEA00BD26BD).
 
 * Um erro de Javascript impedia adicionar ou editar uma definição em **Settings** > **SPIN** > **IndexConnector**.
 * Depois que uma Regra de negócios era salva, parecia que, quando a hora era selecionada durante a criação da Regra de negócios, ela usava o fuso horário GMT como padrão. Após a regra ser salva, o fuso horário da conta aparecia corretamente.
 
-   Consulte [Sobre Regras de Negócios](../c-about-rules-menu/c-about-business-rules.md#concept_2A93D76216754D3D8412CDEA00BD26BD).
+   Consulte [Sobre as Regras de Negócios](../c-about-rules-menu/c-about-business-rules.md#concept_2A93D76216754D3D8412CDEA00BD26BD).
 
 * A classificação das regras empresariais não estava funcionando corretamente.
 
-   Consulte [Sobre Regras de Negócios](../c-about-rules-menu/c-about-business-rules.md#concept_2A93D76216754D3D8412CDEA00BD26BD).
+   Consulte [Sobre as Regras de Negócios](../c-about-rules-menu/c-about-business-rules.md#concept_2A93D76216754D3D8412CDEA00BD26BD).
 
 * O relatório de desempenho de pesquisa for aprimorado e agora é possível agendar relatórios para entregas de emails.
 * A programação fixa de regras empresariais estava mudando automaticamente para o horário de verão.
 
-   Consulte [Sobre Regras de Negócios](../c-about-rules-menu/c-about-business-rules.md#concept_2A93D76216754D3D8412CDEA00BD26BD).
+   Consulte [Sobre as Regras de Negócios](../c-about-rules-menu/c-about-business-rules.md#concept_2A93D76216754D3D8412CDEA00BD26BD).
 
-* Se um grande número de campos de facetas dinâmicos foi definido, os usuários experimentaram tempos de resposta de pesquisa principais lentos.
+* Se um grande número de campos de faceta dinâmicos foi definido, os usuários experimentaram tempos de resposta de pesquisa de núcleo lento.
 * Falsos erros de índice de intervalo estavam ocorrendo.
-* O acesso ao Dynamic Media Classic em datacenters que não são norte-americanos foi interrompido.
+* O acesso ao Dynamic Media Classic em data centers não norte-americanos estava interrompido.
 * A função de validação SPIN XPath exibia um erro falso-positivo.
 
 * O usuário era redirecionado para a página de logon de membros após habilitar/desabilitar o SPIN.
