@@ -1,16 +1,14 @@
 ---
-description: 'null'
-seo-description: nulo
-seo-title: Search&amp;Notas de versão do Promote 8.12.0 (16/01/2014)
+description: Search& amp; Notas de versão do Promote 8.12.0.
 solution: Target
-title: Search&amp;Notas de versão do Promote 8.12.0 (16/01/2014)
-topic: Release Notes,Site search and merchandising
+title: Search& amp; Notas de versão do Promote 8.12.0 (16/01/2014)
+topic: Notas de versão, Pesquisa e comercialização do site
 uuid: 4db10eb4-11bf-4483-a7f2-87981d9c7a50
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 74%
+source-wordcount: '257'
+ht-degree: 72%
 
 ---
 
@@ -32,10 +30,10 @@ ht-degree: 74%
   <tr> 
    <td colname="col1"> <p>Exportar relatórios </p> </td> 
    <td colname="col2"> <p> 
-     <!--3683368-->Agora você pode exportar dados para CSV a partir dos seguintes relatórios: 
+     <!--3683368-->Agora é possível exportar dados para CSV a partir dos seguintes relatórios: 
      <ul id="ul_93B619DBB3444F64BD6D7F9E969AB1E1"> 
       <li id="li_96DDE1A196834845A0FA319903C5934B"> <p>Relatório de termos </p> </li> 
-      <li id="li_4F1A19DE98C84F8CAD963EEA2B38ED7A"> <p>Relatório de termos de pesquisa nulo </p> </li> 
+      <li id="li_4F1A19DE98C84F8CAD963EEA2B38ED7A"> <p>Relatório de termos de pesquisa nula </p> </li> 
       <li id="li_A7716C62C4D44CD69D411C3FEE246D96"> <p>Relatório de solicitação de pesquisa </p> </li> 
      </ul> </p> <p>Consulte <a href="../c-about-reports-menu/c-about-reports-menu.md#concept_5F901459C7AB461BAB30B305957EB00C" format="dita" scope="local"> Sobre o menu Relatórios</a>. </p> </td> 
   </tr> 
@@ -52,20 +50,20 @@ ht-degree: 74%
 * Não foi possível salvar as regras com base em resultados em uma conta com pesquisa somente por HTTPS.
 * A configuração de uma regra de negócios para &quot;não é celular&quot; não funcionou.
 
-   Consulte [Sobre Regras de Negócios](../c-about-rules-menu/c-about-business-rules.md#concept_2A93D76216754D3D8412CDEA00BD26BD).
+   Consulte [Sobre as Regras de Negócios](../c-about-rules-menu/c-about-business-rules.md#concept_2A93D76216754D3D8412CDEA00BD26BD).
 
 * A realização de uma pesquisa de filtro de inventário não gerou resultados.
 * O pedido de lapidamento do tamanho não era atualizado.
 * Adição da opção para uma definição de regra &quot;personalizada&quot; para a página Limpeza de consulta.
 
-   Consulte [Sobre as regras de limpeza de Query](../c-about-rules-menu/c-about-query-cleaning-rules.md#concept_17F3CDDC3C8A4128AF092A82B777B86C).
+   Consulte [Sobre as Regras de Limpeza de Consulta](../c-about-rules-menu/c-about-query-cleaning-rules.md#concept_17F3CDDC3C8A4128AF092A82B777B86C).
 
 * O relatório Termos estava repetindo entradas se não houvesse dados suficientes.
 
-   Consulte [Visualizando o Relatório de termos ou o Relatório de termos de pesquisa nulos...](../c-about-reports-menu/c-about-reports-menu.md#task_53B7ED1582DD4B0E8376546A7AFC789A).
+   Consulte [Exibindo o Relatório de termos ou o Relatório de termos de pesquisa nulo..](../c-about-reports-menu/c-about-reports-menu.md#task_53B7ED1582DD4B0E8376546A7AFC789A).
 
 * Mover uma única regra de negócios em tempo real funcionava no modo Estágios, mas falhava no modo Em tempo real.
 * As edições com preenchimento automático para Incluir ou Excluir listas não eram salvas no Histórico e, por isso, não podiam ser desfeitas.
 
-   Consulte [Sobre a Completar automaticamente](../c-about-auto-complete.md#concept_093A9CD754864BA79B456FE4BEB64578).
+   Consulte [Sobre a Conclusão Automática](../c-about-auto-complete.md#concept_093A9CD754864BA79B456FE4BEB64578).
 
