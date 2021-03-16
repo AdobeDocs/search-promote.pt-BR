@@ -1,42 +1,45 @@
 ---
-title: 'Lorem Ipsum '
-description: Lorem ipsum dolor sit amet, consagrtetur adipiscing elit. Etiam vulputate nulla libero sagittis sollicitudin.
-solution: Target
+title: Anúncio de fim de serviço do Adobe Search & Promote
+description: Saiba mais sobre o anúncio de Fim de serviço do Search & Promote Adobe.
+feature: null
+role: Administrador,Profissional de negócios,Engenheiro de dados,Desenvolvedor
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: ce3b55f0265c52670a81a17b9eff79309ff32bc0
+source-git-commit: aa10a950262e5d1828da3d2e417dd5a5b752029b
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '330'
 ht-degree: 0%
 
 ---
 
 
-# Lorem Ipsum
+# Anúncio de fim de serviço do Adobe Search &amp; Promote
 
-## Lorem ipsum dolor sit amet
+## Perguntas frequentes sobre o fim do serviço no Search &amp; Promote
 
-Consectur adipiscing elit. Etiam vulputate nulla libero sagittis sollicitudin. Quisque pellentesque enim sit amet maximus comet. Suspendizavae risus volutpat, vehicula orci a, placerat nulla. Curabitur ullamcorper quis dolor ac lacinia. Fusce aliquet egestas mi/n.c. facilisis.
+### **_Em que data cessará o Search &amp; Promote de funcionar?_**
 
-Donec neque odio, celerisque sed odio a, consagrtetur eficiitur ex. Nunc sodales vitae turpis non-rutrum. Mauris imperetary sollicitudin leo vel efficiency. Mattis nulla eget nulla ornare, ac tempor lorem maximus. No nisl nisl elit, et vulputate nunc maximum quus.
+O fim do serviço do Search &amp; Promote está agendado para 1º de agosto de 2022. Nessa data, a interface de usuário administrativa do Search &amp; Promote não estará mais acessível e as solicitações para APIs do Search &amp; Promote não fornecerão mais resultados. Antes dessa data, o serviço estará totalmente disponível e funcional.
 
-### **_Lorem ipsum dolor sit amet, consagrtetur adipiscing elit?_**
+### **_O que acontecerá se uma pesquisa ou outra solicitação de API for feita para o Search &amp; Promote?_**
 
-No metus do espectro em sodales de metus volutpat. Donec imperfood augue ipsum vestibulum, em elementum ante egestas. Duis sodales ligula maximus ex leiltor, em leiloeiro tortor malesuada.
+Pesquisar e outras solicitações de API feitas no Search &amp; Promote não retornarão resultados. As solicitações podem resultar em um erro &quot;Host não encontrado&quot;, um redirecionamento HTTP 3xx ou um erro HTTP, como 404, 408 ou outro código de erro HTTP.
 
-### **_Pellentesque fringilla purus convallis, sollicitudin leo sit amet, condimentum ex?_**
+### **_O Adobe tem opções alternativas para pesquisa de site e pesquisa comercial?_**
 
-Quisque uma máxima mágica, molestie mauris em iaculis leo. Pellentesque vel erat ac tellus vehicula ultricies. Morbi condicional ligula ut condimentum consequat.
+Sim. Para pesquisa de produto e comércio, [Live Search from Magento Commerce](https://blog.adobe.com/en/publish/2020/11/23/new-ai-capabilities-for-magento-commerce-improve-retail.html) é o aplicativo de pesquisa do Adobe a partir de agora. A Live Search do Magento Commerce está programada para ser lançada no primeiro semestre de 2021.
 
-### **_Curabitur id nunc no mestre fringilla Condimentum?_**
+### **_O Adobe pode recomendar qualquer estrutura ou plataforma que ofereça recursos semelhantes ao Search &amp; Promote?_**
 
-Morbi eu nisl n.e. urna aliquet laoreet. Suspenso luctus nisl em scelerismo do bibendo. Pellentesque sit amet lacus vel convallis ornare. Quisque gravida eros eu dapibus tempor.
+Sim. Se o recurso Search &amp; Promote for essencial para sua estratégia de marketing, considere as muitas estruturas de código aberto que existem para a pesquisa de energia, incluindo [Apache Solr](https://solr.apache.org/) e [Elastic Free e Open](https://www.elastic.co/about/free-and-open).
 
-### **_Massa fringilla Condimentum?_**
+Além disso, ambos [AWS](https://aws.amazon.com/cloudsearch/) e [Microsoft® Azure](https://azure.microsoft.com/en-us/services/search/) fornecem recursos de pesquisa nativos em nuvem em suas respectivas plataformas de nuvem. É possível integrar ambas as opções no Adobe Experience Manager Sites para potencializar a pesquisa no site e muito mais.
 
-Morbi eu nisl n.e. urna aliquet laoreet. Suspenso luctus nisl em scelerismo do bibendo. Pellentesque sit amet lacus vel convallis ornare. Quisque gravida eros eu dapibus tempor.
+### **_Quem posso entrar em contato para saber mais?_**
 
-### **_Nam et sem ac quam sollicitudin egestas et sit amet ligula?_**
+Entre em contato com o Gerente de sucesso do cliente (CSM) caso tenha dúvidas ou entre em contato com a equipe do Adobe em [searchquestions@adobe.com](mailto:searchquestions@adobe.com).
 
-Ut id libero, da portadora de velit lacinia sagittis sit amet metus. Nulla vehicula odio mollis dolor facilisis tempor. Morbi senta amet felis senta amet dolor varius vehicula. Nulla vel leo sed purus varius rhoncus.
+### **_Ainda posso renovar minha licença do Search &amp; Promote aplicável antes do fim do serviço?_**
+
+Sim. Entre em contato com seu representante de Adobe para renovar sua licença com uma data de término do contrato até 1º de agosto de 2022.
