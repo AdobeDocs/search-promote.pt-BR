@@ -1,15 +1,18 @@
 ---
-cloud: experience-cloud
+cloud: Experience Cloud
 solution-title: Aprendizagem e suporte
 solution-hub-url: https://helpx.adobe.com/br/support/target.html
 solution-image: https://www.adobe.com
 getting-started-title: Introdução
 getting-started-url: https://helpx.adobe.com/br/target/get-started.html
 tutorials-url: https://helpx.adobe.com/br/target/kt/index/target-videos.html
-git-repo: https://github.com/AdobeDocs/search-promote.en
+git-repo: https://git.corp.adobe.com/AdobeDocs/search-promote.pt-BR
 index: y
 translation-type: tm+mt
-source-git-commit: 87f8584440256c90546e3fb997b387fc87b590f9
+source-git-commit: 5ecb1d79057b166887c37c1c54905a93e2a87835
+workflow-type: tm+mt
+source-wordcount: '131'
+ht-degree: 93%
 
 ---
 
