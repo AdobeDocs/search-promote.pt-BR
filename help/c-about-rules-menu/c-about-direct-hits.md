@@ -2,7 +2,7 @@
 description: As ocorrências diretas permitem redirecionar um cliente para um URL especificado quando o cliente pesquisa por um termo correspondente. Esse tipo de funcionalidade permite melhorar a navegação da pesquisa do site.
 solution: Target
 title: Sobre ocorrências diretas
-topic: Regras, Pesquisa e comercialização do site
+topic: Rules,Site search and merchandising
 uuid: 374d63c8-2b82-4165-b543-05b587757baa
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

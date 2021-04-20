@@ -2,7 +2,7 @@
 description: Você pode usar Palavras excluídas para especificar frases e palavras comuns usadas com frequência, como "a" e "the", que você deseja excluir dos resultados de pesquisa.
 solution: Target
 title: Sobre palavras excluídas
-topic: Linguística, Pesquisa e comercialização do site
+topic: Linguistics,Site search and merchandising
 uuid: 1c879462-1b19-44f6-a3b2-20aa786b3221
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

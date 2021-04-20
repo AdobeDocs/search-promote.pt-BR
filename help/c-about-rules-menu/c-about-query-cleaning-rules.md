@@ -2,7 +2,7 @@
 description: Use Regras de limpeza de consulta para analisar e modificar a consulta recebida.
 solution: Target
 title: Sobre as regras de limpeza de query
-topic: Regras, Pesquisa e comercialização do site
+topic: Rules,Site search and merchandising
 uuid: 683af81f-f7c0-45f8-9212-e5e7cb82ccca
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

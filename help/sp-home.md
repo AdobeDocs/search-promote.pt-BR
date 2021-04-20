@@ -2,7 +2,7 @@
 title: Adobe Search& amp; Promover documentação técnica
 description: Documentação técnica e materiais de autoajuda para o Adobe Search& amp; Promover
 solution: Target
-topic: Comercialização e pesquisa no site
+topic: Site search and merchandising
 uuid: bb1c49be-7cfd-485a-a848-c5dc8733b009
 translation-type: tm+mt
 source-git-commit: 1914d67d2634cb13368ab72d54da7da5988de13f

@@ -3,7 +3,7 @@ description: Com o Índice de script, você pode gravar, atualizar e manter opç
 solution: Target
 subtopic: Scripted Index
 title: Sobre índice de script
-topic: Índice,Pesquisa e comercialização do site
+topic: Index,Site search and merchandising
 uuid: 51e726ad-414b-4cbd-8a68-fefc3cf9b565
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

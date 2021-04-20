@@ -3,7 +3,7 @@ description: Use o menu Metadados para personalizar as Definições de pesquisa 
 solution: Target
 subtopic: Metadata
 title: Sobre o menu Metadados
-topic: Configurações,Pesquisa e comercialização do site
+topic: Settings,Site search and merchandising
 uuid: f12fc863-a140-45e8-b219-3dbfdef099cd
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

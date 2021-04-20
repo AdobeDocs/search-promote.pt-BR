@@ -2,7 +2,7 @@
 description: Você pode usar Palavras e idioma para determinar como os termos de pesquisa são correspondidos ao conteúdo das suas páginas da Web.
 solution: Target
 title: Sobre Palavras e Idioma
-topic: Linguística, Pesquisa e comercialização do site
+topic: Linguistics,Site search and merchandising
 uuid: 793d7a40-4609-44b8-a170-536eb1434537
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

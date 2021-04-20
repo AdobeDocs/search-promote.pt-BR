@@ -2,7 +2,7 @@
 description: Saiba mais sobre como usar tags de apresentação e modelo no Search&amp;Promote.
 solution: Target
 title: Modelos
-topic: Apêndices,Pesquisa e comercialização do site
+topic: Appendices,Site search and merchandising
 uuid: 78299032-dc23-4dfe-b68f-cd57b2b6d7d8
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

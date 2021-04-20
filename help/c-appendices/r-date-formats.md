@@ -2,7 +2,7 @@
 description: É possível definir os formatos de data usados ao analisar e indexar qualquer campo com um tipo de dados de "data".
 solution: Target
 title: Formatos de data
-topic: Apêndices,Pesquisa e comercialização do site
+topic: Appendices,Site search and merchandising
 uuid: 148914b5-33ef-41db-8404-67c03f6f0832
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

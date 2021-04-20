@@ -3,7 +3,7 @@ description: Use o menu Pesquisar para definir palavras, coleções, restriçõe
 solution: Target
 subtopic: Searching
 title: Sobre o menu Pesquisar
-topic: Configurações,Pesquisa e comercialização do site
+topic: Settings,Site search and merchandising
 uuid: 072111fc-a32b-4acb-8337-cb21bcdb5542
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

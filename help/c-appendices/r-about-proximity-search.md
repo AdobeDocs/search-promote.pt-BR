@@ -2,7 +2,7 @@
 description: A Pesquisa de proximidade permite associar um local exclusivo a qualquer página do seu site e, em seguida, pesquisar e classificar os resultados por proximidade (distância) de um determinado local.
 solution: Target
 title: Sobre pesquisa de proximidade
-topic: Apêndices,Pesquisa e comercialização do site
+topic: Appendices,Site search and merchandising
 uuid: 24fc9265-3400-46a7-b6e0-4de5b049a39a
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

@@ -2,7 +2,7 @@
 description: Você pode usar a Página inicial para exibir uma variedade de widgets de relatório que fornecem uma visão geral rápida da sua conta do Search&amp;Promote.
 solution: Target
 title: Sobre a página inicial
-topic: Início,Pesquisa e comercialização do site
+topic: Home,Site search and merchandising
 uuid: 5d4dbf5e-954d-46ae-a822-18a58af60de6
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

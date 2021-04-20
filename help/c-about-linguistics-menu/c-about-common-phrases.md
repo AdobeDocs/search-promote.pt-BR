@@ -2,7 +2,7 @@
 description: Você pode definir Frases comuns usadas em seu site para que, quando um cliente entrar em uma query de pesquisa, não precise inserir aspas em qualquer uma das frases que você definiu.
 solution: Target
 title: Sobre frases comuns
-topic: Linguística, Pesquisa e comercialização do site
+topic: Linguistics,Site search and merchandising
 uuid: 0f980a22-d826-4476-97de-0e9c14549bc8
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

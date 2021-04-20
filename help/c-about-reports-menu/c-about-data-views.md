@@ -2,7 +2,7 @@
 description: Visualizações de dados exibe os resultados da pesquisa com os meta campos. Cada coluna é um campo meta e cada linha é resultado de uma consulta de pesquisa. Personalize visualizações de dados escolhendo e reorganizando colunas. As Exibições de dados também podem ter títulos e descrições personalizados.
 solution: Target
 title: Sobre visualizações de dados
-topic: Relatórios, Pesquisa e comercialização do site
+topic: Reports,Site search and merchandising
 uuid: 18930551-960d-40c2-b5b7-0807a2e11134
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

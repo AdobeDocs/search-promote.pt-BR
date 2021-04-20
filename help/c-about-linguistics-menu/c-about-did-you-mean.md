@@ -2,7 +2,7 @@
 description: Você pode configurar a opção Você quis dizer para que os clientes recebam sugestões para termos de pesquisa válidos quando tentarem pesquisas que falharam. As sugestões são formadas procurando por ortografia e digitando correções nos termos de pesquisa que resultam em uma pesquisa válida.
 solution: Target
 title: Sobre Você quis dizer
-topic: Linguística, Pesquisa e comercialização do site
+topic: Linguistics,Site search and merchandising
 uuid: c5973541-3d6b-4fc9-bad4-66d4d3559fe8
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

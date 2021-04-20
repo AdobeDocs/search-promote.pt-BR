@@ -2,7 +2,7 @@
 description: O armazenamento temporário permite testar e visualizar alterações em suas configurações e configurações sem afetar seu índice dinâmico.
 solution: Target
 title: Sobre preparo
-topic: Armazenamento temporário, pesquisa e comercialização no site
+topic: Staging,Site search and merchandising
 uuid: 2e5889a6-2e9c-4ac7-9d6e-d35e7cafda5b
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

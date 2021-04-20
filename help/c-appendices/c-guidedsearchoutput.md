@@ -2,7 +2,7 @@
 description: Saiba como personalizar a saída em qualquer formato baseado em texto, incluindo XML ou JSON.
 solution: Target
 title: Saída de pesquisa guiada
-topic: Apêndices,Pesquisa e comercialização do site
+topic: Appendices,Site search and merchandising
 uuid: 234fd563-f249-42b0-88ca-c89b44f8df77
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

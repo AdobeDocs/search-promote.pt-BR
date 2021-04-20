@@ -3,7 +3,7 @@ description: É possível configurar várias áreas de Preenchimento automático
 solution: Target
 subtopic: Auto-Complete
 title: Sobre a Conclusão Automática
-topic: Design,Pesquisa e comercialização do site
+topic: Design,Site search and merchandising
 uuid: 3dfdd14d-2044-4f01-a5bc-fcb2eb0d5068
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

@@ -3,7 +3,7 @@ description: Você pode usar a Navegação de página para personalizar o contro
 solution: Target
 subtopic: Navigation
 title: Sobre a navegação da página
-topic: Design,Pesquisa e comercialização do site
+topic: Design,Site search and merchandising
 uuid: fb17a99e-d7b4-415e-ba1b-ca194fe41a5d
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

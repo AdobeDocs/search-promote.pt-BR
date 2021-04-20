@@ -2,7 +2,7 @@
 description: Use Contas no menu de produtos para selecionar uma conta que deseja acessar e usar.
 solution: Target
 title: Sobre o menu Contas
-topic: Configurações,Pesquisa e comercialização do site
+topic: Settings,Site search and merchandising
 uuid: 7cfc1b68-5126-484a-8a1d-54995a8fd19b
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

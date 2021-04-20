@@ -2,7 +2,7 @@
 description: Use Regras de pré-pesquisa para analisar a consulta recebida e determinar qual modelo de apresentação usar. As Regras de pré-pesquisa são executadas em sequência para cada consulta. Para alterar a ordem de suas regras, você pode usar o recurso de arrastar e soltar. A ordem real não é alterada até que você a salve.
 solution: Target
 title: Sobre as regras de pré-pesquisa
-topic: Regras, Pesquisa e comercialização do site
+topic: Rules,Site search and merchandising
 uuid: e75f9d9e-e8ca-4184-bf79-b1fdadb5c0fe
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

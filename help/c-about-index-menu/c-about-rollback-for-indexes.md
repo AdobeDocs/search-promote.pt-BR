@@ -3,7 +3,7 @@ description: Você pode usar o Rollback para fazer backup e arquivar índices de
 solution: Target
 subtopic: Rollback
 title: Sobre a reversão para índices
-topic: Índice,Pesquisa e comercialização do site
+topic: Index,Site search and merchandising
 uuid: abed878a-71b3-4122-9822-7410f4427a9a
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

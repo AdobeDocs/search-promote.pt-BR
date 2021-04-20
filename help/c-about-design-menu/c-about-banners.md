@@ -2,7 +2,7 @@
 description: Você pode usar os Banners para gerenciar os anúncios em banners em seu site.
 solution: Target
 title: Sobre banners
-topic: Design,Pesquisa e comercialização do site
+topic: Design,Site search and merchandising
 uuid: 653b567d-5cf3-41a0-a260-a6912d0fd20d
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

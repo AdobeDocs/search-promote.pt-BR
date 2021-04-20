@@ -3,7 +3,7 @@ description: Você pode usar menus para personalizar a camada da apresentação.
 solution: Target
 subtopic: Navigation
 title: Sobre menus
-topic: Design,Pesquisa e comercialização do site
+topic: Design,Site search and merchandising
 uuid: 011050cd-21b6-4150-9503-18fa3f771626
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

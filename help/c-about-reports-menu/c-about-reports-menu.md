@@ -2,7 +2,7 @@
 description: Use o menu Relatórios para exibir ou redefinir relatórios de consultas de pesquisa dos clientes.
 solution: Target
 title: Sobre o menu Relatórios
-topic: Relatórios, Pesquisa e comercialização do site
+topic: Reports,Site search and merchandising
 uuid: 3ea856d7-dc07-455f-8dc7-c7f7f56355d7
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

@@ -2,7 +2,7 @@
 description: Sempre que seu site mudar, você poderá executar um script ou programa solicitando que o robô de pesquisa execute um índice usando o Controle Remoto.
 solution: Target
 title: Sobre o controle remoto para indexação
-topic: Índice,Pesquisa e comercialização do site
+topic: Index,Site search and merchandising
 uuid: 20e230c6-5c1a-4bf4-bff3-b8236d14ab21
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

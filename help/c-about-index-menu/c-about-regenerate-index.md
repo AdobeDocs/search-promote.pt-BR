@@ -3,7 +3,7 @@ description: Você pode usar o Índice de regeneração para atualizar o índice
 solution: Target
 subtopic: Regenerate Index
 title: Sobre o Índice de Regeneração
-topic: Índice,Pesquisa e comercialização do site
+topic: Index,Site search and merchandising
 uuid: 9d1f1d88-0453-4422-a625-a348febbf224
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

@@ -2,7 +2,7 @@
 description: Você pode usar o Histórico para revisar uma lista de todas as revisões feitas em um recurso implementado, como uma faceta, navegação estrutural, banner ou template, para nomear algumas.
 solution: Target
 title: Uso da opção Histórico
-topic: Utilização do Histórico, Pesquisa e comercialização do site
+topic: Using History,Site search and merchandising
 uuid: 48b9ee9d-cd61-41e7-b8c3-5f1665b9a9cb
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

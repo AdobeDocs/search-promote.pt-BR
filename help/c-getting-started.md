@@ -2,7 +2,7 @@
 description: Se você é novo no Search & Promote e na navegação dinâmica, comece aqui para começar a usar sua conta. Entre outras coisas, você aprenderá a indexar seu site e a personalizar a aparência de seus resultados de pesquisa.
 solution: Target
 title: Introdução
-topic: Introdução, Pesquisa e comercialização do site
+topic: Getting Started,Site search and merchandising
 uuid: 816ad003-15c9-4e44-b09d-cab284518634
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

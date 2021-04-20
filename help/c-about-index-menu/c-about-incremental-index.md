@@ -3,7 +3,7 @@ description: Você pode usar o Índice incremental para indexar "partes" de seu 
 solution: Target
 subtopic: Incremental Index
 title: Sobre índice incremental
-topic: Índice,Pesquisa e comercialização do site
+topic: Index,Site search and merchandising
 uuid: b1ee9b08-dcbe-4ffe-b0b4-d379daaac9b5
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
