@@ -3,16 +3,16 @@ description: Você pode usar menus para personalizar a camada da apresentação.
 solution: Target
 subtopic: Navigation
 title: Sobre menus
-topic: Design,Site search and merchandising
+topic-legacy: Design,Site search and merchandising
 uuid: 011050cd-21b6-4150-9503-18fa3f771626
+exl-id: bd9611c0-4bb6-4869-ae92-fb52722026dd
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '752'
 ht-degree: 1%
 
 ---
-
 
 # Sobre menus{#about-menus}
 
@@ -190,4 +190,3 @@ t_deleting_a_menu.xml
    * Clique em **[!UICONTROL Push Live]**.
 
       Consulte [Envio das configurações do estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
-
