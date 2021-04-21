@@ -3,16 +3,16 @@ description: Você pode usar o Índice completo para indexar todas as páginas d
 solution: Target
 subtopic: Full Index
 title: Sobre o Índice Completo
-topic: Index,Site search and merchandising
+topic-legacy: Index,Site search and merchandising
 uuid: dce1eafd-5aea-4945-8305-8f9e7dc392df
+exl-id: cb702bd6-8702-469b-8ce9-0368ccdd55d9
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '755'
 ht-degree: 1%
 
 ---
-
 
 # Sobre o Índice Completo{#about-full-index}
 
@@ -117,4 +117,3 @@ Não é possível exportar logs nem salvá-los. O log permanece disponível para
    * Use as opções de navegação **[!UICONTROL First]**, **[!UICONTROL Prev]**, **[!UICONTROL Next]**, **[!UICONTROL Last]** ou **[!UICONTROL Go to line]** para percorrer o log.
 
    * Use as opções de exibição **[!UICONTROL Errors only]**, **[!UICONTROL Wrap line]** ou **[!UICONTROL Show]** para refinar o que você vê.
-
