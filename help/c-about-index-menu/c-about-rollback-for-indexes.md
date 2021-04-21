@@ -3,16 +3,16 @@ description: Você pode usar o Rollback para fazer backup e arquivar índices de
 solution: Target
 subtopic: Rollback
 title: Sobre a reversão para índices
-topic: Index,Site search and merchandising
+topic-legacy: Index,Site search and merchandising
 uuid: abed878a-71b3-4122-9822-7410f4427a9a
+exl-id: bc75f6ba-d919-4dff-8ee2-e17568892626
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '835'
 ht-degree: 0%
 
 ---
-
 
 # Sobre a reversão para índices{#about-rollback-for-indexes}
 
@@ -81,4 +81,3 @@ Exibir a data e a hora de todas as operações relacionadas à reversão.
    * Use as opções de navegação **[!UICONTROL First]**, **[!UICONTROL Prev]**, **[!UICONTROL Next]**, **[!UICONTROL Last]** ou **[!UICONTROL Go to line]** para percorrer o log.
 
    * Use as opções de exibição **[!UICONTROL Errors only]**, **[!UICONTROL Wrap line]** ou **[!UICONTROL Show]** para refinar o que você vê.
-
