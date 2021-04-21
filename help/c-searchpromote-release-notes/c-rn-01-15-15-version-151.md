@@ -2,16 +2,16 @@
 description: Search& amp; Notas de versão do Promote 15.1.1.
 solution: Target
 title: Search& amp; Notas de versão do Promote 15.1.1 (15/01/2015)
-topic: Release Notes,Site search and merchandising
+topic-legacy: Release Notes,Site search and merchandising
 uuid: 070f9c46-426f-4ca1-80c7-8ca53d40a402
+exl-id: 6176ce1e-aafe-4a46-a564-57c3ac4632ef
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '241'
-ht-degree: 16%
+source-wordcount: '235'
+ht-degree: 17%
 
 ---
-
 
 # Notas de versão do Search &amp; Promote 15.1.1 (15/01/2015){#search-promote-release-notes}
 
@@ -34,4 +34,3 @@ ht-degree: 16%
 * Consultas com valores `sp_i` diferentes de zero não são mais executadas pelo redirecionador [!DNL Adobe Analytics].
 
    Consulte a linha 15 na tabela em [Parâmetros CGI de pesquisa de backend](../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8).
-
