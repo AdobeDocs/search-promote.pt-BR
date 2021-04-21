@@ -2,16 +2,16 @@
 description: Use Regras de pré-pesquisa para analisar a consulta recebida e determinar qual modelo de apresentação usar. As Regras de pré-pesquisa são executadas em sequência para cada consulta. Para alterar a ordem de suas regras, você pode usar o recurso de arrastar e soltar. A ordem real não é alterada até que você a salve.
 solution: Target
 title: Sobre as regras de pré-pesquisa
-topic: Rules,Site search and merchandising
+topic-legacy: Rules,Site search and merchandising
 uuid: e75f9d9e-e8ca-4184-bf79-b1fdadb5c0fe
+exl-id: 23e7feda-956a-48ce-8c61-fe0498c1bbda
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '1666'
+source-wordcount: '1661'
 ht-degree: 1%
 
 ---
-
 
 # Sobre as regras de pré-pesquisa{#about-pre-search-rules}
 
@@ -234,4 +234,3 @@ As regras de pré-pesquisa são executadas na ordem em que foram definidas. Quan
    * Clique em **[!UICONTROL Push Live]**.
 
       Consulte [Envio das configurações do estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
-
