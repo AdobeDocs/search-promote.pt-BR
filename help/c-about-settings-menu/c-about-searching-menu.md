@@ -3,16 +3,16 @@ description: Use o menu Pesquisar para definir palavras, coleções, restriçõe
 solution: Target
 subtopic: Searching
 title: Sobre o menu Pesquisar
-topic: Settings,Site search and merchandising
+topic-legacy: Settings,Site search and merchandising
 uuid: 072111fc-a32b-4acb-8337-cb21bcdb5542
+exl-id: 4cb70240-051b-4bf3-ae2a-b151acc7cba1
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '11170'
+source-wordcount: '11165'
 ht-degree: 1%
 
 ---
-
 
 # Sobre o menu Pesquisar{#about-the-searching-menu}
 
@@ -1141,7 +1141,7 @@ t_creating_a_feed.xml
     </thead>
     <tbody> 
       <tr> 
-      <td colname="col1"> <p>3 </p> </td> 
+      <td colname="col1"> <p>1 </p> </td> 
       <td colname="col2"> <p>Nome do feed </p> </td> 
       <td colname="col3"> <p>Especifica o nome do feed. </p> </td> 
       </tr> 
@@ -1157,7 +1157,7 @@ t_creating_a_feed.xml
         </ul> <p>Os feeds genéricos precisam de um parâmetro CGI especial especificado. Para vincular o template especial associado a este feed, defina o parâmetro <span class="codeph"> sp_t </span>. Defina o valor de <span class="codeph"> sp_t </span> para o nome do arquivo de modelo de transporte. Por exemplo, se você adicionou um arquivo de modelo de transporte chamado <span class="codeph"> super_feed.tpl </span>, crie um parâmetro de pesquisa CGI personalizado como <span class="codeph"> sp_t=super_feed </span>. A caixa de texto para inserir o <span class="codeph"> sp_t </span> não é exibida até que você selecione <span class="uicontrol"> Formulário livre </span> na lista suspensa <span class="wintitle"> Campo Meta </span>. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>3 </p> </td> 
+      <td colname="col1"> <p>1 </p> </td> 
       <td colname="col2"> <p>Envio de arquivo </p> </td> 
       <td colname="col3"> <p>Permite configurar o agendamento para envio dos arquivos de feed e definir o método que deseja usar para carregar os arquivos. </p> 
         <ul id="ul_30E830C41F6A4526822AF1FD3083075A"> 
@@ -1209,7 +1209,7 @@ t_creating_a_feed.xml
       <td colname="col3"> <p>Permite mapear campos de feed específicos do fornecedor para campos de metadados de pesquisa/comercialização do site. Essa etapa de mapeamento no assistente é importante porque permite que os Feeds correlacionem as informações entre os campos no índice e os campos nos dados do feed. Na maioria dos casos, exceto para <span class="wintitle"> Feeds genéricos </span>, as correlações são salvas em um modelo de pesquisa gerado dinamicamente. </p> <p>Cada linha na tabela Mapas de campo representa um mapeamento de campo. Na coluna <span class="wintitle"> Adicionar/Remover </span> da tabela, clique em <span class="uicontrol"> + </span> para adicionar uma nova linha de mapeamento de campo; clique em <span class="uicontrol"> - </span> para excluir a linha de mapeamento de campo atualmente selecionada da tabela. Para associar um campo de feed a um campo de metadados de pesquisa/comercialização do site, use as respectivas listas suspensas para escolher os campos desejados. </p> <p> <b>Uso avançado</b> </p> <p>Você pode criar seus próprios campos personalizados. Na lista suspensa <span class="wintitle"> Campos de feed </span> , clique em <span class="uicontrol"> Personalizado </span>. No campo de texto associado, insira um nome de tag personalizado para esse campo. Essa opção personalizada é útil se um feed precisar de campos especiais específicos do fornecedor. </p> <p>Também é possível criar um campo de metadados personalizado. Na lista suspensa <span class="wintitle"> Campos de metadados </span> , clique em <span class="uicontrol"> Personalizado </span>. No campo de texto associado, insira um valor de campo de metadados personalizado. O valor é inserido no modelo pré-gerado e também pode ser usado para inserir tags de modelo de pesquisa personalizadas. </p> <p>Consulte <a href="../c-appendices/c-templates.md#reference_F7AA3FF602314E42842BBC740D2CA1A4" type="reference" format="dita" scope="local"> Pesquisar tags de modelo </a>. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>3 </p> </td> 
+      <td colname="col1"> <p>1 </p> </td> 
       <td colname="col2"> <p>Critérios de busca </p> </td> 
       <td colname="col3"> <p>Quando os arquivos de feed são gerados, uma consulta de pesquisa é usada para filtrar os dados. Você define os filtros usados para a consulta de pesquisa neste painel. </p> 
         <ul id="ul_8179321A58BB4C72B0CDB2B2BEC58FE4"> 
@@ -1274,7 +1274,7 @@ t_creating_a_feed.xml
       <td colname="col3"> <p>Permite mapear campos de feed específicos do fornecedor para campos de metadados de pesquisa/comercialização do site. Essa etapa de mapeamento no assistente é importante porque permite que os Feeds correlacionem as informações entre os campos no índice e os campos nos dados do feed. Na maioria dos casos, exceto para <span class="wintitle"> Feeds genéricos </span>, as correlações são salvas em um modelo de pesquisa gerado dinamicamente. </p> <p>Cada linha na tabela Mapas de campo representa um mapeamento de campo. Na coluna Adicionar/Remover da tabela, clique em <span class="uicontrol"> + </span> para adicionar uma nova linha de mapeamento de campo; clique em <span class="uicontrol"> - </span> para excluir a linha de mapeamento de campo atualmente selecionada da tabela. Para associar um Campo de feed a um Campo de metadados, use as respectivas listas suspensas para escolher os campos desejados. </p> <p> <b>Uso avançado</b> </p> <p>Você pode criar seus próprios campos personalizados. Na lista suspensa <span class="wintitle"> Campos de feed </span> , clique em <span class="uicontrol"> Personalizado </span>. No campo de texto associado, insira um nome de tag personalizado para esse campo. Essa opção personalizada é útil se um feed precisar de campos especiais específicos do fornecedor. </p> <p>Também é possível criar um campo de metadados personalizado. Na lista suspensa <span class="wintitle"> Campos de metadados </span> , clique em <span class="uicontrol"> Personalizado </span>. No campo de texto associado, insira um valor de campo de metadados personalizado. O valor é inserido no modelo pré-gerado e também pode ser usado para inserir tags de modelo de pesquisa personalizadas. </p> <p>Consulte <a href="../c-appendices/c-templates.md#reference_F7AA3FF602314E42842BBC740D2CA1A4" type="reference" format="dita" scope="local"> Pesquisar tags de modelo </a>. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>3 </p> </td> 
+      <td colname="col1"> <p>1 </p> </td> 
       <td colname="col2"> <p>Critérios de busca </p> </td> 
       <td colname="col3"> <p>Quando os arquivos de feed são gerados, uma consulta de pesquisa é usada para filtrar os dados. Você define os filtros usados para a consulta de pesquisa neste painel. </p> 
         <ul id="ul_994585E89A044BD3A89A99D30F277432"> 
