@@ -3,16 +3,16 @@ description: Use o menu Filtragem para usar scripts que alteram o conteúdo de u
 solution: Target
 subtopic: Filtering
 title: Sobre o menu Filtragem
-topic: Settings,Site search and merchandising
+topic-legacy: Settings,Site search and merchandising
 uuid: ebb08fa8-4e17-417d-868b-11fc2af9f284
+exl-id: 1a1c7b86-a29b-4c17-8743-ff3c2c91b63a
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '4008'
+source-wordcount: '4003'
 ht-degree: 1%
 
 ---
-
 
 # Sobre o menu Filtragem{#about-the-filtering-menu}
 
