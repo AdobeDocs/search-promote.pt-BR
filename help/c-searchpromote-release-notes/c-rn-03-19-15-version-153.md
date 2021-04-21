@@ -2,16 +2,16 @@
 description: Search& amp; Notas de versão do Promote 15.3.1.
 solution: Target
 title: Search& amp; Notas de versão do Promote 15.3.1 (24/03/2015)
-topic: Release Notes,Site search and merchandising
+topic-legacy: Release Notes,Site search and merchandising
 uuid: f02da5a4-2207-4603-aa05-5cff7be16dd5
+exl-id: 2d254275-f777-45e5-a838-b6a35365a6dd
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '254'
 ht-degree: 0%
 
 ---
-
 
 # Notas de versão do Search &amp; Promote 15.3.1 (24/03/2015){#search-promote-release-notes}
 
@@ -43,4 +43,3 @@ ht-degree: 0%
 * Os campos MDI podem ser preenchidos sem recurso à Filtragem com script.
 * Codificação incorreta em sugestões.
 * O acionador &quot;outra faceta selecionada&quot; agora funciona corretamente com regras comerciais complexas.
-
