@@ -3,16 +3,16 @@ description: Você pode usar o Índice incremental para indexar "partes" de seu 
 solution: Target
 subtopic: Incremental Index
 title: Sobre índice incremental
-topic: Index,Site search and merchandising
+topic-legacy: Index,Site search and merchandising
 uuid: b1ee9b08-dcbe-4ffe-b0b4-d379daaac9b5
+exl-id: 41943f84-23f0-434c-8eef-a9075dd5c03d
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '1357'
+source-wordcount: '1352'
 ht-degree: 1%
 
 ---
-
 
 # Sobre o Índice Incremental{#about-incremental-index}
 
@@ -254,4 +254,3 @@ Não é possível exportar logs nem salvá-los. O log permanece disponível para
    * Use as opções de navegação **[!UICONTROL First]**, **[!UICONTROL Prev]**, **[!UICONTROL Next]**, **[!UICONTROL Last]** ou **[!UICONTROL Go to line]** para percorrer o log.
 
    * Use as opções de exibição **[!UICONTROL Errors only]**, **[!UICONTROL Wrap line]** ou **[!UICONTROL Show]** para refinar o que você vê.
-
