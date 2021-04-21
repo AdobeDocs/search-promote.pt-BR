@@ -3,16 +3,16 @@ description: Você pode usar a Navegação de página para personalizar o contro
 solution: Target
 subtopic: Navigation
 title: Sobre a navegação da página
-topic: Design,Site search and merchandising
+topic-legacy: Design,Site search and merchandising
 uuid: fb17a99e-d7b4-415e-ba1b-ca194fe41a5d
+exl-id: ed1ba6a8-1bab-4616-a447-50cfe319dac8
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '400'
 ht-degree: 2%
 
 ---
-
 
 # Sobre a navegação da página{#about-page-navigation}
 
@@ -129,4 +129,3 @@ Se a camada de apresentação tiver mais de um conjunto de resultados de pesquis
    * Clique em **[!UICONTROL Push Live]**.
 
       Consulte [Envio das configurações do estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
-
