@@ -2,16 +2,16 @@
 description: Search& amp; Notas de versão do Promote 8.15.0.
 solution: Target
 title: Search& amp; Notas de versão do Promote 8.15.0 (19/6/2014)
-topic: Release Notes,Site search and merchandising
+topic-legacy: Release Notes,Site search and merchandising
 uuid: bb250450-48b4-4563-84b9-66f2c3dc063a
+exl-id: 57476f25-903c-4452-a3e9-adffd229ba5e
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '112'
-ht-degree: 54%
+source-wordcount: '106'
+ht-degree: 57%
 
 ---
-
 
 # Notas de versão do Search &amp; Promote 8.15.0 (19/6/2014){#search-promote-release-notes}
 
@@ -27,4 +27,3 @@ ht-degree: 54%
 * O carregador Atributo estava gerando um erro 404.
 * Caso SPIN tenha tentado gerar um modelo que estava muito grande, e um alerta foi exibido.
 * Foram feitas atualizações no analisador morfológico chinês, coreano e japonês.
-
