@@ -3,16 +3,16 @@ description: Use o menu Rastreamento para definir a data e as máscaras de URL, 
 solution: Target
 subtopic: Crawling
 title: Sobre o menu Rastreamento
-topic: Settings,Site search and merchandising
+topic-legacy: Settings,Site search and merchandising
 uuid: a58c03bf-90f7-4b5b-91ff-988b95c246b0
+exl-id: 22dbbc30-bf1c-4d51-8fb0-708115ba844b
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '11016'
+source-wordcount: '11011'
 ht-degree: 0%
 
 ---
-
 
 # Sobre o menu Rastreamento{#about-the-crawling-menu}
 
