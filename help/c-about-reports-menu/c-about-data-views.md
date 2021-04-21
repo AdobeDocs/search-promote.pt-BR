@@ -2,16 +2,16 @@
 description: Visualizações de dados exibe os resultados da pesquisa com os meta campos. Cada coluna é um campo meta e cada linha é resultado de uma consulta de pesquisa. Personalize visualizações de dados escolhendo e reorganizando colunas. As Exibições de dados também podem ter títulos e descrições personalizados.
 solution: Target
 title: Sobre visualizações de dados
-topic: Reports,Site search and merchandising
+topic-legacy: Reports,Site search and merchandising
 uuid: 18930551-960d-40c2-b5b7-0807a2e11134
+exl-id: 9ef5eaef-85d6-41e9-af44-b4775755e5bf
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1018'
 ht-degree: 1%
 
 ---
-
 
 # Sobre visualizações de dados{#about-data-views}
 
@@ -185,4 +185,3 @@ A visualização de dados selecionada é aberta em uma janela separada do navega
    * Na página [!DNL Data Views], na coluna [!DNL Title] da tabela, clique no nome de uma visualização de dados que deseja abrir.
 
    * Na página [!DNL Data Views], na coluna [!DNL Actions] da tabela, clique em **[!UICONTROL View]** na linha com a visualização de dados que deseja abrir.
-
