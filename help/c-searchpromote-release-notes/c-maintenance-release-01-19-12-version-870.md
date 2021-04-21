@@ -2,16 +2,16 @@
 description: Search& amp; Notas de versão do Promote 8.7.
 solution: Target
 title: Search& amp; Notas de versão do Promote 8.7 (19/01/2012)
-topic: Release Notes,Site search and merchandising
+topic-legacy: Release Notes,Site search and merchandising
 uuid: b640a215-1e2f-4cda-9e02-c3db04326cca
+exl-id: 52faf509-7b09-4310-a08c-8865b57c6119
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '93'
+source-wordcount: '87'
 ht-degree: 0%
 
 ---
-
 
 # Notas de versão do Search &amp; Promote 8.7 (19/01/2012){#search-promote-release-notes}
 
@@ -30,4 +30,3 @@ ht-degree: 0%
 * Serviço obsoleto urlblocker que prejudicava a validação do ponto de entrada do URL.
 * O analisador JSON falha ao analisar o resultado com caracteres UTF-8 mal formados.
 * Caminho de desfazer da faceta quebrado para facetas de seleção múltipla com o símbolo $.
-
