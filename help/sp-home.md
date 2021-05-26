@@ -5,8 +5,7 @@ solution: Target
 topic-legacy: Site search and merchandising
 uuid: bb1c49be-7cfd-485a-a848-c5dc8733b009
 exl-id: 6920dbf0-beeb-4723-8178-4da37f0b03ed
-translation-type: tm+mt
-source-git-commit: c52719f476a61592b11bf1182a1bfe3525488817
+source-git-commit: bd8341e6bd955dbf5496351594938b65e1bd2948
 workflow-type: tm+mt
 source-wordcount: '141'
 ht-degree: 22%
@@ -17,7 +16,7 @@ ht-degree: 22%
 
 ## Notícias e anúncios {#topic_02625547D07F411DBAC9593FCBD4741B}
 
-* **ATENÇÃO**  - Anúncio de fim de serviço do  [Adobe Search &amp; Promote](/help/sp-eol.md).
+* **IMPORTANTE:** [Anúncio de fim de serviço do Adobe Search &amp; Promote](/help/sp-eol.md).
 
 * Notas de versão da Adobe Marketing Cloud - Contém novos recursos, correções e problemas conhecidos em todas as soluções do Marketing Cloud. As versões dos recursos são lançadas na primavera e no outono, enquanto as versões de manutenção ocorrem todos os meses.
 
@@ -25,7 +24,7 @@ ht-degree: 22%
 
 * As notas de versão mais recentes do Search &amp; Promote Adobe:
 
-   [Notas de versão](/help/c-searchpromote-release-notes/c-rn-02-13-18-version-1811.md)
+[Notas de versão](/help/c-searchpromote-release-notes/c-rn-02-13-18-version-1811.md)
 
 ## Informe {#topic_EED10B7F7E8D4A9A8F759FE24C461937}
 
@@ -35,4 +34,4 @@ ht-degree: 22%
 
 [Site do Adobe Search &amp; Promote](https://www.adobe.com/solutions/testing-targeting/search-driven-merchandising.html)
 
-[Industry Insights](https://blogs.adobe.com/digitalmarketing/) - O blog de marketing digital da Adobe.
+[Industry Insights](https://blog.adobe.com/en/topics/digital-transformation.html) - O blog de marketing digital da Adobe.
