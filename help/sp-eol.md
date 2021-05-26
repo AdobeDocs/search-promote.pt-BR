@@ -4,10 +4,9 @@ description: Saiba mais sobre o anúncio de Fim de serviço do Search & Promote 
 feature: null
 role: Administrator,Business Practitioner,Data Engineer,Developer
 exl-id: 1e062554-090b-4275-8595-8ae4233c58d7
-translation-type: tm+mt
-source-git-commit: 99d23647ba5d30ed90d9e8ac377d627f6266c618
+source-git-commit: 27dca9caf3e59d5ed20fdea3d5ef279bd5aac097
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '340'
 ht-degree: 0%
 
 ---
@@ -18,7 +17,7 @@ ht-degree: 0%
 
 ### **_Em que data cessará o Search &amp; Promote de funcionar?_**
 
-O Fim do Serviço do Search &amp; Promote Adobe está agendado para **1º de setembro de 2022**. Nessa data, a interface de usuário administrativa do Search &amp; Promote não estará mais acessível e as solicitações para APIs do Search &amp; Promote não fornecerão mais resultados. Antes dessa data, o serviço estará totalmente disponível e funcional.
+O Fim do Serviço do Search &amp; Promote Adobe está agendado para **1º de setembro de 2022**. Nessa data, a interface de usuário administrativa do Search &amp; Promote não estará mais acessível e as solicitações para APIs do Search &amp; Promote não fornecerão mais resultados. Antes dessa data, o serviço estará totalmente disponível e funcional. Em antecipação a 1º de setembro de 2022, os direitos contratuais ao Search &amp; Promote não serão permitidos após 31 de agosto de 2022.
 
 ### **_O que acontecerá se uma pesquisa ou outra solicitação de API for feita para o Search &amp; Promote?_**
 
