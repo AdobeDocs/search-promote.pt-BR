@@ -6,10 +6,9 @@ title: Sobre o menu Rastreamento
 topic-legacy: Settings,Site search and merchandising
 uuid: a58c03bf-90f7-4b5b-91ff-988b95c246b0
 exl-id: 22dbbc30-bf1c-4d51-8fb0-708115ba844b
-translation-type: tm+mt
-source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
+source-git-commit: 95bf92df17d7832df72e8d883a22f9063e53a18d
 workflow-type: tm+mt
-source-wordcount: '11011'
+source-wordcount: '11015'
 ht-degree: 0%
 
 ---
@@ -131,7 +130,7 @@ Consulte [Definição das configurações da sua conta](../c-about-settings-menu
 
       Consulte [Envio das configurações do estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Sobre as máscaras de URL {#concept_8039DFC53FF3410AA494D602F71BA164}
+## Sobre máscaras de URL {#concept_8039DFC53FF3410AA494D602F71BA164}
 
 As máscaras de URL são padrões que determinam qual dos seus sites documentos o robô de pesquisa indexa ou não índices.
 
@@ -518,7 +517,7 @@ Uma vírgula não é válida como separador entre a máscara e a palavra-chave; 
  </tbody> 
 </table>
 
-## Adicionar máscaras de data para indexar ou não partes do seu site {#task_0010543C55F648D2B5DEFEFAD60FAF04}
+## Adicionar máscaras de data para indexar ou não partes do site {#task_0010543C55F648D2B5DEFEFAD60FAF04}
 
 Você pode usar as máscaras de data para incluir ou excluir arquivos dos resultados de pesquisa do cliente com base na idade dos arquivos.
 
@@ -633,7 +632,7 @@ Consulte [Configuração de um índice incremental de um site de preparo](../c-a
 
       Consulte [Envio das configurações do estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Sobre os tipos de conteúdo {#concept_6FEA1355C0374500B4C53090C34A8A07}
+## Sobre tipos de conteúdo {#concept_6FEA1355C0374500B4C53090C34A8A07}
 
 Você pode usar [!DNL Content Types] para selecionar quais tipos de arquivos deseja rastrear e indexar para esta conta.
 
@@ -746,7 +745,7 @@ Você pode usar o Envio de formulário para ajudá-lo a reconhecer e processar f
 
 Durante o rastreamento e a indexação do site, cada formulário encontrado é comparado às definições de formulário adicionadas. Se um formulário corresponder a uma definição de formulário, ele será enviado para indexação. Se um formulário corresponder a mais de uma definição, ele será enviado uma vez para cada definição correspondente.
 
-## Adicionar definições de formulário para indexar formulários no seu site {#task_62FBCE9E6DBE4BDA8D1249233ADFC00F}
+## Adicionar definições de formulário para indexação de formulários no seu site {#task_62FBCE9E6DBE4BDA8D1249233ADFC00F}
 
 Você pode usar [!DNL Form Submission] para ajudar a processar formulários reconhecidos em seu site para fins de indexação.
 
@@ -939,7 +938,7 @@ Consulte [Configuração de um índice incremental de um site de preparo](../c-a
 
       Consulte [Envio das configurações do estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Excluindo uma definição de formulário {#task_C350FC0CDE344F2786215D544C048B5E}
+## Exclusão de uma definição de formulário {#task_C350FC0CDE344F2786215D544C048B5E}
 
 É possível excluir uma definição de formulário existente se o formulário não existir mais em seu site ou se você não quiser mais processar e indexar um formulário específico.
 
@@ -966,7 +965,7 @@ Consulte [Configuração de um índice incremental de um site de preparo](../c-a
 
       Consulte [Envio das configurações do estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Sobre o Conector de índice {#concept_CA6921E2FBF641F9B4F60C92B32AFA84}
+## Sobre o Index Connector {#concept_CA6921E2FBF641F9B4F60C92B32AFA84}
 
 Use [!DNL Index Connector] para definir fontes de entrada adicionais para indexar páginas XML ou qualquer tipo de feed.
 
@@ -1032,7 +1031,7 @@ Consulte também [Sobre o Conector de índice](../c-about-settings-menu/c-about-
  </tbody> 
 </table>
 
-## Como o processo de indexação funciona para configurações XML no Conector de índice {#section_7F1551EA51854C5C99F284CE260526EB}
+## Como o processo de indexação funciona para configurações XML no Index Connector {#section_7F1551EA51854C5C99F284CE260526EB}
 
 O processo de indexação da configuração XML é semelhante ao processo das configurações de Texto e Feed com as seguintes pequenas alterações e exceções.
 
@@ -1063,7 +1062,7 @@ RewriteRule (^http.*[.]xml$) index:Adobe?key=$1
 
 Essa regra converte qualquer URL que termine com `.xml` em um link de Conector de índice. O crawler reconhece e regrava o esquema de URL `index:`. O processo de download é redirecionado por meio do servidor Apache do Conector de índice no primário. Cada documento baixado é examinado usando o mesmo padrão de expressão regular usado com Feeds. Nesse caso, no entanto, o documento HTML fabricado não é salvo no cache. Em vez disso, é entregue diretamente ao crawler para processamento do índice.
 
-## Como configurar vários Conectores de índice {#section_C2B14C0F06354A57AEF6238FF3814E5D}
+## Como configurar vários conectores de índice {#section_C2B14C0F06354A57AEF6238FF3814E5D}
 
 É possível definir várias configurações do Conector de índice para qualquer conta. As configurações são adicionadas automaticamente à lista suspensa em **[!UICONTROL Settings]** > **[!UICONTROL Crawl]** > **[!UICONTROL URL Entrypoints]**, conforme mostrado na ilustração a seguir:
 
@@ -1124,7 +1123,7 @@ A Visualização só processa um padrão de cinco documentos, conforme controlad
 
 A visualização não oferece suporte a configurações XML porque esses documentos são processados diretamente e não baixados no cache.
 
-## Adicionar uma definição de Conector de índice {#task_96779B651A654E1F871F55D6DBBC8886}
+## Adição de uma definição de Conector de índice {#task_96779B651A654E1F871F55D6DBBC8886}
 
 Cada configuração do Conector de índice define uma fonte de dados e os mapeamentos para relacionar os itens de dados definidos para essa fonte aos campos de metadados no índice.
 
@@ -1326,7 +1325,7 @@ Antes que os efeitos da definição nova e ativada sejam visíveis para os clien
       <li id="li_759013EA02CD48BE971A55B0A6A11424"> <code> /record/metadata/meta[@name='title']/@content&amp;nbsp;-&gt;&amp;nbsp;title </code> <p>O atributo <span class="codeph"> content </span> de qualquer elemento <span class="codeph"> meta </span> contido num elemento <span class="codeph"> de metadados </span>, contido num elemento <span class="codeph"> de registro </span>, cujo atributo de nome é <span class="codeph"> título </span>, mapeia para o campo de metadados <span class="codeph"> título &lt;a11/ &gt;.</span> </p> </li> 
       <li id="li_E741CA59197D462EB2946EDE874AFDC8"> <code> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;desc </code> <p>O atributo <span class="codeph"> content </span> de qualquer elemento <span class="codeph"> meta </span> contido num elemento <span class="codeph"> de metadados </span>, contido no elemento <span class="codeph"> record </span>, cujo atributo name é <span class="codeph"> descrição </span>, mapeia para o campo de metadados <span class="codeph"> desc </span>. </p> </li> 
       <li id="li_E35EAE3D284D46D485D9064D7BB6AB13"> <code> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;body </code> <p>O atributo <span class="codeph"> content </span> de qualquer elemento <span class="codeph"> meta </span> contido em um elemento <span class="codeph"> de metadados </span>, contido no elemento <span class="codeph"> record </span>, cujo atributo name é <span class="codeph"> descrição </span>, mapeia para o campo de metadados <span class="codeph"> body &lt;a11/ &gt;.</span> </p> </li> 
-      </ul> </p> <p>XPath é uma notação relativamente complicada. Mais informações estão disponíveis no seguinte local: </p> <p>Consulte <a href="https://www.w3schools.com/xpath/" scope="external" format="html"> https://www.w3schools.com/xpath/ </a> </p> </li> 
+      </ul> </p> <p>XPath é uma notação relativamente complicada. Mais informações estão disponíveis no seguinte local: </p> <p>Consulte <a href="https://www.w3schools.com/xml/xpath_intro.asp" scope="external" format="html"> https://www.w3schools.com/xpath/ </a> </p> </li> 
       <li id="li_8147075D7ACD4811A7ED335F23FE62A6"> <span class="uicontrol"> Campo </span> <p>Define o valor do atributo de nome usado para cada tag <span class="codeph"> &lt;meta&gt; </span> gerada. </p> </li> 
       <li id="li_2380199D63BF425A919606D8232FA6E2"> <span class="uicontrol"> Metadados? </span> <p>Faz com que <span class="uicontrol"> Campo </span> se torne uma lista suspensa na qual você pode selecionar campos de metadados definidos para a conta atual. </p> <p>O valor <span class="uicontrol"> Campo </span> pode ser um campo de metadados indefinido, se desejado. Um campo de metadados indefinido às vezes é útil para criar conteúdo usado por <span class="wintitle"> Filtering Script </span>. </p> <p>Consulte <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Sobre o script de filtragem </a>. </p> <p>Quando o Index Connector processa documentos XML com várias ocorrências em qualquer campo de mapa, os vários valores são concatenados em um único valor no documento em cache resultante. Por padrão, esses valores são combinados com um delimitador de vírgula. No entanto, suponha que o valor <span class="wintitle"> Campo </span> correspondente seja um campo de metadados definido. Além disso, esse campo tem o conjunto de atributos <span class="wintitle"> Lista de permissões </span>. Nesse caso, o valor Delimitadores de lista do campo, que é o primeiro delimitador definido, é usado na concatenação. </p> </li> 
       <li id="li_DEA24003E97E406DA2510C43CCFDC70E"> <span class="uicontrol"> Chave primária?  </span> <p>Somente uma definição de mapa é identificada como a chave primária. Este campo se torna a referência exclusiva que é apresentada quando este documento é adicionado ao índice. Esse valor é usado no URL do documento no Índice. </p> <p>Os valores <span class="uicontrol"> Chave Primária </span> devem ser exclusivos em todos os documentos representados pela configuração do Conector de Índice - todas as duplicatas encontradas serão ignoradas. Se os documentos de origem não contiverem um único valor exclusivo para uso como <span class="uicontrol"> Chave Primária </span>, mas dois ou mais campos juntos <i>podem</i> formar um identificador exclusivo, você poderá definir a <span class="uicontrol"> Chave Primária </span> combinando várias definições <span class="uicontrol"> Tag </span> com uma barra vertical ("|") delimitando os valores. </p> </li> 
@@ -1382,7 +1381,7 @@ Antes que os efeitos da definição nova e ativada sejam visíveis para os clien
       <li id="li_FA7DF3D1942248B98660F3D0C82F4563"> <code> /record/metadata/meta[@name='title']/@content&amp;nbsp;-&gt;&amp;nbsp;title </code> <p>O atributo <span class="codeph"> content </span> de qualquer elemento <span class="codeph"> meta </span> contido num elemento <span class="codeph"> de metadados </span>, contido num elemento <span class="codeph"> de registro </span>, cujo atributo de nome é <span class="codeph"> título </span>, mapeia para o campo de metadados <span class="codeph"> título &lt;a11/ &gt;.</span> </p> </li> 
       <li id="li_D8000A116FF84DE59ED19C656DDD3BC1"> <code> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;desc </code> <p>O atributo <span class="codeph"> content </span> de qualquer elemento <span class="codeph"> meta </span> contido num elemento <span class="codeph"> de metadados </span>, contido no elemento <span class="codeph"> record </span>, cujo atributo name é <span class="codeph"> descrição </span>, mapeia para o campo de metadados <span class="codeph"> desc </span>. </p> </li> 
       <li id="li_7FA6A53DFD3D42A98B7BA17CC29DDB81"> <code> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;body </code> <p>O atributo <span class="codeph"> content </span> de qualquer elemento <span class="codeph"> meta </span> contido em um elemento <span class="codeph"> de metadados </span>, contido no elemento <span class="codeph"> record </span>, cujo atributo name é <span class="codeph"> descrição </span>, mapeia para o campo de metadados <span class="codeph"> body &lt;a11/ &gt;.</span> </p> </li> 
-      </ul> </p> <p>XPath é uma notação relativamente complicada. Mais informações estão disponíveis no seguinte local: </p> <p>Consulte <a href="https://www.w3schools.com/xpath/" scope="external" format="html"> https://www.w3schools.com/xpath/ </a> </p> </li> 
+      </ul> </p> <p>XPath é uma notação relativamente complicada. Mais informações estão disponíveis no seguinte local: </p> <p>Consulte <a href="https://www.w3schools.com/xml/xpath_intro.asp" scope="external" format="html"> https://www.w3schools.com/xpath/ </a> </p> </li> 
       <li id="li_84999D07E0AE4265BC7928BBB49957B9"> <span class="uicontrol"> Campo </span> <p>Define o valor do atributo de nome usado para cada tag &lt;meta&gt; gerada. </p> </li> 
       <li id="li_E125788D0F5242958BD790E26A675C20"> <span class="uicontrol"> Metadados? </span> <p>Faz com que <span class="uicontrol"> Campo </span> se torne uma lista suspensa na qual você pode selecionar campos de metadados definidos para a conta atual. </p> <p>O valor <span class="uicontrol"> Campo </span> pode ser um campo de metadados indefinido, se desejado. Um campo de metadados indefinido às vezes é útil para criar conteúdo usado por <span class="wintitle"> Filtering Script </span>. </p> <p>Consulte <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Sobre o script de filtragem </a>. </p> <p>Quando o Index Connector processa documentos XML com várias ocorrências em qualquer campo de mapa, os vários valores são concatenados em um único valor no documento em cache resultante. Por padrão, esses valores são combinados com um delimitador de vírgula. No entanto, suponha que o valor <span class="wintitle"> Campo </span> correspondente seja um campo de metadados definido. Além disso, esse campo tem o conjunto de atributos <span class="wintitle"> Lista de permissões </span>. Nesse caso, o valor Delimitadores de lista do campo, que é o primeiro delimitador definido, é usado na concatenação. </p> </li> 
       <li id="li_9F435EFB3EC74B409EC82A851824609F"> <span class="uicontrol"> Chave primária?  </span> <p>Somente uma definição de mapa é identificada como a chave primária. Este campo se torna a referência exclusiva que é apresentada quando este documento é adicionado ao índice. Esse valor é usado no URL do documento no Índice. </p> <p>Os valores <span class="uicontrol"> Chave Primária </span> devem ser exclusivos em todos os documentos representados pela configuração do Conector de Índice - todas as duplicatas encontradas serão ignoradas. Se os documentos de origem não contiverem um único valor exclusivo para uso como <span class="uicontrol"> Chave Primária </span>, mas dois ou mais campos juntos <i>podem</i> formar um identificador exclusivo, você poderá definir a <span class="uicontrol"> Chave Primária </span> combinando várias definições <span class="uicontrol"> Tag </span> com uma barra vertical ("|") delimitando os valores. </p> </li> 
@@ -1413,7 +1412,7 @@ Antes que os efeitos da definição nova e ativada sejam visíveis para os clien
 
       Consulte [Envio das configurações do estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Editar uma definição de Conector de índice {#task_DCFC9C6A9964421DB5AB6C25DEE98DE9}
+## Edição de uma definição de Conector de índice {#task_DCFC9C6A9964421DB5AB6C25DEE98DE9}
 
 É possível editar um Conector de índice existente definido por você.
 
@@ -1455,7 +1454,7 @@ Depois que uma definição de Conector de índice é adicionada à página [!DNL
 1. No menu do produto, clique em **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Index Connector]**.
 1. Na página [!DNL Index Connector] , no cabeçalho da coluna [!DNL Actions], clique em **[!UICONTROL Edit]** para obter um nome de definição do Conector de índice cujas configurações você deseja revisar ou editar.
 
-## Copiando uma definição do Conector de índice {#task_3AD55DF07FC44A748D0EFDAB7B35699B}
+## Como copiar uma definição de Conector de índice {#task_3AD55DF07FC44A748D0EFDAB7B35699B}
 
 Você pode copiar uma definição de Conector de índice existente para usar como a base para um novo Conector de índice que deseja criar.
 

@@ -5,10 +5,9 @@ title: Pesquisar formulários
 topic-legacy: Appendices,Site search and merchandising
 uuid: 91153e3a-c437-47f3-8c2a-d9ac02965b8c
 exl-id: 9771a19d-86a8-41db-9c80-d734fbd10ab7
-translation-type: tm+mt
-source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
+source-git-commit: 95bf92df17d7832df72e8d883a22f9063e53a18d
 workflow-type: tm+mt
-source-wordcount: '2926'
+source-wordcount: '2899'
 ht-degree: 0%
 
 ---
@@ -103,9 +102,9 @@ A tag `<search-input>` gera uma tag `<input>` e inclui o atributo `checked` se a
 
 Você pode configurar seus conjuntos de quadros para funcionar com pesquisa/merchandising de site.
 
-Para saber mais sobre quadros HTML e o elemento do conjunto de quadros HTML, consulte o seguinte URL:
+<!-- 404 DEAD LINK To learn more about HTML frames and the HTML frameset element, see the following URL:
 
-[https://www.w3schools.com/html/html_frames.asp](https://www.w3schools.com/html/html_frames.asp)
+[https://www.w3schools.com/html/html_frames.asp](https://www.w3schools.com/html/html_frames.asp) -->
 
 Se o site usa quadros, você pode especificar um quadro de destino para links de resultados de pesquisa. O destino padrão é _self, que abre links no quadro ou na janela do navegador atual. Em vez disso, você pode especificar metas específicas de site ou reservadas para navegador:
 
@@ -157,7 +156,7 @@ O processo para configurar conjuntos de quadros é o seguinte:
  </tbody> 
 </table>
 
-## Adicionar o código do formulário de pesquisa a um quadro na sua página da Web {#section_BAA8A502BB2243F8B5FF9783CDF2BFFD}
+## Adicionar o código do formulário de pesquisa a um quadro na página da Web {#section_BAA8A502BB2243F8B5FF9783CDF2BFFD}
 
 1. No menu do produto, clique em **[!UICONTROL Design]** > **[!UICONTROL Auto-Complete]** > **[!UICONTROL Form Source]**.
 
@@ -179,7 +178,7 @@ O processo para configurar conjuntos de quadros é o seguinte:
 
    ![](assets/frames1.gif)
 
-## Definir o quadro de destino para a página de resultados da pesquisa {#section_532CACB90888467093D95EACB64FDFA1}
+## Definição do quadro de destino para a página de resultados da pesquisa {#section_532CACB90888467093D95EACB64FDFA1}
 
 Se você colocou o código do formulário de pesquisa no quadro de navegação vertical, como acima, é possível exibir os resultados da pesquisa no quadro principal maior. Neste exemplo, você chama o quadro principal de &quot;corpo&quot; e o define como o quadro de destino.
 
@@ -197,7 +196,7 @@ Se você colocou o código do formulário de pesquisa no quadro de navegação v
 
 Quando um cliente faz uma pesquisa em seu site, os resultados da pesquisa aparecem no quadro &quot;body&quot; da página da Web.
 
-## Definir o destino para links feitos a partir da página de resultados da pesquisa {#section_523248C5AC424D878321C21A23A5CD66}
+## Definição do target para links feitos na página de resultados da pesquisa {#section_523248C5AC424D878321C21A23A5CD66}
 
 Você pode definir o quadro de destino editando diretamente seu modelo.
 
@@ -235,7 +234,7 @@ Por exemplo, para definir o quadro de destino `_blank`, edite o modelo da seguin
 
 Quando um visitante do site escolhe um link de resultados de pesquisa, a página vinculada agora abre em uma nova janela em branco.
 
-## Editar as páginas de quadro de navegação para evitar que elas sejam indexadas {#section_C62E5F0EE1294D5EBD97E123E54433FC}
+## Edição de páginas de quadros de navegação para evitar que elas sejam indexadas {#section_C62E5F0EE1294D5EBD97E123E54433FC}
 
 Normalmente, você quer excluir seus quadros de navegação de serem indexados com seus resultados de pesquisa. Para realizar essa funcionalidade, você pode adicionar `noindex` meta tag a essas páginas.
 

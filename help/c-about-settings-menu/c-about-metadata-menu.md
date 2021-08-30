@@ -6,10 +6,9 @@ title: Sobre o menu Metadados
 topic-legacy: Settings,Site search and merchandising
 uuid: f12fc863-a140-45e8-b219-3dbfdef099cd
 exl-id: 53d62da9-c5bd-4c4a-bb89-743704f66f7f
-translation-type: tm+mt
-source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
+source-git-commit: 95bf92df17d7832df72e8d883a22f9063e53a18d
 workflow-type: tm+mt
-source-wordcount: '8024'
+source-wordcount: '8028'
 ht-degree: 1%
 
 ---
@@ -18,7 +17,7 @@ ht-degree: 1%
 
 Use o menu Metadados para personalizar as Definições de pesquisa e as injeções de índice.
 
-## Sobre as definições {#concept_AE48035C210145169BE067D396975620}
+## Sobre definições {#concept_AE48035C210145169BE067D396975620}
 
 Você pode usar [!DNL Definitions] para personalizar o conteúdo e a relevância dos campos HTML e metadados que são considerados quando um cliente envia uma consulta de pesquisa.
 
@@ -292,7 +291,7 @@ Antes que os efeitos da nova definição de meta tag sejam visíveis para os cli
 
       Consulte [Envio das configurações do estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Editar campos de metatag predefinidos ou definidos pelo usuário {#task_0A7657B63596421BB6DB3ED44F827AB3}
+## Edição de campos de meta tag predefinidos ou definidos pelo usuário {#task_0A7657B63596421BB6DB3ED44F827AB3}
 
 Você pode editar apenas determinados campos em metatags predefinidas ou editar todos os campos em metatags definidas pelo usuário.
 
@@ -414,10 +413,10 @@ replace language https://www.yoursite.com/japanese/intro.txt ja_JP
    <td colname="col1"> <p> <span class="codeph"> campo  </span> </p> </td> 
    <td colname="col2"> <p>É necessário um nome de campo. A seguir estão dez nomes de campo predefinidos que podem ser usados: </p> <p> 
      <ul id="ul_B9336FA53023474EAEE399116E7FC972"> 
-      <li id="li_C621203DCD2B4875A54A1DD19F0B5B90"> <span class="codeph"> alt  </span> </li> 
+      <li id="li_C621203DCD2B4875A54A1DD19F0B5B90"> <span class="codeph"> Alt </span> </li> 
       <li id="li_9217E6A037254BEDBB8D006B70D7670D"> <span class="codeph"> body </span> </li> 
       <li id="li_DCDC50F93F224F02897419B745E09399"> <span class="codeph"> charset </span> </li> 
-      <li id="li_D95668236B6547B99966668C82B302AB"> <span class="codeph"> data  </span> </li> 
+      <li id="li_D95668236B6547B99966668C82B302AB"> <span class="codeph"> data </span> </li> 
       <li id="li_D2071681274345C3B97E9ADA6D223271"> <span class="codeph"> desc  </span> </li> 
       <li id="li_26683A9209454A438D811187FB929482"> <span class="codeph"> teclas  </span> </li> 
       <li id="li_A5E19F81B872402CA62B5AB9497E030D"> <span class="codeph"> language </span> </li> 
@@ -446,7 +445,7 @@ replace language https://www.yoursite.com/japanese/intro.txt ja_JP
 
 Consulte também [Selecionar tipos de conteúdo para rastrear e indexar](../c-about-settings-menu/c-about-crawling-menu.md#task_CCAC5C67C8BF4AB7B79D34A1495D5EE8).
 
-## Adicionar definições de injeção de campo {#task_E86566FA1FF74CF68115C0ADA05172AE}
+## Adição de definições de injeção de campo {#task_E86566FA1FF74CF68115C0ADA05172AE}
 
 Você pode usar [!DNL Injections] para inserir conteúdo em suas páginas da Web sem precisar editar as próprias páginas.
 
@@ -472,7 +471,7 @@ Opcionalmente, você pode usar **[!UICONTROL Test]** na página [!DNL Injections
 
       Consulte [Envio das configurações do estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Sobre o Carregador de Atributos {#concept_9EF38E98811B42CDA41996432B9AD209}
+## Sobre o carregador de atributos {#concept_9EF38E98811B42CDA41996432B9AD209}
 
 Use [!DNL Attribute Loader] para definir fontes de entrada adicionais para aumentar os dados rastreados de um site.
 
@@ -501,7 +500,7 @@ Consulte também [Sobre a configuração de vários carregadores de atributo](..
 
 Consulte também [Sobre o uso de Visualização quando você adiciona um Atributo...](../c-about-settings-menu/c-about-metadata-menu.md#section_E9CAB000A94C4D9189786C1EDB1CDB46)
 
-## Como o processo de injeção de atributo funciona nas configurações de Texto e Feed no Carregador de Atributos {#section_E059A33D61EE4DB0972A37B8A35E9E16}
+## Como o processo de injeção de atributo funciona nas configurações de Texto e Feed no Carregador de atributos {#section_E059A33D61EE4DB0972A37B8A35E9E16}
 
 <table> 
  <thead> 
@@ -572,7 +571,7 @@ Ao adicionar um Carregador de Atributo, você pode usar opcionalmente o recurso 
 >
 >O recurso de Mapas de configuração pode não funcionar para grandes conjuntos de dados XML porque o analisador de arquivos tenta ler o arquivo inteiro na memória. Como resultado, você pode experimentar uma condição de falta de memória. No entanto, quando o mesmo documento é processado no momento da indexação, ele não é lido na memória. Em vez disso, documentos grandes são processados &quot;em movimento&quot; e não são lidos inteiramente na memória primeiro.
 
-## Sobre o uso de Visualização ao adicionar um Carregador de Atributo {#section_E9CAB000A94C4D9189786C1EDB1CDB46}
+## Sobre o uso de Visualização ao adicionar um Carregador de atributos {#section_E9CAB000A94C4D9189786C1EDB1CDB46}
 
 Os dados do Carregador de atributos são carregados antes de uma operação Índice.
 
@@ -770,7 +769,7 @@ Antes que os efeitos da definição nova e ativada sejam visíveis para os clien
         <li id="li_759013EA02CD48BE971A55B0A6A11424"> <code class="syntax xml"> /record/metadata/meta[@name='title']/@content&amp;nbsp;-&gt;&amp;nbsp;title </code> <p>O atributo <span class="codeph"> content </span> de qualquer elemento <span class="codeph"> meta </span> contido num elemento <span class="codeph"> de metadados </span>, contido num elemento <span class="codeph"> de registro </span>, cujo atributo de nome é <span class="codeph"> título </span>, mapeia para o campo de metadados <span class="codeph"> título &lt;a11/ &gt;.</span> </p> </li> 
         <li id="li_E741CA59197D462EB2946EDE874AFDC8"> <code class="syntax xml"> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;desc </code> <p>O atributo <span class="codeph"> content </span> de qualquer elemento <span class="codeph"> meta </span> contido num elemento <span class="codeph"> de metadados </span>, contido no elemento <span class="codeph"> record </span>, cujo atributo name é <span class="codeph"> descrição </span>, mapeia para o campo de metadados <span class="codeph"> desc </span>. </p> </li> 
         <li id="li_E35EAE3D284D46D485D9064D7BB6AB13"> <code class="syntax xml"> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;body </code> <p>O atributo <span class="codeph"> content </span> de qualquer elemento <span class="codeph"> meta </span> contido em um elemento <span class="codeph"> de metadados </span>, contido no elemento <span class="codeph"> record </span>, cujo atributo name é <span class="codeph"> descrição </span>, mapeia para o campo de metadados <span class="codeph"> body &lt;a11/ &gt;.</span> </p> </li> 
-        </ul> </p> <p>XPath é uma notação relativamente complicada. Mais informações estão disponíveis no seguinte local: </p> <p>Consulte <a href="https://www.w3schools.com/xpath/" scope="external" format="html"> https://www.w3schools.com/xpath/ </a> </p> </li> 
+        </ul> </p> <p>XPath é uma notação relativamente complicada. Mais informações estão disponíveis no seguinte local: </p> <p>Consulte <a href="https://www.w3schools.com/xml/xpath_intro.asp" scope="external" format="html"> https://www.w3schools.com/xml/xpath_intro.asp </a> </p> </li> 
       <li id="li_8147075D7ACD4811A7ED335F23FE62A6"> <span class="uicontrol"> Campo </span> <p>Define o valor do atributo de nome usado para cada tag <span class="codeph"> &lt;meta&gt; </span> gerada. </p> </li> 
       <li id="li_2380199D63BF425A919606D8232FA6E2"> <span class="uicontrol"> Metadados? </span> <p>Faz com que <span class="uicontrol"> Campo </span> se torne uma lista suspensa na qual você pode selecionar campos de metadados definidos para a conta atual. </p> <p>O valor <span class="uicontrol"> Campo </span> pode ser um campo de metadados indefinido, se desejado. Um campo de metadados indefinido às vezes é útil para criar conteúdo usado por <span class="wintitle"> Filtering Script </span>. </p> <p>Consulte <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Sobre o script de filtragem </a>. </p> <p>Quando o Carregador de atributos processa documentos XML com várias ocorrências em qualquer campo de mapa, os vários valores são concatenados em um único valor no documento em cache resultante. Por padrão, esses valores são combinados com um delimitador de vírgula. No entanto, suponha que o valor <span class="wintitle"> Campo </span> correspondente seja um campo de metadados definido. Além disso, esse campo tem o conjunto de atributos <span class="wintitle"> Lista de permissões </span>. Nesse caso, o valor Delimitadores de lista do campo, que é o primeiro delimitador definido, é usado na concatenação. </p> </li> 
       <li id="li_DEA24003E97E406DA2510C43CCFDC70E"> <span class="uicontrol"> Chave primária?  </span> <p>Somente um campo é identificado como a chave primária. Este campo será usado como a "chave estrangeira" para corresponder os dados do Carregador de atributos ao documento correspondente no índice. </p> </li> 
@@ -863,7 +862,7 @@ Consulte [Editar uma definição de Carregador de Atributo](../c-about-settings-
 
       Consulte [Envio das configurações do estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Renomear uma definição de Carregador de atributos {#task_58D5DFD7EBC04111BCB91118E4440DB4}
+## Renomear uma definição do Carregador de atributos {#task_58D5DFD7EBC04111BCB91118E4440DB4}
 
 Você pode alterar o nome de uma definição existente do Carregador de atributos.
 
@@ -891,7 +890,7 @@ Você pode alterar o nome de uma definição existente do Carregador de atributo
 
       Consulte [Envio das configurações do estágio ao vivo](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Carregando dados do carregador de atributos {#task_2F3C55189B0A4049AB2113F2291CC181}
+## Carregamento de dados do carregador de atributos {#task_2F3C55189B0A4049AB2113F2291CC181}
 
 Você pode baixar os dados configurados do Carregador de atributos em pesquisa/merchandising do site.
 
@@ -958,7 +957,7 @@ Consulte [Carregando dados do carregador de atributos](../c-about-settings-menu/
    * Clique em **[!UICONTROL Download to Desktop]** para baixar e salvar a tabela como um arquivo .xlt.
    * Feche a página quando terminar de visualizar os dados do Carregador de atributos e retornar à página visualizada anteriormente.
 
-## Visualização das configurações de uma definição do Carregador de atributos {#task_EA99A9694FE948ADA82C1DBA0667851B}
+## Exibindo as configurações de uma definição do Carregador de atributos {#task_EA99A9694FE948ADA82C1DBA0667851B}
 
 Você pode revisar as configurações de uma definição existente do Carregador de atributos.
 
@@ -973,7 +972,7 @@ Depois que uma definição de Carregador de atributo é adicionada à página [!
 1. No menu do produto, clique em **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Attribute Loader]**.
 1. Na página [!DNL Attribute Loader], no cabeçalho da coluna [!DNL Actions], clique em **[!UICONTROL Edit]** para obter um nome de definição do Carregador de Atributo cujas configurações você deseja revisar ou editar.
 
-## Visualização do log do carregamento de dados mais recente do Carregador de atributos{#task_9C7D6E34BB6C4A40B7CA3EE36ACB0837}
+## Como visualizar o log a partir do carregamento de dados mais recente do Carregador de atributos {#task_9C7D6E34BB6C4A40B7CA3EE36ACB0837}
 
 Você pode usar [!DNL View Log] para examinar o arquivo de log de dados do Carregador de Atributo do processo de download mais recente. Você também pode usar a visualização de log para monitorar um download em execução.
 

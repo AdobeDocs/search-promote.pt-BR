@@ -6,10 +6,9 @@ title: Sobre a Conclusão Automática
 topic-legacy: Design,Site search and merchandising
 uuid: 3dfdd14d-2044-4f01-a5bc-fcb2eb0d5068
 exl-id: a1d08c0a-6c68-4da2-88d2-fe953d333536
-translation-type: tm+mt
-source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
+source-git-commit: 95bf92df17d7832df72e8d883a22f9063e53a18d
 workflow-type: tm+mt
-source-wordcount: '1494'
+source-wordcount: '1486'
 ht-degree: 1%
 
 ---
@@ -18,7 +17,7 @@ ht-degree: 1%
 
 É possível configurar várias áreas de Preenchimento automático para controlar a geração do formulário de pesquisa ativado de preenchimento automático e o arquivo autocomplete_data.js, que é incluído como parte do formulário de pesquisa ativado de preenchimento automático.
 
-## Sobre a Conclusão automática {#concept_093A9CD754864BA79B456FE4BEB64578}
+## Sobre a Conclusão Automática {#concept_093A9CD754864BA79B456FE4BEB64578}
 
 O arquivo [!DNL autocomplete_data.js] é gerado novamente e publicado na rede de conteúdo de pesquisa sempre que há alterações que a página Configuração de Completar Automaticamente foi salva.
 
@@ -97,7 +96,7 @@ Consulte [Configuração do CSS de Conclusão Automática](c-about-auto-complete
 1. Clique em **[!UICONTROL Save Changes]**.
 1. (Opcional) Siga um destes procedimentos:
 
-   * Clique em **[!UICONTROL History]** para reverter as alterações feitas.
+   * Clique em **[!UICONTROL History]** se desejar reverter as alterações feitas.
 
       Consulte [Usando a opção Histórico](t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
@@ -109,7 +108,7 @@ Consulte [Configuração do CSS de Conclusão Automática](c-about-auto-complete
 
       Consulte [Envio das configurações do estágio ao vivo](c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Configurando a Lista de Palavras de Conclusão Automática {#task_1F8E0F346263443383F8CFD2C7AB35D4}
+## Configuração da lista de palavras de preenchimento automático {#task_1F8E0F346263443383F8CFD2C7AB35D4}
 
 Configure a lista de palavras e frases que a opção Completar automaticamente exibe para um cliente como sugestões.
 
@@ -182,7 +181,7 @@ Consulte [Configuração do CSS de Conclusão Automática](c-about-auto-complete
 1. Clique em **[!UICONTROL Save Changes]**.
 1. (Opcional) Siga um destes procedimentos:
 
-   * Clique em **[!UICONTROL History]** para reverter as alterações feitas.
+   * Clique em **[!UICONTROL History]** se desejar reverter as alterações feitas.
    * Clique em **[!UICONTROL Preview Word List]** para salvar as alterações feitas e abra a página [!DNL Auto-Complete Word List Preview], onde poderá revisar a lista de sugestões de preenchimento automático. Use as opções de navegação perto da parte superior da página para revisar e refinar a lista exibida. Quando terminar, clique em **[!UICONTROL Close]** para retornar à página [!DNL Auto-Complete Word List].
 
       Consulte [Usando a opção Histórico](t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
@@ -207,7 +206,7 @@ t_configuring_auto-complete_css.xml
 
 O CSS de Completar automaticamente controla o conteúdo de [!DNL autocomplete_styles.css], que é incluído como parte do formulário de pesquisa ativado de preenchimento automático. O CSS especificado aqui controla a apresentação visual da lista de sugestão de preenchimento automático. Para obter um exemplo das ideias de apresentação visual possíveis, consulte o seguinte:
 
-[https://developer.yahoo.com/yui/examples/autocomplete/ac_skinning.html](https://developer.yahoo.com/yui/examples/autocomplete/ac_skinning.html).
+<!-- 404 DEAD LINK [https://developer.yahoo.com/yui/examples/autocomplete/ac_skinning.html](https://developer.yahoo.com/yui/examples/autocomplete/ac_skinning.html). -->
 
 [Configurando a Lista de Palavras de Preenchimento Automático](c-about-auto-complete.md#task_1F8E0F346263443383F8CFD2C7AB35D4).
 
@@ -217,7 +216,7 @@ Quando você terminar de configurar o CSS de Completar Automaticamente, poderá 
 
 Consulte [Visualizar o formulário de pesquisa como ele apareceria em seu...](c-about-auto-complete.md#task_437B35EFA5424603A08AF8E79E6B4714).
 
-**Importante**: Para aplicar seu CSS personalizado de preenchimento automático, é necessário remover as tags de comentário da segunda linha que aparece no código HTML. Em seguida, mova a mesma linha para dentro da seção de cabeçalho da página que contém o formulário de pesquisa.
+**Importante**: Para aplicar seu CSS personalizado de preenchimento automático, você deve remover as tags de comentário da segunda linha que aparece no código HTML. Em seguida, mova a mesma linha para dentro da seção de cabeçalho da página que contém o formulário de pesquisa.
 
 Consulte [Copiando o código HTML do formulário de pesquisa para o...](c-about-auto-complete.md#task_A3A01EA800F24C0AA33902387E0362C7).
 
@@ -271,7 +270,7 @@ Consulte [Código do modelo de formulário de pesquisa avançada](c-appendices/c
 1. No menu do produto, clique em **[!UICONTROL Design]** > **[!UICONTROL Auto-Complete]** > **[!UICONTROL Search Form]**.
 1. (Opcional) Clique em **[!UICONTROL HTML code]** para ver o HTML que você copia e cola nas páginas do seu site.
 
-## Copiando o código HTML do formulário de pesquisa nas páginas do seu site {#task_A3A01EA800F24C0AA33902387E0362C7}
+## Como copiar o código HTML do formulário de pesquisa nas páginas do seu site {#task_A3A01EA800F24C0AA33902387E0362C7}
 
 Com base na sua configuração de CSS de Preenchimento Automático e de Preenchimento Automático, você pode visualizar como o formulário de pesquisa será exibido se quiser adicionar o código HTML ao seu site.
 

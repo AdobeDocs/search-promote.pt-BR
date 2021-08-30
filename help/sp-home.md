@@ -5,10 +5,10 @@ solution: Target
 topic-legacy: Site search and merchandising
 uuid: bb1c49be-7cfd-485a-a848-c5dc8733b009
 exl-id: 6920dbf0-beeb-4723-8178-4da37f0b03ed
-source-git-commit: bd8341e6bd955dbf5496351594938b65e1bd2948
+source-git-commit: 95bf92df17d7832df72e8d883a22f9063e53a18d
 workflow-type: tm+mt
-source-wordcount: '141'
-ht-degree: 22%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 22%
 
 * **IMPORTANTE:** [Anúncio de fim de serviço do Adobe Search &amp; Promote](/help/sp-eol.md).
 
-* Notas de versão da Adobe Marketing Cloud - Contém novos recursos, correções e problemas conhecidos em todas as soluções do Marketing Cloud. As versões dos recursos são lançadas na primavera e no outono, enquanto as versões de manutenção ocorrem todos os meses.
+* Notas de versão da Adobe Experience Cloud - Contém novos recursos, correções e problemas conhecidos em todas as soluções do Experience Cloud. As versões dos recursos são lançadas na primavera e no outono, enquanto as versões de manutenção ocorrem todos os meses.
 
-   Acesso antecipado: Cadastre-se no [Adobe Priority Product Update](https://campaign.adobe.com/webApp/adbePriorityProductSubscribe) para receber as notas de versão do Adobe Marketing Cloud uma semana antes de cada lançamento.
+<!--   Early Access: Sign up for the [Adobe Priority Product Update](https://campaign.adobe.com/webApp/adbePriorityProductSubscribe) to receive Adobe Marketing Cloud release notes one week before each release. -->
 
 * As notas de versão mais recentes do Search &amp; Promote Adobe:
 
@@ -32,6 +32,6 @@ ht-degree: 22%
 
 ## Outras informações {#topic_34A00195904D4AE7AE982D3746F693AA}
 
-[Site do Adobe Search &amp; Promote](https://www.adobe.com/solutions/testing-targeting/search-driven-merchandising.html)
+<!-- [Adobe Search&amp;Promote website](https://www.adobe.com/solutions/testing-targeting/search-driven-merchandising.html) -->
 
 [Industry Insights](https://blog.adobe.com/en/topics/digital-transformation.html) - O blog de marketing digital da Adobe.
