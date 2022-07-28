@@ -1,18 +1,17 @@
 ---
 cloud: Experience Cloud
-solution-title: Aprendizagem e suporte
-solution-hub-url: https://helpx.adobe.com/br/support/target.html
+solution-title: Learn & Support
+solution-hub-url: https://helpx.adobe.com/support/target.html
 solution-image: https://www.adobe.com
-getting-started-title: Introdução
-getting-started-url: https://helpx.adobe.com/br/target/get-started.html
-tutorials-url: https://helpx.adobe.com/br/target/kt/index/target-videos.html
-git-repo: https://git.corp.adobe.com/AdobeDocs/search-promote.pt-BR
+getting-started-title: Getting Started
+getting-started-url: https://helpx.adobe.com/target/get-started.html
+tutorials-url: https://helpx.adobe.com/target/kt/index/target-videos.html
+git-repo: https://github.com/AdobeDocs/search-promote.pt-BR
 index: y
-translation-type: tm+mt
 source-git-commit: 5ecb1d79057b166887c37c1c54905a93e2a87835
 workflow-type: tm+mt
-source-wordcount: '131'
-ht-degree: 93%
+source-wordcount: '111'
+ht-degree: 96%
 
 ---
 
